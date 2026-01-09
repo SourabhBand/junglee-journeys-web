@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   title: "Junglee Journeys | Luxury Tiger Safaris in India",
   description: "Book your tiger safari in India with expert naturalists. Private safaris, luxury lodges, 95% tiger sighting rate. 15+ years experience. Plan your journey today.",
   keywords: "tiger safari india, wildlife safari, kanha national park, ranthambore safari, tadoba tiger reserve, bandhavgarh safari, luxury safari india",
+  authors: [{ name: "Junglee Journeys" }],
   openGraph: {
     title: "Junglee Journeys | Luxury Tiger Safaris in India",
     description: "Experience India's magnificent wildlife with expert naturalists. Private safaris to Kanha, Tadoba, Ranthambore & more.",
