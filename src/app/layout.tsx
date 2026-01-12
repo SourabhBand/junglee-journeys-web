@@ -27,10 +27,17 @@ export const metadata: Metadata = {
   keywords: "tiger safari india, wildlife safari, kanha national park, ranthambore safari, tadoba tiger reserve, bandhavgarh safari, luxury safari india",
   authors: [{ name: "Junglee Journeys" }],
   creator: "Junglee Journeys",
+  metadataBase: new URL("https://junglee-journeys-web.vercel.app"),
   openGraph: {
     title: "Junglee Journeys | Luxury Tiger Safaris in India",
     description: "Experience India's magnificent wildlife with expert naturalists. Private safaris to Kanha, Tadoba, Ranthambore & more.",
     type: "website",
+    siteName: "Junglee Journeys",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Junglee Journeys | Luxury Tiger Safaris in India",
+    description: "Experience India's magnificent wildlife with expert naturalists.",
   },
 };
 
