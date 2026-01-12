@@ -12,10 +12,13 @@ export default function Home() {
             <a className="hover:text-[#d4a04d] transition" href="#">Safaries</a>
           </div>
           <div className="flex flex-col items-center">
-            <div className="text-4xl font-display font-bold leading-none tracking-tighter">
-              <span className="block">J</span>
-              <span className="block -mt-2 ml-2">J</span>
-            </div>
+            <Image
+              src="/logo-jj.png"
+              alt="Junglee Journeys"
+              width={50}
+              height={50}
+              className="object-contain"
+            />
           </div>
           <div className="flex items-center space-x-8">
             <div className="hidden md:flex space-x-8 uppercase text-xs tracking-[0.2em] font-medium">
@@ -41,7 +44,7 @@ export default function Home() {
         <div className="absolute inset-0 hero-overlay"></div>
         <div className="relative z-10 max-w-4xl px-4">
           <p className="font-serif italic text-xl md:text-2xl mb-4 tracking-wide">First-hand wilderness</p>
-          <h1 className="font-display text-6xl md:text-9xl tracking-tighter leading-none mb-12">
+          <h1 className="font-display text-6xl md:text-9xl tracking-wider leading-none mb-12 hero-title">
             JUNGLEE <br/> JOURNEYS
           </h1>
           <a className="bg-[#d4a04d] hover:bg-opacity-90 transition-all text-white px-10 py-4 uppercase text-sm tracking-[0.3em] font-bold inline-block" href="#plan">
@@ -68,7 +71,7 @@ export default function Home() {
       <section className="py-24 bg-[#f4f1ea]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="ornament-divider">
-            <span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span>
+            ◆ ◆ ◆ ◆ ◆ ◆ ◆
           </div>
           <h2 className="text-center font-display text-4xl md:text-5xl mb-12 tracking-tight">WHY TRAVEL WITH US?</h2>
           <div className="max-w-3xl mx-auto text-center mb-16">
@@ -83,22 +86,26 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="bg-[#0b1c09] text-white p-8 rounded-xl text-center flex flex-col items-center">
+            <div className="feature-card bg-[#0b1c09] text-white p-8 rounded-xl text-center flex flex-col items-center">
+              <span className="material-symbols-outlined text-[#d4a04d] text-4xl mb-4">directions_car</span>
               <h3 className="font-display text-xl mb-4">Private Safaris</h3>
               <p className="font-bold text-xs mb-4">Your vehicle. Your pace. Your moment with the tiger.</p>
               <p className="text-[10px] leading-relaxed opacity-80">No strangers debating camera angles. No compromises on where to go next. Just you, your group, and whatever the jungle decides to reveal.</p>
             </div>
-            <div className="bg-[#0b1c09] text-white p-8 rounded-xl text-center flex flex-col items-center">
+            <div className="feature-card bg-[#0b1c09] text-white p-8 rounded-xl text-center flex flex-col items-center">
+              <span className="material-symbols-outlined text-[#d4a04d] text-4xl mb-4">visibility</span>
               <h3 className="font-display text-xl mb-4">Expert Naturalists</h3>
               <p className="font-bold text-xs mb-4">Guides who read the forest like a first language.</p>
               <p className="text-[10px] leading-relaxed opacity-80">They notice the alarm call you missed. They know this tigress&apos;s territory by heart. The difference? You don&apos;t just see wildlife. You understand it.</p>
             </div>
-            <div className="bg-[#0b1c09] text-white p-8 rounded-xl text-center flex flex-col items-center">
+            <div className="feature-card bg-[#0b1c09] text-white p-8 rounded-xl text-center flex flex-col items-center">
+              <span className="material-symbols-outlined text-[#d4a04d] text-4xl mb-4">hotel</span>
               <h3 className="font-display text-xl mb-4">Luxury Lodges</h3>
               <p className="font-bold text-xs mb-4">Where wilderness meets genuine comfort.</p>
               <p className="text-[10px] leading-relaxed opacity-80">We&apos;ve stayed at every lodge we recommend. Some have magical forest views. All of them let you exhale after a dusty game drive.</p>
             </div>
-            <div className="bg-[#0b1c09] text-white p-8 rounded-xl text-center flex flex-col items-center">
+            <div className="feature-card bg-[#0b1c09] text-white p-8 rounded-xl text-center flex flex-col items-center">
+              <span className="material-symbols-outlined text-[#d4a04d] text-4xl mb-4">event_available</span>
               <h3 className="font-display text-xl mb-4">Hassle-Free Planning</h3>
               <p className="font-bold text-xs mb-4">Permits, transfers, timing - we&apos;ve got it.</p>
               <p className="text-[10px] leading-relaxed opacity-80">Safari bookings in India can be... let&apos;s say, bureaucratic. We handle the complexity so your only job is to show up ready for adventure.</p>
@@ -111,7 +118,7 @@ export default function Home() {
       <section className="py-24 bg-[#0b1c09] text-[#f4f1ea]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="ornament-divider">
-            <span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span>
+            ◆ ◆ ◆ ◆ ◆ ◆ ◆
           </div>
           <h2 className="text-center font-display text-4xl md:text-5xl mb-12 tracking-tight">INDIA&apos;S PREMIER TIGER RESERVES</h2>
           <div className="max-w-3xl mx-auto text-center mb-16 text-sm text-[#f4f1ea]/80 leading-relaxed">
@@ -121,7 +128,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Kanha */}
-            <div className="bg-white text-[#0b1c09] rounded-t-sm overflow-hidden flex flex-col h-full">
+            <div className="destination-card bg-white text-[#0b1c09] rounded-t-sm overflow-hidden flex flex-col h-full">
               <div className="h-64 overflow-hidden relative group">
                 <Image
                   alt="Kanha National Park"
@@ -137,7 +144,7 @@ export default function Home() {
               </div>
             </div>
             {/* Tadoba */}
-            <div className="bg-white text-[#0b1c09] rounded-t-sm overflow-hidden flex flex-col h-full">
+            <div className="destination-card bg-white text-[#0b1c09] rounded-t-sm overflow-hidden flex flex-col h-full">
               <div className="h-64 overflow-hidden relative group">
                 <Image
                   alt="Tadoba Tiger Reserve"
@@ -153,7 +160,7 @@ export default function Home() {
               </div>
             </div>
             {/* Ranthambore */}
-            <div className="bg-white text-[#0b1c09] rounded-t-sm overflow-hidden flex flex-col h-full">
+            <div className="destination-card bg-white text-[#0b1c09] rounded-t-sm overflow-hidden flex flex-col h-full">
               <div className="h-64 overflow-hidden relative group">
                 <Image
                   alt="Ranthambore National Park"
@@ -169,7 +176,7 @@ export default function Home() {
               </div>
             </div>
             {/* Bandhavgarh */}
-            <div className="bg-white text-[#0b1c09] rounded-t-sm overflow-hidden flex flex-col h-full relative">
+            <div className="destination-card bg-white text-[#0b1c09] rounded-t-sm overflow-hidden flex flex-col h-full relative">
               <div className="h-64 overflow-hidden relative group">
                 <Image
                   alt="Bandhavgarh National Park"
@@ -201,7 +208,7 @@ export default function Home() {
               <p>Tell us what you&apos;re after. We&apos;ll design something that actually fits.</p>
             </div>
             <div className="ornament-divider justify-start">
-              <span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span>
+              ◆ ◆ ◆ ◆ ◆ ◆ ◆
             </div>
             <button className="bg-[#d4a04d] text-white text-[10px] tracking-[0.2em] font-bold px-10 py-3 uppercase mt-8">Browse Safari Packages</button>
           </div>
@@ -261,7 +268,7 @@ export default function Home() {
             </div>
           </div>
           <div className="ornament-divider text-gray-200">
-            <span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span>
+            ◆ ◆ ◆ ◆ ◆ ◆ ◆
           </div>
         </div>
       </section>
@@ -335,13 +342,16 @@ export default function Home() {
       <footer className="bg-[#0b1c09] text-[#f4f1ea] py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="ornament-divider mb-12">
-            <span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span><span>&#10019;</span>
+            ◆ ◆ ◆ ◆ ◆ ◆ ◆
           </div>
           <div className="flex flex-col items-center mb-10">
-            <div className="text-5xl font-display font-bold leading-none tracking-tighter mb-8">
-              <span className="block">J</span>
-              <span className="block -mt-2 ml-2">J</span>
-            </div>
+            <Image
+              src="/logo-jj.png"
+              alt="Junglee Journeys"
+              width={70}
+              height={70}
+              className="object-contain mb-8"
+            />
             <div className="flex space-x-8 uppercase text-[10px] tracking-[0.3em] opacity-60">
               <a className="hover:text-[#d4a04d] transition" href="#">About</a>
               <a className="hover:text-[#d4a04d] transition" href="#">Privacy</a>

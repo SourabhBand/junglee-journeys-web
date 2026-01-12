@@ -58,10 +58,59 @@ body {
 .ornament-divider {
   display: flex;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
   color: #d4a04d;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   margin: 2rem 0;
+  letter-spacing: 0.5em;
+}
+
+/* Hero title with flourish */
+.hero-title {
+  font-family: var(--font-cinzel);
+  letter-spacing: 0.15em;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero-title::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4a04d, transparent);
+  margin: 1.5rem auto 0;
+}
+
+/* Staggered fade-in animation for feature cards */
+.feature-card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects for destination cards */
+.destination-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .material-symbols-outlined {
