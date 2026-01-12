@@ -39,6 +39,10 @@ export const metadata: Metadata = {
     title: "Junglee Journeys | Luxury Tiger Safaris in India",
     description: "Experience India's magnificent wildlife with expert naturalists.",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
