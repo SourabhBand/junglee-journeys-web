@@ -2,11 +2,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0b1c09;
-  --primary: #d4a04d;
-  --forest-green: #0b1c09;
-  --forest-accent: #1a2e18;
-  --beige-light: #f4f1ea;
+  --foreground: #081d01;
+  --primary: #e79e23;
+  --forest-green: #081d01;
+  --forest-accent: #0d2a05;
+  --beige: #ede4d1;
+  --beige-light: #f5f0e3;
   --beige-dark: #e5dfd3;
 }
 
@@ -16,34 +17,35 @@
   --color-primary: var(--primary);
   --color-forest-green: var(--forest-green);
   --color-forest-accent: var(--forest-accent);
+  --color-beige: var(--beige);
   --color-beige-light: var(--beige-light);
   --color-beige-dark: var(--beige-dark);
-  --font-display: var(--font-cinzel);
-  --font-serif: var(--font-playfair);
-  --font-body: var(--font-montserrat);
+  --font-display: var(--font-outfit);
+  --font-serif: var(--font-gelasio);
+  --font-body: var(--font-gelasio);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-montserrat), system-ui, sans-serif;
+  font-family: var(--font-gelasio), Georgia, serif;
   overflow-x: hidden;
 }
 
 .font-display {
-  font-family: var(--font-cinzel), serif;
+  font-family: var(--font-outfit), sans-serif;
 }
 
 .font-serif {
-  font-family: var(--font-playfair), serif;
+  font-family: var(--font-gelasio), Georgia, serif;
 }
 
 .font-body {
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: var(--font-gelasio), Georgia, serif;
 }
 
 .font-ornament {
-  font-family: var(--font-cinzel), serif;
+  font-family: var(--font-outfit), sans-serif;
   letter-spacing: 0.15em;
 }
 
@@ -59,32 +61,30 @@ body {
   display: flex;
   justify-content: center;
   gap: 8px;
-  color: #d4a04d;
+  color: #e79e23;
   font-size: 0.75rem;
   margin: 2rem 0;
   letter-spacing: 0.5em;
 }
 
-/* Hero title with flourish */
-.hero-title {
-  font-family: var(--font-cinzel);
-  letter-spacing: 0.15em;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+/* Section headings - Reform-style geometric sans */
+.section-heading {
+  font-family: var(--font-outfit), sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  line-height: 1.369;
 }
 
-.hero-title::after {
-  content: '';
-  display: block;
-  width: 200px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #d4a04d, transparent);
-  margin: 1.5rem auto 0;
+/* Hero title text shadow */
+.hero-title {
+  text-shadow: 2px 4px 20px rgba(0,0,0,0.4);
 }
 
 /* Staggered fade-in animation for feature cards */
 .feature-card {
   opacity: 0;
   animation: fadeInUp 0.6s ease forwards;
+  border-radius: 9px 120px 9px 120px;
 }
 
 .feature-card:nth-child(1) { animation-delay: 0.1s; }
@@ -128,4 +128,27 @@ body {
   -webkit-font-feature-settings: 'liga';
   font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+}
+
+/* Curved image frame for Tiger Reserves */
+.curved-image-frame {
+  clip-path: polygon(
+    0% 15%,
+    5% 5%,
+    15% 0%,
+    85% 0%,
+    95% 5%,
+    100% 15%,
+    100% 85%,
+    95% 95%,
+    85% 100%,
+    15% 100%,
+    5% 95%,
+    0% 85%
+  );
+}
+
+/* Alternate card rotations for feature cards */
+.feature-card-rotated {
+  border-radius: 120px 9px 120px 9px;
 }

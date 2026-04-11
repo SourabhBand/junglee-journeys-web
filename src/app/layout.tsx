@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
-import { Cinzel, Playfair_Display, Montserrat } from "next/font/google";
+import { Outfit, Gelasio } from "next/font/google";
 import "./globals.css";
 
-const cinzel = Cinzel({
-  variable: "--font-cinzel",
+// Outfit - geometric sans-serif for headings (Reform alternative)
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+// Gelasio - serif font for body text
+const gelasio = Gelasio({
+  variable: "--font-gelasio",
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal", "italic"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -59,10 +55,16 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${cinzel.variable} ${playfair.variable} ${montserrat.variable} antialiased`}
+        className={`${outfit.variable} ${gelasio.variable} antialiased`}
       >
         {children}
       </body>
+      {/*
+        Note: Header and Footer are NOT placed in this layout because the
+        homepage uses a transparent header overlaid on the hero image, while
+        interior pages use a solid header. Each page imports and renders its
+        own Header and Footer to control the variant.
+      */}
     </html>
   );
 }
