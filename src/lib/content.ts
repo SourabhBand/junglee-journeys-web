@@ -20,13 +20,42 @@ export interface PageContent {
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
 /**
+ * Split a markdown table row on unescaped pipes. Treats `\|` as a literal pipe.
+ * Returns the cells, stripped of leading/trailing whitespace and surrounding empty cells.
+ */
+function splitTableRow(line: string): string[] {
+  const cells: string[] = [];
+  let current = '';
+  let i = 0;
+  while (i < line.length) {
+    if (line[i] === '\\' && line[i + 1] === '|') {
+      current += '|';
+      i += 2;
+    } else if (line[i] === '|') {
+      cells.push(current.trim());
+      current = '';
+      i++;
+    } else {
+      current += line[i];
+      i++;
+    }
+  }
+  if (current.trim()) cells.push(current.trim());
+  // Drop empty cells at the start and end (the leading/trailing pipes produce empty cells)
+  while (cells.length && cells[0] === '') cells.shift();
+  while (cells.length && cells[cells.length - 1] === '') cells.pop();
+  return cells;
+}
+
+/**
  * Parse the metadata table at the top of a markdown file.
- * Pattern: | **Field** | value |
+ * Pattern: | **Field** | value |   (with optional `| **Field** (50 char) | value |` for char counts)
+ * Handles escaped pipes (`\|`) inside cell values so titles like
+ * "Kanha Safari | The Land of Mowgli | Junglee Journeys" survive.
  */
 function parseMetadataTable(markdown: string): PageMetadata {
   const metadata: PageMetadata = {};
 
-  // Find the table block (between "| Field | Value |" and the next blank line or "---")
   const lines = markdown.split('\n');
   let inTable = false;
 
@@ -38,12 +67,19 @@ function parseMetadataTable(markdown: string): PageMetadata {
     if (inTable) {
       if (line.match(/^\|\s*-+\s*\|/)) continue; // separator row
       if (!line.startsWith('|')) break; // table ended
-      const m = line.match(/^\|\s*\*\*([^*]+)\*\*\s*(?:\([^)]*\))?\s*\|\s*(.+?)\s*\|/);
-      if (!m) continue;
-      const field = m[1].trim().toLowerCase();
-      const value = m[2].trim().replace(/\\\|/g, '|');
 
-      switch (field) {
+      const cells = splitTableRow(line);
+      if (cells.length < 2) continue;
+
+      // Strip the **bold** wrapper and any parenthetical "(60 char)" suffix from the field name
+      const fieldRaw = cells[0]
+        .replace(/\*\*/g, '')
+        .replace(/\s*\([^)]*\)\s*/g, '')
+        .trim()
+        .toLowerCase();
+      const value = cells.slice(1).join(' | ').trim();
+
+      switch (fieldRaw) {
         case 'url':
           metadata.url = value.replace(/^`|`$/g, '');
           break;
@@ -70,6 +106,18 @@ function parseMetadataTable(markdown: string): PageMetadata {
   }
 
   return metadata;
+}
+
+/**
+ * Strip editorial section labels from rendered body content.
+ * "## Hero" is used in the markdown source as a section divider for the
+ * editor's benefit, but it should not render as a visible H2 on the page.
+ */
+function stripEditorialLabels(markdown: string): string {
+  return markdown
+    .split('\n')
+    .filter((line) => !/^##\s+Hero\s*$/i.test(line))
+    .join('\n');
 }
 
 /**
@@ -110,6 +158,7 @@ function readPageFile(relPath: string): PageContent {
   const metadata = parseMetadataTable(raw);
   let body = stripFrontMatter(raw);
   body = stripSeoCheck(body);
+  body = stripEditorialLabels(body);
   return {
     metadata,
     body,
