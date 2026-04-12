@@ -20,7 +20,7 @@
 
 The honest truth is that you can absolutely book a tiger safari in India yourself. People do it all the time. The honest truth is also that it usually goes badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday. We are not here to talk you out of doing this on your own. We are here for the people who decided their holiday was worth doing properly.
 
-We have spent fifteen years arranging **tiger safari india** trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
+We have spent fifteen years arranging **tiger safari in India** trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
 
 **[Plan Your Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
 
@@ -58,7 +58,7 @@ India holds more than half the world's wild tigers, which is the kind of statist
 
 ### **[Kanha National Park](/destination/kanha/)**
 
-Kanha is what Mowgli's forest looked like before the marketing department got involved. Sal trees in straight ranks, meadows wide enough that you forget what you came here for, and a tiger population that has held steady for two decades because the people running this park are very serious about their work and very polite about telling you so. The classic Central Indian **jungle safari india** experience, and the one most first-timers should start with. Four hours by road from Jabalpur airport.
+Kanha is what Mowgli's forest looked like before the marketing department got involved. Sal trees in straight ranks, meadows wide enough that you forget what you came here for, and a tiger population that has held steady for two decades because the people running this park are very serious about their work and very polite about telling you so. The classic Central Indian **jungle safari in India** experience, and the one most first-timers should start with. Four hours by road from Jabalpur airport.
 
 ### **[Tadoba Tiger Reserve](/destination/tadoba/)**
 
@@ -80,7 +80,7 @@ Pench is the actual Jungle Book setting, although Kipling never set foot in it a
 
 Satpura is the **wildlife safari** for guests who have already done Kanha and Bandhavgarh and want a quieter version of the trip. Walking safaris and boat safaris and almost no jeeps. Sloth bears, gaur, leopards, and the occasional tiger when she feels like making an appearance.
 
-These six are the parks we run most often, but they are not the only ones we work in. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out our list of eleven. Pick the wrong park for your dates and the **best tiger safari india** has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
+These six are the parks we run most often, but they are not the only ones we work in. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out our list of eleven. Pick the wrong park for your dates and the **best tiger safari in India** has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
 
 **[View All 11 Destinations](/destinations/)**
 
@@ -92,7 +92,7 @@ The trip we sell you is the trip you actually want, not the trip we wish you wou
 
 ### **[Private Tiger Safaris](/safaris/)**
 
-The default for most of our guests. A **private safari india** trip with us means your own jeep, your own naturalist, and game drives timed around the actual wildlife activity rather than the tour bus schedule. No sharing. No rushing. No second jeep idling behind you while a tigress decides whether to cross the road.
+The default for most of our guests. A **private safari in India** trip with us means your own jeep, your own naturalist, and game drives timed around the actual wildlife activity rather than the tour bus schedule. No sharing. No rushing. No second jeep idling behind you while a tigress decides whether to cross the road.
 
 ### **[Photography Expeditions](/safari/photography-special/)**
 
@@ -140,7 +140,7 @@ Probably. We do not guarantee wildlife sightings, because anyone who guarantees 
 
 ### Which is the best tiger reserve in India?
 
-Honestly, it depends what you want. Bandhavgarh for the best odds. Ranthambore for the fort photographs. Tadoba for weekend access from Mumbai. Kanha for the meadow light and the classic experience. **Tiger reserve india** is not really a single thing, and asking which one is best is a bit like asking which flavour of ice cream is best. Tell us what matters most to you and we will pick for you.
+Honestly, it depends what you want. Bandhavgarh for the best odds. Ranthambore for the fort photographs. Tadoba for weekend access from Mumbai. Kanha for the meadow light and the classic experience. **Tiger reserves in India** is not really a single thing, and asking which one is best is a bit like asking which flavour of ice cream is best. Tell us what matters most to you and we will pick for you.
 
 ### Is an Indian safari like an African safari?
 

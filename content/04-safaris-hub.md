@@ -20,13 +20,13 @@
 
 *Three flagships, a workshop of custom builds, and a quote in your inbox within 24 hours.*
 
-This is the page for our **india safari tours**: three flagship packages with dedicated pages of their own, plus the option to commission something built from scratch around your dates. Every itinerary is custom by default. The starting points below are simply the trips we have planned often enough to have strong opinions about.
+This is the page for our **India safari tours**: three flagship packages with dedicated pages of their own, plus the option to commission something built from scratch around your dates. Every itinerary is custom by default. The starting points below are simply the trips we have planned often enough to have strong opinions about.
 
 ---
 
 ## How This Works
 
-We do not run group departures. We do not sell fixed-date trips. The **safari tours india** version we sell is the one we build for you, after we have asked roughly fifteen questions about your dates, your city of departure, your tolerance for early starts, and whether you are coming for the photograph or the experience.
+We do not run group departures. We do not sell fixed-date trips. The **safari tours in India** version we sell is the one we build for you, after we have asked roughly fifteen questions about your dates, your city of departure, your tolerance for early starts, and whether you are coming for the photograph or the experience.
 
 Here is the actual sequence.
 
@@ -49,7 +49,7 @@ The packages below are the ones we have done often enough that they have their o
 **Parks:** Kanha, Bandhavgarh, Pench
 **Best for:** Serious tiger fans, first-timers who want to do it properly
 
-The flagship. Three tiger reserves in one trip, in the order that makes sense for both the wildlife and the geography. Kanha for the meadow openings. Bandhavgarh for the density. Pench for the closing chapter. Seven to nine nights, your own jeep and naturalist for the duration, lodges we have stayed at ourselves. This is the trip for guests who want one really good shot at understanding why Central India is the heart of **wildlife tour india** territory.
+The flagship. Three tiger reserves in one trip, in the order that makes sense for both the wildlife and the geography. Kanha for the meadow openings. Bandhavgarh for the density. Pench for the closing chapter. Seven to nine nights, your own jeep and naturalist for the duration, lodges we have stayed at ourselves. This is the trip for guests who want one really good shot at understanding why Central India is the heart of **wildlife tour in India** territory.
 
 If you have one trip in you, this is probably the one.
 
@@ -65,7 +65,7 @@ If you have one trip in you, this is probably the one.
 
 For guests who care which hide they are sitting in, at what hour, and which way the light is moving. Guides who understand light, positioning, and tiger behaviour at the level you actually need them to. The right waterhole. The right window. The right time of year for the species you came for. The lodges we use for this package are chosen for their proximity to the gates, because the morning gate queue at 5:30 AM is not where a serious photographer wants to be sitting in traffic.
 
-This is the **luxury tiger safari india** package for people whose definition of luxury is "I get the shot."
+This is the **luxury tiger safari in India** package for people whose definition of luxury is "I get the shot."
 
 **[Explore Photography Special](/safari/photography-special/)**
 
@@ -95,11 +95,11 @@ The Mumbai and Pune weekend escape. Fly to Nagpur on Friday evening, drive 3 hou
 
 ### Multi-Park Luxury (7 to 10 nights)
 
-The flagship-plus version. Same Central Indian arc as the Tiger Trail, but in the lodges where you do not pick the room because every room is the right room. The naturalists are the same; the difference is the bed at the end of the day and the food at the start of it. The most popular **wildlife safari packages india** request among our repeat international guests.
+The flagship-plus version. Same Central Indian arc as the Tiger Trail, but in the lodges where you do not pick the room because every room is the right room. The naturalists are the same; the difference is the bed at the end of the day and the food at the start of it. The most popular **wildlife safari packages in India** request among our repeat international guests.
 
 ### Golden Triangle + Ranthambore (8 to 10 days)
 
-Delhi, Agra, Jaipur, Ranthambore. The classic India circuit with the wildlife chapter that the standard version skips. The Taj at sunrise, then the fort at Agra, then Jaipur, then five hours south to a tigress walking through tenth-century ruins. The most-requested of all our **india wildlife tour packages** from first-time visitors to India.
+Delhi, Agra, Jaipur, Ranthambore. The classic India circuit with the wildlife chapter that the standard version skips. The Taj at sunrise, then the fort at Agra, then Jaipur, then five hours south to a tigress walking through tenth-century ruins. The most-requested of all our **India wildlife tour packages** from first-time visitors to India.
 
 ### Northeast Explorer (6 to 8 nights)
 
@@ -163,7 +163,7 @@ We send a detailed packing list once you have booked. The short version: khaki, 
 
 ### What are tiger safari packages in India usually priced at?
 
-Across the industry, **tiger safari packages india** vary enormously based on park, lodge tier, season, and duration. We do not publish ranges on this page because every range we have ever seen quoted has been wrong for some segment of guests. We send a written, itemised quote within 24 hours of an enquiry, and the quote is detailed enough that you can compare it line by line against any other operator. The variable that matters most is rarely the lodge price. It is the quality of the guide, and that does not always correlate with what you pay.
+Across the industry, **tiger safari packages in India** vary enormously based on park, lodge tier, season, and duration. We do not publish ranges on this page because every range we have ever seen quoted has been wrong for some segment of guests. We send a written, itemised quote within 24 hours of an enquiry, and the quote is detailed enough that you can compare it line by line against any other operator. The variable that matters most is rarely the lodge price. It is the quality of the guide, and that does not always correlate with what you pay.
 
 ---
 

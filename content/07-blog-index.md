@@ -29,11 +29,11 @@ If you want to be told when the first posts are live, drop your email at the bot
 
 ## What Will Be Here
 
-The **wildlife safari india** content most useful to a guest planning their first trip falls into a handful of categories. Here is what we are writing.
+The **wildlife safari in India** content most useful to a guest planning their first trip falls into a handful of categories. Here is what we are writing.
 
 ### Best time to visit each park
 
-A month-by-month guide to every reserve we operate in. When the tigers are easiest to find. When the lodges fill first. When the heat is too much for guests with kids. The kind of detail you can only write if you have actually been in the park during the month in question, repeatedly, across different years. These are some of the highest-value pieces a **safari guide india** can produce, and we are starting with Ranthambore, Kanha, Bandhavgarh, and Tadoba.
+A month-by-month guide to every reserve we operate in. When the tigers are easiest to find. When the lodges fill first. When the heat is too much for guests with kids. The kind of detail you can only write if you have actually been in the park during the month in question, repeatedly, across different years. These are some of the highest-value pieces a **safari guide for India** can produce, and we are starting with Ranthambore, Kanha, Bandhavgarh, and Tadoba.
 
 ### How to reach each park
 
@@ -57,7 +57,7 @@ The Panna tiger reintroduction. The Manas recovery. The Kaziranga rhino numbers.
 
 ### Beyond tigers
 
-Asiatic lions in Gir. One-horned rhinos in Kaziranga. Wild dogs in Pench. Sloth bears in Satpura. The animals you go to India for after you have done the tiger trips. Functions partly as a **wildlife guide india** for second-time visitors who want to see something different.
+Asiatic lions in Gir. One-horned rhinos in Kaziranga. Wild dogs in Pench. Sloth bears in Satpura. The animals you go to India for after you have done the tiger trips. Functions partly as a **wildlife guide for India** for second-time visitors who want to see something different.
 
 ---
 

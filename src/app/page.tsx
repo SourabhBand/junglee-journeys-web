@@ -105,7 +105,7 @@ export default function Home() {
       <section className="pt-[100px] pb-[100px] bg-[#ede4d1]">
         <div className="max-w-4xl mx-auto px-6 mb-16">
           <p className="font-serif text-[16px] leading-[160%] text-center">
-            We have spent fifteen years arranging <strong>tiger safari india</strong> trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
+            We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
           </p>
         </div>
       </section>

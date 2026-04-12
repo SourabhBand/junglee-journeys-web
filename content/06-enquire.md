@@ -70,7 +70,7 @@ Itemised. Lodge by lodge, drive by drive, park by park, transfer by transfer. No
 
 ### 3. You ask for changes
 
-This is the most common step, and it is the part of **safari booking india** that most operators skip. You will probably want to swap a lodge, add a day, change a park, or move the dates. We expect this. We will revise the quote until it actually fits the trip you want, and we will keep revising it until you are sure.
+This is the most common step, and it is the part of **safari booking in India** that most operators skip. You will probably want to swap a lodge, add a day, change a park, or move the dates. We expect this. We will revise the quote until it actually fits the trip you want, and we will keep revising it until you are sure.
 
 ### 4. You confirm and we lock the trip
 
@@ -118,7 +118,7 @@ No. There is no payment of any kind until you have confirmed an itinerary in wri
 
 Within 24 hours, almost always faster. If you submit on a weekend or a holiday, the first reply might come on the next working day.
 
-### Can I send a **safari enquiry india** without committing to dates?
+### Can I send a **safari enquiry in India** without committing to dates?
 
 Yes. About a third of our enquiries arrive without firm dates. We send back rough pricing for two or three likely scenarios and then narrow down once you decide.
 

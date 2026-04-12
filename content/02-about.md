@@ -21,7 +21,7 @@
 
 *Naturalists who happen to plan safaris.*
 
-We did not start this company because we noticed there was a market for **wildlife tours india**. We started it because we were already in the forest, and people kept asking us how they could come too.
+We did not start this company because we noticed there was a market for **wildlife tours in India**. We started it because we were already in the forest, and people kept asking us how they could come too.
 
 ---
 
@@ -31,7 +31,7 @@ We did not start this company because we noticed there was a market for **wildli
 
 Everything since then has been an extended attempt to stay in the forest. [Founder Name] worked as a naturalist across Central India for the better part of a decade, leading walks, training new guides, and learning the parks the way people learn neighbourhoods they grew up in. The trips ran on a question that would not let go: why was it so hard for guests to have the kind of safari the guides got to have every day? Why was the booking experience so much worse than the trip itself?
 
-So we built the company we wished existed. No middlemen. No call centres reading from a script. No itineraries assembled by someone who had never set foot in the park. Every trip planned by a person who has actually walked the trails and tracked the tigers, and who understands that **wildlife tour india** experiences live or die on the small details that the booking sites never mention.
+So we built the company we wished existed. No middlemen. No call centres reading from a script. No itineraries assembled by someone who had never set foot in the park. Every trip planned by a person who has actually walked the trails and tracked the tigers, and who understands that **wildlife tour in India** experiences live or die on the small details that the booking sites never mention.
 
 Five hundred safaris later, the answer is still the same. The trips that go right are the ones planned by someone who already loved the place.
 
@@ -41,11 +41,11 @@ Five hundred safaris later, the answer is still the same. The trips that go righ
 
 ### The guides
 
-This is the part that matters most. Our naturalists have ten to fifteen years each in the field, not as freelance contractors but as people who have built their entire working lives around these forests. They know individual tigers by name and territory. They can read an alarm call from three hundred metres away and tell you which species is doing the calling and roughly why. They are the **wildlife experts india** has produced over a generation of dedicated naturalist work, and they would be doing this whether or not we paid them. We pay them anyway. The point is that the knowledge is real and the credit goes to them.
+This is the part that matters most. Our naturalists have ten to fifteen years each in the field, not as freelance contractors but as people who have built their entire working lives around these forests. They know individual tigers by name and territory. They can read an alarm call from three hundred metres away and tell you which species is doing the calling and roughly why. They are among the finest **wildlife experts in India**, produced over a generation of dedicated naturalist work, and they would be doing this whether or not we paid them. We pay them anyway. The point is that the knowledge is real and the credit goes to them.
 
 ### The planning
 
-Every itinerary is built from scratch. Your dates. Your interests. Your pace. Whether you have done this before or whether this is your first **wildlife adventure india** trip. Whether you want a photography hide and a 5 AM start, or a slow morning and a coffee on the verandah before the second drive. We do not run group departures and we do not sell off-the-shelf packages. The package is a starting point. Your trip is the version we built for you.
+Every itinerary is built from scratch. Your dates. Your interests. Your pace. Whether you have done this before or whether this is your first **wildlife adventure in India** trip. Whether you want a photography hide and a 5 AM start, or a slow morning and a coffee on the verandah before the second drive. We do not run group departures and we do not sell off-the-shelf packages. The package is a starting point. Your trip is the version we built for you.
 
 ### The lodges
 
@@ -53,11 +53,11 @@ We have stayed at every lodge we recommend. Not as guests on a press trip. As pe
 
 ### The conservation bit
 
-This is where the company actually puts its money. We fund **tiger conservation india** work directly through partner NGOs ([NGO Name 1], [NGO Name 2]), and we hire guides from local villages because the people who grew up next to a tiger reserve know things about it that no field guide can teach. The lodges we work with employ locally. Our wildlife viewing follows the rules properly: no baiting, no chasing, no off-road shortcuts when a guest is impatient. The forest comes first. It has to. Without it, none of the rest of this works.
+This is where the company actually puts its money. We fund **tiger conservation in India** work directly through partner NGOs ([NGO Name 1], [NGO Name 2]), and we hire guides from local villages because the people who grew up next to a tiger reserve know things about it that no field guide can teach. The lodges we work with employ locally. Our wildlife viewing follows the rules properly: no baiting, no chasing, no off-road shortcuts when a guest is impatient. The forest comes first. It has to. Without it, none of the rest of this works.
 
 ### The logistics
 
-Permits, transfers, lodge bookings, the 4 AM wake-up calls, the airport pickup, the boring spreadsheet that nobody actually wants to make. All of it sits with us. Your **wildlife tours india** experience starts the moment you land at the airport, and the only thing we ask of you is that you turn up.
+Permits, transfers, lodge bookings, the 4 AM wake-up calls, the airport pickup, the boring spreadsheet that nobody actually wants to make. All of it sits with us. Your **wildlife tours in India** experience starts the moment you land at the airport, and the only thing we ask of you is that you turn up.
 
 ---
 
@@ -78,9 +78,9 @@ Permits, transfers, lodge bookings, the 4 AM wake-up calls, the airport pickup, 
 
 ## Why This Works
 
-When you book with us, the **wildlife tour india** product is not the marketing line. It is the actual product. You are paying for a guide who has tracked the tigress in question since she was a cub. You are paying for the lodge owner who knows your name by the second day. You are paying for the radio call we make at 4:55 AM when a kill is reported near the eastern boundary, and we get you there before the official sighting hour begins.
+When you book with us, the **wildlife tour in India** product is not the marketing line. It is the actual product. You are paying for a guide who has tracked the tigress in question since she was a cub. You are paying for the lodge owner who knows your name by the second day. You are paying for the radio call we make at 4:55 AM when a kill is reported near the eastern boundary, and we get you there before the official sighting hour begins.
 
-You are not paying for a brochure. You are not paying for a glossy itinerary with stock photos of tigers and a list of "highlights" that could apply to any reserve in the country. **Nature tours india** has plenty of both already, and the market does not need more of either. You are paying for the version of an Indian safari where the people running it know what they are doing and care whether your morning is good.
+You are not paying for a brochure. You are not paying for a glossy itinerary with stock photos of tigers and a list of "highlights" that could apply to any reserve in the country. **Nature tours in India** has plenty of both already, and the market does not need more of either. You are paying for the version of an Indian safari where the people running it know what they are doing and care whether your morning is good.
 
 ---
 

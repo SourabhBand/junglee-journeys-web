@@ -29,11 +29,11 @@
 
 ## What This Package Is
 
-Most safari operators run "photography tours" that are general wildlife trips with a slightly heavier camera bag in the jeep. We do not run those. Our **wildlife photography tours india** programme is built specifically for guests who care which hide they are sitting in, at what hour, and which way the light is moving. Guides who understand exposure, positioning, and animal behaviour at the level you actually need them to. Lodges chosen for proximity to the gate so you are not stuck in the morning gate queue while the light is at its best. Vehicles configured for clean shots from both sides. The right waterhole, the right window, and the right time of year for the species you came for.
+Most safari operators run "photography tours" that are general wildlife trips with a slightly heavier camera bag in the jeep. We do not run those. Our **wildlife photography tours in India** programme is built specifically for guests who care which hide they are sitting in, at what hour, and which way the light is moving. Guides who understand exposure, positioning, and animal behaviour at the level you actually need them to. Lodges chosen for proximity to the gate so you are not stuck in the morning gate queue while the light is at its best. Vehicles configured for clean shots from both sides. The right waterhole, the right window, and the right time of year for the species you came for.
 
 This is the trip we run for guests who have already done a generic safari, came back with photographs they were not happy with, and decided that next time they wanted the trip built around the camera rather than around the rest of the group. It is also what serious wildlife magazines book when they need editorial-quality images on a deadline.
 
-A **tiger photography tour india** is one of those trips where the difference between a good operator and an average one shows up immediately, often within the first morning drive. The variables that matter to a photographer (the angle of the light at first gate-opening time, which side of the jeep faces the sighting, how long you can wait at a productive spot before moving) are all things that a generic guide will get wrong by default.
+A **tiger photography tour in India** is one of those trips where the difference between a good operator and an average one shows up immediately, often within the first morning drive. The variables that matter to a photographer (the angle of the light at first gate-opening time, which side of the jeep faces the sighting, how long you can wait at a productive spot before moving) are all things that a generic guide will get wrong by default.
 
 ---
 
@@ -126,7 +126,7 @@ This is not the right trip for first-time wildlife guests, for guests with phone
 
 ### Bird photography focus
 
-For guests who want a **bird photography tours india** focus rather than tigers, we adjust the parks and the lens recommendations accordingly. Pench, Kanha, and Tadoba all have strong bird species lists, and the Northeast (Kaziranga and Manas) opens up entirely different bird targets including hornbills, the Bengal florican, and several Eastern Himalayan specialists. For dedicated **bird watching india** photographers, we run a separate Northeast itinerary on request.
+For guests who want a **bird photography tours in India** focus rather than tigers, we adjust the parks and the lens recommendations accordingly. Pench, Kanha, and Tadoba all have strong bird species lists, and the Northeast (Kaziranga and Manas) opens up entirely different bird targets including hornbills, the Bengal florican, and several Eastern Himalayan specialists. For dedicated **bird watching in India** photographers, we run a separate Northeast itinerary on request.
 
 ### Tiger photography workshop format
 
@@ -160,7 +160,7 @@ Both. The standard format is a private photography trip for one to four guests. 
 
 The difference is the guide, the vehicle configuration, the lodge selection, and the drive plan. On a regular safari, the photographer is a passenger whose preferences are accommodated where possible. On the Photography Special, the photographer is the customer and every decision is built around what helps the camera. The same week in the same park produces materially better photographs on the photography programme.
 
-### How does the **wildlife photography india** experience compare to African photo safaris?
+### How does the **wildlife photography in India** experience compare to African photo safaris?
 
 The biggest differences are the terrain and the format. African safaris in the open savannah make panoramic compositions and predator-prey scenes accessible in ways the dense Indian forest cannot match. Indian wildlife photography compensates with more intimate close encounters, the dramatic backdrops (forts, cenotaphs, sal forest light), and the species variety. Most photographers who have done both find that the two are complementary rather than substitutes.
 

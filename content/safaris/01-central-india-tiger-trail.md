@@ -33,7 +33,7 @@ The Central India Tiger Trail is our flagship multi-park itinerary, and the trip
 
 This is not three separate trips stitched together. It is one trip that moves through three parks deliberately, and the order matters. Kanha first, because it eases first-time guests into the rhythm of an Indian safari (the early starts, the gate procedures, the patience the format requires). Bandhavgarh second, because that is where the sighting density does most of the heavy lifting and where most guests get their best photographs. Pench third, because the smaller park and the family-friendly lodges are the right way to wind down after the more intensive earlier legs.
 
-A **tiger safari central india** itinerary like this one is what most international guests want when they come to India for wildlife, even if they do not know it yet. It is also our most-booked single product after the Ranthambore Weekend.
+A **tiger safari in central India** itinerary like this one is what most international guests want when they come to India for wildlife, even if they do not know it yet. It is also our most-booked single product after the Ranthambore Weekend.
 
 ---
 
@@ -174,7 +174,7 @@ A single-park trip is the right choice for guests with less than 5 days or for g
 
 ### Is this a **jungle safari madhya pradesh** trip or does it cross states?
 
-All three parks (Kanha, Bandhavgarh, Pench) are in Madhya Pradesh, so it is genuinely a **tiger safari madhya pradesh** itinerary in the strict sense, although Pench technically straddles the Madhya Pradesh and Maharashtra border (we use the Madhya Pradesh side). The road journeys between the parks all stay within Madhya Pradesh, which keeps the logistics clean.
+All three parks (Kanha, Bandhavgarh, Pench) are in Madhya Pradesh, so it is genuinely a **tiger safari in Madhya Pradesh** itinerary in the strict sense, although Pench technically straddles the Madhya Pradesh and Maharashtra border (we use the Madhya Pradesh side). The road journeys between the parks all stay within Madhya Pradesh, which keeps the logistics clean.
 
 ### Can the trip be done in less than 7 nights?
 
