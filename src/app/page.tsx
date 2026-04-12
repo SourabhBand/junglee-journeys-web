@@ -91,43 +91,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== EDITORIAL INTRO + WHY TRAVEL WITH US ===== */}
+      {/* ===== WHY TRAVEL WITH US ===== */}
       <section className="bg-[#ede4d1] relative">
-        {/* Pull-quote intro - staggered sentences */}
-        <div className="pt-[80px] md:pt-[120px] pb-[40px] md:pb-[60px] px-6">
-          <div className="max-w-[900px] mx-auto">
-            <AnimateOnScroll animation="fade-up">
-              <p className="font-serif text-[20px] md:text-[26px] leading-[1.7] text-[#081d01] text-center mb-5">
-                We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people.
-              </p>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll animation="fade-up" delay={120}>
-              <p className="font-serif text-[16px] md:text-[18px] leading-[1.8] text-[#081d01]/60 text-center mb-5">
-                Your own jeep, a naturalist who knows the local tigress by name, and lodges we have personally slept in often enough to have opinions about the breakfast.
-              </p>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll animation="fade-up" delay={240}>
-              <p className="font-serif text-[16px] md:text-[18px] leading-[1.8] text-[#081d01]/60 text-center mb-5">
-                Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong.
-              </p>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll animation="fade-up" delay={360}>
-              <p className="font-serif italic text-[18px] md:text-[22px] leading-[1.6] text-[#081d01] text-center">
-                Your only job is to turn up with socks and a camera.
-              </p>
-            </AnimateOnScroll>
-          </div>
-        </div>
-
-        <AnimateOnScroll animation="fade-in">
-          <OrnamentDivider className="!my-4" />
-        </AnimateOnScroll>
-
-        {/* Section heading */}
-        <div className="pt-[30px] md:pt-[50px] pb-[30px] md:pb-[40px] px-6">
+        {/* Heading */}
+        <div className="pt-[80px] md:pt-[120px] pb-[20px] md:pb-[30px] px-6">
           <AnimateOnScroll animation="fade-up">
             <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] tracking-[0.06em]">
               Why Travel With Us
@@ -135,14 +102,57 @@ export default function Home() {
           </AnimateOnScroll>
         </div>
 
-        {/* Supporting text - lighter, secondary */}
-        <AnimateOnScroll animation="fade-up" delay={100}>
-          <div className="max-w-[720px] mx-auto text-center px-6 pb-[50px] md:pb-[70px]">
-            <p className="font-serif text-[14px] md:text-[15px] leading-[185%] text-[#081d01]/55">
-              Most of our guests arrive with a version of the same problem. They have between five and ten days, they have always wanted to see a tiger in the wild, and they have no idea which of India&apos;s fifty-odd tiger reserves to actually go to. We have planned hundreds of these trips. The boring middle is the part we have completely solved.
+        {/* "Most of our guests" paragraph - staggered */}
+        <div className="max-w-[900px] mx-auto px-6 pb-[40px] md:pb-[50px]">
+          <AnimateOnScroll animation="fade-up" delay={80}>
+            <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
+              Most of our guests arrive with a version of the same problem.
             </p>
-          </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll animation="fade-up" delay={160}>
+            <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
+              They have between five and ten days, they have always wanted to see a tiger in the wild, and they have no idea which of India&apos;s fifty-odd tiger reserves to actually go to.
+            </p>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll animation="fade-up" delay={240}>
+            <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center">
+              We have planned hundreds of these trips. The boring middle is the part we have completely solved.
+            </p>
+          </AnimateOnScroll>
+        </div>
+
+        <AnimateOnScroll animation="fade-in">
+          <OrnamentDivider className="!my-4" />
         </AnimateOnScroll>
+
+        {/* "Fifteen years" paragraph - staggered */}
+        <div className="max-w-[900px] mx-auto px-6 pt-[30px] md:pt-[40px] pb-[50px] md:pb-[70px]">
+          <AnimateOnScroll animation="fade-up">
+            <p className="font-serif text-[20px] md:text-[26px] leading-[1.7] text-[#081d01] text-center mb-5">
+              We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people.
+            </p>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll animation="fade-up" delay={120}>
+            <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
+              Your own jeep, a naturalist who knows the local tigress by name, and lodges we have personally slept in often enough to have opinions about the breakfast.
+            </p>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll animation="fade-up" delay={240}>
+            <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
+              Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong.
+            </p>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll animation="fade-up" delay={360}>
+            <p className="font-serif italic text-[18px] md:text-[22px] leading-[1.6] text-[#081d01] text-center">
+              Your only job is to turn up with socks and a camera.
+            </p>
+          </AnimateOnScroll>
+        </div>
 
         {/* 4 pill-shaped feature cards */}
         <div className="max-w-[1280px] mx-auto px-6 pb-[80px] md:pb-[120px]">
