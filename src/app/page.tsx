@@ -132,44 +132,66 @@ export default function Home() {
             {[
               {
                 heading: "Your Own Jeep",
-                body: "No second jeep behind you. No third jeep in front. No strangers debating camera angles while a tigress walks past. The vehicle is yours, the pace is yours, the only person on the radio is your guide.",
+                points: [
+                  "Private vehicle, private pace",
+                  "No shared jeeps or strangers",
+                  "Your guide on the radio, nobody else",
+                ],
                 rotated: false,
                 delay: 0,
               },
               {
                 heading: "Real Naturalists",
-                body: "Ten or fifteen years tracking these tigers. They know which tigress uses which waterhole at 6:40 AM in March. They notice the alarm call you missed. The difference is not subtle.",
+                points: [
+                  "10 to 15 years in these forests",
+                  "They know each tigress by name",
+                  "Alarm calls read from 300m away",
+                ],
                 rotated: false,
                 delay: 80,
               },
               {
                 heading: "Lodges We Have Slept In",
-                body: "We do not recommend lodges from photographs. Every property on our shortlist is one we have stayed at, eaten at, complained about, and decided was good enough to send our guests to.",
+                points: [
+                  "Every property personally vetted",
+                  "Selected for the gate, not the brochure",
+                  "Food worth mentioning, rooms that exhale",
+                ],
                 rotated: true,
                 delay: 160,
               },
               {
                 heading: "Nothing to Figure Out",
-                body: "Permits, airport transfers, the 4 AM wake-up call. Your job is to turn up at the airport. Our job is everything in between.",
+                points: [
+                  "Permits | Transfers | Wake-up calls",
+                  "Zone allocations pre-booked",
+                  "You show up. We handle the rest.",
+                ],
                 rotated: true,
                 delay: 240,
               },
             ].map((card) => (
               <AnimateOnScroll key={card.heading} animation="fade-up" delay={card.delay}>
                 <div
-                  className={`pill-card bg-[#081d01] text-white px-[28px] lg:px-[36px] pt-[32px] lg:pt-[40px] pb-[28px] lg:pb-[36px] min-h-[280px] lg:min-h-[300px] flex flex-col ${
+                  className={`pill-card bg-[#081d01] text-white px-[28px] lg:px-[36px] pt-[34px] lg:pt-[42px] pb-[30px] lg:pb-[38px] min-h-[270px] lg:min-h-[290px] flex flex-col ${
                     card.rotated
                       ? 'rounded-tl-[120px] rounded-tr-[9px] rounded-br-[120px] rounded-bl-[9px]'
                       : 'rounded-tl-[9px] rounded-tr-[120px] rounded-br-[9px] rounded-bl-[120px]'
                   }`}
                 >
-                  <h3 className="font-serif font-bold text-[22px] lg:text-[24px] text-[#ede4d1] mb-4 leading-tight">
+                  <h3 className="font-serif font-bold text-[20px] lg:text-[24px] text-[#ede4d1] mb-5 leading-tight">
                     {card.heading}
                   </h3>
-                  <hr className="gold-rule mb-4 opacity-40" />
-                  <p className="font-serif text-[13px] lg:text-[14px] text-white/70 leading-[175%]">
-                    {card.body}
-                  </p>
+                  <ul className="space-y-3 mt-auto">
+                    {card.points.map((point, i) => (
+                      <li key={i} className="flex items-start gap-2.5">
+                        <span className="text-[#e79e23] text-[8px] mt-[6px] flex-shrink-0">&#9670;</span>
+                        <span className="font-serif text-[12px] lg:text-[13px] text-white/70 leading-[160%]">
+                          {point}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </AnimateOnScroll>
             ))}
