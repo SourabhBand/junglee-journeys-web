@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { OrnamentDivider, ArrowButton, Header, Footer, FAQAccordion } from "@/components";
-import { IMAGE_ASSETS } from "@/lib/assets";
+import { OrnamentDivider, Header, Footer } from "@/components";
+import { IMAGE_ASSETS, SVG_ASSETS } from "@/lib/assets";
+import WildlifeCarousel from "@/components/WildlifeCarousel";
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
   title: "Tiger Safari India | Luxury Wildlife Tours | Junglee Journeys",
@@ -24,520 +26,404 @@ export default function Home() {
       {/* ===== SECTION 1: HEADER + HERO ===== */}
       <Header transparent />
 
-      <section className="relative h-[854px] flex flex-col items-center justify-center text-center text-white overflow-hidden">
+      <section className="relative h-[100vh] min-h-[700px] max-h-[960px] flex flex-col items-center justify-center text-center text-white overflow-hidden">
         {/* SEO H1 - visually hidden */}
         <h1 className="sr-only">Private Tiger Safaris Across India</h1>
 
-        {/* Hero background image */}
-        <Image
-          alt="Tiger walking through sal forest at dawn"
-          className="absolute inset-0 w-full h-full object-cover"
-          src={IMAGE_ASSETS.heroTiger}
-          fill
-          priority
-        />
+        {/* Hero background with Ken Burns zoom */}
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            alt="Tiger walking through sal forest at dawn"
+            className="absolute inset-0 w-full h-full object-cover ken-burns"
+            src={IMAGE_ASSETS.heroTiger}
+            fill
+            priority
+          />
+        </div>
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
-        {/* Beige subtle strip near bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-[150px] bg-[rgba(237,228,209,0.18)]" />
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center">
+        <div className="relative z-10 flex flex-col items-center px-6">
           {/* Italic tagline */}
-          <p className="font-serif italic text-[29px] mb-6 tracking-wide leading-normal">
+          <p className="font-serif italic text-[24px] md:text-[29px] mb-6 tracking-wide leading-normal opacity-90">
             First-hand wilderness
           </p>
 
           {/* JUNGLEE JOURNEYS wordmark SVGs */}
-          <div className="flex flex-col items-center mb-12">
+          <div className="flex flex-col items-center mb-10 md:mb-12">
             <Image
               src="/images/hero-title-union.svg"
               alt="Junglee"
               width={616}
               height={95}
-              className="mb-2"
+              className="mb-2 w-[320px] md:w-[500px] lg:w-[616px] h-auto"
             />
             <Image
               src="/images/hero-title-journeys.svg"
               alt="Journeys"
               width={661}
               height={94}
+              className="w-[350px] md:w-[540px] lg:w-[661px] h-auto"
             />
           </div>
 
-          {/* CTA buttons - Plan Your Safari + WhatsApp */}
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <Link
-              className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
-              href="/enquire/"
-            >
-              Plan Your Safari
-            </Link>
-            <Link
-              className="border border-white text-white hover:bg-white/10 transition-all w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
-              href="https://wa.me/"
-            >
-              WhatsApp Us
-            </Link>
-          </div>
+          {/* Single primary CTA */}
+          <Link
+            className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/20"
+            href="/enquire/"
+          >
+            Plan Your Safari
+          </Link>
         </div>
 
-        {/* Stats strip at bottom */}
-        <div className="absolute bottom-[56px] left-0 right-0 z-10">
-          <div className="flex justify-center gap-8 md:gap-[120px] lg:gap-[200px]">
+        {/* Stats strip at bottom with frosted glass */}
+        <div className="absolute bottom-[40px] md:bottom-[56px] left-0 right-0 z-10">
+          <div className="flex justify-center gap-10 md:gap-[128px]">
             {[
               { value: "70%", label: "Repeat Guests" },
               { value: "15+", label: "Years Experience" },
               { value: "500+", label: "Safaris" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col items-center">
-                <div className="w-[50px] h-[50px] rounded-full border border-white/30 flex items-center justify-center mb-2">
-                  <span className="font-serif text-[15px]">{stat.value}</span>
+                <div className="w-[56px] h-[56px] md:w-[60px] md:h-[60px] rounded-full border border-white/30 backdrop-blur-sm bg-white/5 flex items-center justify-center mb-2">
+                  <span className="font-serif text-[15px] md:text-[16px] font-bold">{stat.value}</span>
                 </div>
-                <span className="font-serif text-[15px]">{stat.label}</span>
+                <span className="font-serif text-[13px] md:text-[15px] tracking-wide opacity-80">{stat.label}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ===== SECTION 2: HERO INTRO + WHY TRAVEL WITH US (continuous beige) ===== */}
-      <section className="pt-[100px] pb-[100px] bg-[#ede4d1]">
-        <div className="max-w-4xl mx-auto px-6 mb-16">
-          <p className="font-serif text-[16px] leading-[160%] text-center">
-            We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
-          </p>
-        </div>
-      </section>
-
-      {/* ===== SECTION 3: WHY TRAVEL WITH US ===== */}
-      <section className="pb-[100px] bg-[#ede4d1]">
+      {/* ===== SECTION 2: WHY TRAVEL WITH US ===== */}
+      <section className="py-[80px] md:py-[100px] bg-[#ede4d1]">
         <div className="max-w-7xl mx-auto px-6">
+          {/* Merged intro paragraph from the hero subhead */}
+          <AnimateOnScroll animation="fade-up">
+            <div className="max-w-3xl mx-auto text-center mb-10">
+              <p className="font-serif text-[16px] md:text-[17px] leading-[170%] text-[#081d01]">
+                We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
+              </p>
+            </div>
+          </AnimateOnScroll>
+
           <OrnamentDivider />
-          <h2 className="text-center section-heading text-[48px] mb-12">
-            Why Travel With Us?
-          </h2>
+
+          <AnimateOnScroll animation="fade-up">
+            <h2 className="text-center section-heading text-[36px] md:text-[48px] mb-10 md:mb-12">
+              Why Travel With Us?
+            </h2>
+          </AnimateOnScroll>
 
           {/* Intro paragraphs */}
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="font-serif text-[16px] leading-[160%] text-[#081d01] mb-4">
-              Most of our guests arrive with a version of the same problem. They have between five and ten days, they have always wanted to see a tiger in the wild, and they have no idea which of India&apos;s fifty-odd tiger reserves to actually go to. They have read four blog posts that all say different things and looked at three TripAdvisor pages where the photographs are clearly from a different planet. They are slightly suspicious of how much this is going to cost. They are also slightly worried that if they pick wrong, they will have spent the budget on a forest with no tigers in it.
-            </p>
-            <p className="font-serif text-[16px] leading-[160%] text-[#081d01]">
-              We have planned hundreds of these trips. The boring middle (which park, which dates, which lodge, which guide, which permits, which 4 AM pickup) is the part we have completely solved. The exciting part is the part we hand back to you on the day you arrive.
-            </p>
-          </div>
-
-          {/* 4 feature blocks in 2x2 grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Block 1 */}
-            <div>
-              <h3 className="font-serif font-bold text-[22px] text-[#081d01] mb-3">
-                Your own jeep, and only your own jeep
-              </h3>
-              <p className="font-serif text-[16px] text-[#081d01] leading-[160%]">
-                There is no second jeep behind you, no third jeep in front, and no group of strangers debating camera settings in loud whispers while a tigress walks past your bonnet. The vehicle is yours, the pace is yours, and the only person on the radio is your guide. This sounds obvious. It is not the default arrangement at most reserves, and the difference is the entire trip.
+          <AnimateOnScroll animation="fade-up" delay={100}>
+            <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
+              <p className="font-serif text-[16px] leading-[160%] text-[#081d01] mb-4">
+                Most of our guests arrive with a version of the same problem. They have between five and ten days, they have always wanted to see a tiger in the wild, and they have no idea which of India&apos;s fifty-odd tiger reserves to actually go to. They have read four blog posts that all say different things and looked at three TripAdvisor pages where the photographs are clearly from a different planet. They are slightly suspicious of how much this is going to cost. They are also slightly worried that if they pick wrong, they will have spent the budget on a forest with no tigers in it.
+              </p>
+              <p className="font-serif text-[16px] leading-[160%] text-[#081d01]">
+                We have planned hundreds of these trips. The boring middle (which park, which dates, which lodge, which guide, which permits, which 4 AM pickup) is the part we have completely solved. The exciting part is the part we hand back to you on the day you arrive.
               </p>
             </div>
+          </AnimateOnScroll>
 
-            {/* Block 2 */}
-            <div>
-              <h3 className="font-serif font-bold text-[22px] text-[#081d01] mb-3">
-                Naturalists who actually live here
-              </h3>
-              <p className="font-serif text-[16px] text-[#081d01] leading-[160%]">
-                Our guides are not freelance contractors we round up the week before your trip. They are people who have been tracking these tigers for ten or fifteen years, who know which tigress uses which waterhole at 6:40 AM in March, and who can read an alarm call from three hundred metres away and tell you which species is doing the calling and roughly why. They notice the things you miss. The good ones make a sighting feel inevitable. The great ones make the waiting feel like the actual point of being there.
-              </p>
-            </div>
-
-            {/* Block 3 */}
-            <div>
-              <h3 className="font-serif font-bold text-[22px] text-[#081d01] mb-3">
-                Lodges we have actually slept in
-              </h3>
-              <p className="font-serif text-[16px] text-[#081d01] leading-[160%]">
-                We do not recommend lodges from photographs. Every property on our shortlist is one we have stayed at, eaten at, complained about, and decided was good enough to send our guests to. Some of them have astonishingly good food. Some have a single window that frames the forest in a way you remember years later. All of them let you exhale after a dusty game drive, and that is more important than the thread count.
-              </p>
-            </div>
-
-            {/* Block 4 */}
-            <div>
-              <h3 className="font-serif font-bold text-[22px] text-[#081d01] mb-3">
-                Nothing for you to figure out
-              </h3>
-              <p className="font-serif text-[16px] text-[#081d01] leading-[160%]">
-                The permits, the lodge bookings, the airport pickup, the inter-park transfers, the 4 AM wake-up call, the boring spreadsheet of permit zone allocations: all of it sits with us. Your job is to send us your dates and turn up at the airport. Our job is everything in between.
-              </p>
-            </div>
+          {/* 4 pill-shaped feature cards in a row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-[50px] max-w-[1280px] mx-auto">
+            {[
+              {
+                heading: "Your Own Jeep",
+                sub: "No second jeep behind you. No third jeep in front.",
+                body: "No strangers debating camera angles while a tigress walks past. The vehicle is yours, the pace is yours, the only person on the radio is your guide.",
+                rotated: false,
+                delay: 0,
+              },
+              {
+                heading: "Real Naturalists",
+                sub: "Ten or fifteen years tracking these tigers.",
+                body: "They know which tigress uses which waterhole at 6:40 AM in March. They notice the alarm call you missed. The difference is not subtle.",
+                rotated: false,
+                delay: 100,
+              },
+              {
+                heading: "Lodges We Have Slept In",
+                sub: "We do not recommend lodges from photographs.",
+                body: "Every property on our shortlist is one we have stayed at, eaten at, complained about, and decided was good enough to send our guests to.",
+                rotated: true,
+                delay: 200,
+              },
+              {
+                heading: "Nothing to Figure Out",
+                sub: "Permits, airport transfers, the 4 AM wake-up call.",
+                body: "Your job is to turn up at the airport. Our job is everything in between.",
+                rotated: true,
+                delay: 300,
+              },
+            ].map((card) => (
+              <AnimateOnScroll key={card.heading} animation="fade-up" delay={card.delay}>
+                <div
+                  className={`pill-card bg-[#081d01] text-white px-[28px] lg:px-[36px] pt-[36px] lg:pt-[42px] pb-[28px] lg:pb-[36px] min-h-[260px] lg:min-h-[290px] flex flex-col ${
+                    card.rotated
+                      ? 'rounded-tl-[120px] rounded-tr-[9px] rounded-br-[120px] rounded-bl-[9px]'
+                      : 'rounded-tl-[9px] rounded-tr-[120px] rounded-br-[9px] rounded-bl-[120px]'
+                  }`}
+                >
+                  <h3 className="font-serif font-bold text-[20px] lg:text-[24px] text-[#ede4d1] mb-2">
+                    {card.heading}
+                  </h3>
+                  <p className="font-serif font-bold text-[13px] lg:text-[14px] text-white/90 mb-3 leading-snug">
+                    {card.sub}
+                  </p>
+                  <p className="font-serif text-[12px] lg:text-[13px] text-white/75 leading-relaxed">
+                    {card.body}
+                  </p>
+                </div>
+              </AnimateOnScroll>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ===== SECTION 4: INDIA'S PREMIER TIGER RESERVES ===== */}
-      <section className="py-[100px] bg-[#081d01] text-[#ede4d1]">
+      {/* ===== SECTION 3: INDIA'S PREMIER TIGER RESERVES ===== */}
+      <section className="py-[80px] md:py-[100px] bg-[#081d01] text-[#ede4d1]">
         <div className="max-w-7xl mx-auto px-6">
           <OrnamentDivider variant="light" />
-          <h2 className="text-center section-heading text-[48px] mb-12 text-[#ede4d1]">
-            India&apos;s Premier Tiger Reserves
-          </h2>
+
+          <AnimateOnScroll animation="fade-up">
+            <h2 className="text-center section-heading text-[36px] md:text-[48px] mb-10 md:mb-12 text-[#ede4d1]">
+              India&apos;s Premier Tiger Reserves
+            </h2>
+          </AnimateOnScroll>
 
           {/* Intro text */}
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <p className="font-serif text-[16px] text-white leading-[160%]">
-              India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. The country gazettes more than fifty official tiger reserves, and we operate in eleven of them. Each one is a completely different argument for going. Six to start with.
-            </p>
-          </div>
-
-          {/* 6 Destination Cards - alternating layout */}
-          {/* Card 1: Kanha (image left) */}
-          <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
-            <div className="w-full md:w-1/2">
-              <Link href="/destination/kanha/">
-                <Image
-                  src={IMAGE_ASSETS.kanhaNationalPark}
-                  alt="Kanha National Park"
-                  width={552}
-                  height={399}
-                  className="rounded-[9px] w-full h-[300px] object-cover"
-                />
-              </Link>
-            </div>
-            <div className="w-full md:w-1/2">
-              <h3 className="font-serif font-bold text-[28px] text-[#ede4d1] mb-4">
-                Kanha National Park
-              </h3>
-              <p className="font-serif text-[16px] text-white/90 leading-[150%] mb-6">
-                Kanha is what Mowgli&apos;s forest looked like before the marketing department got involved. Sal trees in straight ranks, meadows wide enough that you forget what you came here for, and a tiger population that has held steady for two decades because the people running this park are very serious about their work and very polite about telling you so. The classic Central Indian jungle safari experience, and the one most first-timers should start with. Four hours by road from Jabalpur airport.
+          <AnimateOnScroll animation="fade-up" delay={100}>
+            <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+              <p className="font-serif text-[16px] text-white leading-[160%]">
+                India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. The country gazettes more than fifty official tiger reserves, and we operate in eleven of them. Each one is a completely different argument for going. Four to start with.
               </p>
+            </div>
+          </AnimateOnScroll>
+
+          {/* 4 curved-frame destination images in a row */}
+          <AnimateOnScroll animation="fade-up" delay={200}>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 mb-0 overflow-x-auto pb-4">
+              {[
+                { src: IMAGE_ASSETS.kanhaNationalPark, alt: "Kanha National Park", slug: "kanha" },
+                { src: IMAGE_ASSETS.tadobaTigerReserve, alt: "Tadoba Tiger Reserve", slug: "tadoba" },
+                { src: IMAGE_ASSETS.ranthamboreNationalPark, alt: "Ranthambore National Park", slug: "ranthambore" },
+                { src: IMAGE_ASSETS.bandhavgarhNationalPark, alt: "Bandhavgarh National Park", slug: "bandhavgarh" },
+              ].map((dest, i) => (
+                <Link
+                  key={dest.slug}
+                  href={`/destination/${dest.slug}/`}
+                  className="group flex-shrink-0 mx-auto sm:mx-0"
+                >
+                  <div className="curved-image-frame w-[240px] md:w-[272px] h-[350px] md:h-[400px] overflow-hidden relative">
+                    <Image
+                      src={dest.src}
+                      alt={dest.alt}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    {/* Hover overlay with park name */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
+                      <span className="font-serif text-white text-[16px] font-bold tracking-wide">
+                        {dest.alt}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </AnimateOnScroll>
+
+          {/* White info strip below images */}
+          <div className="bg-white rounded-[9px] mt-8 md:mt-12 py-10 md:py-16 px-6 md:px-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+              {[
+                {
+                  name: "Kanha National Park",
+                  slug: "kanha",
+                  desc: "Mowgli's forest. Sal trees in straight ranks, meadows wide enough that you forget what you came here for, and a tiger population that has held steady for two decades.",
+                },
+                {
+                  name: "Tadoba Tiger Reserve",
+                  slug: "tadoba",
+                  desc: "The closest tiger reserve to Mumbai and Pune. Bold tigers, open terrain, and sighting rates that quietly embarrass the more famous parks. Three hours from Nagpur airport.",
+                },
+                {
+                  name: "Ranthambore National Park",
+                  slug: "ranthambore",
+                  desc: "The most photographed tigers on Earth, walking through the ruins of a tenth-century fort. Five hours from Delhi by road. The park is iconic for a reason.",
+                },
+                {
+                  name: "Bandhavgarh National Park",
+                  slug: "bandhavgarh",
+                  desc: "The highest tiger density in India. Most of our guests see one before lunch on day one. If your priority is the odds, this is where you go.",
+                },
+              ].map((park, i) => (
+                <AnimateOnScroll key={park.slug} animation="fade-up" delay={i * 100}>
+                  <div className="text-center lg:text-left">
+                    <h3 className="font-serif font-bold text-[20px] md:text-[24px] text-[#081d01] mb-3">
+                      {park.name}
+                    </h3>
+                    <p className="font-serif text-[15px] md:text-[16px] text-[#081d01]/80 leading-[155%] mb-5">
+                      {park.desc}
+                    </p>
+                    <Link
+                      href={`/destination/${park.slug}/`}
+                      className="bg-[#081d01] text-white font-serif text-[15px] inline-flex items-center justify-center w-[180px] md:w-[192px] h-[42px] md:h-[44px] rounded-[9px] hover:bg-[#0d2a05] transition-colors"
+                    >
+                      Explore {park.name.split(' ')[0]}
+                    </Link>
+                  </div>
+                </AnimateOnScroll>
+              ))}
+            </div>
+
+            {/* View all link */}
+            <div className="text-center mt-10">
               <Link
-                href="/destination/kanha/"
-                className="bg-[#081d01] border border-[#ede4d1] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#ede4d1] hover:text-[#081d01] transition"
+                href="/destinations/"
+                className="font-serif text-[14px] text-[#081d01] underline underline-offset-4 hover:text-[#e79e23] transition-colors"
               >
-                Explore Park
+                View All 11 Destinations
               </Link>
             </div>
-          </div>
-
-          {/* Card 2: Tadoba (image right - reversed) */}
-          <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
-            <div className="w-full md:w-1/2">
-              <Link href="/destination/tadoba/">
-                <Image
-                  src={IMAGE_ASSETS.tadobaTigerReserve}
-                  alt="Tadoba Tiger Reserve"
-                  width={904}
-                  height={399}
-                  className="rounded-[9px] w-full h-[300px] object-cover"
-                />
-              </Link>
-            </div>
-            <div className="w-full md:w-1/2">
-              <h3 className="font-serif font-bold text-[28px] text-[#ede4d1] mb-4">
-                Tadoba Tiger Reserve
-              </h3>
-              <p className="font-serif text-[16px] text-white/90 leading-[150%] mb-6">
-                Tadoba is the closest tiger reserve to Mumbai and Pune, which makes it the best safari near Mumbai by a wide margin and the only park where Friday-to-Monday is genuinely realistic. Open terrain, bold tigers that walk past jeeps without breaking stride, and sighting rates that quietly embarrass the more famous parks. Three hours by road from Nagpur airport.
-              </p>
-              <Link
-                href="/destination/tadoba/"
-                className="bg-[#081d01] border border-[#ede4d1] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#ede4d1] hover:text-[#081d01] transition"
-              >
-                Explore Park
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 3: Ranthambore (image left) */}
-          <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
-            <div className="w-full md:w-1/2">
-              <Link href="/destination/ranthambore/">
-                <Image
-                  src={IMAGE_ASSETS.ranthamboreNationalPark}
-                  alt="Ranthambore National Park"
-                  width={599}
-                  height={400}
-                  className="rounded-[9px] w-full h-[300px] object-cover"
-                />
-              </Link>
-            </div>
-            <div className="w-full md:w-1/2">
-              <h3 className="font-serif font-bold text-[28px] text-[#ede4d1] mb-4">
-                Ranthambore National Park
-              </h3>
-              <p className="font-serif text-[16px] text-white/90 leading-[150%] mb-6">
-                The most photographed tigers on Earth live in Ranthambore, and they walk through the ruins of a tenth-century fort in the kind of golden hour that photographers travel years to find. Five hours from Delhi by road, which makes Ranthambore the easiest safari near Delhi by a long way. The park is iconic for a reason, and the reason is genuinely good.
-              </p>
-              <Link
-                href="/destination/ranthambore/"
-                className="bg-[#081d01] border border-[#ede4d1] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#ede4d1] hover:text-[#081d01] transition"
-              >
-                Explore Park
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 4: Bandhavgarh (image right - reversed) */}
-          <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
-            <div className="w-full md:w-1/2">
-              <Link href="/destination/bandhavgarh/">
-                <Image
-                  src={IMAGE_ASSETS.bandhavgarhNationalPark}
-                  alt="Bandhavgarh National Park"
-                  width={605}
-                  height={404}
-                  className="rounded-[9px] w-full h-[300px] object-cover"
-                />
-              </Link>
-            </div>
-            <div className="w-full md:w-1/2">
-              <h3 className="font-serif font-bold text-[28px] text-[#ede4d1] mb-4">
-                Bandhavgarh National Park
-              </h3>
-              <p className="font-serif text-[16px] text-white/90 leading-[150%] mb-6">
-                Bandhavgarh has the highest tiger density in India, which is a polite way of saying you will probably see one before lunch on day one. If your priority is the odds, this is where you go. The fort on the hill is two thousand years old, the locals will tell you. (It is closer to a thousand. Either way, old enough.)
-              </p>
-              <Link
-                href="/destination/bandhavgarh/"
-                className="bg-[#081d01] border border-[#ede4d1] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#ede4d1] hover:text-[#081d01] transition"
-              >
-                Explore Park
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 5: Pench (image left) */}
-          <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
-            <div className="w-full md:w-1/2">
-              <Link href="/destination/pench/">
-                <Image
-                  src={IMAGE_ASSETS.kanhaNationalPark}
-                  alt="Pench National Park"
-                  width={552}
-                  height={399}
-                  className="rounded-[9px] w-full h-[300px] object-cover"
-                />
-              </Link>
-            </div>
-            <div className="w-full md:w-1/2">
-              <h3 className="font-serif font-bold text-[28px] text-[#ede4d1] mb-4">
-                Pench National Park
-              </h3>
-              <p className="font-serif text-[16px] text-white/90 leading-[150%] mb-6">
-                Pench is the actual Jungle Book setting, although Kipling never set foot in it and is therefore not strictly qualified to comment. Two hours from Nagpur, relaxed enough for families with young children, and the only one of our parks where you have a serious chance at seeing wild dogs hunting. Tigers, leopards, and the kind of forest that does not bother showing off.
-              </p>
-              <Link
-                href="/destination/pench/"
-                className="bg-[#081d01] border border-[#ede4d1] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#ede4d1] hover:text-[#081d01] transition"
-              >
-                Explore Park
-              </Link>
-            </div>
-          </div>
-
-          {/* Card 6: Satpura (image right - reversed) */}
-          <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
-            <div className="w-full md:w-1/2">
-              <Link href="/destination/satpura/">
-                <Image
-                  src={IMAGE_ASSETS.tadobaTigerReserve}
-                  alt="Satpura National Park"
-                  width={904}
-                  height={399}
-                  className="rounded-[9px] w-full h-[300px] object-cover"
-                />
-              </Link>
-            </div>
-            <div className="w-full md:w-1/2">
-              <h3 className="font-serif font-bold text-[28px] text-[#ede4d1] mb-4">
-                Satpura National Park
-              </h3>
-              <p className="font-serif text-[16px] text-white/90 leading-[150%] mb-6">
-                Satpura is the wildlife safari for guests who have already done Kanha and Bandhavgarh and want a quieter version of the trip. Walking safaris and boat safaris and almost no jeeps. Sloth bears, gaur, leopards, and the occasional tiger when she feels like making an appearance.
-              </p>
-              <Link
-                href="/destination/satpura/"
-                className="bg-[#081d01] border border-[#ede4d1] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#ede4d1] hover:text-[#081d01] transition"
-              >
-                Explore Park
-              </Link>
-            </div>
-          </div>
-
-          {/* Closing paragraph */}
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <p className="font-serif text-[16px] text-white/90 leading-[160%]">
-              These six are the parks we run most often, but they are not the only ones we work in. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out our list of eleven. Pick the wrong park for your dates and the best tiger safari India has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
-            </p>
-          </div>
-
-          {/* CTA: View All Destinations */}
-          <div className="text-center">
-            <Link
-              href="/destinations/"
-              className="bg-[#e79e23] hover:bg-[rgba(231,158,35,0.81)] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
-            >
-              View All 11 Destinations
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* ===== SECTION 5: TAILORED SAFARI EXPERIENCES ===== */}
-      <section className="py-[100px] bg-[#081d01] text-[#ede4d1]">
+      {/* ===== SECTION 4: TAILORED SAFARI EXPERIENCES (Asymmetric Layout) ===== */}
+      <section className="py-[80px] md:py-[100px] bg-[#081d01] text-[#ede4d1]">
         <div className="max-w-7xl mx-auto px-6">
-          {/* Centered H2 */}
-          <h2 className="text-center section-heading text-[48px] mb-12 text-[#ede4d1]">
-            Tailored Safari Experiences
-          </h2>
-
-          {/* Centered intro paragraph */}
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <p className="font-serif text-[16px] text-white leading-[160%]">
-              The trip we sell you is the trip you actually want, not the trip we wish you would buy. A photographer with a 400mm lens needs a completely different itinerary from a couple celebrating their tenth anniversary, who in turn need a completely different itinerary from a family with a six-year-old who can identify forty species of bird by call. We do not run group departures and we do not sell off-the-shelf packages. The starting points below are the experiences we have built often enough to have opinions about, and each one becomes your version of the trip the moment you tell us your dates.
-            </p>
-          </div>
-
-          {/* 2x2 card grid - full width */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-            {/* Card 1 */}
-            <div>
-              <h3 className="font-serif font-bold text-[24px] text-white leading-[136.9%] mb-4">
-                <Link href="/safaris/" className="hover:opacity-70 transition">
-                  Private Tiger Safaris
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+            {/* Left column: heading, intro, CTA */}
+            <AnimateOnScroll animation="fade-left" className="lg:w-[40%] flex flex-col">
+              <h2 className="section-heading text-[36px] md:text-[48px] mb-8 text-[#ede4d1]">
+                Tailored Safari Experiences
+              </h2>
+              <p className="font-serif text-[16px] text-white/90 leading-[165%] mb-8">
+                The trip we sell you is the trip you actually want, not the trip we wish you would buy. A photographer with a 400mm lens needs a completely different itinerary from a couple celebrating their tenth anniversary. We do not run group departures and we do not sell off-the-shelf packages.
+              </p>
+              <OrnamentDivider variant="light" className="!justify-start !my-6" />
+              <div className="mt-4">
+                <Link
+                  href="/safaris/"
+                  className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/20"
+                >
+                  Browse Safari Packages
                 </Link>
-              </h3>
-              <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-6 min-h-0">
-                <p className="font-serif font-bold text-[16px] leading-[136.9%] mb-2">
-                  The default for most of our guests.
-                </p>
-                <p className="font-serif text-[16px] leading-[136.9%]">
-                  A private safari India trip with us means your own jeep, your own naturalist, and game drives timed around the actual wildlife activity rather than the tour bus schedule. No sharing. No rushing. No second jeep idling behind you while a tigress decides whether to cross the road.
-                </p>
               </div>
-            </div>
+            </AnimateOnScroll>
 
-            {/* Card 2 */}
-            <div>
-              <h3 className="font-serif font-bold text-[24px] text-white leading-[136.9%] mb-4">
-                <Link href="/safari/photography-special/" className="hover:opacity-70 transition">
-                  Photography Expeditions
-                </Link>
-              </h3>
-              <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-6 min-h-0">
-                <p className="font-serif font-bold text-[16px] leading-[136.9%] mb-2">
-                  For photographers who care which hide they are sitting in and at what hour.
-                </p>
-                <p className="font-serif text-[16px] leading-[136.9%]">
-                  With guides who understand light and animal behaviour at the level you actually need them to. The right waterhole, the right window, the right time of year for the species you came for.
-                </p>
-              </div>
+            {/* Right column: 2x2 card grid */}
+            <div className="lg:w-[55%] grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[
+                {
+                  heading: "Private Tiger Safaris",
+                  href: "/safaris/",
+                  sub: "The default for most of our guests.",
+                  body: "A private safari India trip with us means your own jeep, your own naturalist, and game drives timed around the actual wildlife activity. No sharing. No rushing.",
+                  delay: 0,
+                },
+                {
+                  heading: "Photography Expeditions",
+                  href: "/safari/photography-special/",
+                  sub: "For photographers who care which hide they are sitting in.",
+                  body: "With guides who understand light and animal behaviour at the level you actually need them to. The right waterhole, the right window, the right time of year.",
+                  delay: 100,
+                },
+                {
+                  heading: "Weekend Escapes",
+                  href: "/safari/ranthambore-weekend/",
+                  sub: "Two or three nights in Tadoba, Ranthambore, or Pench.",
+                  body: "The kind of weekend that resets a year of city living and has you wondering, on the flight home, whether you can negotiate a Friday off for next month.",
+                  delay: 200,
+                },
+                {
+                  heading: "Multi-Park Adventures",
+                  href: "/safari/central-india-tiger-trail/",
+                  sub: "Seven to fourteen nights across India's best reserves.",
+                  body: "Kanha to Bandhavgarh to Pench, or any combination that makes geographical sense. The trip you will still be telling people about a decade later.",
+                  delay: 300,
+                },
+              ].map((card) => (
+                <AnimateOnScroll key={card.heading} animation="fade-up" delay={card.delay}>
+                  <div>
+                    <h3 className="font-serif font-bold text-[20px] md:text-[24px] text-white mb-3">
+                      <Link href={card.href} className="hover:text-[#e79e23] transition-colors">
+                        {card.heading}
+                      </Link>
+                    </h3>
+                    <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-5 md:p-6 min-h-[180px] md:min-h-[200px] hover:shadow-lg transition-shadow">
+                      <p className="font-serif font-bold text-[15px] md:text-[16px] leading-snug mb-2">
+                        {card.sub}
+                      </p>
+                      <p className="font-serif text-[14px] md:text-[15px] leading-[155%] text-[#081d01]/80">
+                        {card.body}
+                      </p>
+                    </div>
+                  </div>
+                </AnimateOnScroll>
+              ))}
             </div>
-
-            {/* Card 3 */}
-            <div>
-              <h3 className="font-serif font-bold text-[24px] text-white leading-[136.9%] mb-4">
-                <Link href="/safari/ranthambore-weekend/" className="hover:opacity-70 transition">
-                  Weekend Escapes
-                </Link>
-              </h3>
-              <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-6 min-h-0">
-                <p className="font-serif font-bold text-[16px] leading-[136.9%] mb-2">
-                  Two or three nights in Tadoba, Ranthambore, or Pench.
-                </p>
-                <p className="font-serif text-[16px] leading-[136.9%]">
-                  Depending on which city you fly out of. The kind of weekend that resets a year of city living and has you wondering, on the flight home, whether you can negotiate a Friday off for next month.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 4 */}
-            <div>
-              <h3 className="font-serif font-bold text-[24px] text-white leading-[136.9%] mb-4">
-                <Link href="/safari/central-india-tiger-trail/" className="hover:opacity-70 transition">
-                  Multi-Park Adventures
-                </Link>
-              </h3>
-              <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-6 min-h-0">
-                <p className="font-serif font-bold text-[16px] leading-[136.9%] mb-2">
-                  Seven to fourteen nights across India&apos;s best reserves.
-                </p>
-                <p className="font-serif text-[16px] leading-[136.9%]">
-                  Kanha to Bandhavgarh to Pench, or Ranthambore north into Corbett, or any combination that makes geographical sense for the dates you actually have. The trip you will still be telling people about a decade later.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA: Browse Safari Packages */}
-          <div className="text-center">
-            <Link
-              href="/safaris/"
-              className="bg-[#e79e23] hover:bg-[rgba(231,158,35,0.81)] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
-            >
-              Browse Safari Packages
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* ===== SECTION 6: WHAT OUR GUESTS SAY ===== */}
-      <section className="bg-white relative py-[100px]">
+      {/* ===== SECTION 5: WHAT OUR GUESTS SAY ===== */}
+      <section className="bg-white relative py-[80px] md:py-[100px]">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-center section-heading text-[48px] text-black mb-16">
-            What Our Guests Say
-          </h2>
+          <AnimateOnScroll animation="fade-up">
+            <h2 className="text-center section-heading text-[36px] md:text-[48px] text-[#081d01] mb-12 md:mb-16">
+              What Our Guests Say
+            </h2>
+          </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Card 1 */}
-            <div className="bg-[#ede4d1] rounded-[9px] p-8 flex flex-col">
-              <p className="font-serif text-[16px] text-black leading-[160%] mb-auto">
-                Eight tiger sightings in six drives. Our guide Ramesh predicted a tigress at waterhole 3 at 6:40 AM in March. She showed up at 6:38, which I have brought up at every dinner party since. Singinawa Lodge was perfect. Already planning the next one.
-              </p>
-              <div className="mt-6 pt-6 border-t border-[#081d01]/20">
-                <p className="font-serif font-bold text-[16px] text-black">
-                  Sarah and James T., London
-                </p>
-                <p className="font-serif text-[14px] text-black/70">
-                  Kanha, March 2024
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-[#ede4d1] rounded-[9px] p-8 flex flex-col">
-              <p className="font-serif text-[16px] text-black leading-[160%] mb-auto">
-                Left Mumbai on a Friday night. First tiger by Saturday at 6 AM. Zero hassle anywhere in the chain. Already planning trip three.
-              </p>
-              <div className="mt-6 pt-6 border-t border-[#081d01]/20">
-                <p className="font-serif font-bold text-[16px] text-black">
-                  Rahul M., Mumbai
-                </p>
-                <p className="font-serif text-[14px] text-black/70">
-                  Tadoba, December 2023
-                </p>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-[#ede4d1] rounded-[9px] p-8 flex flex-col">
-              <p className="font-serif text-[16px] text-black leading-[160%] mb-auto">
-                Forty-seven keepers in three days. The guide had me positioned twenty minutes before golden hour at the exact waterhole, and he knew which tiger and which direction. My 400mm finally earned its keep, and I have stopped pretending I am taking it on holiday for fun.
-              </p>
-              <div className="mt-6 pt-6 border-t border-[#081d01]/20">
-                <p className="font-serif font-bold text-[16px] text-black">
-                  Priya K., Bangalore
-                </p>
-                <p className="font-serif text-[14px] text-black/70">
-                  Bandhavgarh, February 2024
-                </p>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-12">
+            {[
+              {
+                quote: "Eight tiger sightings in six drives. Our guide Ramesh predicted a tigress at waterhole 3 at 6:40 AM in March. She showed up at 6:38, which I have brought up at every dinner party since. Singinawa Lodge was perfect. Already planning the next one.",
+                name: "Sarah and James T., London",
+                trip: "Kanha, March 2024",
+                delay: 0,
+              },
+              {
+                quote: "Left Mumbai on a Friday night. First tiger by Saturday at 6 AM. Zero hassle anywhere in the chain. Already planning trip three.",
+                name: "Rahul M., Mumbai",
+                trip: "Tadoba, December 2023",
+                delay: 150,
+              },
+              {
+                quote: "Forty-seven keepers in three days. The guide had me positioned twenty minutes before golden hour at the exact waterhole, and he knew which tiger and which direction. My 400mm finally earned its keep, and I have stopped pretending I am taking it on holiday for fun.",
+                name: "Priya K., Bangalore",
+                trip: "Bandhavgarh, February 2024",
+                delay: 300,
+              },
+            ].map((testimonial, i) => (
+              <AnimateOnScroll key={i} animation="fade-up" delay={testimonial.delay}>
+                <div className="testimonial-card bg-[#ede4d1] rounded-[9px] p-7 md:p-8 flex flex-col min-h-[226px]">
+                  <p className="font-serif text-[15px] md:text-[16px] text-[#081d01] leading-[165%] mb-auto">
+                    {testimonial.quote}
+                  </p>
+                  <div className="mt-6 pt-5 border-t border-[#081d01]/15">
+                    <p className="font-serif font-bold text-[15px] md:text-[16px] text-[#081d01]">
+                      {testimonial.name}
+                    </p>
+                    <p className="font-serif text-[13px] md:text-[14px] text-[#081d01]/60">
+                      {testimonial.trip}
+                    </p>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+            ))}
           </div>
 
-          {/* Rating info */}
+          {/* Rating line - italic per Figma */}
           <div className="text-center mb-8">
-            <p className="font-serif text-[16px] text-[#081d01]">
-              <strong>4.9 / 5</strong> from 200+ reviews
+            <p className="font-serif italic text-[14px] text-[#081d01]/60">
+              4.9 / 5 from 200+ reviews
             </p>
           </div>
 
@@ -545,84 +431,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== SECTION 7: FAQ ACCORDION ===== */}
-      <section className="py-[100px] bg-[#ede4d1]">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-center section-heading text-[48px] mb-12">
-            Questions We Get Asked
-          </h2>
-          <FAQAccordion />
-        </div>
-      </section>
+      {/* ===== SECTION 6: WILDLIFE CAROUSEL ===== */}
+      <WildlifeCarousel />
 
-      {/* ===== SECTION 8: READY CTA ===== */}
-      <section className="py-[100px] bg-[#081d01]" id="plan">
+      {/* ===== SECTION 7: READY CTA ===== */}
+      <section className="py-[80px] md:py-[100px] lg:py-[138px] bg-[#081d01]" id="plan">
         <div className="max-w-[1184px] mx-auto px-6">
-          <div className="bg-white rounded-[9px] py-[80px] px-[60px]">
-            <h2 className="text-center section-heading text-[56px] text-black mb-4">
-              Ready?
-            </h2>
-            <p className="text-center font-serif text-[16px] text-black mb-12">
-              The permits are limited and the good lodges book out earlier than you expect, so the sooner you tell us your dates the more options we can give you. The rest is on us.
-            </p>
+          <AnimateOnScroll animation="scale-in">
+            <div className="bg-white rounded-[9px] py-[50px] md:py-[80px] px-[24px] md:px-[60px]">
+              <h2 className="text-center section-heading text-[40px] md:text-[48px] text-[#081d01] mb-4">
+                Ready?
+              </h2>
+              <p className="text-center font-serif text-[15px] md:text-[16px] text-[#081d01]/80 max-w-[640px] mx-auto mb-12 md:mb-16 leading-[165%]">
+                The permits are limited and the good lodges book out earlier than you expect, so the sooner you tell us your dates the more options we can give you. The rest is on us.
+              </p>
 
-            {/* 3-step process */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-[52px] h-[52px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-[40px] text-[#081d01]">1</span>
+              {/* 3-step process with connecting line */}
+              <div className="relative steps-connector mb-12 md:mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+                  {[
+                    { num: "1", heading: "Tell us your dates", body: "Your dates and the cities you are flying in and out of." },
+                    { num: "2", heading: "We build the itinerary", body: "An itemised written quote within 24 hours." },
+                    { num: "3", heading: "You confirm and go", body: "We handle everything else." },
+                  ].map((step, i) => (
+                    <AnimateOnScroll key={step.num} animation="fade-up" delay={i * 150}>
+                      <div className="flex flex-col items-center text-center relative z-10">
+                        <div className="w-[52px] h-[52px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-5">
+                          <span className="font-serif text-[28px] text-[#081d01]">{step.num}</span>
+                        </div>
+                        <h4 className="font-serif font-bold text-[17px] md:text-[18px] text-[#081d01] mb-3">
+                          {step.heading}
+                        </h4>
+                        <p className="font-serif text-[15px] md:text-[16px] text-[#081d01]/70 max-w-[300px]">
+                          {step.body}
+                        </p>
+                      </div>
+                    </AnimateOnScroll>
+                  ))}
                 </div>
-                <h4 className="font-serif font-bold text-[20px] text-black mb-4">
-                  Tell us your dates
-                </h4>
-                <p className="font-serif text-[16px] text-black">
-                  Tell us your dates and the cities you are flying in and out of.
-                </p>
               </div>
 
-              <div className="flex flex-col items-center text-center">
-                <div className="w-[52px] h-[52px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-[40px] text-[#081d01]">2</span>
-                </div>
-                <h4 className="font-serif font-bold text-[20px] text-black mb-4">
-                  We build the itinerary
-                </h4>
-                <p className="font-serif text-[16px] text-black">
-                  We build the itinerary and send you an itemised written quote within 24 hours.
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center text-center">
-                <div className="w-[52px] h-[52px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-[40px] text-[#081d01]">3</span>
-                </div>
-                <h4 className="font-serif font-bold text-[20px] text-black mb-4">
-                  You confirm
-                </h4>
-                <p className="font-serif text-[16px] text-black">
-                  You confirm. We handle everything else.
-                </p>
+              {/* CTA buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <Link
+                  className="bg-[#e79e23] hover:bg-[rgba(231,158,35,0.81)] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/20"
+                  href="/enquire/"
+                >
+                  Plan Your Safari
+                </Link>
+                <Link
+                  className="border border-[#081d01]/20 text-[#081d01] hover:bg-[#081d01] hover:text-white transition-all w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
+                  href="https://wa.me/"
+                >
+                  WhatsApp Us
+                </Link>
               </div>
             </div>
-
-            {/* CTA buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <Link
-                className="bg-[#e79e23] hover:bg-[rgba(231,158,35,0.81)] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
-                href="/enquire/"
-              >
-                Plan Your Safari
-              </Link>
-              <Link
-                className="border border-[#081d01] text-[#081d01] hover:bg-[#081d01] hover:text-white transition-all w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
-                href="https://wa.me/"
-              >
-                WhatsApp Us
-              </Link>
-            </div>
-          </div>
+          </AnimateOnScroll>
         </div>
       </section>
+
+      {/* ===== FLOATING WHATSAPP BUTTON ===== */}
+      <a
+        href="https://wa.me/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-float"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
 
       {/* ===== FOOTER ===== */}
       <Footer />
