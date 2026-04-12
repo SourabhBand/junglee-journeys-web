@@ -93,27 +93,29 @@ export default function Home() {
 
       {/* ===== EDITORIAL INTRO + WHY TRAVEL WITH US ===== */}
       <section className="bg-[#ede4d1] relative">
-        {/* Pull-quote intro - broken into visual lines */}
+        {/* Pull-quote intro - staggered sentences */}
         <div className="pt-[80px] md:pt-[120px] pb-[40px] md:pb-[60px] px-6">
-          <div className="max-w-[1000px] mx-auto text-center">
+          <div className="max-w-[900px] mx-auto">
             <AnimateOnScroll animation="fade-up">
-              <p className="font-serif text-[20px] md:text-[28px] lg:text-[32px] leading-[1.5] text-[#081d01] mb-6 tracking-tight">
-                Fifteen years arranging <strong>tiger safaris in India</strong>.
+              <p className="font-serif text-[20px] md:text-[26px] leading-[1.7] text-[#081d01] text-center mb-5">
+                We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people.
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-up" delay={100}>
-              <div className="flex items-center justify-center gap-4 md:gap-6 mb-6 flex-wrap">
-                <span className="font-serif text-[15px] md:text-[17px] text-[#081d01]/60">Your own jeep</span>
-                <span className="text-[#e79e23] text-[10px]">&#9670;</span>
-                <span className="font-serif text-[15px] md:text-[17px] text-[#081d01]/60">A naturalist who knows the tigress by name</span>
-                <span className="text-[#e79e23] text-[10px]">&#9670;</span>
-                <span className="font-serif text-[15px] md:text-[17px] text-[#081d01]/60">Lodges we have slept in</span>
-              </div>
+            <AnimateOnScroll animation="fade-up" delay={120}>
+              <p className="font-serif text-[16px] md:text-[18px] leading-[1.8] text-[#081d01]/60 text-center mb-5">
+                Your own jeep, a naturalist who knows the local tigress by name, and lodges we have personally slept in often enough to have opinions about the breakfast.
+              </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-up" delay={200}>
-              <p className="font-serif italic text-[16px] md:text-[18px] text-[#081d01]/45">
+            <AnimateOnScroll animation="fade-up" delay={240}>
+              <p className="font-serif text-[16px] md:text-[18px] leading-[1.8] text-[#081d01]/60 text-center mb-5">
+                Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong.
+              </p>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll animation="fade-up" delay={360}>
+              <p className="font-serif italic text-[18px] md:text-[22px] leading-[1.6] text-[#081d01] text-center">
                 Your only job is to turn up with socks and a camera.
               </p>
             </AnimateOnScroll>
