@@ -126,51 +126,50 @@ export default function Home() {
           </div>
         </AnimateOnScroll>
 
-        {/* 4 feature blocks - editorial numbered layout */}
-        <div className="max-w-[1200px] mx-auto px-6 pb-[80px] md:pb-[120px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-0">
+        {/* 4 pill-shaped feature cards */}
+        <div className="max-w-[1280px] mx-auto px-6 pb-[80px] md:pb-[120px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
             {[
               {
-                num: "01",
                 heading: "Your Own Jeep",
-                body: "No second jeep behind you. No third jeep in front. No strangers debating camera angles while a tigress walks past your bonnet. The vehicle is yours, the pace is yours, and the only person on the radio is your guide.",
+                body: "No second jeep behind you. No third jeep in front. No strangers debating camera angles while a tigress walks past. The vehicle is yours, the pace is yours, the only person on the radio is your guide.",
+                rotated: false,
                 delay: 0,
               },
               {
-                num: "02",
                 heading: "Real Naturalists",
                 body: "Ten or fifteen years tracking these tigers. They know which tigress uses which waterhole at 6:40 AM in March. They notice the alarm call you missed. The difference is not subtle.",
-                delay: 100,
+                rotated: false,
+                delay: 80,
               },
               {
-                num: "03",
                 heading: "Lodges We Have Slept In",
                 body: "We do not recommend lodges from photographs. Every property on our shortlist is one we have stayed at, eaten at, complained about, and decided was good enough to send our guests to.",
-                delay: 200,
+                rotated: true,
+                delay: 160,
               },
               {
-                num: "04",
                 heading: "Nothing to Figure Out",
-                body: "Permits, airport transfers, the 4 AM wake-up call, the boring spreadsheet of permit zone allocations. Your job is to turn up at the airport. Our job is everything in between.",
-                delay: 300,
+                body: "Permits, airport transfers, the 4 AM wake-up call. Your job is to turn up at the airport. Our job is everything in between.",
+                rotated: true,
+                delay: 240,
               },
             ].map((card) => (
-              <AnimateOnScroll key={card.num} animation="fade-up" delay={card.delay}>
-                <div className="py-8 md:py-10 border-t border-[#081d01]/10 group">
-                  <div className="flex gap-5 md:gap-7 items-start">
-                    {/* Large decorative number */}
-                    <span className="font-display text-[56px] md:text-[72px] leading-none text-[#e79e23]/20 group-hover:text-[#e79e23]/40 transition-colors duration-500 select-none flex-shrink-0">
-                      {card.num}
-                    </span>
-                    <div className="pt-2 md:pt-3">
-                      <h3 className="font-serif font-bold text-[20px] md:text-[24px] text-[#081d01] mb-3 group-hover:text-[#e79e23] transition-colors duration-300">
-                        {card.heading}
-                      </h3>
-                      <p className="font-serif text-[14px] md:text-[15px] text-[#081d01]/55 leading-[175%]">
-                        {card.body}
-                      </p>
-                    </div>
-                  </div>
+              <AnimateOnScroll key={card.heading} animation="fade-up" delay={card.delay}>
+                <div
+                  className={`pill-card bg-[#081d01] text-white px-[28px] lg:px-[36px] pt-[32px] lg:pt-[40px] pb-[28px] lg:pb-[36px] min-h-[280px] lg:min-h-[300px] flex flex-col ${
+                    card.rotated
+                      ? 'rounded-tl-[120px] rounded-tr-[9px] rounded-br-[120px] rounded-bl-[9px]'
+                      : 'rounded-tl-[9px] rounded-tr-[120px] rounded-br-[9px] rounded-bl-[120px]'
+                  }`}
+                >
+                  <h3 className="font-serif font-bold text-[22px] lg:text-[24px] text-[#ede4d1] mb-4 leading-tight">
+                    {card.heading}
+                  </h3>
+                  <hr className="gold-rule mb-4 opacity-40" />
+                  <p className="font-serif text-[13px] lg:text-[14px] text-white/70 leading-[175%]">
+                    {card.body}
+                  </p>
                 </div>
               </AnimateOnScroll>
             ))}
