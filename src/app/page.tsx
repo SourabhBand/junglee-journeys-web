@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { OrnamentDivider, Header, Footer } from "@/components";
-import { IMAGE_ASSETS, SVG_ASSETS } from "@/lib/assets";
+import { IMAGE_ASSETS } from "@/lib/assets";
 import WildlifeCarousel from "@/components/WildlifeCarousel";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
@@ -23,11 +23,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="font-body bg-white text-[#081d01] overflow-x-hidden">
-      {/* ===== SECTION 1: HEADER + HERO ===== */}
+      {/* ===== HEADER + HERO ===== */}
       <Header transparent />
 
       <section className="relative h-[100vh] min-h-[700px] max-h-[960px] flex flex-col items-center justify-center text-center text-white overflow-hidden">
-        {/* SEO H1 - visually hidden */}
         <h1 className="sr-only">Private Tiger Safaris Across India</h1>
 
         {/* Hero background with Ken Burns zoom */}
@@ -40,96 +39,96 @@ export default function Home() {
             priority
           />
         </div>
-        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center px-6">
-          {/* Italic tagline */}
-          <p className="font-serif italic text-[24px] md:text-[29px] mb-6 tracking-wide leading-normal opacity-90">
+          <p className="font-serif italic text-[22px] md:text-[29px] mb-6 tracking-wide leading-normal opacity-90">
             First-hand wilderness
           </p>
 
-          {/* JUNGLEE JOURNEYS wordmark SVGs */}
           <div className="flex flex-col items-center mb-10 md:mb-12">
             <Image
               src="/images/hero-title-union.svg"
               alt="Junglee"
               width={616}
               height={95}
-              className="mb-2 w-[320px] md:w-[500px] lg:w-[616px] h-auto"
+              className="mb-2 w-[280px] md:w-[460px] lg:w-[580px] h-auto"
             />
             <Image
               src="/images/hero-title-journeys.svg"
               alt="Journeys"
               width={661}
               height={94}
-              className="w-[350px] md:w-[540px] lg:w-[661px] h-auto"
+              className="w-[300px] md:w-[500px] lg:w-[620px] h-auto"
             />
           </div>
 
-          {/* Single primary CTA */}
           <Link
-            className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/20"
+            className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[240px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/25"
             href="/enquire/"
           >
             Plan Your Safari
           </Link>
         </div>
 
-        {/* Stats strip at bottom with frosted glass */}
-        <div className="absolute bottom-[40px] md:bottom-[56px] left-0 right-0 z-10">
-          <div className="flex justify-center gap-10 md:gap-[128px]">
+        {/* Stats strip */}
+        <div className="absolute bottom-[36px] md:bottom-[52px] left-0 right-0 z-10">
+          <div className="flex justify-center gap-12 md:gap-[140px]">
             {[
               { value: "70%", label: "Repeat Guests" },
-              { value: "15+", label: "Years Experience" },
+              { value: "15+", label: "Years" },
               { value: "500+", label: "Safaris" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col items-center">
-                <div className="w-[56px] h-[56px] md:w-[60px] md:h-[60px] rounded-full border border-white/30 backdrop-blur-sm bg-white/5 flex items-center justify-center mb-2">
-                  <span className="font-serif text-[15px] md:text-[16px] font-bold">{stat.value}</span>
+                <div className="w-[52px] h-[52px] md:w-[58px] md:h-[58px] rounded-full border border-white/25 backdrop-blur-sm bg-white/5 flex items-center justify-center mb-2">
+                  <span className="font-serif text-[14px] md:text-[15px] font-bold tracking-wide">{stat.value}</span>
                 </div>
-                <span className="font-serif text-[13px] md:text-[15px] tracking-wide opacity-80">{stat.label}</span>
+                <span className="font-serif text-[11px] md:text-[13px] tracking-[0.15em] uppercase opacity-70">{stat.label}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ===== SECTION 2: WHY TRAVEL WITH US ===== */}
-      <section className="py-[80px] md:py-[100px] bg-[#ede4d1]">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Merged intro paragraph from the hero subhead */}
+      {/* ===== EDITORIAL INTRO + WHY TRAVEL WITH US ===== */}
+      <section className="bg-[#ede4d1] relative">
+        {/* Pull-quote intro */}
+        <div className="pt-[80px] md:pt-[120px] pb-[40px] md:pb-[60px] px-6">
           <AnimateOnScroll animation="fade-up">
-            <div className="max-w-3xl mx-auto text-center mb-10">
-              <p className="font-serif text-[16px] md:text-[17px] leading-[170%] text-[#081d01]">
-                We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
+            <div className="max-w-[900px] mx-auto text-center">
+              <p className="pull-quote text-balance">
+                We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people. Your own jeep, a naturalist who knows the local tigress by name, and lodges we have personally slept in often enough to have opinions about the breakfast. Your only job is to turn up with socks and a camera.
               </p>
             </div>
           </AnimateOnScroll>
+        </div>
 
-          <OrnamentDivider />
+        <AnimateOnScroll animation="fade-in">
+          <OrnamentDivider className="!my-4" />
+        </AnimateOnScroll>
 
+        {/* Section heading */}
+        <div className="pt-[30px] md:pt-[50px] pb-[30px] md:pb-[40px] px-6">
           <AnimateOnScroll animation="fade-up">
-            <h2 className="text-center section-heading text-[36px] md:text-[48px] mb-10 md:mb-12">
-              Why Travel With Us?
+            <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] tracking-[0.06em]">
+              Why Travel With Us
             </h2>
           </AnimateOnScroll>
+        </div>
 
-          {/* Intro paragraphs */}
-          <AnimateOnScroll animation="fade-up" delay={100}>
-            <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-              <p className="font-serif text-[16px] leading-[160%] text-[#081d01] mb-4">
-                Most of our guests arrive with a version of the same problem. They have between five and ten days, they have always wanted to see a tiger in the wild, and they have no idea which of India&apos;s fifty-odd tiger reserves to actually go to. They have read four blog posts that all say different things and looked at three TripAdvisor pages where the photographs are clearly from a different planet. They are slightly suspicious of how much this is going to cost. They are also slightly worried that if they pick wrong, they will have spent the budget on a forest with no tigers in it.
-              </p>
-              <p className="font-serif text-[16px] leading-[160%] text-[#081d01]">
-                We have planned hundreds of these trips. The boring middle (which park, which dates, which lodge, which guide, which permits, which 4 AM pickup) is the part we have completely solved. The exciting part is the part we hand back to you on the day you arrive.
-              </p>
-            </div>
-          </AnimateOnScroll>
+        {/* Supporting text - lighter, secondary */}
+        <AnimateOnScroll animation="fade-up" delay={100}>
+          <div className="max-w-[720px] mx-auto text-center px-6 pb-[50px] md:pb-[70px]">
+            <p className="font-serif text-[14px] md:text-[15px] leading-[185%] text-[#081d01]/55">
+              Most of our guests arrive with a version of the same problem. They have between five and ten days, they have always wanted to see a tiger in the wild, and they have no idea which of India&apos;s fifty-odd tiger reserves to actually go to. We have planned hundreds of these trips. The boring middle is the part we have completely solved.
+            </p>
+          </div>
+        </AnimateOnScroll>
 
-          {/* 4 pill-shaped feature cards in a row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-[50px] max-w-[1280px] mx-auto">
+        {/* 4 pill-shaped feature cards */}
+        <div className="max-w-[1280px] mx-auto px-6 pb-[80px] md:pb-[120px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
             {[
               {
                 heading: "Your Own Jeep",
@@ -143,38 +142,38 @@ export default function Home() {
                 sub: "Ten or fifteen years tracking these tigers.",
                 body: "They know which tigress uses which waterhole at 6:40 AM in March. They notice the alarm call you missed. The difference is not subtle.",
                 rotated: false,
-                delay: 100,
+                delay: 80,
               },
               {
                 heading: "Lodges We Have Slept In",
                 sub: "We do not recommend lodges from photographs.",
                 body: "Every property on our shortlist is one we have stayed at, eaten at, complained about, and decided was good enough to send our guests to.",
                 rotated: true,
-                delay: 200,
+                delay: 160,
               },
               {
                 heading: "Nothing to Figure Out",
                 sub: "Permits, airport transfers, the 4 AM wake-up call.",
                 body: "Your job is to turn up at the airport. Our job is everything in between.",
                 rotated: true,
-                delay: 300,
+                delay: 240,
               },
             ].map((card) => (
               <AnimateOnScroll key={card.heading} animation="fade-up" delay={card.delay}>
                 <div
-                  className={`pill-card bg-[#081d01] text-white px-[28px] lg:px-[36px] pt-[36px] lg:pt-[42px] pb-[28px] lg:pb-[36px] min-h-[260px] lg:min-h-[290px] flex flex-col ${
+                  className={`pill-card bg-[#081d01] text-white px-[28px] lg:px-[32px] pt-[32px] lg:pt-[38px] pb-[28px] lg:pb-[32px] min-h-[260px] lg:min-h-[280px] flex flex-col ${
                     card.rotated
                       ? 'rounded-tl-[120px] rounded-tr-[9px] rounded-br-[120px] rounded-bl-[9px]'
                       : 'rounded-tl-[9px] rounded-tr-[120px] rounded-br-[9px] rounded-bl-[120px]'
                   }`}
                 >
-                  <h3 className="font-serif font-bold text-[20px] lg:text-[24px] text-[#ede4d1] mb-2">
+                  <h3 className="font-serif font-bold text-[20px] lg:text-[22px] text-[#ede4d1] mb-2">
                     {card.heading}
                   </h3>
-                  <p className="font-serif font-bold text-[13px] lg:text-[14px] text-white/90 mb-3 leading-snug">
+                  <p className="font-serif font-bold text-[12px] lg:text-[13px] text-white/80 mb-3 leading-snug tracking-wide">
                     {card.sub}
                   </p>
-                  <p className="font-serif text-[12px] lg:text-[13px] text-white/75 leading-relaxed">
+                  <p className="font-serif text-[12px] lg:text-[13px] text-white/55 leading-relaxed mt-auto">
                     {card.body}
                   </p>
                 </div>
@@ -184,50 +183,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== SECTION 3: INDIA'S PREMIER TIGER RESERVES ===== */}
-      <section className="py-[80px] md:py-[100px] bg-[#081d01] text-[#ede4d1]">
-        <div className="max-w-7xl mx-auto px-6">
-          <OrnamentDivider variant="light" />
+      {/* ===== CINEMATIC IMAGE DIVIDER ===== */}
+      <div className="image-divider">
+        <Image
+          src={IMAGE_ASSETS.heroTiger}
+          alt=""
+          fill
+          className="object-cover object-[center_40%]"
+          aria-hidden="true"
+        />
+      </div>
 
+      {/* ===== INDIA'S PREMIER TIGER RESERVES ===== */}
+      <section className="pt-[60px] md:pt-[100px] pb-[80px] md:pb-[120px] bg-[#081d01] text-[#ede4d1] grain-overlay atmospheric-glow">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <AnimateOnScroll animation="fade-up">
-            <h2 className="text-center section-heading text-[36px] md:text-[48px] mb-10 md:mb-12 text-[#ede4d1]">
-              India&apos;s Premier Tiger Reserves
+            <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] mb-6 md:mb-8 text-[#ede4d1] tracking-[0.06em]">
+              Tiger Reserves
             </h2>
           </AnimateOnScroll>
 
-          {/* Intro text */}
-          <AnimateOnScroll animation="fade-up" delay={100}>
-            <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-              <p className="font-serif text-[16px] text-white leading-[160%]">
-                India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. The country gazettes more than fifty official tiger reserves, and we operate in eleven of them. Each one is a completely different argument for going. Four to start with.
+          <AnimateOnScroll animation="fade-up" delay={80}>
+            <div className="max-w-[600px] mx-auto text-center mb-12 md:mb-16">
+              <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%]">
+                India holds more than half the world&apos;s wild tigers. We operate in eleven reserves. Each one is a completely different argument for going.
               </p>
             </div>
           </AnimateOnScroll>
 
-          {/* 4 curved-frame destination images in a row */}
-          <AnimateOnScroll animation="fade-up" delay={200}>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-8 mb-0 overflow-x-auto pb-4">
+          {/* 4 curved-frame destination images */}
+          <AnimateOnScroll animation="fade-up" delay={150}>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 lg:gap-8 mb-0">
               {[
                 { src: IMAGE_ASSETS.kanhaNationalPark, alt: "Kanha National Park", slug: "kanha" },
                 { src: IMAGE_ASSETS.tadobaTigerReserve, alt: "Tadoba Tiger Reserve", slug: "tadoba" },
                 { src: IMAGE_ASSETS.ranthamboreNationalPark, alt: "Ranthambore National Park", slug: "ranthambore" },
                 { src: IMAGE_ASSETS.bandhavgarhNationalPark, alt: "Bandhavgarh National Park", slug: "bandhavgarh" },
-              ].map((dest, i) => (
+              ].map((dest) => (
                 <Link
                   key={dest.slug}
                   href={`/destination/${dest.slug}/`}
                   className="group flex-shrink-0 mx-auto sm:mx-0"
                 >
-                  <div className="curved-image-frame w-[240px] md:w-[272px] h-[350px] md:h-[400px] overflow-hidden relative">
+                  <div className="curved-image-frame w-[220px] md:w-[260px] lg:w-[272px] h-[320px] md:h-[370px] lg:h-[400px] overflow-hidden relative">
                     <Image
                       src={dest.src}
                       alt={dest.alt}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      sizes="(max-width: 640px) 220px, (max-width: 1024px) 260px, 272px"
                     />
-                    {/* Hover overlay with park name */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-6">
-                      <span className="font-serif text-white text-[16px] font-bold tracking-wide">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-8">
+                      <span className="font-serif text-white text-[15px] font-bold tracking-wide">
                         {dest.alt}
                       </span>
                     </div>
@@ -237,55 +244,54 @@ export default function Home() {
             </div>
           </AnimateOnScroll>
 
-          {/* White info strip below images */}
-          <div className="bg-white rounded-[9px] mt-8 md:mt-12 py-10 md:py-16 px-6 md:px-12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+          {/* White info strip */}
+          <div className="bg-white rounded-[9px] mt-8 md:mt-14 py-10 md:py-14 px-6 md:px-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
               {[
                 {
-                  name: "Kanha National Park",
+                  name: "Kanha",
                   slug: "kanha",
-                  desc: "Mowgli's forest. Sal trees in straight ranks, meadows wide enough that you forget what you came here for, and a tiger population that has held steady for two decades.",
+                  desc: "Mowgli's forest. Sal trees, wide meadows, and a tiger population that has held steady for two decades.",
                 },
                 {
-                  name: "Tadoba Tiger Reserve",
+                  name: "Tadoba",
                   slug: "tadoba",
-                  desc: "The closest tiger reserve to Mumbai and Pune. Bold tigers, open terrain, and sighting rates that quietly embarrass the more famous parks. Three hours from Nagpur airport.",
+                  desc: "Closest tiger reserve to Mumbai. Bold tigers, open terrain, sighting rates that embarrass the famous parks.",
                 },
                 {
-                  name: "Ranthambore National Park",
+                  name: "Ranthambore",
                   slug: "ranthambore",
-                  desc: "The most photographed tigers on Earth, walking through the ruins of a tenth-century fort. Five hours from Delhi by road. The park is iconic for a reason.",
+                  desc: "The most photographed tigers on Earth, walking through tenth-century fort ruins in golden hour.",
                 },
                 {
-                  name: "Bandhavgarh National Park",
+                  name: "Bandhavgarh",
                   slug: "bandhavgarh",
-                  desc: "The highest tiger density in India. Most of our guests see one before lunch on day one. If your priority is the odds, this is where you go.",
+                  desc: "Highest tiger density in India. Most guests see one before lunch on day one.",
                 },
               ].map((park, i) => (
-                <AnimateOnScroll key={park.slug} animation="fade-up" delay={i * 100}>
+                <AnimateOnScroll key={park.slug} animation="fade-up" delay={i * 80}>
                   <div className="text-center lg:text-left">
-                    <h3 className="font-serif font-bold text-[20px] md:text-[24px] text-[#081d01] mb-3">
+                    <h3 className="font-serif font-bold text-[20px] md:text-[22px] text-[#081d01] mb-2">
                       {park.name}
                     </h3>
-                    <p className="font-serif text-[15px] md:text-[16px] text-[#081d01]/80 leading-[155%] mb-5">
+                    <p className="font-serif text-[13px] md:text-[14px] text-[#081d01]/60 leading-[165%] mb-4 line-clamp-3">
                       {park.desc}
                     </p>
                     <Link
                       href={`/destination/${park.slug}/`}
-                      className="bg-[#081d01] text-white font-serif text-[15px] inline-flex items-center justify-center w-[180px] md:w-[192px] h-[42px] md:h-[44px] rounded-[9px] hover:bg-[#0d2a05] transition-colors"
+                      className="bg-[#081d01] text-white font-serif text-[13px] inline-flex items-center justify-center px-6 h-[38px] md:h-[40px] rounded-[9px] hover:bg-[#0d2a05] transition-colors tracking-wide"
                     >
-                      Explore {park.name.split(' ')[0]}
+                      Explore
                     </Link>
                   </div>
                 </AnimateOnScroll>
               ))}
             </div>
 
-            {/* View all link */}
             <div className="text-center mt-10">
               <Link
                 href="/destinations/"
-                className="font-serif text-[14px] text-[#081d01] underline underline-offset-4 hover:text-[#e79e23] transition-colors"
+                className="font-serif text-[13px] text-[#081d01]/50 hover:text-[#e79e23] transition-colors tracking-[0.08em] uppercase"
               >
                 View All 11 Destinations
               </Link>
@@ -294,73 +300,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== SECTION 4: TAILORED SAFARI EXPERIENCES (Asymmetric Layout) ===== */}
-      <section className="py-[80px] md:py-[100px] bg-[#081d01] text-[#ede4d1]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-            {/* Left column: heading, intro, CTA */}
-            <AnimateOnScroll animation="fade-left" className="lg:w-[40%] flex flex-col">
-              <h2 className="section-heading text-[36px] md:text-[48px] mb-8 text-[#ede4d1]">
+      {/* ===== TAILORED SAFARI EXPERIENCES (Asymmetric) ===== */}
+      <section className="py-[80px] md:py-[120px] bg-[#081d01] text-[#ede4d1] grain-overlay relative">
+        {/* Gold rule divider at top */}
+        <div className="flex justify-center mb-[60px] md:mb-[80px] relative z-10">
+          <hr className="gold-rule-wide" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+            {/* Left column */}
+            <AnimateOnScroll animation="fade-left" className="lg:w-[38%] flex flex-col">
+              <h2 className="section-heading text-[32px] md:text-[48px] lg:text-[56px] mb-8 text-[#ede4d1] tracking-[0.06em] leading-[1.05]">
                 Tailored Safari Experiences
               </h2>
-              <p className="font-serif text-[16px] text-white/90 leading-[165%] mb-8">
-                The trip we sell you is the trip you actually want, not the trip we wish you would buy. A photographer with a 400mm lens needs a completely different itinerary from a couple celebrating their tenth anniversary. We do not run group departures and we do not sell off-the-shelf packages.
+              <p className="font-serif text-[15px] text-white/50 leading-[180%] mb-8">
+                The trip we sell you is the trip you actually want. A photographer needs a completely different itinerary from a couple celebrating their tenth anniversary. We do not run group departures.
               </p>
-              <OrnamentDivider variant="light" className="!justify-start !my-6" />
-              <div className="mt-4">
+              <hr className="gold-rule mb-8" />
+              <div className="mt-auto">
                 <Link
                   href="/safaris/"
-                  className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/20"
+                  className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[220px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/20"
                 >
-                  Browse Safari Packages
+                  Browse Packages
                 </Link>
               </div>
             </AnimateOnScroll>
 
             {/* Right column: 2x2 card grid */}
-            <div className="lg:w-[55%] grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="lg:w-[58%] grid grid-cols-1 sm:grid-cols-2 gap-5">
               {[
                 {
                   heading: "Private Tiger Safaris",
                   href: "/safaris/",
                   sub: "The default for most of our guests.",
-                  body: "A private safari India trip with us means your own jeep, your own naturalist, and game drives timed around the actual wildlife activity. No sharing. No rushing.",
+                  body: "Your own jeep, your own naturalist, and game drives timed around actual wildlife activity. No sharing.",
                   delay: 0,
                 },
                 {
                   heading: "Photography Expeditions",
                   href: "/safari/photography-special/",
-                  sub: "For photographers who care which hide they are sitting in.",
-                  body: "With guides who understand light and animal behaviour at the level you actually need them to. The right waterhole, the right window, the right time of year.",
-                  delay: 100,
+                  sub: "For photographers who care which hide they sit in.",
+                  body: "Guides who understand light and animal behaviour at the level you actually need. The right waterhole, the right window.",
+                  delay: 80,
                 },
                 {
                   heading: "Weekend Escapes",
                   href: "/safari/ranthambore-weekend/",
-                  sub: "Two or three nights in Tadoba, Ranthambore, or Pench.",
-                  body: "The kind of weekend that resets a year of city living and has you wondering, on the flight home, whether you can negotiate a Friday off for next month.",
-                  delay: 200,
+                  sub: "Two or three nights. Tadoba, Ranthambore, or Pench.",
+                  body: "The kind of weekend that resets a year of city living.",
+                  delay: 160,
                 },
                 {
                   heading: "Multi-Park Adventures",
                   href: "/safari/central-india-tiger-trail/",
                   sub: "Seven to fourteen nights across India's best reserves.",
-                  body: "Kanha to Bandhavgarh to Pench, or any combination that makes geographical sense. The trip you will still be telling people about a decade later.",
-                  delay: 300,
+                  body: "The trip you will still be telling people about a decade later.",
+                  delay: 240,
                 },
               ].map((card) => (
                 <AnimateOnScroll key={card.heading} animation="fade-up" delay={card.delay}>
                   <div>
-                    <h3 className="font-serif font-bold text-[20px] md:text-[24px] text-white mb-3">
+                    <h3 className="font-serif font-bold text-[18px] md:text-[20px] text-white/90 mb-3">
                       <Link href={card.href} className="hover:text-[#e79e23] transition-colors">
                         {card.heading}
                       </Link>
                     </h3>
-                    <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-5 md:p-6 min-h-[180px] md:min-h-[200px] hover:shadow-lg transition-shadow">
-                      <p className="font-serif font-bold text-[15px] md:text-[16px] leading-snug mb-2">
+                    <div className="safari-card bg-[#ede4d1] text-[#081d01] rounded-[9px] p-5 md:p-6">
+                      <p className="font-serif font-bold text-[13px] md:text-[14px] leading-snug mb-2 text-[#081d01]/80">
                         {card.sub}
                       </p>
-                      <p className="font-serif text-[14px] md:text-[15px] leading-[155%] text-[#081d01]/80">
+                      <p className="font-serif text-[12px] md:text-[13px] leading-[170%] text-[#081d01]/55">
                         {card.body}
                       </p>
                     </div>
@@ -372,47 +383,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== SECTION 5: WHAT OUR GUESTS SAY ===== */}
-      <section className="bg-white relative py-[80px] md:py-[100px]">
+      {/* ===== WHAT OUR GUESTS SAY ===== */}
+      <section className="bg-white relative py-[80px] md:py-[120px]">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll animation="fade-up">
-            <h2 className="text-center section-heading text-[36px] md:text-[48px] text-[#081d01] mb-12 md:mb-16">
+            <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] text-[#081d01] mb-4 tracking-[0.06em]">
               What Our Guests Say
             </h2>
           </AnimateOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-12">
+          <AnimateOnScroll animation="fade-in" delay={50}>
+            <p className="text-center font-serif italic text-[13px] text-[#081d01]/40 mb-12 md:mb-16 tracking-wide">
+              4.9 / 5 from 200+ reviews
+            </p>
+          </AnimateOnScroll>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
             {[
               {
-                quote: "Eight tiger sightings in six drives. Our guide Ramesh predicted a tigress at waterhole 3 at 6:40 AM in March. She showed up at 6:38, which I have brought up at every dinner party since. Singinawa Lodge was perfect. Already planning the next one.",
-                name: "Sarah and James T., London",
+                quote: "Eight tiger sightings in six drives. Our guide Ramesh predicted a tigress at waterhole 3 at 6:40 AM in March. She showed up at 6:38, which I have brought up at every dinner party since.",
+                name: "Sarah and James T.",
+                location: "London",
                 trip: "Kanha, March 2024",
                 delay: 0,
               },
               {
                 quote: "Left Mumbai on a Friday night. First tiger by Saturday at 6 AM. Zero hassle anywhere in the chain. Already planning trip three.",
-                name: "Rahul M., Mumbai",
+                name: "Rahul M.",
+                location: "Mumbai",
                 trip: "Tadoba, December 2023",
-                delay: 150,
+                delay: 120,
               },
               {
-                quote: "Forty-seven keepers in three days. The guide had me positioned twenty minutes before golden hour at the exact waterhole, and he knew which tiger and which direction. My 400mm finally earned its keep, and I have stopped pretending I am taking it on holiday for fun.",
-                name: "Priya K., Bangalore",
+                quote: "Forty-seven keepers in three days. The guide had me positioned twenty minutes before golden hour at the exact waterhole. My 400mm finally earned its keep.",
+                name: "Priya K.",
+                location: "Bangalore",
                 trip: "Bandhavgarh, February 2024",
-                delay: 300,
+                delay: 240,
               },
             ].map((testimonial, i) => (
               <AnimateOnScroll key={i} animation="fade-up" delay={testimonial.delay}>
-                <div className="testimonial-card bg-[#ede4d1] rounded-[9px] p-7 md:p-8 flex flex-col min-h-[226px]">
-                  <p className="font-serif text-[15px] md:text-[16px] text-[#081d01] leading-[165%] mb-auto">
+                <div className="testimonial-card bg-[#ede4d1] rounded-[9px] p-7 md:p-8 flex flex-col min-h-[220px]">
+                  <p className="font-serif text-[14px] md:text-[15px] text-[#081d01]/80 leading-[175%] mb-auto">
                     {testimonial.quote}
                   </p>
-                  <div className="mt-6 pt-5 border-t border-[#081d01]/15">
-                    <p className="font-serif font-bold text-[15px] md:text-[16px] text-[#081d01]">
+                  <div className="mt-6 pt-4 border-t border-[#081d01]/10">
+                    <p className="font-serif font-bold text-[14px] text-[#081d01]">
                       {testimonial.name}
                     </p>
-                    <p className="font-serif text-[13px] md:text-[14px] text-[#081d01]/60">
-                      {testimonial.trip}
+                    <p className="font-serif text-[12px] text-[#081d01]/40 tracking-wide">
+                      {testimonial.location} &middot; {testimonial.trip}
                     </p>
                   </div>
                 </div>
@@ -420,49 +440,42 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Rating line - italic per Figma */}
-          <div className="text-center mb-8">
-            <p className="font-serif italic text-[14px] text-[#081d01]/60">
-              4.9 / 5 from 200+ reviews
-            </p>
-          </div>
-
           <OrnamentDivider />
         </div>
       </section>
 
-      {/* ===== SECTION 6: WILDLIFE CAROUSEL ===== */}
+      {/* ===== WILDLIFE CAROUSEL ===== */}
       <WildlifeCarousel />
 
-      {/* ===== SECTION 7: READY CTA ===== */}
-      <section className="py-[80px] md:py-[100px] lg:py-[138px] bg-[#081d01]" id="plan">
-        <div className="max-w-[1184px] mx-auto px-6">
+      {/* ===== READY CTA ===== */}
+      <section className="py-[80px] md:py-[120px] lg:py-[140px] bg-[#081d01] grain-overlay" id="plan">
+        <div className="max-w-[1100px] mx-auto px-6 relative z-10">
           <AnimateOnScroll animation="scale-in">
-            <div className="bg-white rounded-[9px] py-[50px] md:py-[80px] px-[24px] md:px-[60px]">
-              <h2 className="text-center section-heading text-[40px] md:text-[48px] text-[#081d01] mb-4">
+            <div className="bg-white rounded-[12px] py-[50px] md:py-[70px] px-[24px] md:px-[60px] shadow-2xl shadow-black/20">
+              <h2 className="text-center section-heading text-[36px] md:text-[48px] text-[#081d01] mb-3 tracking-[0.06em]">
                 Ready?
               </h2>
-              <p className="text-center font-serif text-[15px] md:text-[16px] text-[#081d01]/80 max-w-[640px] mx-auto mb-12 md:mb-16 leading-[165%]">
-                The permits are limited and the good lodges book out earlier than you expect, so the sooner you tell us your dates the more options we can give you. The rest is on us.
+              <p className="text-center font-serif text-[14px] md:text-[15px] text-[#081d01]/50 max-w-[560px] mx-auto mb-12 md:mb-14 leading-[175%]">
+                The permits are limited and the good lodges book out earlier than you expect. Tell us your dates and the rest is on us.
               </p>
 
-              {/* 3-step process with connecting line */}
-              <div className="relative steps-connector mb-12 md:mb-16">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+              {/* 3-step process */}
+              <div className="relative steps-connector mb-12 md:mb-14">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
                   {[
-                    { num: "1", heading: "Tell us your dates", body: "Your dates and the cities you are flying in and out of." },
-                    { num: "2", heading: "We build the itinerary", body: "An itemised written quote within 24 hours." },
+                    { num: "1", heading: "Tell us your dates", body: "Your dates and departure cities." },
+                    { num: "2", heading: "We build the itinerary", body: "Itemised quote within 24 hours." },
                     { num: "3", heading: "You confirm and go", body: "We handle everything else." },
                   ].map((step, i) => (
-                    <AnimateOnScroll key={step.num} animation="fade-up" delay={i * 150}>
+                    <AnimateOnScroll key={step.num} animation="fade-up" delay={i * 120}>
                       <div className="flex flex-col items-center text-center relative z-10">
-                        <div className="w-[52px] h-[52px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-5">
-                          <span className="font-serif text-[28px] text-[#081d01]">{step.num}</span>
+                        <div className="w-[48px] h-[48px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-4">
+                          <span className="font-serif text-[24px] text-[#081d01]">{step.num}</span>
                         </div>
-                        <h4 className="font-serif font-bold text-[17px] md:text-[18px] text-[#081d01] mb-3">
+                        <h4 className="font-serif font-bold text-[15px] md:text-[16px] text-[#081d01] mb-2">
                           {step.heading}
                         </h4>
-                        <p className="font-serif text-[15px] md:text-[16px] text-[#081d01]/70 max-w-[300px]">
+                        <p className="font-serif text-[13px] md:text-[14px] text-[#081d01]/45 max-w-[240px]">
                           {step.body}
                         </p>
                       </div>
@@ -471,16 +484,16 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* CTA buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              {/* CTA */}
+              <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
                 <Link
-                  className="bg-[#e79e23] hover:bg-[rgba(231,158,35,0.81)] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/20"
+                  className="bg-[#e79e23] hover:bg-[rgba(231,158,35,0.85)] transition-all text-white w-[220px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center"
                   href="/enquire/"
                 >
                   Plan Your Safari
                 </Link>
                 <Link
-                  className="border border-[#081d01]/20 text-[#081d01] hover:bg-[#081d01] hover:text-white transition-all w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
+                  className="border border-[#081d01]/15 text-[#081d01]/60 hover:bg-[#081d01] hover:text-white hover:border-[#081d01] transition-all w-[220px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center"
                   href="https://wa.me/"
                 >
                   WhatsApp Us
@@ -491,7 +504,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== FLOATING WHATSAPP BUTTON ===== */}
+      {/* ===== FLOATING WHATSAPP ===== */}
       <a
         href="https://wa.me/"
         target="_blank"
