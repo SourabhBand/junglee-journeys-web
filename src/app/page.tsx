@@ -93,15 +93,31 @@ export default function Home() {
 
       {/* ===== EDITORIAL INTRO + WHY TRAVEL WITH US ===== */}
       <section className="bg-[#ede4d1] relative">
-        {/* Pull-quote intro */}
+        {/* Pull-quote intro - broken into visual lines */}
         <div className="pt-[80px] md:pt-[120px] pb-[40px] md:pb-[60px] px-6">
-          <AnimateOnScroll animation="fade-up">
-            <div className="max-w-[900px] mx-auto text-center">
-              <p className="pull-quote text-balance">
-                We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people. Your own jeep, a naturalist who knows the local tigress by name, and lodges we have personally slept in often enough to have opinions about the breakfast. Your only job is to turn up with socks and a camera.
+          <div className="max-w-[1000px] mx-auto text-center">
+            <AnimateOnScroll animation="fade-up">
+              <p className="font-serif text-[20px] md:text-[28px] lg:text-[32px] leading-[1.5] text-[#081d01] mb-6 tracking-tight">
+                Fifteen years arranging <strong>tiger safaris in India</strong>.
               </p>
-            </div>
-          </AnimateOnScroll>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll animation="fade-up" delay={100}>
+              <div className="flex items-center justify-center gap-4 md:gap-6 mb-6 flex-wrap">
+                <span className="font-serif text-[15px] md:text-[17px] text-[#081d01]/60">Your own jeep</span>
+                <span className="text-[#e79e23] text-[10px]">&#9670;</span>
+                <span className="font-serif text-[15px] md:text-[17px] text-[#081d01]/60">A naturalist who knows the tigress by name</span>
+                <span className="text-[#e79e23] text-[10px]">&#9670;</span>
+                <span className="font-serif text-[15px] md:text-[17px] text-[#081d01]/60">Lodges we have slept in</span>
+              </div>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll animation="fade-up" delay={200}>
+              <p className="font-serif italic text-[16px] md:text-[18px] text-[#081d01]/45">
+                Your only job is to turn up with socks and a camera.
+              </p>
+            </AnimateOnScroll>
+          </div>
         </div>
 
         <AnimateOnScroll animation="fade-in">
