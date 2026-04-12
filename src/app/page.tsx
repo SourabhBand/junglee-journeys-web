@@ -22,179 +22,148 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="font-body bg-white text-[#081d01] overflow-x-hidden">
+      {/* ===== SECTION 1: HEADER + HERO (Figma Y: 0-854) ===== */}
       <Header transparent />
 
-      {/* Hero Section */}
-      <section className="relative h-[900px] flex flex-col items-center justify-center text-center text-white overflow-hidden">
+      <section className="relative h-[854px] flex flex-col items-center justify-center text-center text-white overflow-hidden">
+        {/* Hero background image */}
         <Image
-          alt="Close up of a majestic tiger in the wild"
+          alt="Tiger walking through sal forest at dawn"
           className="absolute inset-0 w-full h-full object-cover"
           src={IMAGE_ASSETS.heroTiger}
           fill
           priority
         />
-        <div className="absolute inset-0 hero-overlay"></div>
+        {/* Gradient overlay: top dark, middle light, bottom dark */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+        {/* Beige subtle strip near bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-[150px] bg-[rgba(237,228,209,0.18)]" />
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center max-w-4xl mx-auto px-6">
-          <p className="font-serif italic text-[24px] md:text-[29px] mb-6 tracking-wide">
+        <div className="relative z-10 flex flex-col items-center">
+          {/* Italic tagline */}
+          <p className="font-serif italic text-[29px] mb-6 tracking-wide leading-normal">
             First-hand wilderness
           </p>
 
+          {/* JUNGLEE JOURNEYS wordmark SVGs */}
           <div className="flex flex-col items-center mb-12">
             <Image
               src="/images/hero-title-union.svg"
               alt="Junglee"
               width={616}
               height={95}
-              className="mb-2 max-w-full h-auto"
+              className="mb-2"
             />
             <Image
               src="/images/hero-title-journeys.svg"
               alt="Journeys"
               width={661}
               height={94}
-              className="max-w-full h-auto"
             />
           </div>
 
-          <a
+          {/* Gold CTA button */}
+          <Link
             className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center"
             href="/enquire/"
           >
             Plan Your Safari
-          </a>
+          </Link>
         </div>
 
-        {/* Stats at bottom */}
-        <div className="absolute bottom-20 left-0 right-0 z-10">
-          <div className="flex justify-center space-x-16 md:space-x-32">
-            <div className="flex flex-col items-center">
-              <div className="w-[50px] h-[50px] rounded-full border border-white/30 flex items-center justify-center mb-2">
-                <span className="font-serif text-[15px]">15</span>
+        {/* Stats strip at bottom */}
+        <div className="absolute bottom-[56px] left-0 right-0 z-10">
+          <div className="flex justify-center gap-[200px]">
+            {[
+              { value: "70%", label: "Repeat Guests" },
+              { value: "15+", label: "Years Experience" },
+              { value: "500+", label: "Safaris" },
+            ].map((stat) => (
+              <div key={stat.label} className="flex flex-col items-center">
+                <div className="w-[50px] h-[50px] rounded-full border border-white/30 flex items-center justify-center mb-2">
+                  <span className="font-serif text-[15px]">{stat.value}</span>
+                </div>
+                <span className="font-serif text-[15px]">{stat.label}</span>
               </div>
-              <span className="font-serif text-[15px]">Years</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-[50px] h-[50px] rounded-full border border-white/30 flex items-center justify-center mb-2">
-                <span className="font-serif text-[15px]">500+</span>
-              </div>
-              <span className="font-serif text-[15px]">Safaris</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-[50px] h-[50px] rounded-full border border-white/30 flex items-center justify-center mb-2">
-                <span className="font-serif text-[15px]">70%</span>
-              </div>
-              <span className="font-serif text-[15px]">Repeat Guests</span>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Hero Subhead Section (the "honest truth" opener) */}
-      <section className="bg-[#ede4d1] py-[80px]">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h1 className="section-heading text-[32px] md:text-[48px] mb-8 leading-tight">
-            Private Tiger Safaris Across India
-          </h1>
-          <p className="font-serif text-[16px] md:text-[18px] leading-relaxed text-[#081d01] mb-6">
-            The honest truth is that you can absolutely book a tiger safari in India yourself.
-            People do it all the time. The honest truth is also that it usually goes badly in
-            small, expensive ways: the Forest Department permit portal that crashes on the third
-            attempt, the lodge website that bears no relationship to the actual lodge, the
-            cheerful young man at the front desk who calls himself an expert naturalist and got
-            his certification last Tuesday. We are not here to talk you out of doing this on
-            your own. We are here for the people who decided their holiday was worth doing
-            properly.
-          </p>
-          <p className="font-serif text-[16px] md:text-[18px] leading-relaxed text-[#081d01]">
-            We have spent fifteen years arranging <strong>tiger safari india</strong> trips for
-            those people. Your own jeep, a naturalist who knows the local tigress by name (and
-            her two cubs from last March), and lodges we have personally slept in often enough
-            to have opinions about the breakfast. Permits, airport transfers, and the 4 AM
-            wake-up call: all of it sits with us, handled by people who do this every week and
-            have very little patience for it going wrong. Your only job is to turn up with socks
-            and a camera.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Travel With Us */}
-      <section className="py-[100px] bg-white">
+      {/* ===== SECTION 2: WHY TRAVEL WITH US (Figma Y: 854-1754, 900px tall) ===== */}
+      <section className="py-[100px] bg-[#ede4d1]">
         <div className="max-w-7xl mx-auto px-6">
           <OrnamentDivider />
-          <h2 className="text-center section-heading text-[32px] md:text-[48px] mb-[40px]">
-            Why Travel With Us
+          <h2 className="text-center section-heading text-[48px] mb-[47px]">
+            Why Travel With Us?
           </h2>
-          <div className="max-w-[907px] mx-auto text-center mb-[80px] md:mb-[100px]">
-            <p className="font-serif text-[16px] leading-relaxed text-[#081d01]">
-              Most of our guests arrive with a version of the same problem. They have between
-              five and ten days, they have always wanted to see a tiger in the wild, and they
-              have no idea which of India&apos;s fifty-odd tiger reserves to actually go to.
-              They have read four blog posts that all say different things and looked at three
-              TripAdvisor pages where the photographs are clearly from a different planet.
-              They are slightly suspicious of how much this is going to cost. They are also
-              slightly worried that if they pick wrong, they will have spent the budget on a
-              forest with no tigers in it.
-            </p>
-            <p className="font-serif text-[16px] leading-relaxed text-[#081d01] mt-4">
-              We have planned hundreds of these trips. The boring middle (which park, which
-              dates, which lodge, which guide, which permits, which 4 AM pickup) is the part we
-              have completely solved. The exciting part is the part we hand back to you on the
-              day you arrive.
+
+          {/* Intro body text */}
+          <div className="max-w-[907px] mx-auto text-center mb-[100px]">
+            <p className="font-serif text-[16px] leading-[107.85%] text-[#081d01]">
+              The honest truth is that you can absolutely book a tiger safari in India yourself. People do it all the time. The honest truth is also that it usually goes badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday. We are not here to talk you out of doing this on your own. We are here for the people who decided their holiday was worth doing properly.
             </p>
           </div>
-          {/* Feature Cards - 4 column grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] lg:gap-[50px] items-center">
-            {/* Card 1 - Your own jeep */}
+
+          {/* 4 pill-shaped feature cards */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-[50px] items-center">
+            {/* Card 1 - standard orientation */}
             <div className="flex items-center justify-center">
               <div className="bg-[#081d01] text-white w-[284px] h-[290px] rounded-tl-[9px] rounded-tr-[120px] rounded-br-[9px] rounded-bl-[120px] pt-[42px] px-[36px] text-center flex flex-col items-center justify-start">
-                <h3 className="font-serif font-bold text-[#ede4d1] text-[22px] mb-[20px] leading-tight">
-                  Your Own Jeep
+                <h3 className="font-serif font-bold text-[#ede4d1] text-[24px] mb-[25px] leading-[107.85%]">
+                  Private Safaris
                 </h3>
-                <p className="font-serif text-[13px] leading-snug">
-                  No second jeep behind you. No third jeep in front. No strangers debating
-                  camera angles while a tigress walks past. The vehicle is yours, the pace is
-                  yours, the only person on the radio is your guide.
+                <p className="font-serif font-bold text-[14px] mb-[1px] leading-[74.25%] w-[215px]">
+                  Your vehicle. Your pace. Your moment with the tiger.
+                </p>
+                <p className="font-serif text-[13px] leading-[98.05%] w-[211px]">
+                  No strangers debating camera angles. No compromises on where to go next. Just you, your group, and whatever the jungle decides to reveal.
                 </p>
               </div>
             </div>
-            {/* Card 2 - Real naturalists */}
+
+            {/* Card 2 - standard orientation */}
             <div className="flex items-center justify-center">
-              <div className="bg-[#081d01] text-white w-[284px] h-[290px] rounded-tl-[9px] rounded-tr-[120px] rounded-br-[9px] rounded-bl-[120px] pt-[42px] px-[36px] text-center flex flex-col items-center justify-start">
-                <h3 className="font-serif font-bold text-[#ede4d1] text-[22px] mb-[20px] leading-tight">
-                  Real Naturalists
+              <div className="bg-[#081d01] text-white w-[284px] h-[290px] rounded-tl-[9px] rounded-tr-[120px] rounded-br-[9px] rounded-bl-[120px] pt-[47px] px-[36px] text-center flex flex-col items-center justify-start">
+                <h3 className="font-serif font-bold text-[#ede4d1] text-[24px] mb-[14px] leading-[75.33%]">
+                  Expert<br />Naturalists
                 </h3>
-                <p className="font-serif text-[13px] leading-snug">
-                  Ten or fifteen years tracking these tigers. They know which tigress uses
-                  which waterhole at 6:40 AM in March. They notice the alarm call you missed.
-                  The difference is not subtle.
+                <p className="font-serif font-bold text-[14px] mb-[5px] leading-[74.25%] w-[215px]">
+                  Guides who read the forest like a first language.
+                </p>
+                <p className="font-serif text-[13px] leading-[98.05%] w-[221px]">
+                  They notice the alarm call you missed. They know this tigress&apos;s territory by heart. The difference? You don&apos;t just see wildlife. You understand it.
                 </p>
               </div>
             </div>
-            {/* Card 3 - Lodges we have slept in */}
-            <div className="flex items-center justify-center">
-              <div className="bg-[#081d01] text-white w-[284px] h-[290px] rounded-tl-[120px] rounded-tr-[9px] rounded-br-[120px] rounded-bl-[9px] pt-[42px] px-[36px] text-center flex flex-col items-center justify-start">
-                <h3 className="font-serif font-bold text-[#ede4d1] text-[22px] mb-[20px] leading-tight">
-                  Lodges We Have Slept In
-                </h3>
-                <p className="font-serif text-[13px] leading-snug">
-                  Every property on our shortlist is one we have stayed at, eaten at,
-                  complained about, and decided was good enough to send our guests to. We do
-                  not recommend lodges from photographs.
-                </p>
-              </div>
-            </div>
-            {/* Card 4 - Nothing to figure out */}
+
+            {/* Card 3 - rotated orientation */}
             <div className="flex items-center justify-center">
               <div className="bg-[#081d01] text-white w-[284px] h-[290px] rounded-tl-[120px] rounded-tr-[9px] rounded-br-[120px] rounded-bl-[9px] pt-[42px] px-[36px] text-center flex flex-col items-center justify-start">
-                <h3 className="font-serif font-bold text-[#ede4d1] text-[22px] mb-[20px] leading-tight">
-                  Nothing to Figure Out
+                <h3 className="font-serif font-bold text-[#ede4d1] text-[24px] mb-[25px] leading-[107.85%]">
+                  Luxury Lodges
                 </h3>
-                <p className="font-serif text-[13px] leading-snug">
-                  Permits, airport transfers, the 4 AM wake-up call, the boring spreadsheet of
-                  permit zones. Your job is to turn up at the airport. Our job is everything
-                  in between.
+                <p className="font-serif font-bold text-[14px] mb-[1px] leading-[74.25%] w-[215px]">
+                  Where wilderness meets genuine comfort.
+                </p>
+                <p className="font-serif text-[13px] leading-[98.05%] w-[211px]">
+                  We&apos;ve stayed at every lodge we recommend. Some have incredible food. Some have that magical verandah view. All of them let you exhale after a dusty game drive.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 4 - rotated orientation */}
+            <div className="flex items-center justify-center">
+              <div className="bg-[#081d01] text-white w-[284px] h-[290px] rounded-tl-[120px] rounded-tr-[9px] rounded-br-[120px] rounded-bl-[9px] pt-[47px] px-[36px] text-center flex flex-col items-center justify-start">
+                <h3 className="font-serif font-bold text-[#ede4d1] text-[24px] mb-[22px] leading-[74.25%]">
+                  Hassle-Free<br />Planning
+                </h3>
+                <p className="font-serif font-bold text-[14px] mb-[11px] leading-[74.25%] w-[215px]">
+                  Permits, transfers, timing &ndash; we&apos;ve got it.
+                </p>
+                <p className="font-serif text-[13px] leading-[98.05%] w-[211px]">
+                  Safari bookings in India can be&hellip; let&apos;s say, bureaucratic. We handle the complexity so your only job is to show up ready for adventure.
                 </p>
               </div>
             </div>
@@ -202,25 +171,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* India's Premier Tiger Reserves */}
+      {/* ===== SECTION 3: INDIA'S PREMIER TIGER RESERVES (Figma Y: 1754-2646) ===== */}
       <section className="py-[100px] bg-[#081d01] text-[#ede4d1]">
         <div className="max-w-7xl mx-auto px-6">
           <OrnamentDivider variant="light" />
-          <h2 className="text-center section-heading text-[32px] md:text-[48px] mb-[40px] text-[#ede4d1]">
+          <h2 className="text-center section-heading text-[48px] mb-[51px] text-[#ede4d1]">
             India&apos;s Premier Tiger Reserves
           </h2>
-          <div className="max-w-[997px] mx-auto text-center mb-[80px] md:mb-[120px] font-serif text-[16px] text-white leading-relaxed">
+
+          {/* Intro text */}
+          <div className="max-w-[997px] mx-auto text-center mb-[152px] font-serif text-[16px] text-white leading-[136.9%]">
             <p className="mb-4">
-              India holds more than half the world&apos;s wild tigers, which is the kind of
-              statistic that sounds invented until you visit and realise it is, slightly
-              improbably, true. The country gazettes more than fifty official{" "}
-              <strong>tiger reserves</strong>, and we operate in eleven of them.
+              India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. Each park offers something completely different.
             </p>
-            <p>Each one is a completely different argument for going. Four to start with.</p>
+            <p>
+              Kanha has those sweeping meadows where tigers stroll in golden light. Ranthambore has ancient forts with tigers lounging in the ruins. Tadoba? Intimate encounters that feel almost too close. Let us help you find the right one for you.
+            </p>
           </div>
-          {/* Reserve Images Row */}
-          <div className="relative flex flex-wrap justify-center gap-6 lg:gap-8 mb-8">
-            <Link href="/destination/kanha/" className="w-[272px] h-[400px] curved-image-frame overflow-hidden destination-card">
+
+          {/* 4 destination images in curved frames */}
+          <div className="relative flex justify-center gap-8 mb-8">
+            <Link href="/destination/kanha/" className="w-[272px] h-[400px] curved-image-frame overflow-hidden block">
               <Image
                 alt="Kanha National Park"
                 className="w-full h-full object-cover"
@@ -229,7 +200,7 @@ export default function Home() {
                 height={399}
               />
             </Link>
-            <Link href="/destination/tadoba/" className="w-[272px] h-[400px] curved-image-frame overflow-hidden destination-card">
+            <Link href="/destination/tadoba/" className="w-[272px] h-[400px] curved-image-frame overflow-hidden block">
               <Image
                 alt="Tadoba Tiger Reserve"
                 className="w-full h-full object-cover"
@@ -238,7 +209,7 @@ export default function Home() {
                 height={399}
               />
             </Link>
-            <Link href="/destination/ranthambore/" className="w-[272px] h-[400px] curved-image-frame overflow-hidden destination-card">
+            <Link href="/destination/ranthambore/" className="w-[272px] h-[400px] curved-image-frame overflow-hidden block">
               <Image
                 alt="Ranthambore National Park"
                 className="w-full h-full object-cover"
@@ -247,7 +218,7 @@ export default function Home() {
                 height={400}
               />
             </Link>
-            <Link href="/destination/bandhavgarh/" className="w-[272px] h-[400px] curved-image-frame overflow-hidden destination-card">
+            <Link href="/destination/bandhavgarh/" className="w-[272px] h-[400px] curved-image-frame overflow-hidden block">
               <Image
                 alt="Bandhavgarh National Park"
                 className="w-full h-full object-cover"
@@ -259,244 +230,237 @@ export default function Home() {
             <ArrowButton className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 hidden lg:block" />
           </div>
         </div>
-        {/* Reserve Info Cards - on white background */}
+
+        {/* Destination info cards on white strip */}
         <div className="bg-white py-16">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Kanha */}
               <div className="text-center">
-                <h4 className="font-serif font-bold text-[22px] text-[#081d01] mb-4 leading-tight">
-                  Kanha
-                  <br />
-                  National Park
+                <h4 className="font-serif font-bold text-[24px] text-[#081d01] mb-4 leading-[111%]">
+                  Kanha National<br />Park
                 </h4>
-                <p className="font-serif text-[15px] text-black leading-relaxed mb-6 max-w-[268px] mx-auto">
-                  Mowgli&apos;s forest. Sal trees in straight ranks, meadows wide enough that
-                  you forget what you came here for, and a tiger population that has held
-                  steady for two decades.
+                <p className="font-serif text-[16px] text-black leading-[137%] mb-6 w-[268px] mx-auto">
+                  The Land of Mowgli. Endless meadows, sal forests, and tiger sightings that feel straight out of a documentary. If you want the classic Indian safari experience, start here.
                 </p>
                 <Link
                   href="/destination/kanha/"
-                  className="bg-[#081d01] text-white font-serif text-[14px] inline-flex items-center justify-center w-[180px] h-[42px] rounded-[9px] hover:bg-[#0d2a05] transition"
+                  className="bg-[#081d01] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#0d2a05] transition"
                 >
                   Explore Kanha
                 </Link>
               </div>
+
               {/* Tadoba */}
               <div className="text-center">
-                <h4 className="font-serif font-bold text-[22px] text-[#081d01] mb-4 leading-tight">
-                  Tadoba Tiger
-                  <br />
-                  Reserve
+                <h4 className="font-serif font-bold text-[24px] text-[#081d01] mb-4 leading-[111%]">
+                  Tadoba Tiger<br />Reserve
                 </h4>
-                <p className="font-serif text-[15px] text-black leading-relaxed mb-6 max-w-[268px] mx-auto">
-                  The closest tiger reserve to Mumbai and Pune. Bold tigers, open terrain, and
-                  sighting rates that quietly embarrass the more famous parks. Three hours from
-                  Nagpur airport.
+                <p className="font-serif text-[16px] text-black leading-[137%] mb-6 w-[268px] mx-auto">
+                  Just 8 hours from Mumbai. Tigers here are famously relaxed around vehicles &ndash; we&apos;ve had them walk right past, close enough to hear them breathing. Weekend-friendly and unforgettable.
                 </p>
                 <Link
                   href="/destination/tadoba/"
-                  className="bg-[#081d01] text-white font-serif text-[14px] inline-flex items-center justify-center w-[180px] h-[42px] rounded-[9px] hover:bg-[#0d2a05] transition"
+                  className="bg-[#081d01] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#0d2a05] transition"
                 >
                   Explore Tadoba
                 </Link>
               </div>
+
               {/* Ranthambore */}
               <div className="text-center">
-                <h4 className="font-serif font-bold text-[22px] text-[#081d01] mb-4 leading-tight">
-                  Ranthambore
-                  <br />
-                  National Park
+                <h4 className="font-serif font-bold text-[24px] text-[#081d01] mb-4 leading-[111%]">
+                  Ranthambore<br />National Park
                 </h4>
-                <p className="font-serif text-[15px] text-black leading-relaxed mb-6 max-w-[268px] mx-auto">
-                  The most photographed tigers on Earth, walking through the ruins of a
-                  tenth-century fort. Five hours from Delhi by road. The park is iconic for a
-                  reason.
+                <p className="font-serif text-[16px] text-black leading-[137%] mb-6 w-[268px] mx-auto">
+                  India&apos;s most photographed tigers. Ancient forts. Lakes reflecting the golden light. It&apos;s dramatic, it&apos;s accessible from Delhi, and there&apos;s a reason everyone knows this one.
                 </p>
                 <Link
                   href="/destination/ranthambore/"
-                  className="bg-[#081d01] text-white font-serif text-[14px] inline-flex items-center justify-center w-[180px] h-[42px] rounded-[9px] hover:bg-[#0d2a05] transition"
+                  className="bg-[#081d01] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#0d2a05] transition"
                 >
                   Explore Ranthambore
                 </Link>
               </div>
+
               {/* Bandhavgarh */}
               <div className="text-center">
-                <h4 className="font-serif font-bold text-[22px] text-[#081d01] mb-4 leading-tight">
-                  Bandhavgarh
-                  <br />
-                  National Park
+                <h4 className="font-serif font-bold text-[24px] text-[#081d01] mb-4 leading-[111%]">
+                  Bandhavgarh<br />National Park
                 </h4>
-                <p className="font-serif text-[15px] text-black leading-relaxed mb-6 max-w-[268px] mx-auto">
-                  The highest tiger density in India. Most of our guests see one before lunch
-                  on day one. If your priority is the odds, this is where you go.
+                <p className="font-serif text-[16px] text-black leading-[137%] mb-6 w-[240px] mx-auto">
+                  Highest tiger density in India. Full stop. If seeing a tiger matters more than anything else, this is where you go. Most guests spot them on day one.
                 </p>
                 <Link
                   href="/destination/bandhavgarh/"
-                  className="bg-[#081d01] text-white font-serif text-[14px] inline-flex items-center justify-center w-[180px] h-[42px] rounded-[9px] hover:bg-[#0d2a05] transition"
+                  className="bg-[#081d01] text-white font-serif text-[16px] inline-flex items-center justify-center w-[192px] h-[44px] rounded-[9px] hover:bg-[#0d2a05] transition"
                 >
                   Explore Bandhavgarh
                 </Link>
               </div>
             </div>
             <div className="mt-12 text-center">
-              <Link
-                href="/destinations/"
-                className="inline-block font-serif text-[15px] text-[#081d01] underline hover:text-[#e79e23] transition"
-              >
-                View All 11 Destinations
+              <Link className="inline-block font-serif text-[14px] text-[#081d01] underline hover:text-[#e79e23] transition" href="/destinations/">
+                View All Destinations
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Tailored Safari Experiences */}
-      <section className="bg-[#081d01] text-[#ede4d1] py-[80px] md:py-[100px]">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="section-heading text-[32px] md:text-[48px] text-[#ede4d1] text-center mb-8 leading-tight">
-            Tailored Safari Experiences
-          </h2>
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <p className="font-serif text-[16px] text-white leading-relaxed mb-4">
-              The trip we sell you is the trip you actually want, not the trip we wish you would
-              buy. A photographer with a 400mm lens needs a completely different itinerary from
-              a couple celebrating their tenth anniversary, who in turn need a completely
-              different itinerary from a family with a six-year-old who can identify forty
-              species of bird by call.
-            </p>
-            <p className="font-serif text-[16px] text-white leading-relaxed">
-              We do not run group departures and we do not sell off-the-shelf packages. The
-              starting points below are the experiences we have built often enough to have
-              opinions about.
-            </p>
-          </div>
+      {/* ===== SECTION 4: TAILORED SAFARI EXPERIENCES (Figma Y: 2646-3111, 2-column layout) ===== */}
+      <section className="bg-[#081d01] text-[#ede4d1] relative" style={{ minHeight: '793px' }}>
+        <div className="max-w-7xl mx-auto px-6 py-[100px]">
+          <div className="flex flex-col lg:flex-row gap-16">
+            {/* Left column: title + intro + CTA */}
+            <div className="lg:w-[505px] flex-shrink-0">
+              <h2 className="section-heading text-[48px] leading-[136.9%] text-[#ede4d1] mb-8">
+                Tailored Safari<br />Experiences
+              </h2>
+              <p className="font-serif text-[16px] text-white leading-[136.9%] mb-4">
+                Every wildlife safari in India we plan is different. A photography enthusiast needs completely different timing than a family with kids. Someone looking for a quick jungle safari getaway has different priorities than someone planning the trip of a lifetime.
+              </p>
+              <p className="font-serif text-[16px] text-white leading-[136.9%] mb-12">
+                Tell us what you&apos;re after. We&apos;ll design something that actually fits.
+              </p>
+              <OrnamentDivider variant="light" className="justify-start mb-12" />
+              <Link
+                className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[255px] h-[52px] rounded-[9px] text-[14px] font-serif inline-flex items-center justify-center underline"
+                href="/safaris/"
+              >
+                Browse Safari Packages
+              </Link>
+            </div>
 
-          {/* Experience cards grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            <Link
-              href="/safaris/"
-              className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-8 hover:scale-[1.02] transition"
-            >
-              <p className="font-serif font-bold text-[20px] mb-3">Private Tiger Safaris</p>
-              <p className="font-serif text-[15px] leading-relaxed">
-                The default for most of our guests. Your own jeep, your own naturalist, drives
-                timed around the actual wildlife activity. No sharing, no rushing, no group
-                dynamics to navigate.
-              </p>
-            </Link>
-            <Link
-              href="/safari/photography-special/"
-              className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-8 hover:scale-[1.02] transition"
-            >
-              <p className="font-serif font-bold text-[20px] mb-3">Photography Expeditions</p>
-              <p className="font-serif text-[15px] leading-relaxed">
-                For photographers who care which hide they are sitting in and at what hour. The
-                right waterhole, the right window, the right time of year for the species you
-                came for.
-              </p>
-            </Link>
-            <Link
-              href="/safari/ranthambore-weekend/"
-              className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-8 hover:scale-[1.02] transition"
-            >
-              <p className="font-serif font-bold text-[20px] mb-3">Weekend Escapes</p>
-              <p className="font-serif text-[15px] leading-relaxed">
-                Two or three nights in Tadoba, Ranthambore, or Pench, depending on which city
-                you fly out of. The kind of weekend that resets a year of city living.
-              </p>
-            </Link>
-            <Link
-              href="/safari/central-india-tiger-trail/"
-              className="bg-[#ede4d1] text-[#081d01] rounded-[9px] p-8 hover:scale-[1.02] transition"
-            >
-              <p className="font-serif font-bold text-[20px] mb-3">Multi-Park Adventures</p>
-              <p className="font-serif text-[15px] leading-relaxed">
-                Seven to fourteen nights across India&apos;s best reserves. The trip you will
-                still be telling people about a decade later.
-              </p>
-            </Link>
-          </div>
+            {/* Right column: 2x2 card grid */}
+            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Row 1 */}
+              <div>
+                <p className="font-serif font-bold text-[24px] text-white leading-[136.9%] mb-2">
+                  Private Tiger Safaris
+                </p>
+                <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] w-full h-[219px] pt-[22px] px-[30px]">
+                  <p className="font-serif font-bold text-[16px] leading-[136.9%]">
+                    The classic luxury safari India experience.
+                  </p>
+                  <p className="font-serif text-[16px] leading-[136.9%] mt-[5px]">
+                    Your own vehicle, your own naturalist, game drives timed around the best wildlife activity. No sharing, no rushing, no group dynamics to navigate.
+                  </p>
+                </div>
+              </div>
 
-          <div className="mt-12 text-center">
-            <Link
-              href="/safaris/"
-              className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white inline-flex items-center justify-center w-[255px] h-[52px] rounded-[9px] text-[15px] font-serif"
-            >
-              Browse Safari Packages
-            </Link>
+              <div>
+                <p className="font-serif font-bold text-[24px] text-white leading-[136.9%] mb-2">
+                  Photography Expeditions
+                </p>
+                <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] w-full h-[219px] pt-[22px] px-[30px]">
+                  <p className="font-serif font-bold text-[16px] leading-[136.9%]">
+                    For those serious about the shot.
+                  </p>
+                  <p className="font-serif text-[16px] leading-[136.9%] mt-[5px]">
+                    We work with photographers who know exactly where to position for the light, which hides offer the best angles, and when patience will pay off.
+                  </p>
+                </div>
+              </div>
+
+              {/* Row 2 */}
+              <div>
+                <p className="font-serif font-bold text-[24px] text-white leading-[136.9%] mb-2">
+                  Weekend Escapes
+                </p>
+                <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] w-full h-[219px] pt-[17px] px-[30px]">
+                  <p className="font-serif font-bold text-[16px] leading-[136.9%]">
+                    2-3 nights. Maximum wilderness. Minimum logistics.
+                  </p>
+                  <p className="font-serif text-[16px] leading-[136.9%] mt-[19px]">
+                    You&apos;re a professional in Mumbai, Delhi, or Bangalore who needs to disappear into nature for a few days. We make it happen&mdash;every weekend if you want.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <p className="font-serif font-bold text-[24px] text-white leading-[136.9%] mb-2">
+                  Multi-Park Adventures
+                </p>
+                <div className="bg-[#ede4d1] text-[#081d01] rounded-[9px] w-full h-[219px] pt-[17px] px-[30px]">
+                  <p className="font-serif font-bold text-[16px] leading-[136.9%]">
+                    7-14 days across India&apos;s finest reserves.
+                  </p>
+                  <p className="font-serif text-[16px] leading-[136.9%] mt-[19px]">
+                    Kanha&apos;s meadows. Bandhavgarh&apos;s density. Satpura&apos;s walking safaris. For the trip you&apos;ll talk about for decades, we connect the best of India&apos;s tiger country.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-white py-[80px] md:py-[100px]">
+      {/* ===== SECTION 5: WHAT OUR GUESTS SAY (Figma Y: ~3636-3980) ===== */}
+      <section className="bg-white relative py-[92px]">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-center section-heading text-[32px] md:text-[48px] text-black mb-16">
+          <h2 className="text-center section-heading text-[48px] text-black mb-16">
             What Our Guests Say
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-[#ede4d1] rounded-[9px] p-8 relative">
+          <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1280px] mx-auto">
+            {/* Quote icons */}
+            {[0, 1, 2].map((i) => (
               <Image
+                key={i}
                 src="/images/quote-icon.svg"
                 alt=""
-                width={40}
-                height={45}
-                className="absolute -top-4 left-6 rotate-180 -scale-y-100"
+                width={51}
+                height={57}
+                className="absolute -top-4 z-10 rotate-180 -scale-y-100"
+                style={{ left: `calc(${i * 33.33}% + ${i === 0 ? 10 : i === 1 ? 10 : 10}px)` }}
               />
-              <p className="font-serif text-[15px] text-black leading-relaxed mb-6 mt-6">
-                Eight tiger sightings in six drives. Our guide Ramesh predicted a tigress at
-                waterhole 3 at 6:40 AM in March. She showed up at 6:38, which I have brought up
-                at every dinner party since. Singinawa Lodge was perfect. Already planning the
-                next one.
+            ))}
+
+            {/* Card 1 */}
+            <div className="bg-[#ede4d1] rounded-[9px] w-full h-[226px] relative pt-[42px] px-[24px]">
+              <p className="font-serif text-[16px] text-black leading-normal">
+                An absolutely magical experience. We saw four different tigers in Bandhavgarh, and our naturalist&apos;s knowledge made every sighting special. The lodge was stunning &ndash; this was the trip of a lifetime.
               </p>
-              <p className="font-serif font-bold text-[14px] text-black">
-                Sarah and James T., London
-              </p>
-              <p className="font-serif text-[14px] text-black/70">Kanha, March 2024</p>
+              <div className="absolute left-[24px] bottom-[16px]">
+                <p className="font-serif font-bold text-[16px] text-black leading-normal">
+                  &mdash; Sarah &amp; Michael, London, UK
+                </p>
+                <p className="font-serif text-[16px] text-black leading-normal">
+                  Bandhavgarh Safari, 2024
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#ede4d1] rounded-[9px] p-8 relative">
-              <Image
-                src="/images/quote-icon.svg"
-                alt=""
-                width={40}
-                height={45}
-                className="absolute -top-4 left-6 rotate-180 -scale-y-100"
-              />
-              <p className="font-serif text-[15px] text-black leading-relaxed mb-6 mt-6">
-                Left Mumbai on a Friday night. First tiger by Saturday at 6 AM. Zero hassle
-                anywhere in the chain. Already planning trip three.
+            {/* Card 2 */}
+            <div className="bg-[#ede4d1] rounded-[9px] w-full h-[226px] relative pt-[28px] px-[29px]">
+              <p className="font-serif text-[16px] text-black leading-normal">
+                As a Mumbai professional, I wanted a hassle-free weekend escape. Junglee Journeys delivered beyond expectations. Tadoba is just 8 hours away, and I came back with tiger photos I&apos;m still showing everyone.
               </p>
-              <p className="font-serif font-bold text-[14px] text-black">Rahul M., Mumbai</p>
-              <p className="font-serif text-[14px] text-black/70">Tadoba, December 2023</p>
+              <div className="absolute left-[29px] bottom-[16px]">
+                <p className="font-serif font-bold text-[16px] text-black leading-normal">
+                  &mdash; Rahul Mehta, Mumbai, India
+                </p>
+                <p className="font-serif text-[16px] text-black leading-normal">
+                  Tadoba Weekend, 2024
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#ede4d1] rounded-[9px] p-8 relative">
-              <Image
-                src="/images/quote-icon.svg"
-                alt=""
-                width={40}
-                height={45}
-                className="absolute -top-4 left-6 rotate-180 -scale-y-100"
-              />
-              <p className="font-serif text-[15px] text-black leading-relaxed mb-6 mt-6">
-                Forty-seven keepers in three days. The guide had me positioned twenty minutes
-                before golden hour at the exact waterhole, and he knew which tiger and which
-                direction. My 400mm finally earned its keep.
+            {/* Card 3 */}
+            <div className="bg-[#ede4d1] rounded-[9px] w-full h-[226px] relative pt-[42px] px-[27px]">
+              <p className="font-serif text-[16px] text-black leading-normal">
+                I&apos;ve been on safaris in Africa, but India&apos;s tigers are different &ndash; more personal, more intense. The team understood exactly what I needed as a photographer. Exceptional.
               </p>
-              <p className="font-serif font-bold text-[14px] text-black">
-                Priya K., Bangalore
-              </p>
-              <p className="font-serif text-[14px] text-black/70">Bandhavgarh, February 2024</p>
+              <div className="absolute left-[27px] bottom-[16px]">
+                <p className="font-serif font-bold text-[16px] text-black leading-normal">
+                  &mdash; James Chen, Sydney, Australia
+                </p>
+                <p className="font-serif text-[16px] text-black leading-normal">
+                  Photography Expedition, 2024
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="font-serif italic text-[14px] text-black/60">
-              4.9 / 5 from 200+ reviews
-            </p>
           </div>
 
           <div className="mt-16">
@@ -505,138 +469,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Not Just About Tigers - Wildlife Carousel */}
+      {/* ===== SECTION 6: IT'S NOT JUST ABOUT TIGERS (Wildlife Carousel) ===== */}
       <WildlifeCarousel />
 
-      {/* Questions We Get Asked - FAQ section */}
-      <section className="py-[80px] md:py-[100px] bg-[#ede4d1]">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-center section-heading text-[32px] md:text-[48px] mb-16">
-            Questions We Get Asked
-          </h2>
-          <div className="space-y-8">
-            <div>
-              <h3 className="font-display font-bold text-[20px] md:text-[22px] mb-3">
-                How much does a tiger safari in India cost?
-              </h3>
-              <p className="font-serif text-[15px] md:text-[16px] leading-relaxed text-[#081d01]">
-                The actual cost depends on three things: which park, which lodge, and how long
-                you go for. Premium lodges, peak season, and longer multi-park itineraries push
-                the number up. Shoulder months and shorter single-park trips bring it down.
-                Rather than quote a range that would be wrong for half our guests, we send a
-                written and itemised quote within 24 hours of an enquiry. The quote is detailed
-                enough that you can compare it line by line against any other operator&apos;s
-                offer, and there is no deposit until you say yes.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-[20px] md:text-[22px] mb-3">
-                Will I actually see a tiger?
-              </h3>
-              <p className="font-serif text-[15px] md:text-[16px] leading-relaxed text-[#081d01]">
-                Probably. We do not guarantee wildlife sightings, because anyone who guarantees
-                you a wild animal is selling you something we are not. Our guests see tigers
-                on roughly 95% of trips, though, and that number is the result of fifteen years
-                of knowing which park, which guide, which waterhole, and which hour. It is not
-                luck.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-[20px] md:text-[22px] mb-3">
-                Which is the best tiger reserve in India?
-              </h3>
-              <p className="font-serif text-[15px] md:text-[16px] leading-relaxed text-[#081d01]">
-                Honestly, it depends what you want. Bandhavgarh for the best odds. Ranthambore
-                for the fort photographs. Tadoba for weekend access from Mumbai. Kanha for the
-                meadow light and the classic experience. <strong>Tiger reserve india</strong>{" "}
-                is not really a single thing, and asking which one is best is a bit like asking
-                which flavour of ice cream is best. Tell us what matters most to you and we
-                will pick for you.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-[20px] md:text-[22px] mb-3">
-                How far ahead should I book?
-              </h3>
-              <p className="font-serif text-[15px] md:text-[16px] leading-relaxed text-[#081d01]">
-                Two to four weeks usually works. Peak season at Ranthambore (March to May)
-                needs six to eight weeks because the permits are limited and the good lodges
-                fill first. If your dates are inflexible, the earlier the better.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-[20px] md:text-[22px] mb-3">
-                Is it safe for solo travellers, including women?
-              </h3>
-              <p className="font-serif text-[15px] md:text-[16px] leading-relaxed text-[#081d01]">
-                Yes. A meaningful number of our guests come solo, and many of them are women
-                travelling on their own. The guides are professional, the lodges are secure,
-                and we are reachable by phone for the entire duration of the trip.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ready for Safari CTA */}
-      <section className="py-[100px] bg-[#081d01]" id="plan">
+      {/* ===== SECTION 7: READY FOR YOUR TIGER SAFARI (Figma Y: ~4573-5423) ===== */}
+      <section className="py-[138px] bg-[#081d01]" id="plan">
         <div className="max-w-[1184px] mx-auto px-6">
-          <div className="bg-white rounded-[9px] py-[60px] md:py-[80px] px-[40px] md:px-[60px]">
-            <h2 className="text-center section-heading text-[32px] md:text-[48px] text-black mb-6">
-              Ready?
+          <div className="bg-white rounded-[9px] py-[80px] px-[60px]">
+            <h2 className="text-center section-heading text-[48px] text-black mb-[26px]">
+              Ready for Your Tiger Safari?
             </h2>
-            <p className="text-center font-serif text-[16px] text-black mb-12 max-w-2xl mx-auto leading-relaxed">
-              The permits are limited and the good lodges book out earlier than you expect, so
-              the sooner you tell us your dates the more options we can give you. The rest is
-              on us.
+            <p className="text-center font-serif text-[16px] text-black mb-[80px]">
+              Planning your perfect wildlife journey is simpler than you might think:
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="flex flex-col items-center text-center">
                 <div className="w-[52px] h-[52px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-[28px] text-[#081d01]">1</span>
+                  <span className="font-serif text-[40px] text-[#081d01]">1</span>
                 </div>
-                <h4 className="font-serif font-bold text-[18px] text-black mb-3">
-                  Tell us your dates
+                <h4 className="font-serif font-bold text-[20px] text-black mb-4">
+                  Tell Us What You&apos;re Dreaming Of
                 </h4>
-                <p className="font-serif text-[15px] text-black max-w-[300px]">
-                  Your dates and the cities you are flying in and out of.
+                <p className="font-serif text-[16px] text-black max-w-[354px]">
+                  Dates you&apos;re considering. What matters most to you. Whether you&apos;ve done this before or it&apos;s completely new.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="w-[52px] h-[52px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-[28px] text-[#081d01]">2</span>
+                  <span className="font-serif text-[40px] text-[#081d01]">2</span>
                 </div>
-                <h4 className="font-serif font-bold text-[18px] text-black mb-3">
-                  We build the itinerary
+                <h4 className="font-serif font-bold text-[20px] text-black mb-4">
+                  We Craft Your Journey
                 </h4>
-                <p className="font-serif text-[15px] text-black max-w-[300px]">
-                  An itemised written quote within 24 hours.
+                <p className="font-serif text-[16px] text-black max-w-[354px]">
+                  A personalized itinerary with lodges we&apos;d stay at ourselves and experiences that match how you actually travel.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="w-[52px] h-[52px] bg-[#ede4d1] rounded-full flex items-center justify-center mb-6">
-                  <span className="font-serif text-[28px] text-[#081d01]">3</span>
+                  <span className="font-serif text-[40px] text-[#081d01]">3</span>
                 </div>
-                <h4 className="font-serif font-bold text-[18px] text-black mb-3">
-                  You confirm and go
+                <h4 className="font-serif font-bold text-[20px] text-black mb-4">
+                  You Experience the Wild
                 </h4>
-                <p className="font-serif text-[15px] text-black max-w-[300px]">
-                  We handle everything else.
+                <p className="font-serif text-[16px] text-black max-w-[354px]">
+                  Show up. Breathe in the forest. Let the jungle do what it does.
                 </p>
               </div>
-            </div>
-            <div className="text-center">
-              <Link
-                href="/enquire/"
-                className="bg-[#e79e23] hover:bg-[#c8841a] transition-all text-white inline-flex items-center justify-center w-[255px] h-[52px] rounded-[9px] text-[16px] font-serif"
-              >
-                Plan Your Safari
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
+      {/* ===== SECTION 8: FOOTER ===== */}
       <Footer />
     </main>
   );
