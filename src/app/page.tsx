@@ -92,7 +92,7 @@ export default function Home() {
       </section>
 
       {/* ===== SECTION 2: WHY TRAVEL WITH US (Figma Y: 854-1754, 900px tall) ===== */}
-      <section className="py-[100px] bg-[#ede4d1]">
+      <section className="pt-[70px] pb-[80px] bg-[#ede4d1]">
         <div className="max-w-7xl mx-auto px-6">
           <OrnamentDivider />
           <h2 className="text-center section-heading text-[48px] mb-[47px]">
@@ -100,9 +100,12 @@ export default function Home() {
           </h2>
 
           {/* Intro body text */}
-          <div className="max-w-[907px] mx-auto text-center mb-[100px]">
-            <p className="font-serif text-[16px] leading-[107.85%] text-[#081d01]">
-              The honest truth is that you can absolutely book a tiger safari in India yourself. People do it all the time. The honest truth is also that it usually goes badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday. We are not here to talk you out of doing this on your own. We are here for the people who decided their holiday was worth doing properly.
+          <div className="max-w-[907px] mx-auto text-center mb-[60px]">
+            <p className="font-serif text-[16px] leading-[137%] text-[#081d01] mb-4">
+              The honest truth is that you can absolutely book a tiger safari in India yourself. People do it all the time. The honest truth is also that it usually goes badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday.
+            </p>
+            <p className="font-serif text-[16px] leading-[137%] text-[#081d01]">
+              We are not here to talk you out of doing this on your own. We are here for the people who decided their holiday was worth doing properly.
             </p>
           </div>
 
