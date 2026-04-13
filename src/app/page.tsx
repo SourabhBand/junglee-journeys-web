@@ -130,12 +130,6 @@ export default function Home() {
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={500}>
-              <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-12 md:mb-16">
-                Everything from the permits, the airport transportation, the 4 am awakening &ndash; taken care of by individuals who&apos;ve traversed this route so many times they&apos;d be ashamed if anything were to go wrong.
-              </p>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll animation="fade-up" delay={560}>
               <p className="font-serif italic text-[20px] md:text-[26px] leading-[1.6] text-[#081d01] text-center">
                 Your only job is to turn up with socks and a camera.
               </p>
@@ -165,7 +159,7 @@ export default function Home() {
 
           <AnimateOnScroll animation="fade-up" delay={160}>
             <p className="font-serif italic text-[16px] md:text-[18px] leading-[1.7] text-[#081d01]/60 text-center">
-              We have planned hundreds of these trips. The boring middle (which park, which dates, which lodge, which guide, which permits, which 4 AM pickup) is the part we have completely solved. The exciting part is the part we hand back to you on the day you arrive.
+              We have planned hundreds of these trips. The exciting part is the part we hand back to you on the day you arrive.
             </p>
           </AnimateOnScroll>
         </div>
