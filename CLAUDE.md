@@ -12,9 +12,9 @@ Luxury tiger safari landing page for Junglee Journeys, an India-based wildlife s
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4
 - **Fonts:**
-  - Cinzel (display headings / section-heading class)
-  - Playfair Display (serif text)
-  - Montserrat (body text)
+  - Reform Regular (local OTF — `src/fonts/Reform.otf`) — all H1/H2 headings via `.section-heading` and `.font-reform`
+  - Gelasio 400 / 600 / 700 (Google Fonts) — body text (400), subheadings H3 (600), bold emphasis (700)
+  - Outfit 300–700 (Google Fonts) — ornamental use only (`.font-ornament`, `.font-display`)
 - **Icons:** Material Symbols (via Google Fonts CDN)
 
 ## URLs
@@ -46,16 +46,27 @@ vercel --prod
 junglee-journeys-web/
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx          # Root layout, fonts, metadata
-│   │   ├── page.tsx            # Main landing page component
-│   │   └── globals.css         # CSS variables, custom styles
+│   │   ├── layout.tsx                # Root layout, fonts, metadata
+│   │   ├── page.tsx                  # Main landing page component
+│   │   ├── globals.css               # CSS variables, custom styles
+│   │   ├── destinations/page.tsx     # Destinations hub page
+│   │   └── safaris/page.tsx          # Safaris hub page
 │   ├── components/
-│   │   ├── WildlifeCarousel.tsx # "It's Not Just About Tigers" carousel
-│   │   └── OrnamentDivider.tsx  # Decorative divider component
+│   │   ├── WildlifeCarousel.tsx      # "It's Not Just About Tigers" carousel
+│   │   ├── DestinationsCarousel.tsx  # "India's Premier Tiger Reserves" carousel
+│   │   ├── TestimonialsCarousel.tsx  # "What Our Guests Say" carousel
+│   │   ├── SafariFlipCards.tsx       # "Tailored Safari Experiences" 2×2 flip cards
+│   │   ├── FAQAccordion.tsx          # FAQ accordion
+│   │   ├── MarkdownContent.tsx       # Styled markdown renderer (detail pages)
+│   │   ├── AnimateOnScroll.tsx       # Scroll-triggered fade/slide animations
+│   │   └── OrnamentDivider.tsx       # Decorative gold divider
+│   ├── fonts/
+│   │   └── Reform.otf               # Reform Regular (local font, loaded via next/font/local)
 │   └── lib/
-│       └── assets.ts           # Centralized asset paths (SVG_ASSETS, IMAGE_ASSETS)
+│       ├── assets.ts                 # Centralized asset paths (SVG_ASSETS, IMAGE_ASSETS)
+│       └── content.ts                # DESTINATIONS and SAFARIS data arrays
 ├── public/
-│   └── images/                 # Local image assets (downloaded from Figma)
+│   └── images/                       # Local image assets
 │       ├── hero-tiger-new.jpg
 │       ├── asiatic-lion.jpg
 │       ├── one-horned-rhino.jpg
@@ -65,45 +76,70 @@ junglee-journeys-web/
 │       ├── ranthambore-national-park.jpg
 │       ├── bandhavgarh-national-park.jpg
 │       └── ... (SVGs and other assets)
-├── next.config.ts              # External image domains config
-├── vercel.json                 # Vercel deployment config
+├── next.config.ts                    # External image domains config
+├── vercel.json                       # Vercel deployment config
 └── package.json
 ```
 
 ## Key Files
 
 ### `src/app/layout.tsx`
-- Custom fonts configuration (Cinzel, Playfair, Montserrat)
+- **Reform Regular** loaded via `next/font/local` → `--font-reform` CSS variable
+- **Gelasio** (Google Fonts, weights 400/600/700) → `--font-gelasio`
+- **Outfit** (Google Fonts, utility only) → `--font-outfit`
 - SEO metadata (title, description, OpenGraph, Twitter cards)
 - Material Symbols icon font link
 
 ### `src/app/globals.css`
 - CSS variables for brand colors:
-  - `--primary`: #d4a04d (gold)
-  - `--forest-green`: #0b1c09
-  - `--forest-accent`: #1a2e18
-  - `--beige-light`: #f4f1ea
+  - `--primary`: #e79e23 (safari gold)
+  - `--forest-green`: #081d01
+  - `--forest-accent`: #0d2a05
+  - `--beige`: #ede4d1
+  - `--beige-light`: #f5f0e3
   - `--beige-dark`: #e5dfd3
-- Custom utility classes: `.hero-overlay`, `.ornament-divider`, `.font-display`, `.font-serif`
+- Typography utility classes:
+  - `.section-heading` — Reform Regular, uppercase, 0.04em tracking (used on all H2s)
+  - `.font-reform` — Reform Regular utility class
+  - `.font-serif` — Gelasio serif
+  - `.font-display` — Outfit (ornamental use)
+- Custom component classes: `.flip-card-inner`, `.flip-face`, `.gold-rule`, `.pill-card`, `.grain-overlay`, etc.
 
 ### `src/app/page.tsx`
-Landing page sections:
-1. Header (navigation with logo and "Enquire Now" button)
-2. Hero (full-screen tiger image with stats circles: 70%, 15+, 500+)
-3. Why Travel With Us (4 feature cards with pill-shaped design)
-4. India's Premier Tiger Reserves (4 destination cards with curved image masks)
-5. Tailored Safari Experiences (experience type cards)
-6. What Our Guests Say (testimonials with quote icons)
-7. It's Not Just About Tigers (WildlifeCarousel component - Lions, Rhinos, Leopards)
-8. Ready for Your Tiger Safari? (3-step CTA in white rectangle)
-9. Footer (logo, links, copyright)
+Landing page sections (in order):
+1. **Hero** — full-screen tiger image, SVG title, stats circles, CTA buttons. **Do not touch.**
+2. **Hero copy** — editorial paragraph block on beige
+3. **Why Travel With Us** — 4 pill-shaped feature cards (alternating rounded corners)
+4. **India's Premier Tiger Reserves** — `<DestinationsCarousel />`
+5. **Tailored Safari Experiences** — `<SafariFlipCards />`
+6. **What Our Guests Say** — `<TestimonialsCarousel />`
+7. **It's Not Just About Tigers** — `<WildlifeCarousel />`
+8. **Questions We Get Asked** — `<FAQAccordion />`
+9. **Ready?** — 3-step CTA in white card on dark bg
+10. **Footer**
+
+### `src/components/SafariFlipCards.tsx`
+- 2×2 grid of 3D CSS flip cards (click/tap to flip)
+- Front face: number label, heading, SVG icon, gold-rule, CTA text
+- Back face: heading as link, body copy
+- Icons (inline SVG, gold `#e79e23`):
+  - 01 Private Tiger Safaris → PugmarkIcon — "Tap the Paw to explore"
+  - 02 Photography Expeditions → ViewfinderIcon — "Find your frame"
+  - 03 Weekend Escapes → CalendarIcon (Friday circled) — "Block that Friday"
+  - 04 Multi-Park Adventures → RouteIcon (dotted path) — "Take the long route"
+
+### `src/components/DestinationsCarousel.tsx`
+- Full dark-bg section with 6 park slides: Kanha, Tadoba, Ranthambore, Bandhavgarh, Pench, Satpura
+- Image (58% width) + info card (42%) layout, fading transitions
+- Prev/next arrows + dot indicators
+
+### `src/components/TestimonialsCarousel.tsx`
+- White bg section, single testimonial card per slide, 3 reviews
+- Prev/next arrows + dot indicators
 
 ### `src/components/WildlifeCarousel.tsx`
-- Client component (`'use client'`) for carousel interactivity
-- 3 slides: Asiatic Lions, One-Horned Rhinos, Leopards
-- Each slide has: wildlife image (692x461), info card with title, subtitle, location, population
-- Navigation arrows and slide indicators
-- Uses `IMAGE_ASSETS` from `lib/assets.ts`
+- Dark bg section, 3 slides: Asiatic Lions, One-Horned Rhinos, Leopards
+- Same image+info layout as DestinationsCarousel
 
 ### `src/lib/assets.ts`
 Centralized asset management:
@@ -134,10 +170,15 @@ export const IMAGE_ASSETS = {
 | Safari Gold | `#e79e23` | CTAs, buttons, highlights |
 | White | `#ffffff` | Text on dark, container backgrounds |
 
-### Typography Classes
-- `.section-heading` - Cinzel font for major headings (48px)
-- `.font-serif` - Playfair Display for body text
-- `.font-display` - Display font for special elements
+### Typography Rules
+| Element | Font | Weight | Class |
+|---------|------|--------|-------|
+| H1, H2 (all headings) | Reform Regular | 400 | `.section-heading` or `.font-reform` |
+| H3 (all subheadings) | Gelasio | 600 (semi bold) | `.font-serif font-semibold` |
+| Body / paragraphs | Gelasio | 400 | `.font-serif` or `.font-body` |
+| Ornamental / nav | Outfit | varies | `.font-display` / `.font-ornament` |
+
+**Rule:** Hero/banner section is exempt — do not change fonts there.
 
 ### Common Design Patterns
 - **Pill-shaped cards:** `rounded-[9px_120px_9px_120px]` or `rounded-tl-[9px] rounded-tr-[9px] rounded-br-[9px] rounded-bl-[120px]`
@@ -148,14 +189,16 @@ export const IMAGE_ASSETS = {
 
 ### ✅ Completed Sections
 1. **Header/Navigation** - Logo, nav links, "Enquire Now" button
-2. **Hero Section** - Tiger image, decorative title, stats circles, CTA
-3. **Why Travel With Us** - 4 feature cards with pill shapes
-4. **India's Premier Tiger Reserves** - 4 park cards with curved image masks
-5. **Tailored Safari Experiences** - Experience type cards
-6. **What Our Guests Say** - Testimonial cards with quote icons
-7. **It's Not Just About Tigers** - Wildlife carousel (Lions, Rhinos, Leopards)
-8. **Ready for Your Tiger Safari?** - 3-step process in white rectangle on dark bg
-9. **Footer** - Logo, links, copyright
+2. **Hero Section** - Tiger image, SVG decorative title, stats circles, CTA (**do not touch fonts here**)
+3. **Why Travel With Us** - 4 pill-shaped feature cards (overflow-hidden, responsive radii)
+4. **India's Premier Tiger Reserves** - `DestinationsCarousel` (6 parks, prev/next + dots)
+5. **Tailored Safari Experiences** - `SafariFlipCards` (2×2 flip grid, custom SVG icons per tile)
+6. **What Our Guests Say** - `TestimonialsCarousel` (3 testimonials, prev/next + dots)
+7. **It's Not Just About Tigers** - `WildlifeCarousel` (3 wildlife slides)
+8. **Questions We Get Asked** - `FAQAccordion`
+9. **Ready?** - 3-step CTA in white card
+10. **Footer** - Logo, links, copyright
+11. **Typography** - Reform Regular (H2), Gelasio 600 (H3), Gelasio 400 (body) site-wide
 
 ### 🖼️ Assets Downloaded from Figma
 - `hero-tiger-new.jpg` - Main hero image
