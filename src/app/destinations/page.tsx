@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Header, Footer, OrnamentDivider } from "@/components";
+import { Header, Footer, OrnamentDivider, CurrencyConverter } from "@/components";
 import { DESTINATIONS } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -152,6 +152,8 @@ export default function DestinationsHubPage() {
           </section>
         );
       })}
+
+      <CurrencyConverter />
 
       {/* CTA */}
       <section className="py-[80px] md:py-[100px] bg-[#081d01] text-[#ede4d1]">

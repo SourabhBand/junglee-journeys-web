@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Header, Footer, OrnamentDivider } from "@/components";
+import { Header, Footer, OrnamentDivider, CurrencyConverter } from "@/components";
 import { SAFARIS } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -211,6 +211,8 @@ export default function SafarisHubPage() {
           </div>
         </div>
       </section>
+
+      <CurrencyConverter />
 
       {/* CTA */}
       <section className="py-[80px] md:py-[100px] bg-[#081d01] text-[#ede4d1]">

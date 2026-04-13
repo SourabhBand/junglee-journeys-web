@@ -262,6 +262,7 @@ export interface DestinationSummary {
   airportDistance: string;
   bestFor: string;
   heroImage?: string;
+  priceFrom?: number;
 }
 
 export const DESTINATIONS: DestinationSummary[] = [
@@ -410,6 +411,7 @@ export interface SafariSummary {
   parks: string;
   bestFor: string;
   description: string;
+  priceFrom?: number;
 }
 
 export const SAFARIS: SafariSummary[] = [
