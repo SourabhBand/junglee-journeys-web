@@ -23,12 +23,12 @@ export function MarkdownContent({ children }: Props) {
             </h1>
           ),
           h2: ({ children }) => (
-            <h2 className="font-display text-2xl md:text-3xl mt-12 mb-6 leading-tight">
+            <h2 className="font-reform text-2xl md:text-3xl mt-12 mb-6 leading-tight uppercase tracking-[0.04em]">
               {children}
             </h2>
           ),
           h3: ({ children }) => (
-            <h3 className="font-display text-xl md:text-2xl mt-10 mb-4 leading-tight">
+            <h3 className="font-serif font-semibold text-xl md:text-2xl mt-10 mb-4 leading-tight">
               {children}
             </h3>
           ),

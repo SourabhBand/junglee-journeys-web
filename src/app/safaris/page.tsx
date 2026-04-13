@@ -88,7 +88,7 @@ export default function SafarisHubPage() {
                 href={`/safari/${pkg.slug}/`}
                 className="block bg-[#ede4d1] rounded-[9px] p-8 md:p-12 hover:scale-[1.01] transition"
               >
-                <h3 className="font-display text-[26px] md:text-[32px] mb-4 leading-tight">
+                <h3 className="font-serif font-semibold text-[26px] md:text-[32px] mb-4 leading-tight">
                   {pkg.name}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 font-serif text-[14px]">
@@ -159,7 +159,7 @@ export default function SafarisHubPage() {
               },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-[9px] p-6">
-                <h3 className="font-display text-[20px] mb-3 leading-tight">{item.title}</h3>
+                <h3 className="font-serif font-semibold text-[20px] mb-3 leading-tight">{item.title}</h3>
                 <p className="font-serif text-[15px] leading-relaxed">{item.body}</p>
               </div>
             ))}
@@ -187,7 +187,7 @@ export default function SafarisHubPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-display text-[18px] mb-4 text-[#081d01]">Included</h3>
+              <h3 className="font-serif font-semibold text-[18px] mb-4 text-[#081d01]">Included</h3>
               <ul className="font-serif text-[15px] leading-relaxed space-y-2 list-disc pl-6">
                 <li>Your own jeep and naturalist for the duration of the trip</li>
                 <li>All safari drives (typically two per day)</li>
@@ -200,7 +200,7 @@ export default function SafarisHubPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-display text-[18px] mb-4 text-[#081d01]">Not included</h3>
+              <h3 className="font-serif font-semibold text-[18px] mb-4 text-[#081d01]">Not included</h3>
               <ul className="font-serif text-[15px] leading-relaxed space-y-2 list-disc pl-6">
                 <li>Flights or trains to and from the destination</li>
                 <li>Travel insurance (we strongly recommend it)</li>

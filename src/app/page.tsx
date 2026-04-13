@@ -189,7 +189,7 @@ export default function Home() {
                       : 'rounded-tl-[9px] rounded-tr-[60px] sm:rounded-tr-[80px] lg:rounded-tr-[120px] rounded-br-[9px] rounded-bl-[60px] sm:rounded-bl-[80px] lg:rounded-bl-[120px]'
                   }`}
                 >
-                  <h3 className="font-serif font-bold text-[18px] lg:text-[20px] text-[#ede4d1] mb-4 leading-tight">
+                  <h3 className="font-serif font-semibold text-[18px] lg:text-[20px] text-[#ede4d1] mb-4 leading-tight">
                     {card.heading}
                   </h3>
                   <hr className="gold-rule mb-4 opacity-40" />

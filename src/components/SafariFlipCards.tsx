@@ -148,7 +148,7 @@ export default function SafariFlipCards() {
                 <span className="font-serif text-[11px] text-[#e79e23]/60 tracking-[0.25em] uppercase block mb-4">
                   {exp.num}
                 </span>
-                <h3 className="font-serif font-bold text-[20px] md:text-[22px] text-[#ede4d1] leading-tight">
+                <h3 className="font-serif font-semibold text-[20px] md:text-[22px] text-[#ede4d1] leading-tight">
                   {exp.heading}
                 </h3>
               </div>
@@ -169,7 +169,7 @@ export default function SafariFlipCards() {
 
             {/* ── BACK FACE ── */}
             <div className="flip-face flip-face-back rounded-[9px] bg-[#ede4d1] p-6 md:p-7 flex flex-col">
-              <h3 className="font-serif font-bold text-[17px] md:text-[19px] text-[#081d01] leading-tight mb-3">
+              <h3 className="font-serif font-semibold text-[17px] md:text-[19px] text-[#081d01] leading-tight mb-3">
                 <Link
                   href={exp.href}
                   onClick={e => e.stopPropagation()}

@@ -60,7 +60,7 @@ const FAQAccordion = () => {
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
             className="w-full flex justify-between items-center py-6 text-left hover:opacity-70 transition"
           >
-            <h3 className="font-serif font-bold text-[18px] text-[#081d01] flex-1">
+            <h3 className="font-serif font-semibold text-[18px] text-[#081d01] flex-1">
               {item.question}
             </h3>
             <span className="text-[24px] text-[#081d01] ml-4 flex-shrink-0">

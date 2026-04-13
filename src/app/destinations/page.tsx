@@ -123,7 +123,7 @@ export default function DestinationsHubPage() {
                     href={`/destination/${park.slug}/`}
                     className="block bg-[#ede4d1] rounded-[9px] p-6 hover:scale-[1.02] transition destination-card"
                   >
-                    <h3 className="font-display text-[22px] mb-2">{park.fullName}</h3>
+                    <h3 className="font-serif font-semibold text-[22px] mb-2">{park.fullName}</h3>
                     <p className="font-serif italic text-[14px] text-[#081d01]/70 mb-4">
                       {park.tagline}
                     </p>

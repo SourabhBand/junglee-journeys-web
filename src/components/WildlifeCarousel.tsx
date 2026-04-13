@@ -104,7 +104,7 @@ export default function WildlifeCarousel() {
             {/* Info Card */}
             <div className="w-full lg:w-[42%] flex-shrink-0">
               <div className="bg-[#ede4d1]/10 backdrop-blur-sm rounded-[9px] p-8 md:p-10 lg:p-12 text-center lg:text-left">
-                <h3 className="font-serif text-[36px] md:text-[48px] text-white mb-4 transition-all duration-500">
+                <h3 className="font-serif font-semibold text-[36px] md:text-[48px] text-white mb-4 transition-all duration-500">
                   {currentWildlife.title}
                 </h3>
                 <p className="font-serif text-[17px] md:text-[20px] text-white/90 leading-normal mb-8">

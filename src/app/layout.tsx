@@ -1,19 +1,28 @@
 import type { Metadata } from "next";
 import { Outfit, Gelasio } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-// Outfit - geometric sans-serif for headings (Reform alternative)
+// Reform Regular - display font for all headings (H1, H2)
+const reform = localFont({
+  src: "../fonts/Reform.otf",
+  variable: "--font-reform",
+  weight: "400",
+  display: "swap",
+});
+
+// Outfit - geometric sans-serif (utility / ornament use)
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
 
-// Gelasio - serif font for body text
+// Gelasio - serif font for body text and subheadings (H3)
 const gelasio = Gelasio({
   variable: "--font-gelasio",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600", "700"],
   style: ["normal", "italic"],
 });
 
@@ -55,7 +64,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${outfit.variable} ${gelasio.variable} antialiased`}
+        className={`${reform.variable} ${outfit.variable} ${gelasio.variable} antialiased`}
       >
         {children}
       </body>

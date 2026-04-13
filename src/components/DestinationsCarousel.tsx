@@ -112,7 +112,7 @@ export default function DestinationsCarousel() {
             {/* Info panel */}
             <div className="w-full lg:w-[42%] flex-shrink-0">
               <div className="bg-[#ede4d1]/10 backdrop-blur-sm rounded-[9px] p-8 md:p-10 lg:p-12 text-center lg:text-left">
-                <h3 className="font-serif text-[28px] md:text-[36px] lg:text-[40px] text-white mb-4 leading-tight">
+                <h3 className="font-serif font-semibold text-[28px] md:text-[36px] lg:text-[40px] text-white mb-4 leading-tight">
                   {curr.name}
                 </h3>
                 <p className="font-serif text-[14px] md:text-[15px] text-white/80 leading-[175%] mb-8">
