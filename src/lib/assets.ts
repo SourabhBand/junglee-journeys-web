@@ -32,9 +32,6 @@ export const IMAGE_ASSETS = {
   oneHornedRhino: '/images/one-horned-rhino.jpg',
   indianLeopard: '/images/indian-leopard.jpg',
 
-  // Safari Experience Cards
-  tigerPaw: '/images/tiger-paw.jpg',
-
   // Logo
   logo: '/logo-jj.png',
   logoSvg: '/images/logo-jj.svg',
