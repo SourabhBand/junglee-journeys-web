@@ -88,42 +88,54 @@ export default function Home() {
         <div className="pt-[80px] md:pt-[120px] pb-[50px] md:pb-[70px] px-6">
           <div className="max-w-[900px] mx-auto">
             <AnimateOnScroll animation="fade-up">
+              <h2 className="section-heading text-[22px] md:text-[28px] text-center text-[#081d01] tracking-[0.06em] mb-6 md:mb-8">
+                Before You Book a Jungle Safari in India
+              </h2>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll animation="fade-up" delay={80}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
                 You can absolutely book a <strong>tiger safari in India</strong> yourself. People do it all the time.
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-up" delay={100}>
+            <AnimateOnScroll animation="fade-up" delay={160}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
-                The honest truth is that it usually goes badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday.
+                The honest truth is that most <strong>wildlife safaris</strong> in India go badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday.
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-up" delay={200}>
-              <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center mb-16 md:mb-24">
+            <AnimateOnScroll animation="fade-up" delay={240}>
+              <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center mb-10 md:mb-14">
                 We are not going to tell you that you need us. We are here for the people who decided that their annual leave was too valuable to spend debugging a permit portal.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={300}>
+              <h2 className="section-heading text-[22px] md:text-[28px] text-center text-[#081d01] tracking-[0.06em] mb-6 md:mb-8">
+                What Fifteen Years in India&apos;s Tiger Reserves Teaches You
+              </h2>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll animation="fade-up" delay={380}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
                 We have run these trips for fifteen years. We know which park looks best in March, which lodge actually matches its photographs, and which guides will have you watching a tigress cross an open meadow at first light rather than returning to breakfast empty-handed.
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-up" delay={380}>
+            <AnimateOnScroll animation="fade-up" delay={440}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
                 Your own jeep. A naturalist who knows the local tigress by name, and has been following her two cubs since they first appeared last March. Lodges we have slept in enough times to have opinions about the breakfast.
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-up" delay={440}>
+            <AnimateOnScroll animation="fade-up" delay={500}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-12 md:mb-16">
                 The permits, the airport transfers, the 4 AM wake-up call: all handled by people who have run these routes hundreds of times and would find it personally embarrassing if something went wrong.
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-up" delay={500}>
+            <AnimateOnScroll animation="fade-up" delay={560}>
               <p className="font-serif italic text-[20px] md:text-[26px] leading-[1.6] text-[#081d01] text-center">
                 Your only job is to turn up with socks and a camera.
               </p>
