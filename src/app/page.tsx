@@ -208,8 +208,8 @@ export default function Home() {
 
       {/* ===== TAILORED SAFARI EXPERIENCES ===== */}
       <section className="py-[80px] md:py-[120px] bg-[#081d01] text-[#ede4d1] grain-overlay relative">
-        <div className="flex justify-center mb-[60px] md:mb-[80px] relative z-10">
-          <hr className="gold-rule-wide" />
+        <div className="relative z-10">
+          <OrnamentDivider variant="light" className="mb-[60px] md:mb-[80px]" />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">

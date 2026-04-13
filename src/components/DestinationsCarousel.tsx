@@ -78,11 +78,6 @@ export default function DestinationsCarousel() {
           India&apos;s Premier Tiger Reserves
         </h2>
 
-        <div className="max-w-[700px] mx-auto text-center mb-12 md:mb-16">
-          <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%]">
-            India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. The country gazettes more than fifty official <strong>tiger reserves</strong>, and we operate in eleven of them. Each one is a completely different argument for going.
-          </p>
-        </div>
 
         {/* Carousel */}
         <div className="relative">
@@ -147,10 +142,13 @@ export default function DestinationsCarousel() {
 
         {/* Closing white card */}
         <div className="mt-12 md:mt-16 bg-white rounded-[9px] py-8 md:py-10 px-6 md:px-10 text-center">
-          <p className="font-serif text-[14px] md:text-[15px] text-[#081d01]/55 leading-[175%] max-w-[800px] mx-auto mb-6">
-            These six are the parks we run most often, but they are not the only ones we work in. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out our list of eleven. Pick the wrong park for your dates and the <strong>best tiger safari India</strong> has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
+          <p className="font-serif text-[14px] md:text-[15px] text-[#081d01]/55 leading-[175%] max-w-[800px] mx-auto mb-8">
+            India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. We operate in eleven of more than fifty official <strong>tiger reserves</strong> — each one a completely different argument for going. The six above are the parks we run most often. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out the list. Pick the wrong park for your dates and the <strong>best tiger safari India</strong> has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
           </p>
-          <Link href="/destinations/" className="font-serif text-[13px] text-[#081d01]/50 hover:text-[#e79e23] transition-colors tracking-[0.08em] uppercase">
+          <Link
+            href="/destinations/"
+            className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[240px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center"
+          >
             View All 11 Destinations
           </Link>
         </div>
