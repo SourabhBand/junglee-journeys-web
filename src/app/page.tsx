@@ -125,13 +125,13 @@ export default function Home() {
 
             <AnimateOnScroll animation="fade-up" delay={440}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
-                Your own jeep. A naturalist who knows the local tigress by name, and has been following her two cubs since they first appeared last March. Lodges we have slept in enough times to have opinions about the breakfast.
+                Your very own jeep. A naturalist familiar with the tigress of the region, even calling her by name, having tracked her two cubs from their initial appearance in March. Lodges we have slept in enough times to have opinions about the breakfast.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={500}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-12 md:mb-16">
-                The permits, the airport transfers, the 4 AM wake-up call: all handled by people who have run these routes hundreds of times and would find it personally embarrassing if something went wrong.
+                Everything from the permits, the airport transportation, the 4 am awakening &ndash; taken care of by individuals who&apos;ve traversed this route so many times they&apos;d be ashamed if anything were to go wrong.
               </p>
             </AnimateOnScroll>
 
