@@ -32,9 +32,9 @@ function YouTubeIcon() {
 
 export function Footer() {
   return (
-    <footer className="bg-[#081d01] text-[#ede4d1] py-[40px] md:py-[52px]">
+    <footer className="bg-[#081d01] text-[#ede4d1] pt-[20px] md:pt-[28px] pb-[40px] md:pb-[48px]">
       <div className="max-w-7xl mx-auto px-6">
-        <OrnamentDivider variant="light" className="!mt-0 mb-[20px] md:mb-[28px]" />
+        <OrnamentDivider variant="light" className="!mt-0 mb-[16px] md:mb-[24px]" />
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 mb-8">
           {/* Left: Logo + tagline + social — full width on mobile */}
