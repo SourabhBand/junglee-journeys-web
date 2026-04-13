@@ -41,7 +41,7 @@ const experiences: {
     heading: 'Multi-Park Adventures',
     href: '/safari/central-india-tiger-trail/',
     body: "Seven to fourteen nights across India's best reserves. Kanha to Bandhavgarh to Pench, or Ranthambore north into Corbett, or any combination that makes geographical sense for the dates you actually have. The trip you will still be telling people about a decade later.",
-    cta: 'Map your decade',
+    cta: 'Take the long route',
   },
 ];
 
