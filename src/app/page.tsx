@@ -7,7 +7,7 @@ import WildlifeCarousel from "@/components/WildlifeCarousel";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import FAQAccordion from "@/components/FAQAccordion";
 import DestinationsCarousel from "@/components/DestinationsCarousel";
-import SafariCarousel from "@/components/SafariCarousel";
+import SafariFlipCards from "@/components/SafariFlipCards";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export const metadata: Metadata = {
@@ -229,7 +229,7 @@ export default function Home() {
               </div>
             </AnimateOnScroll>
 
-            <SafariCarousel />
+            <SafariFlipCards />
           </div>
         </div>
       </section>

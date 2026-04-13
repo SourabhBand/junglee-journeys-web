@@ -398,6 +398,33 @@ html {
 }
 
 /* ========================================
+   SAFARI FLIP CARDS
+   ======================================== */
+
+.flip-card-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flip-card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-face-back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+  overflow: hidden;
+}
+
+/* ========================================
    GOLD RULE DIVIDER
    ======================================== */
 
