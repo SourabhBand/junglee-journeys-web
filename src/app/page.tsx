@@ -6,6 +6,9 @@ import { IMAGE_ASSETS } from "@/lib/assets";
 import WildlifeCarousel from "@/components/WildlifeCarousel";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import FAQAccordion from "@/components/FAQAccordion";
+import DestinationsCarousel from "@/components/DestinationsCarousel";
+import SafariCarousel from "@/components/SafariCarousel";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export const metadata: Metadata = {
   title: "Tiger Safari India | Luxury Wildlife Tours | Junglee Journeys",
@@ -201,106 +204,7 @@ export default function Home() {
       </section>
 
       {/* ===== INDIA'S PREMIER TIGER RESERVES ===== */}
-      <section className="pt-[60px] md:pt-[100px] pb-[80px] md:pb-[120px] bg-[#081d01] text-[#ede4d1] grain-overlay atmospheric-glow">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <AnimateOnScroll animation="fade-up">
-            <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] mb-6 md:mb-8 text-[#ede4d1] tracking-[0.06em]">
-              India&apos;s Premier Tiger Reserves
-            </h2>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll animation="fade-up" delay={80}>
-            <div className="max-w-[700px] mx-auto text-center mb-12 md:mb-16">
-              <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%]">
-                India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. The country gazettes more than fifty official <strong>tiger reserves</strong>, and we operate in eleven of them. Each one is a completely different argument for going. Six to start with.
-              </p>
-            </div>
-          </AnimateOnScroll>
-
-          {/* 4 curved-frame destination images (top row) */}
-          <AnimateOnScroll animation="fade-up" delay={150}>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 lg:gap-8 mb-8 md:mb-14">
-              {[
-                { src: IMAGE_ASSETS.kanhaNationalPark, alt: "Kanha National Park", slug: "kanha" },
-                { src: IMAGE_ASSETS.tadobaTigerReserve, alt: "Tadoba Tiger Reserve", slug: "tadoba" },
-                { src: IMAGE_ASSETS.ranthamboreNationalPark, alt: "Ranthambore National Park", slug: "ranthambore" },
-                { src: IMAGE_ASSETS.bandhavgarhNationalPark, alt: "Bandhavgarh National Park", slug: "bandhavgarh" },
-              ].map((dest) => (
-                <Link key={dest.slug} href={`/destination/${dest.slug}/`} className="group flex-shrink-0 mx-auto sm:mx-0">
-                  <div className="curved-image-frame w-[220px] md:w-[260px] lg:w-[272px] h-[320px] md:h-[370px] lg:h-[400px] overflow-hidden relative">
-                    <Image src={dest.src} alt={dest.alt} fill className="object-cover transition-transform duration-700 group-hover:scale-110" sizes="(max-width: 640px) 220px, (max-width: 1024px) 260px, 272px" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-8">
-                      <span className="font-serif text-white text-[15px] font-bold tracking-wide">{dest.alt}</span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </AnimateOnScroll>
-
-          {/* 6 park descriptions */}
-          <div className="bg-white rounded-[9px] py-10 md:py-14 px-6 md:px-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 mb-10">
-              {[
-                {
-                  name: "Kanha National Park",
-                  slug: "kanha",
-                  desc: <>Kanha is what Mowgli&apos;s forest looked like before the marketing department got involved. Sal trees in straight ranks, meadows wide enough that you forget what you came here for, and a tiger population that has held steady for two decades because the people running this park are very serious about their work and very polite about telling you so. The classic Central Indian <strong>jungle safari in India</strong> experience, and the one most first-timers should start with. Four hours by road from Jabalpur airport.</>,
-                },
-                {
-                  name: "Tadoba Tiger Reserve",
-                  slug: "tadoba",
-                  desc: <>Tadoba is the closest tiger reserve to Mumbai and Pune, which makes it the best <strong>safari near Mumbai</strong> by a wide margin and the only park where Friday-to-Monday is genuinely realistic. Open terrain, bold tigers that walk past jeeps without breaking stride, and sighting rates that quietly embarrass the more famous parks. Three hours by road from Nagpur airport.</>,
-                },
-                {
-                  name: "Ranthambore National Park",
-                  slug: "ranthambore",
-                  desc: <>The most photographed tigers on Earth live in Ranthambore, and they walk through the ruins of a tenth-century fort in the kind of golden hour that photographers travel years to find. Five hours from Delhi by road, which makes Ranthambore the easiest <strong>safari near Delhi</strong> by a long way. The park is iconic for a reason, and the reason is genuinely good.</>,
-                },
-                {
-                  name: "Bandhavgarh National Park",
-                  slug: "bandhavgarh",
-                  desc: <>Bandhavgarh has the highest tiger density in India, which is a polite way of saying you will probably see one before lunch on day one. If your priority is the odds, this is where you go. The fort on the hill is two thousand years old, the locals will tell you. (It is closer to a thousand. Either way, old enough.)</>,
-                },
-                {
-                  name: "Pench National Park",
-                  slug: "pench",
-                  desc: <>Pench is the actual Jungle Book setting, although Kipling never set foot in it and is therefore not strictly qualified to comment. Two hours from Nagpur, relaxed enough for families with young children, and the only one of our parks where you have a serious chance at seeing wild dogs hunting. Tigers, leopards, and the kind of forest that does not bother showing off.</>,
-                },
-                {
-                  name: "Satpura National Park",
-                  slug: "satpura",
-                  desc: <>Satpura is the <strong>wildlife safari</strong> for guests who have already done Kanha and Bandhavgarh and want a quieter version of the trip. Walking safaris and boat safaris and almost no jeeps. Sloth bears, gaur, leopards, and the occasional tiger when she feels like making an appearance.</>,
-                },
-              ].map((park, i) => (
-                <AnimateOnScroll key={park.slug} animation="fade-up" delay={i * 60}>
-                  <div>
-                    <h3 className="font-serif font-bold text-[20px] md:text-[22px] text-[#081d01] mb-3">
-                      <Link href={`/destination/${park.slug}/`} className="hover:text-[#e79e23] transition-colors">{park.name}</Link>
-                    </h3>
-                    <p className="font-serif text-[14px] md:text-[15px] text-[#081d01]/60 leading-[175%] mb-4">
-                      {park.desc}
-                    </p>
-                  </div>
-                </AnimateOnScroll>
-              ))}
-            </div>
-
-            {/* Closing paragraph */}
-            <AnimateOnScroll animation="fade-up">
-              <p className="font-serif text-[14px] md:text-[15px] text-[#081d01]/55 leading-[175%] text-center max-w-[800px] mx-auto mb-8">
-                These six are the parks we run most often, but they are not the only ones we work in. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out our list of eleven. Pick the wrong park for your dates and the <strong>best tiger safari India</strong> has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
-              </p>
-            </AnimateOnScroll>
-
-            <div className="text-center">
-              <Link href="/destinations/" className="font-serif text-[13px] text-[#081d01]/50 hover:text-[#e79e23] transition-colors tracking-[0.08em] uppercase">
-                View All 11 Destinations
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <DestinationsCarousel />
 
       {/* ===== TAILORED SAFARI EXPERIENCES ===== */}
       <section className="py-[80px] md:py-[120px] bg-[#081d01] text-[#ede4d1] grain-overlay relative">
@@ -325,107 +229,13 @@ export default function Home() {
               </div>
             </AnimateOnScroll>
 
-            <div className="lg:w-[58%] grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {[
-                {
-                  heading: "Private Tiger Safaris",
-                  href: "/safaris/",
-                  body: <>The default for most of our guests. A <strong>private safari in India</strong> trip with us means your own jeep, your own naturalist, and game drives timed around the actual wildlife activity rather than the tour bus schedule. No sharing. No rushing. No second jeep idling behind you while a tigress decides whether to cross the road.</>,
-                  delay: 0,
-                },
-                {
-                  heading: "Photography Expeditions",
-                  href: "/safari/photography-special/",
-                  body: "For photographers who care which hide they are sitting in and at what hour, with guides who understand light and animal behaviour at the level you actually need them to. The right waterhole, the right window, the right time of year for the species you came for.",
-                  delay: 80,
-                },
-                {
-                  heading: "Weekend Escapes",
-                  href: "/safari/ranthambore-weekend/",
-                  body: "Two or three nights in Tadoba, Ranthambore, or Pench, depending on which city you fly out of. The kind of weekend that resets a year of city living and has you wondering, on the flight home, whether you can negotiate a Friday off for next month.",
-                  delay: 160,
-                },
-                {
-                  heading: "Multi-Park Adventures",
-                  href: "/safari/central-india-tiger-trail/",
-                  body: "Seven to fourteen nights across India's best reserves. Kanha to Bandhavgarh to Pench, or Ranthambore north into Corbett, or any combination that makes geographical sense for the dates you actually have. The trip you will still be telling people about a decade later.",
-                  delay: 240,
-                },
-              ].map((card) => (
-                <AnimateOnScroll key={card.heading} animation="fade-up" delay={card.delay}>
-                  <div>
-                    <h3 className="font-serif font-bold text-[18px] md:text-[20px] text-white/90 mb-3">
-                      <Link href={card.href} className="hover:text-[#e79e23] transition-colors">{card.heading}</Link>
-                    </h3>
-                    <div className="safari-card bg-[#ede4d1] text-[#081d01] rounded-[9px] p-5 md:p-6">
-                      <p className="font-serif text-[13px] md:text-[14px] leading-[175%] text-[#081d01]/65">
-                        {card.body}
-                      </p>
-                    </div>
-                  </div>
-                </AnimateOnScroll>
-              ))}
-            </div>
+            <SafariCarousel />
           </div>
         </div>
       </section>
 
       {/* ===== WHAT OUR GUESTS SAY ===== */}
-      <section className="bg-white relative py-[80px] md:py-[120px]">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateOnScroll animation="fade-up">
-            <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] text-[#081d01] mb-4 tracking-[0.06em]">
-              What Our Guests Say
-            </h2>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll animation="fade-in" delay={50}>
-            <p className="text-center font-serif italic text-[13px] text-[#081d01]/40 mb-12 md:mb-16 tracking-wide">
-              4.9 / 5 from 200+ reviews
-            </p>
-          </AnimateOnScroll>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
-            {[
-              {
-                quote: "Eight tiger sightings in six drives. Our guide Ramesh predicted a tigress at waterhole 3 at 6:40 AM in March. She showed up at 6:38, which I have brought up at every dinner party since. Singinawa Lodge was perfect. Already planning the next one.",
-                name: "Sarah and James T.",
-                location: "London",
-                trip: "Kanha, March 2024",
-                delay: 0,
-              },
-              {
-                quote: "Left Mumbai on a Friday night. First tiger by Saturday at 6 AM. Zero hassle anywhere in the chain. Already planning trip three.",
-                name: "Rahul M.",
-                location: "Mumbai",
-                trip: "Tadoba, December 2023",
-                delay: 120,
-              },
-              {
-                quote: "Forty-seven keepers in three days. The guide had me positioned twenty minutes before golden hour at the exact waterhole, and he knew which tiger and which direction. My 400mm finally earned its keep, and I have stopped pretending I am taking it on holiday for fun.",
-                name: "Priya K.",
-                location: "Bangalore",
-                trip: "Bandhavgarh, February 2024",
-                delay: 240,
-              },
-            ].map((testimonial, i) => (
-              <AnimateOnScroll key={i} animation="fade-up" delay={testimonial.delay}>
-                <div className="testimonial-card bg-[#ede4d1] rounded-[9px] p-7 md:p-8 flex flex-col min-h-[220px]">
-                  <p className="font-serif text-[14px] md:text-[15px] text-[#081d01]/80 leading-[175%] mb-auto">
-                    {testimonial.quote}
-                  </p>
-                  <div className="mt-6 pt-4 border-t border-[#081d01]/10">
-                    <p className="font-serif font-bold text-[14px] text-[#081d01]">{testimonial.name}</p>
-                    <p className="font-serif text-[12px] text-[#081d01]/40 tracking-wide">{testimonial.location} &middot; {testimonial.trip}</p>
-                  </div>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-
-          <OrnamentDivider />
-        </div>
-      </section>
+      <TestimonialsCarousel />
 
       {/* ===== WILDLIFE CAROUSEL ===== */}
       <WildlifeCarousel />
