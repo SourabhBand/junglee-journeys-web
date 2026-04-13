@@ -89,37 +89,37 @@ export default function Home() {
           <div className="max-w-[900px] mx-auto">
             <AnimateOnScroll animation="fade-up">
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
-                The honest truth is that you can absolutely book a <strong>tiger safari in India</strong> yourself. People do it all the time.
+                You can absolutely book a <strong>tiger safari in India</strong> yourself. People do it all the time.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={100}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
-                The honest truth is also that it usually goes badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday.
+                The honest truth is that it usually goes badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={200}>
               <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center mb-16 md:mb-24">
-                We are not here to talk you out of doing this on your own. We are here for the people who decided their holiday was worth doing properly.
+                We are not going to tell you that you need us. We are here for the people who decided that their annual leave was too valuable to spend debugging a permit portal.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={300}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
-                We have spent fifteen years running <strong>tiger safaris in India</strong> for those people.
+                We have run these trips for fifteen years. We know which park looks best in March, which lodge actually matches its photographs, and which guides will have you watching a tigress cross an open meadow at first light rather than returning to breakfast empty-handed.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={380}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
-                Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast.
+                Your own jeep. A naturalist who knows the local tigress by name, and has been following her two cubs since they first appeared last March. Lodges we have slept in enough times to have opinions about the breakfast.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={440}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-12 md:mb-16">
-                Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong.
+                The permits, the airport transfers, the 4 AM wake-up call: all handled by people who have run these routes hundreds of times and would find it personally embarrassing if something went wrong.
               </p>
             </AnimateOnScroll>
 
