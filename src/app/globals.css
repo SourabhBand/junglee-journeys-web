@@ -259,6 +259,21 @@ body {
   background-repeat: no-repeat;
   opacity: 0.5;
   z-index: 1;
+  transform: scaleX(-1);
+}
+
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background-image: url('/images/quote-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 /* ========================================
