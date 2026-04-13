@@ -78,7 +78,7 @@ export function Footer() {
           </div>
 
           {/* Explore */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start">
             <p className="font-serif font-bold text-[14px] text-[#ede4d1] mb-3">
               Explore
             </p>
@@ -105,7 +105,7 @@ export function Footer() {
           </div>
 
           {/* Get in Touch */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start">
             <p className="font-serif font-bold text-[14px] text-[#ede4d1] mb-3">
               Get in Touch
             </p>
