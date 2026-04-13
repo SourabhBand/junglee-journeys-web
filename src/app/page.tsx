@@ -207,9 +207,9 @@ export default function Home() {
       <DestinationsCarousel />
 
       {/* ===== TAILORED SAFARI EXPERIENCES ===== */}
-      <section className="py-[80px] md:py-[120px] bg-[#081d01] text-[#ede4d1] grain-overlay relative">
+      <section className="pt-[40px] md:pt-[50px] pb-[80px] md:pb-[120px] bg-[#081d01] text-[#ede4d1] grain-overlay relative">
         <div className="relative z-10">
-          <OrnamentDivider variant="light" className="mb-[60px] md:mb-[80px]" />
+          <OrnamentDivider variant="light" className="!mt-0 mb-[40px] md:mb-[56px]" />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">

@@ -72,7 +72,7 @@ export default function DestinationsCarousel() {
   const curr = destinations[current];
 
   return (
-    <section className="pt-[60px] md:pt-[100px] pb-[60px] md:pb-[80px] bg-[#081d01] text-[#ede4d1] grain-overlay atmospheric-glow">
+    <section className="pt-[60px] md:pt-[100px] pb-[36px] md:pb-[48px] bg-[#081d01] text-[#ede4d1] grain-overlay atmospheric-glow">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Intro paragraph */}
