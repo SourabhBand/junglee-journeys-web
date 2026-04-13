@@ -43,8 +43,8 @@ export function Footer() {
               <Image
                 src={IMAGE_ASSETS.logo}
                 alt="Junglee Journeys"
-                width={56}
-                height={79}
+                width={160}
+                height={226}
                 className="object-contain"
               />
             </Link>
