@@ -72,12 +72,20 @@ export default function DestinationsCarousel() {
   const curr = destinations[current];
 
   return (
-    <section className="pt-[60px] md:pt-[100px] pb-[80px] md:pb-[120px] bg-[#081d01] text-[#ede4d1] grain-overlay atmospheric-glow">
+    <section className="pt-[60px] md:pt-[100px] pb-[60px] md:pb-[80px] bg-[#081d01] text-[#ede4d1] grain-overlay atmospheric-glow">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] mb-6 md:mb-8 text-[#ede4d1] tracking-[0.06em]">
+
+        {/* Intro paragraph */}
+        <div className="max-w-[700px] mx-auto text-center mb-10 md:mb-14">
+          <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%]">
+            India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. We operate in eleven of more than fifty official <strong>tiger reserves</strong> — each one a completely different argument for going. The six below are the parks we run most often. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out the list. Pick the wrong park for your dates and the <strong>best tiger safari India</strong> has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
+          </p>
+        </div>
+
+        {/* Title */}
+        <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] mb-10 md:mb-14 text-[#ede4d1] tracking-[0.06em]">
           India&apos;s Premier Tiger Reserves
         </h2>
-
 
         {/* Carousel */}
         <div className="relative">
@@ -140,11 +148,8 @@ export default function DestinationsCarousel() {
           </div>
         </div>
 
-        {/* Closing white card */}
-        <div className="mt-12 md:mt-16 bg-white rounded-[9px] py-8 md:py-10 px-6 md:px-10 text-center">
-          <p className="font-serif text-[14px] md:text-[15px] text-[#081d01]/55 leading-[175%] max-w-[800px] mx-auto mb-8">
-            India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. We operate in eleven of more than fifty official <strong>tiger reserves</strong> — each one a completely different argument for going. The six above are the parks we run most often. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out the list. Pick the wrong park for your dates and the <strong>best tiger safari India</strong> has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
-          </p>
+        {/* CTA button — no white box */}
+        <div className="mt-10 md:mt-12 text-center">
           <Link
             href="/destinations/"
             className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[240px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center"
@@ -152,6 +157,7 @@ export default function DestinationsCarousel() {
             View All 11 Destinations
           </Link>
         </div>
+
       </div>
     </section>
   );
