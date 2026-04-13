@@ -32,23 +32,23 @@ function YouTubeIcon() {
 
 export function Footer() {
   return (
-    <footer className="bg-[#081d01] text-[#ede4d1] py-[48px] md:py-[64px]">
+    <footer className="bg-[#081d01] text-[#ede4d1] py-[40px] md:py-[52px]">
       <div className="max-w-7xl mx-auto px-6">
-        <OrnamentDivider variant="light" className="!mt-0 mb-[32px] md:mb-[40px]" />
+        <OrnamentDivider variant="light" className="!mt-0 mb-[20px] md:mb-[28px]" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 mb-10">
-          {/* Left: Logo + tagline + social */}
-          <div className="flex flex-col items-center md:items-start">
-            <Link href="/" className="mb-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 mb-8">
+          {/* Left: Logo + tagline + social — full width on mobile */}
+          <div className="col-span-2 md:col-span-1 flex flex-col items-center md:items-start mb-2 md:mb-0">
+            <Link href="/" className="mb-3">
               <Image
                 src={IMAGE_ASSETS.logo}
                 alt="Junglee Journeys"
-                width={160}
-                height={226}
+                width={220}
+                height={124}
                 className="object-contain"
               />
             </Link>
-            <p className="font-serif text-[13px] text-[#ede4d1]/60 max-w-[240px] text-center md:text-left mb-5 leading-relaxed">
+            <p className="font-serif text-[13px] text-[#ede4d1]/60 max-w-[240px] text-center md:text-left mb-4 leading-relaxed">
               Private tiger safaris across India. 15 years of first-hand wilderness.
             </p>
             {/* Social media links */}
@@ -79,10 +79,10 @@ export function Footer() {
 
           {/* Explore */}
           <div className="flex flex-col items-center md:items-start">
-            <p className="font-serif font-bold text-[14px] text-[#ede4d1] mb-4">
+            <p className="font-serif font-bold text-[14px] text-[#ede4d1] mb-3">
               Explore
             </p>
-            <div className="flex flex-col gap-3 font-serif text-[14px] text-[#ede4d1]/80">
+            <div className="flex flex-col gap-2.5 font-serif text-[14px] text-[#ede4d1]/80">
               <Link className="hover:text-[#e79e23] transition" href="/about/">
                 About
               </Link>
@@ -106,10 +106,10 @@ export function Footer() {
 
           {/* Get in Touch */}
           <div className="flex flex-col items-center md:items-start">
-            <p className="font-serif font-bold text-[14px] text-[#ede4d1] mb-4">
+            <p className="font-serif font-bold text-[14px] text-[#ede4d1] mb-3">
               Get in Touch
             </p>
-            <div className="flex flex-col gap-3 font-serif text-[14px] text-[#ede4d1]/80">
+            <div className="flex flex-col gap-2.5 font-serif text-[14px] text-[#ede4d1]/80">
               {/* TODO: replace wa.me/ with the actual WhatsApp number e.g. wa.me/919876543210 */}
               <a
                 href="https://wa.me/"
@@ -133,7 +133,7 @@ export function Footer() {
         </div>
 
         {/* Bottom copyright */}
-        <div className="border-t border-[#ede4d1]/10 pt-6 text-center">
+        <div className="border-t border-[#ede4d1]/10 pt-5 text-center">
           <p className="font-serif text-[12px] text-[#ede4d1]/40">
             &copy; {new Date().getFullYear()} Junglee Journeys. All wildlife sightings are subject to the whims of nature.
           </p>
