@@ -32,23 +32,23 @@ function YouTubeIcon() {
 
 export function Footer() {
   return (
-    <footer className="bg-[#081d01] text-[#ede4d1] py-[60px] md:py-[80px]">
+    <footer className="bg-[#081d01] text-[#ede4d1] py-[48px] md:py-[64px]">
       <div className="max-w-7xl mx-auto px-6">
-        <OrnamentDivider variant="light" className="!mt-0 mb-[40px] md:mb-[50px]" />
+        <OrnamentDivider variant="light" className="!mt-0 mb-[32px] md:mb-[40px]" />
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          {/* Left: Logo + tagline + social — spans 2 cols */}
-          <div className="md:col-span-2 flex flex-col items-center md:items-start">
-            <Link href="/" className="mb-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 mb-10">
+          {/* Left: Logo + tagline + social */}
+          <div className="flex flex-col items-center md:items-start">
+            <Link href="/" className="mb-4">
               <Image
                 src={IMAGE_ASSETS.logo}
                 alt="Junglee Journeys"
-                width={100}
-                height={141}
+                width={56}
+                height={79}
                 className="object-contain"
               />
             </Link>
-            <p className="font-serif text-[14px] text-[#ede4d1]/60 max-w-[300px] text-center md:text-left mb-6 leading-relaxed">
+            <p className="font-serif text-[13px] text-[#ede4d1]/60 max-w-[240px] text-center md:text-left mb-5 leading-relaxed">
               Private tiger safaris across India. 15 years of first-hand wilderness.
             </p>
             {/* Social media links */}
