@@ -180,10 +180,10 @@ export default function Home() {
             ].map((card) => (
               <AnimateOnScroll key={card.heading} animation="fade-up" delay={card.delay}>
                 <div
-                  className={`pill-card bg-[#081d01] text-white px-[24px] lg:px-[30px] pt-[28px] lg:pt-[36px] pb-[24px] lg:pb-[30px] min-h-[300px] lg:min-h-[340px] flex flex-col ${
+                  className={`pill-card bg-[#081d01] text-white px-[24px] lg:px-[30px] pt-[28px] lg:pt-[52px] pb-[28px] lg:pb-[52px] min-h-[300px] lg:min-h-[340px] flex flex-col overflow-hidden ${
                     card.rotated
-                      ? 'rounded-tl-[120px] rounded-tr-[9px] rounded-br-[120px] rounded-bl-[9px]'
-                      : 'rounded-tl-[9px] rounded-tr-[120px] rounded-br-[9px] rounded-bl-[120px]'
+                      ? 'rounded-tl-[60px] sm:rounded-tl-[80px] lg:rounded-tl-[120px] rounded-tr-[9px] rounded-br-[60px] sm:rounded-br-[80px] lg:rounded-br-[120px] rounded-bl-[9px]'
+                      : 'rounded-tl-[9px] rounded-tr-[60px] sm:rounded-tr-[80px] lg:rounded-tr-[120px] rounded-br-[9px] rounded-bl-[60px] sm:rounded-bl-[80px] lg:rounded-bl-[120px]'
                   }`}
                 >
                   <h3 className="font-serif font-bold text-[18px] lg:text-[20px] text-[#ede4d1] mb-4 leading-tight">
