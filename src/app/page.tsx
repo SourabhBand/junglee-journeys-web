@@ -100,25 +100,31 @@ export default function Home() {
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={200}>
-              <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center mb-10">
+              <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center mb-16 md:mb-24">
                 We are not here to talk you out of doing this on your own. We are here for the people who decided their holiday was worth doing properly.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={300}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
-                We have spent fifteen years arranging <strong>tiger safari in India</strong> trips for those people.
+                We have spent fifteen years running <strong>tiger safaris in India</strong> for those people.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={380}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
-                Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong.
+                Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast.
               </p>
             </AnimateOnScroll>
 
-            <AnimateOnScroll animation="fade-up" delay={460}>
-              <p className="font-serif italic text-[18px] md:text-[22px] leading-[1.6] text-[#081d01] text-center">
+            <AnimateOnScroll animation="fade-up" delay={440}>
+              <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-12 md:mb-16">
+                Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong.
+              </p>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll animation="fade-up" delay={500}>
+              <p className="font-serif italic text-[20px] md:text-[26px] leading-[1.6] text-[#081d01] text-center">
                 Your only job is to turn up with socks and a camera.
               </p>
             </AnimateOnScroll>
