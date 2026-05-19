@@ -20,48 +20,46 @@ function ArrowButton({ onClick, direction = 'right' }: { onClick: () => void; di
   );
 }
 
-const destinations: { id: string; image: string; name: string; slug: string; desc: ReactNode }[] = [
+const destinations: { id: string; image: string; name: string; slug: string; rank: string; desc: ReactNode }[] = [
+  {
+    id: 'tadoba',
+    image: IMAGE_ASSETS.tadobaTigerReserve,
+    name: 'Tadoba-Andhari Tiger Reserve',
+    slug: 'tadoba',
+    rank: '01',
+    desc: <>Currently the best park in the country for tiger sightings, Tadoba truly is the land of the tiger. With a high density of tigers and numbers on the rise, this is one of the few parks in the country where choosing a specific zone doesn&rsquo;t really matter. Be it the Core or Buffer, the probability of sighting is high. Although a sighting is never guaranteed, Tadoba is your best bet for seeing the striped cat. Tadoba is merely 2.5 hours from Nagpur, a city that has great connectivity with Pune and Mumbai, making this destination ideal for a quick weekend getaway.</>,
+  },
+  {
+    id: 'bandhavgarh',
+    image: IMAGE_ASSETS.bandhavgarhNationalPark,
+    name: 'Bandhavgarh Tiger Reserve',
+    slug: 'bandhavgarh',
+    rank: '02',
+    desc: <>Boasting the highest density of tigers in India, Bandhavgarh is arguably the most well-known tiger destinations in the world. Mountains, hills, grasslands, streams, and a good chance of seeing the gorgeous tiger, this forest truly is a breathtaking destination for wildlifers! Just around 3.5 hours from Jabalpur, Bandhavgarh is a must visit for tiger enthusiasts. This one needs to go on the bucket list for sure!</>,
+  },
   {
     id: 'kanha',
     image: IMAGE_ASSETS.kanhaNationalPark,
     name: 'Kanha National Park',
     slug: 'kanha',
-    desc: <>Kanha is what Mowgli&apos;s forest looked like before the marketing department got involved. Sal trees in straight ranks, meadows wide enough that you forget what you came here for, and a tiger population that has held steady for two decades. The classic Central Indian <strong>jungle safari in India</strong> experience, and the one most first-timers should start with. Four hours by road from Jabalpur airport.</>,
-  },
-  {
-    id: 'tadoba',
-    image: IMAGE_ASSETS.tadobaTigerReserve,
-    name: 'Tadoba Tiger Reserve',
-    slug: 'tadoba',
-    desc: <>Tadoba is the closest tiger reserve to Mumbai and Pune, which makes it the best <strong>safari near Mumbai</strong> by a wide margin and the only park where Friday-to-Monday is genuinely realistic. Open terrain, bold tigers that walk past jeeps without breaking stride, and sighting rates that quietly embarrass the more famous parks. Three hours by road from Nagpur airport.</>,
-  },
-  {
-    id: 'ranthambore',
-    image: IMAGE_ASSETS.ranthamboreNationalPark,
-    name: 'Ranthambore National Park',
-    slug: 'ranthambore',
-    desc: <>The most photographed tigers on Earth live in Ranthambore, and they walk through the ruins of a tenth-century fort in golden hour that photographers travel years to find. Five hours from Delhi by road, which makes Ranthambore the easiest <strong>safari near Delhi</strong> by a long way. The park is iconic for a reason, and the reason is genuinely good.</>,
-  },
-  {
-    id: 'bandhavgarh',
-    image: IMAGE_ASSETS.bandhavgarhNationalPark,
-    name: 'Bandhavgarh National Park',
-    slug: 'bandhavgarh',
-    desc: <>Bandhavgarh has the highest tiger density in India, which is a polite way of saying you will probably see one before lunch on day one. If your priority is the odds, this is where you go. The fort on the hill is two thousand years old, the locals will tell you. Either way, old enough.</>,
+    rank: '03',
+    desc: <>A landscape that inspired Rudyard Kipling to immortalise it in the pages of the Jungle Book, Kanha National Park provides the classic central Indian jungle safari experience. From the tall Sal Trees towering over you to the expansive meadows teeming with herbivores, you&rsquo;re always in for a memorable safari. The tiger population here has held steady for over 2 decades with conservation practices ensuring a rich and biodiverse habitat. Around 4hrs from Jabalpur/Raipur or 4.5hrs from Nagpur, Kanha is one of the best tiger destinations of India.</>,
   },
   {
     id: 'pench',
     image: IMAGE_ASSETS.heroTiger,
-    name: 'Pench National Park',
+    name: 'Pench Tiger Reserve',
     slug: 'pench',
-    desc: <>Pench is the actual Jungle Book setting, although Kipling never set foot in it and is therefore not strictly qualified to comment. Two hours from Nagpur, relaxed enough for families with young children, and the only one of our parks where you have a serious chance at seeing wild dogs hunting. Tigers, leopards, and the kind of forest that does not bother showing off.</>,
+    rank: '04',
+    desc: <>A mere 2 hours from the city of Nagpur, Pench is a destination that everyone must visit at least once. The Pench River meanders through this beautiful landscape that teems with biodiversity making it an ideal setting for photographers, birders, widlifers and tiger enthusiasts alike. This park crossed over from Madhya Pradesh into Maharashtra, making it a tiger reserve that allows for safari experiences in both states. Although the biodiversity stays the same, a change in terrain between MP and Maharashtra makes for a unique safari experience in each state.</>,
   },
   {
-    id: 'satpura',
-    image: IMAGE_ASSETS.indianLeopard,
-    name: 'Satpura National Park',
-    slug: 'satpura',
-    desc: <>Satpura is the <strong>wildlife safari</strong> for guests who have already done Kanha and Bandhavgarh and want a quieter version of the trip. Walking safaris and boat safaris and almost no jeeps. Sloth bears, gaur, leopards, and the occasional tiger when she feels like making an appearance.</>,
+    id: 'ranthambore',
+    image: IMAGE_ASSETS.ranthamboreNationalPark,
+    name: 'Ranthambore Tiger Reserve',
+    slug: 'ranthambore',
+    rank: '05',
+    desc: <>A park that needs no introduction, Ranthambore is a name that has echoed through the wildlife tourism world for decades. Famous for having had some of the most photographed and videographed tigers in the world, this forest boasts a picturesque landscape that merges with history through the beautiful castle ruins scattered across. A few hours drive from Delhi and Jaipur, Ranthambore makes for a great destination for wildlife photography.</>,
   },
 ];
 
@@ -77,13 +75,13 @@ export default function DestinationsCarousel() {
 
         {/* Title */}
         <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] mb-8 md:mb-10 text-[#ede4d1] tracking-[0.06em]">
-          India&apos;s Premier Tiger Reserves
+          India&rsquo;s Best Tiger Reserves
         </h2>
 
         {/* Intro paragraph */}
         <div className="max-w-[700px] mx-auto text-center mb-10 md:mb-14">
           <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%]">
-            India holds more than half the world&apos;s wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. We operate in eleven of more than fifty official <strong>tiger reserves</strong>, each one a completely different argument for going. The six below are the parks we run most often. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out the list. Pick the wrong park for your dates and the <strong>best tiger safari India</strong> has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
+            India holds more than 70% of the world&rsquo;s wild tiger population in over 100 National Parks. Each of these parks have their own charm, with varying habitats and biodiversity. Although the tiger occupies forest across the country, the probability of seeing one in a safari vary vastly from park to park. These five tiger reserves have the highest probability of tiger sightings in the country.
           </p>
         </div>
 
@@ -115,6 +113,9 @@ export default function DestinationsCarousel() {
             {/* Info panel */}
             <div className="w-full lg:w-[42%] flex-shrink-0">
               <div className="bg-[#ede4d1]/10 backdrop-blur-sm rounded-[9px] p-8 md:p-10 lg:p-12 text-center lg:text-left">
+                <span className="font-serif text-[11px] text-[#e79e23]/60 tracking-[0.25em] uppercase block mb-4">
+                  {curr.rank}
+                </span>
                 <h3 className="font-serif font-semibold text-[28px] md:text-[36px] lg:text-[40px] text-white mb-4 leading-tight">
                   {curr.name}
                 </h3>
