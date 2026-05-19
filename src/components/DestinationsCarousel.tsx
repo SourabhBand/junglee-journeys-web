@@ -155,7 +155,7 @@ export default function DestinationsCarousel() {
             href="/destinations/"
             className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[240px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center"
           >
-            View All 11 Destinations
+            All Destinations
           </Link>
         </div>
 
