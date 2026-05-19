@@ -89,25 +89,25 @@ export default function Home() {
           <div className="max-w-[900px] mx-auto">
             <AnimateOnScroll animation="fade-up">
               <h2 className="section-heading text-[22px] md:text-[28px] text-center text-[#081d01] tracking-[0.06em] mb-6 md:mb-8">
-                Before You Book a Jungle Safari in India
+                Tiger Safaris in India
               </h2>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={80}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
-                You are looking up <strong>tiger safari in India</strong> because somewhere in the back of your head there is a very specific image. A tigress crossing an open meadow at first light. Your own jeep. A guide who can read the forest well enough to put you in the right place at the right time.
+                Seeing your first tiger in the wild is a feeling that is hard to convey in words. It&rsquo;s a moment that everyone must experience. But how do you go about booking a safari that can give you the chance to have this experience?
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={160}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
-                That image is not wrong. That is genuinely what happens on a good <strong>wildlife safari</strong>. The variable is the distance between &ldquo;a safari&rdquo; and &ldquo;your safari,&rdquo; and most of that distance is closed by things you cannot see in a brochure: which park, which dates, which zone, which guide, which lodge, which 4 AM start is actually worth the lost sleep.
+                Booking a wildlife safari in India isn&rsquo;t exactly a walk in the park as there are multiple variables to be considered. Such as, which park, what dates, which zones, which lodge, which naturalist, what airport or train station, there&rsquo;s just a lot to consider and coordinate. That&rsquo;s where we come in!
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={240}>
               <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center mb-10 md:mb-14">
-                We are not going to tell you that you need us. We are here for the people who want the version of this trip where somebody has already solved those variables.
+                We make the experience of booking a customised wildlife safari easy. Whether it is your time or you&rsquo;re a veteran wildlifer, we can assist you in designing the tiger safari you need!
               </p>
             </AnimateOnScroll>
 
