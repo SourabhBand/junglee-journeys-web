@@ -135,8 +135,17 @@ export default function Home() {
           <OrnamentDivider className="!my-4" />
         </AnimateOnScroll>
 
+        {/* ===== WHY TRAVEL WITH US ===== */}
+        <div className="pt-[30px] md:pt-[50px] pb-[20px] md:pb-[30px] px-6">
+          <AnimateOnScroll animation="fade-up">
+            <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] tracking-[0.06em]">
+              Why Travel With Us
+            </h2>
+          </AnimateOnScroll>
+        </div>
+
         {/* 4 pill-shaped feature cards */}
-        <div className="max-w-[1280px] mx-auto px-6 pt-[30px] md:pt-[50px] pb-[80px] md:pb-[120px]">
+        <div className="max-w-[1280px] mx-auto px-6 pt-[20px] md:pt-[30px] pb-[80px] md:pb-[120px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
             {[
               {
@@ -172,9 +181,9 @@ export default function Home() {
                       : 'rounded-tl-[9px] rounded-tr-[60px] sm:rounded-tr-[80px] lg:rounded-tr-[120px] rounded-br-[9px] rounded-bl-[60px] sm:rounded-bl-[80px] lg:rounded-bl-[120px]'
                   }`}
                 >
-                  <h3 className="font-serif font-semibold text-[18px] lg:text-[20px] text-[#ede4d1] mb-4 leading-tight">
+                  <h4 className="font-serif font-semibold text-[18px] lg:text-[20px] text-[#ede4d1] mb-4 leading-tight">
                     {card.heading}
-                  </h3>
+                  </h4>
                   <hr className="gold-rule mb-4 opacity-40" />
                   <p className="font-serif text-[11px] lg:text-[12px] text-white/65 leading-[175%]">
                     {card.body}
