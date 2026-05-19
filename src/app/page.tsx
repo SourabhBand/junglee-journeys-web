@@ -135,54 +135,31 @@ export default function Home() {
           <OrnamentDivider className="!my-4" />
         </AnimateOnScroll>
 
-        {/* ===== WHY TRAVEL WITH US ===== */}
-        <div className="pt-[30px] md:pt-[50px] pb-[20px] md:pb-[30px] px-6">
-          <AnimateOnScroll animation="fade-up">
-            <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] tracking-[0.06em]">
-              Why Travel With Us
-            </h2>
-          </AnimateOnScroll>
-        </div>
-
-        <div className="max-w-[900px] mx-auto px-6 pb-[40px] md:pb-[50px]">
-          <AnimateOnScroll animation="fade-up" delay={80}>
-            <p className="font-serif text-[16px] md:text-[18px] leading-[1.8] text-[#081d01]/65 text-center mb-5">
-              Most of our guests arrive with a version of the same problem. They have between five and ten days, they have always wanted to see a tiger in the wild, and they have no idea which of India&apos;s fifty-odd tiger reserves to actually go to. They have read four blog posts that all say different things and looked at three TripAdvisor pages where the photographs are clearly from a different planet. They are slightly suspicious of how much this is going to cost. They are also slightly worried that if they pick wrong, they will have spent the budget on a forest with no tigers in it.
-            </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll animation="fade-up" delay={160}>
-            <p className="font-serif italic text-[16px] md:text-[18px] leading-[1.7] text-[#081d01]/60 text-center">
-              We have planned hundreds of these trips. The exciting part is the part we hand back to you on the day you arrive.
-            </p>
-          </AnimateOnScroll>
-        </div>
-
         {/* 4 pill-shaped feature cards */}
-        <div className="max-w-[1280px] mx-auto px-6 pb-[80px] md:pb-[120px]">
+        <div className="max-w-[1280px] mx-auto px-6 pt-[30px] md:pt-[50px] pb-[80px] md:pb-[120px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
             {[
               {
-                heading: "Your own jeep, and only your own jeep",
-                body: "There is no second jeep behind you, no third jeep in front, and no group of strangers debating camera settings in loud whispers while a tigress walks past your bonnet. The vehicle is yours, the pace is yours, and the only person on the radio is your guide. This sounds obvious. It is not the default arrangement at most reserves, and the difference is the entire trip.",
+                heading: "Private Jeep Safaris",
+                body: "A safari vehicle that is only occupied by you and your group. Explore the forest on your own terms and try to find your target species. If you wish to be away from the crowds, just indicate the same to your guide or driver or naturalist, and they will make sure to take you to the quiet corners of the forest. Enjoy the wilderness at your own pace.",
                 rotated: false,
                 delay: 0,
               },
               {
-                heading: "Naturalists who actually live here",
-                body: "Our guides are not freelance contractors we round up the week before your trip. They are people who have been tracking these tigers for ten or fifteen years, who know which tigress uses which waterhole at 6:40 AM in March, and who can read an alarm call from three hundred metres away and tell you which species is doing the calling and roughly why. They notice the things you miss. The good ones make a sighting feel inevitable. The great ones make the waiting feel like the actual point of being there.",
+                heading: "Experienced Naturalists and Guides",
+                body: "With years of experience under their belt, we have identified the best guides and naturalists in every park. Guides that grew up in the buffer zones of wildlife reserves and naturalists who have dedicated decades to wildlife, these individuals are attuned to the ebbs and flows of nature. From their exceptional tracking skills to their deep knowledge repository, a naturalist-led private safari is truly the best way to experience the national parks and wild havens of India.",
                 rotated: false,
                 delay: 80,
               },
               {
-                heading: "Lodges we have actually slept in",
-                body: "We do not recommend lodges from photographs. Every property on our shortlist is one we have stayed at, eaten at, complained about, and decided was good enough to send our guests to. Some of them have astonishingly good food. Some have a single window that frames the forest in a way you remember years later. All of them let you exhale after a dusty game drive, and that is more important than the thread count.",
+                heading: "Lodges we have actually Slept In",
+                body: "From photos that don’t match the rooms to fake reviews, the online world isn’t as trustworthy and unbiased as it needs to be. But we bridge that gap of deceits by experiencing the lodges ourselves before recommending them to clients. It’s important to know exactly where you are putting your hard-earned money. We ensure our vendors and accommodation partners are held to our high standards. From hygienic rooms to delicious food, we make sure you have a seamless accommodation experience.",
                 rotated: true,
                 delay: 160,
               },
               {
-                heading: "Nothing for you to figure out",
-                body: "The permits, the lodge bookings, the airport pickup, the inter-park transfers, the 4 AM wake-up call, the boring spreadsheet of permit zone allocations: all of it sits with us. Your job is to send us your dates and turn up at the airport. Our job is everything in between.",
+                heading: "One Stop Shop",
+                body: "Safari permits, safari vehicle allocations, selection of zones, the lodge bookings, airport pickup, inter-park transfers, wildlife updates, everything to do with backend of a safari experience sits with us. All you have to do is turn up. We don’t just provide safaris; we provide the complete experience.",
                 rotated: true,
                 delay: 240,
               },
