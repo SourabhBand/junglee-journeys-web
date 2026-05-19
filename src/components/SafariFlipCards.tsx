@@ -31,24 +31,24 @@ const ViewfinderIcon = () => (
   </svg>
 );
 
-// Calendar with Friday circled ("Block that Friday")
-const CalendarIcon = () => (
+// Binoculars with focus rings ("Train your binoculars")
+const BinocularsIcon = () => (
   <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-    <rect x="4" y="12" width="44" height="36" rx="3" stroke="#e79e23" strokeWidth="2" fill="none" />
-    <line x1="4" y1="22" x2="48" y2="22" stroke="#e79e23" strokeWidth="1.5" opacity="0.5" />
-    <line x1="15" y1="7" x2="15" y2="17" stroke="#e79e23" strokeWidth="2.5" strokeLinecap="round" />
-    <line x1="37" y1="7" x2="37" y2="17" stroke="#e79e23" strokeWidth="2.5" strokeLinecap="round" />
-    {/* Row 1 — faded day dots */}
-    <circle cx="13" cy="31" r="2" fill="#e79e23" opacity="0.3" />
-    <circle cx="22" cy="31" r="2" fill="#e79e23" opacity="0.3" />
-    <circle cx="31" cy="31" r="2" fill="#e79e23" opacity="0.3" />
-    <circle cx="40" cy="31" r="2" fill="#e79e23" opacity="0.3" />
-    {/* Row 2 — Friday circled */}
-    <circle cx="13" cy="41" r="2" fill="#e79e23" opacity="0.3" />
-    <circle cx="22" cy="41" r="2" fill="#e79e23" opacity="0.3" />
-    <circle cx="31" cy="41" r="6" stroke="#e79e23" strokeWidth="1.5" fill="none" />
-    <circle cx="31" cy="41" r="2" fill="#e79e23" />
-    <circle cx="40" cy="41" r="2" fill="#e79e23" opacity="0.3" />
+    {/* Eyepieces (small caps on top) */}
+    <line x1="9" y1="11" x2="17" y2="11" stroke="#e79e23" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="35" y1="11" x2="43" y2="11" stroke="#e79e23" strokeWidth="2.5" strokeLinecap="round" />
+    {/* Left barrel */}
+    <rect x="6" y="14" width="14" height="26" rx="3" stroke="#e79e23" strokeWidth="2" fill="none" />
+    {/* Right barrel */}
+    <rect x="32" y="14" width="14" height="26" rx="3" stroke="#e79e23" strokeWidth="2" fill="none" />
+    {/* Bridge */}
+    <rect x="19" y="20" width="14" height="6" rx="1" stroke="#e79e23" strokeWidth="1.5" fill="none" />
+    {/* Left focus ring */}
+    <circle cx="13" cy="28" r="4" stroke="#e79e23" strokeWidth="1.5" fill="none" opacity="0.65" />
+    <circle cx="13" cy="28" r="1.5" fill="#e79e23" opacity="0.65" />
+    {/* Right focus ring */}
+    <circle cx="39" cy="28" r="4" stroke="#e79e23" strokeWidth="1.5" fill="none" opacity="0.65" />
+    <circle cx="39" cy="28" r="1.5" fill="#e79e23" opacity="0.65" />
   </svg>
 );
 
@@ -82,9 +82,9 @@ const experiences: {
 }[] = [
   {
     num: '01',
-    heading: 'Private Tiger Safaris',
+    heading: 'Wildlife Safaris',
     href: '/safaris/',
-    body: <>The default for most of our guests. A <strong>private safari in India</strong> trip with us means your own jeep, your own naturalist, and game drives timed around the actual wildlife activity rather than the tour bus schedule. No sharing. No rushing. No second jeep idling behind you while a tigress decides whether to cross the road.</>,
+    body: 'India is home to over a lakh species of fauna, which makes it one of the most biodiverse nations on the planet. With over 100 national parks spread across, the Indian wildlife list is rather big. Ticking everything off may not be possible but we can surely try. Explore our safari destinations and contact us for customised safari packages.',
     icon: <PugmarkIcon />,
     cta: 'Tap the Paw to explore',
   },
@@ -92,23 +92,23 @@ const experiences: {
     num: '02',
     heading: 'Photography Expeditions',
     href: '/safari/photography-special/',
-    body: 'For photographers who care which hide they are sitting in and at what hour, with guides who understand light and animal behaviour at the level you actually need them to. The right waterhole, the right window, the right time of year for the species you came for.',
+    body: 'Every photographer has a dream frame they wish to capture. It may be the Oriental Dwarf Kingfisher with a fish in its beak or just the perfect reflection of a Tiger drinking water. Over the years we have had many photographers go home with a smile on their faces and that dream shot in the memory stick. We design target specific itineraries across the country to give you the best chance of getting that shot!',
     icon: <ViewfinderIcon />,
     cta: 'Find your frame',
   },
   {
     num: '03',
-    heading: 'Weekend Escapes',
+    heading: 'Birding in India',
     href: '/safari/ranthambore-weekend/',
-    body: 'Two or three nights in Tadoba, Ranthambore, or Pench, depending on which city you fly out of. The kind of weekend that resets a year of city living and has you wondering, on the flight home, whether you can negotiate a Friday off for next month.',
-    icon: <CalendarIcon />,
-    cta: 'Block that Friday',
+    body: 'India boasts over 1300 species of birds and we know where to find them. We specialise in designing itineraries based on your birding wish list. From the Bengal Florican to the Great Indian Bustard, we curate itineraries that take you to the right locations at the right times to give you the best chance of ticking elusive birds off your list.',
+    icon: <BinocularsIcon />,
+    cta: 'Train your binoculars',
   },
   {
     num: '04',
-    heading: 'Multi-Park Adventures',
+    heading: 'Multi-Park Itineraries',
     href: '/safari/central-india-tiger-trail/',
-    body: "Seven to fourteen nights across India's best reserves. Kanha to Bandhavgarh to Pench, or Ranthambore north into Corbett, or any combination that makes geographical sense for the dates you actually have. The trip you will still be telling people about a decade later.",
+    body: "Seven to fourteen nights across India's best wildlife locations, with a bespoke itinerary curated to you. From the Tigers of Central India to the Birds of the Himalayas, we have an assortment of itineraries awaiting your perusal.",
     icon: <RouteIcon />,
     cta: 'Take the long route',
   },
@@ -170,18 +170,19 @@ export default function SafariFlipCards() {
             {/* ── BACK FACE ── */}
             <div className="flip-face flip-face-back rounded-[9px] bg-[#ede4d1] p-6 md:p-7 flex flex-col">
               <h3 className="font-serif font-semibold text-[17px] md:text-[19px] text-[#081d01] leading-tight mb-3">
-                <Link
-                  href={exp.href}
-                  onClick={e => e.stopPropagation()}
-                  className="hover:text-[#e79e23] transition-colors"
-                >
-                  {exp.heading} →
-                </Link>
+                {exp.heading}
               </h3>
               <hr className="border-t border-[#081d01]/10 mb-4" />
               <p className="font-serif text-[13px] md:text-[14px] leading-[170%] text-[#081d01]/65">
                 {exp.body}
               </p>
+              <Link
+                href={exp.href}
+                onClick={e => e.stopPropagation()}
+                className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white font-serif text-[13px] md:text-[14px] inline-flex items-center justify-center h-[40px] px-5 rounded-[9px] mt-auto self-start"
+              >
+                Tap for more info →
+              </Link>
             </div>
 
           </div>
