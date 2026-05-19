@@ -138,9 +138,9 @@ export default function Home() {
         {/* ===== WHY TRAVEL WITH US ===== */}
         <div className="pt-[30px] md:pt-[50px] pb-[20px] md:pb-[30px] px-6">
           <AnimateOnScroll animation="fade-up">
-            <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] tracking-[0.06em]">
+            <h3 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] tracking-[0.06em]">
               Why Travel With Us
-            </h2>
+            </h3>
           </AnimateOnScroll>
         </div>
 
