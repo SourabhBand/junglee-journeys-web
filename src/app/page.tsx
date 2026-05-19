@@ -113,25 +113,19 @@ export default function Home() {
 
             <AnimateOnScroll animation="fade-up" delay={300}>
               <h2 className="section-heading text-[22px] md:text-[28px] text-center text-[#081d01] tracking-[0.06em] mb-6 md:mb-8">
-                What Fifteen Years in India&apos;s Tiger Reserves Teaches You
+                What 10 years of Jungle Safaris in India Teaches You
               </h2>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={380}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
-                We have run these trips for fifteen years. We know which park looks best in March, which lodge actually matches its photographs, and which guides will have you watching a tigress cross an open meadow at first light rather than returning to breakfast empty-handed.
-              </p>
-            </AnimateOnScroll>
-
-            <AnimateOnScroll animation="fade-up" delay={440}>
-              <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
-                Your very own jeep. A naturalist familiar with the tigress of the region, even calling her by name, having tracked her two cubs from their initial appearance in March. Lodges we have slept in enough times to have opinions about the breakfast.
+                We have explored the best tiger reserves, traversed breathtaking landscapes, pursued and found some of the rarest birds, hiked the heights of snow leopards, basically we&rsquo;ve moved around a lot across India for the last 10 years. This decade long journey has allowed us to narrow down the best parks, best seasons and best naturalists to give you the best chance of seeing your target animal.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={500}>
               <p className="font-serif italic text-[20px] md:text-[26px] leading-[1.6] text-[#081d01] text-center">
-                Your only job is to turn up with socks and a camera.
+                All you have to do is turn up with socks and a binocular.
               </p>
             </AnimateOnScroll>
           </div>
