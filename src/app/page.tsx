@@ -208,10 +208,13 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
             <AnimateOnScroll animation="fade-left" className="lg:w-[38%] flex flex-col">
               <h2 className="section-heading text-[32px] md:text-[48px] lg:text-[56px] mb-8 text-[#ede4d1] tracking-[0.06em] leading-[1.05]">
-                Tailored Safari Experiences
+                Customised Safari Experiences
               </h2>
-              <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%] mb-8">
-                The trip we sell you is the trip you actually want, not the trip we wish you would buy. A photographer with a 400mm lens needs a completely different itinerary from a couple celebrating their tenth anniversary, who in turn need a completely different itinerary from a family with a six-year-old who can identify forty species of bird by call. We do not run group departures and we do not sell off-the-shelf packages. The starting points below are the experiences we have built often enough to have opinions about, and each one becomes your version of the trip the moment you tell us your dates.
+              <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%] mb-6">
+                Different travellers have different ideas of what constitutes an ideal safari experience. A photographer with a 400m lens needs a completely different itinerary to a birder with binoculars. A family would want a very different itinerary to a group of college friends. We stitch an itinerary specific to you and what you want. From trying to achieve the target checklist of species to just a leisurely stroll through the forest, we create bespoke experiences that cater to your specific need rather than generic itineraries that cater to the masses.
+              </p>
+              <p className="font-serif italic text-[15px] md:text-[16px] text-[#ede4d1]/80 leading-[170%] mb-8">
+                Its not just a safari package, it&rsquo;s your safari package!
               </p>
               <hr className="gold-rule mb-8" />
               <div className="mt-auto">
