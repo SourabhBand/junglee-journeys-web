@@ -2,7 +2,6 @@
 
 import { useState, useCallback } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { IMAGE_ASSETS } from '@/lib/assets';
 
 const wildlifeData = [
@@ -10,28 +9,43 @@ const wildlifeData = [
     id: 'asiatic-lions',
     image: IMAGE_ASSETS.asiaticLion,
     title: 'Asiatic Lions',
-    subtitle: 'The last wild Asiatic lions. All 700 of them. One forest. Gir.',
+    subtitle: 'The last living population of the Asiatic Lion in found in the state of Gujarat. Once at the brink of extinction, the lions have made an incredible comeback making this one of the biggest success stories of wildlife conservation in India.',
     location: 'Gir National Park',
-    population: '700',
-    href: '/destination/gir/',
   },
   {
     id: 'one-horned-rhinos',
     image: IMAGE_ASSETS.oneHornedRhino,
-    title: 'One-Horned Rhinos',
-    subtitle: 'More one-horned rhinos than anywhere else on Earth. Kaziranga is their kingdom.',
-    location: 'Kaziranga National Park',
-    population: '720',
-    href: '/destination/kaziranga/',
+    title: 'Indian One-Horned Rhino',
+    subtitle: 'Another massive success story from Indian conservation is that of the Indian One-Horned Rhino. Their population grows slowly but steadily, due to tireless efforts of the forest department as well as ngos across the country.',
+    location: 'Kaziranga, Manas, Pobitora, Dudhwa',
   },
   {
-    id: 'indian-leopards',
-    image: IMAGE_ASSETS.indianLeopard,
-    title: 'Leopards',
-    subtitle: 'Elusive, adaptable, and thriving. India\'s leopards roam from rocky hills to dense forests.',
-    location: 'Bera, Jawai, Satpura',
-    population: '1,600',
-    href: '/destination/satpura/',
+    id: 'asian-elephant',
+    image: IMAGE_ASSETS.asianElephant,
+    title: 'Asian Elephant',
+    subtitle: 'The majestic Asian Elephant can be found across various landscapes of north, northeast and south India. Seeing one in the wild is truly a breathtaking experience that will stay with you forever.',
+    location: 'Corbett, Kaziranga, Manas, Bandhavgarh',
+  },
+  {
+    id: 'hoolock-gibbon',
+    image: IMAGE_ASSETS.hoolockGibbon,
+    title: 'Hoolock Gibbon',
+    subtitle: 'The only species of ape in the country, the hoolock gibbon adorns the canopies of Northeast India. Loud echoing calls and agile movements through the trees, sighting a Gibbon is a remarkable experience.',
+    location: 'Kaziranga, Hollongapar',
+  },
+  {
+    id: 'snow-leopard',
+    image: IMAGE_ASSETS.snowLeopard,
+    title: 'Snow Leopard',
+    subtitle: 'An animal that needs no introduction. Aptly labelled the Ghost of the Himalayas, the Snow Leopard is a master of camouflage that traverses the steep mountain slopes as if gravity doesn’t exist. A true personification of agility, this is one of the rarest animals of wild India!',
+    location: 'Spiti',
+  },
+  {
+    id: 'red-panda',
+    image: IMAGE_ASSETS.redPanda,
+    title: 'Red Panda',
+    subtitle: 'What can we say about the Red Panda that truly captures its charm? The feeling of seeing a Red Panda in its true habitat is something that can only be experienced, not explained.',
+    location: 'Singalila',
   },
 ];
 
@@ -74,7 +88,7 @@ export default function WildlifeCarousel() {
 
         {/* Description */}
         <p className="max-w-[800px] mx-auto text-center font-serif text-[15px] md:text-[16px] text-white/85 leading-[165%] mb-12 md:mb-16">
-          Tigers get all the attention (fair enough, they&apos;re magnificent). But India&apos;s wildlife story is so much bigger. There are only about 700 Asiatic lions left in the world, all of them in one forest in Gujarat. And Kaziranga has more one-horned rhinos than anywhere on Earth.
+          Tigers get all the attention (fair enough, they&rsquo;re magnificent). But India&rsquo;s wildlife story is so much bigger. We have lions, rhinos, elephants, gibbons, snow leopards and even red pandas!
         </p>
 
         {/* Carousel content */}
@@ -104,28 +118,16 @@ export default function WildlifeCarousel() {
             {/* Info Card */}
             <div className="w-full lg:w-[42%] flex-shrink-0">
               <div className="bg-[#ede4d1]/10 backdrop-blur-sm rounded-[9px] p-8 md:p-10 lg:p-12 text-center lg:text-left">
-                <h3 className="font-serif font-semibold text-[36px] md:text-[48px] text-white mb-4 transition-all duration-500">
+                <h3 className="font-serif font-semibold text-[28px] md:text-[36px] lg:text-[40px] text-white mb-4 transition-all duration-500 leading-tight">
                   {currentWildlife.title}
                 </h3>
-                <p className="font-serif text-[17px] md:text-[20px] text-white/90 leading-normal mb-8">
+                <p className="font-serif text-[14px] md:text-[15px] text-white/85 leading-[175%] mb-6">
                   {currentWildlife.subtitle}
                 </p>
-
-                <div className="space-y-3 mb-8">
-                  <p className="font-serif text-[16px] md:text-[18px] text-white/80">
-                    <span className="text-[#ede4d1]/60">Location</span> &middot; {currentWildlife.location}
-                  </p>
-                  <p className="font-serif text-[16px] md:text-[18px] text-white/80">
-                    <span className="text-[#ede4d1]/60">Population</span> &middot; {currentWildlife.population}
-                  </p>
-                </div>
-
-                <Link
-                  href={currentWildlife.href}
-                  className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white font-serif text-[14px] md:text-[15px] w-[220px] md:w-[255px] h-[48px] md:h-[52px] rounded-[9px] inline-flex items-center justify-center hover:shadow-lg hover:shadow-[#e79e23]/20"
-                >
-                  Explore Destination
-                </Link>
+                <hr className="gold-rule mb-4 opacity-50" />
+                <p className="font-serif text-[13px] md:text-[14px] text-white/70">
+                  <span className="text-[#ede4d1]/60 uppercase tracking-[0.15em] text-[11px] md:text-[12px]">Location</span> &middot; {currentWildlife.location}
+                </p>
               </div>
             </div>
           </div>

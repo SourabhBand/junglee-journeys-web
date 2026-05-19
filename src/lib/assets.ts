@@ -31,6 +31,10 @@ export const IMAGE_ASSETS = {
   asiaticLion: '/images/asiatic-lion.jpg',
   oneHornedRhino: '/images/one-horned-rhino.jpg',
   indianLeopard: '/images/indian-leopard.jpg',
+  asianElephant: '/images/asian-elephant.jpg',
+  hoolockGibbon: '/images/hoolock-gibbon.jpg',
+  snowLeopard: '/images/snow-leopard.jpg',
+  redPanda: '/images/red-panda.jpg',
 
   // Logo
   logo: '/logo-jj.png',
