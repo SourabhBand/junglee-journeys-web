@@ -169,9 +169,9 @@ export default function SafariFlipCards() {
 
             {/* ── BACK FACE ── */}
             <div className="flip-face flip-face-back rounded-[9px] bg-[#ede4d1] p-6 md:p-7 flex flex-col">
-              <h3 className="font-serif font-semibold text-[17px] md:text-[19px] text-[#081d01] leading-tight mb-3">
+              <p className="font-serif font-semibold text-[17px] md:text-[19px] text-[#081d01] leading-tight mb-3">
                 {exp.heading}
-              </h3>
+              </p>
               <hr className="border-t border-[#081d01]/10 mb-4" />
               <p className="font-serif text-[13px] md:text-[14px] leading-[170%] text-[#081d01]/65">
                 {exp.body}
