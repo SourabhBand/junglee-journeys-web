@@ -60,7 +60,7 @@ export default function SafarisHubPage() {
               We make changes as per your need till we get the itinerary you are happy with.
             </li>
             <li>
-              You confirm. 30% advance payment. Balance is due 15 days before departure.
+              You confirm. 30% advance payment. Balance is due 30 days before departure.
             </li>
           </ol>
           <p className="font-serif text-[16px] leading-relaxed mt-8">
