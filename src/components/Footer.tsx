@@ -48,7 +48,7 @@ export function Footer() {
               <a
                 href="https://instagram.com/jungleejourneys"
                 aria-label="Junglee Journeys on Instagram"
-                className="text-[#ede4d1]/40 hover:text-[#e79e23] transition"
+                className="text-[#ede4d1]/60 hover:text-[#e79e23] transition"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -57,7 +57,7 @@ export function Footer() {
               <a
                 href="https://facebook.com/jungleejourneys"
                 aria-label="Junglee Journeys on Facebook"
-                className="text-[#ede4d1]/40 hover:text-[#e79e23] transition"
+                className="text-[#ede4d1]/60 hover:text-[#e79e23] transition"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -122,7 +122,7 @@ export function Footer() {
 
         {/* Bottom copyright */}
         <div className="border-t border-[#ede4d1]/10 pt-5 text-center">
-          <p className="font-serif text-[12px] text-[#ede4d1]/40">
+          <p className="font-serif text-[12px] text-[#ede4d1]/60">
             &copy; {new Date().getFullYear()} Junglee Journeys. All wildlife sightings are subject to the whims of nature.
           </p>
         </div>

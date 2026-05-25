@@ -50,7 +50,7 @@ export default function TestimonialsCarousel() {
         <h2 className="text-center section-heading text-[32px] md:text-[52px] lg:text-[60px] text-[#081d01] mb-4 tracking-[0.06em]">
           What Our Guests Say
         </h2>
-        <p className="text-center font-serif italic text-[13px] text-[#081d01]/40 mb-12 md:mb-16 tracking-wide">
+        <p className="text-center font-serif italic text-[13px] text-[#081d01]/60 mb-12 md:mb-16 tracking-wide">
           4.9 / 5 from 200+ reviews
         </p>
 
@@ -62,7 +62,7 @@ export default function TestimonialsCarousel() {
             </p>
             <div className="mt-8 pt-5 border-t border-[#081d01]/10">
               <p className="font-serif font-bold text-[15px] text-[#081d01]">{t.name}</p>
-              <p className="font-serif text-[13px] text-[#081d01]/40 tracking-wide">
+              <p className="font-serif text-[13px] text-[#081d01]/60 tracking-wide">
                 {t.location} &middot; {t.trip}
               </p>
             </div>
