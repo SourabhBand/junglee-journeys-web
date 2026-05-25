@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     description: "Experience India's magnificent wildlife with expert naturalists.",
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
 };
 
