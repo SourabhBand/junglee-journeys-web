@@ -35,7 +35,7 @@ export default function Home() {
 
         <div className="absolute inset-0 overflow-hidden">
           <Image
-            alt="Tiger walking through sal forest at dawn"
+            alt="Misty Himalayan forest with a rocky stream"
             className="absolute inset-0 w-full h-full object-cover ken-burns"
             src={IMAGE_ASSETS.heroTiger}
             fill

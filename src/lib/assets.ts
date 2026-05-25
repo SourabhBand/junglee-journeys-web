@@ -18,8 +18,8 @@ export const SVG_ASSETS = {
 } as const;
 
 export const IMAGE_ASSETS = {
-  // Hero Section (Figma: 1446x1072)
-  heroTiger: '/images/hero-tiger-new.jpg',
+  // Hero Section (2400x1600 optimised JPEG, ~500 KB)
+  heroTiger: '/images/hero.jpg',
 
   // Tiger Reserves (Figma dimensions)
   kanhaNationalPark: '/images/kanha-national-park.jpg', // 552x399
