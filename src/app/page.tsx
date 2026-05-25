@@ -107,7 +107,7 @@ export default function Home() {
 
             <AnimateOnScroll animation="fade-up" delay={240}>
               <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center mb-10 md:mb-14">
-                We make the experience of booking a customised wildlife safari easy. Whether it is your time or you&rsquo;re a veteran wildlifer, we can assist you in designing the tiger safari you need!
+                We make the experience of booking a customised wildlife safari easy. Whether it is your first time or you&rsquo;re a veteran wildlifer, we can assist you in designing the tiger safari you need!
               </p>
             </AnimateOnScroll>
 
