@@ -85,6 +85,13 @@ export default function DestinationsCarousel() {
           </p>
         </div>
 
+        {/* Crawlable H3s for all destinations (hidden from sighted users) */}
+        <div className="sr-only">
+          {destinations.map((d) => (
+            <h3 key={`sr-${d.id}`}>{d.name}</h3>
+          ))}
+        </div>
+
         {/* Carousel */}
         <div className="relative">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-14">
