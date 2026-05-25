@@ -18,9 +18,7 @@
 
 # **Plan Your Safari**
 
-The form below takes about three minutes. We use it to figure out which park, which dates, and which lodge tier are right for the trip you have in mind. Within 24 hours of you submitting it, we send back a written quote with an itemised itinerary. There is no deposit until you say yes, and there is no obligation to say yes at all.
-
-If you are not sure what you want yet, fill in the form anyway and tell us in the message field. The questions we ask once we receive an enquiry are usually the questions that help guests figure out what they actually want.
+Give us the following information and we will stitch an itinerary for you.
 
 ---
 
