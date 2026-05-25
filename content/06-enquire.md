@@ -26,33 +26,7 @@ If you are not sure what you want yet, fill in the form anyway and tell us in th
 
 ## Tell Us About Your Trip
 
-### Your details
-
-| Field | Required |
-|---|---|
-| Full name | Yes |
-| Email | Yes |
-| Phone or WhatsApp (with country code) | Yes |
-| Country | Yes |
-
-### Trip details
-
-| Field | Required | Notes |
-|---|---|---|
-| Travel dates | No | Approximate dates are fine. "Sometime in March 2026" works. |
-| Duration | Yes | Weekend (2 to 3 nights), Short break (4 to 5 nights), Week+ (7 nights or more), Not sure yet |
-| Number of travellers | Yes | Adults and children separately |
-| Preferred destinations | No | Multi-select. Kanha, Tadoba, Ranthambore, Bandhavgarh, Pench, Satpura, Corbett, Kaziranga, Panna, Manas, Gir, or "Not sure, recommend something" |
-
-### What you are after
-
-| Field | Required | Notes |
-|---|---|---|
-| What interests you most? | No | Tigers, photography, luxury lodges, off-beaten experiences, family-friendly, first tiger safari, multi-park itineraries |
-| Accommodation preference | No | Luxury, mid-range, best value, no preference |
-| Anything else we should know? | No | Special requests, dietary needs, accessibility, things you definitely do not want |
-
-**[Send Enquiry]**
+<!-- ENQUIRY_FORM -->
 
 ---
 

@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Header, Footer, MarkdownContent } from "@/components";
+import { Header, Footer, MarkdownContent, EnquiryFormEmbed } from "@/components";
 import { getEnquireContent } from "@/lib/content";
 
 const content = getEnquireContent();
+
+const FORM_MARKER = "<!-- ENQUIRY_FORM -->";
+const [bodyBefore, bodyAfter] = content.body.includes(FORM_MARKER)
+  ? content.body.split(FORM_MARKER)
+  : [content.body, ""];
 
 export const metadata: Metadata = {
   title: content.metadata.metaTitle ?? "Book Tiger Safari India | Plan Your Journey | Junglee Journeys",
@@ -21,7 +26,9 @@ export default function EnquirePage() {
   return (
     <main className="font-body bg-white text-[#081d01] min-h-screen">
       <Header />
-      <MarkdownContent>{content.body}</MarkdownContent>
+      <MarkdownContent>{bodyBefore}</MarkdownContent>
+      <EnquiryFormEmbed />
+      {bodyAfter && <MarkdownContent>{bodyAfter}</MarkdownContent>}
       <Footer />
     </main>
   );
