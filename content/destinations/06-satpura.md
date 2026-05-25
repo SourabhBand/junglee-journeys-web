@@ -183,7 +183,7 @@ Send us your dates, your city of departure, and what you are after. We will writ
 ### Explore Other Parks
 
 - **[Pench National Park](/destination/pench/)**. Two hours from Nagpur, family-friendly, the closest practical pairing for a guest doing a multi-park central Indian trip that includes Satpura.
-- **[Kanha National Park](/destination/kanha/)**. Larger park with classic meadow tiger sightings. A natural pairing with Satpura for a guest who wants both formats in one trip.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. Larger park with classic meadow tiger sightings. A natural pairing with Satpura for a guest who wants both formats in one trip.
 - **[Panna National Park](/destination/panna/)**. The other lower-volume central Indian park, near the Khajuraho temples. Pairs well with Satpura for a guest who wants the off-beaten central Indian experience.
 
 ---

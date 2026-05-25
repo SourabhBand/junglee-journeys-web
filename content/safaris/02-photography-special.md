@@ -142,7 +142,7 @@ For guests who specifically want fort backdrops alongside the dense central Indi
 
 - **[Bandhavgarh National Park](/destination/bandhavgarh/)**. The heart of the trip. Highest tiger density in India, the most photographed tigers on Earth, and the productive waterholes for the dramatic close encounters.
 - **[Tadoba Tiger Reserve](/destination/tadoba/)**. The complement to Bandhavgarh. Open terrain, bold tigers, and Telia Lake as the single most photographed waterhole in central India.
-- **[Kanha National Park](/destination/kanha/)**. The substitute for Tadoba on date combinations or species targets where the meadow light is the priority.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. The substitute for Tadoba on date combinations or species targets where the meadow light is the priority.
 
 ---
 
@@ -186,7 +186,7 @@ We send back a written and itemised quote within 24 hours of an enquiry. The quo
 
 - **[Bandhavgarh National Park](/destination/bandhavgarh/)**. The heart of the photography trip. Highest tiger density and the most photogenic resident tigers.
 - **[Tadoba Tiger Reserve](/destination/tadoba/)**. The complement leg. Open terrain and Telia Lake.
-- **[Kanha National Park](/destination/kanha/)**. The alternative complement leg for guests prioritising meadow light over Telia.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. The alternative complement leg for guests prioritising meadow light over Telia.
 - **[Browse all our safari packages](/safaris/)**. The Photography Special is one of our three flagship packages.
 
 ---

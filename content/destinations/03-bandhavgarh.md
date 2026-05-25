@@ -177,7 +177,7 @@ Send us your dates, your city of departure, and what you are after. We will writ
 
 ### Explore Other Parks
 
-- **[Kanha National Park](/destination/kanha/)**. Bandhavgarh's natural pairing for a 7 to 9 night central Indian trip. Larger park, meadow light, slightly lower density.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. Bandhavgarh's natural pairing for a 7 to 9 night central Indian trip. Larger park, meadow light, slightly lower density.
 - **[Pench National Park](/destination/pench/)**. The third leg of the Central India Tiger Trail. Two hours from Nagpur, family-friendly.
 - **[Central India Tiger Trail](/safari/central-india-tiger-trail/)**. Our flagship multi-park package. Kanha plus Bandhavgarh plus Pench, 7 to 9 nights.
 

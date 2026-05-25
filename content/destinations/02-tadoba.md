@@ -186,7 +186,7 @@ Send us your dates, your city of departure, and what you are after. We send back
 ### Explore Other Parks
 
 - **[Pench National Park](/destination/pench/)**. Tadoba's natural pairing for a 5-night central Indian trip. Two hours from Nagpur, family-friendly.
-- **[Kanha National Park](/destination/kanha/)**. Add Kanha for the classic central Indian experience and the meadow light.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. Add Kanha for the classic central Indian experience and the meadow light.
 - **[Central India Tiger Trail](/safari/central-india-tiger-trail/)**. Our flagship multi-park package, which can be customised to include Tadoba alongside Kanha and Bandhavgarh.
 
 ---

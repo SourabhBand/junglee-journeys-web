@@ -57,7 +57,7 @@ Kanha to Bandhavgarh is about 4 hours by road. Bandhavgarh to Pench is about 5 h
 
 This is the standard 8-night version. Every itinerary we run is built around your dates and travel style.
 
-### Days 1 to 3: Kanha National Park
+### Days 1 to 3: Kanha Tiger Reserve
 
 Arrive at Jabalpur airport (or fly in via Nagpur for a slightly longer transfer that opens up more flight options). Road transfer to your Kanha lodge, about 4 hours. Three nights in [Kanha](/destination/kanha/) with six game drives across the four main zones: Kanha Zone for the meadows and barasingha, Mukki for the lower-traffic productive grassland, Kisli for the historic core, Sarhi for the under-rated buffer.
 
@@ -134,7 +134,7 @@ The trip is less suited for guests with very young children (the 4 AM wake-up ca
 
 ## The Parks on This Route
 
-- **[Kanha National Park](/destination/kanha/)**: The opening leg. Sal forests, meadows, the barasingha, and the classic central Indian experience. 5/5 sighting rate. Mowgli's forest in the literary sense.
+- **[Kanha Tiger Reserve](/destination/kanha/)**: The opening leg. Sal forests, meadows, the barasingha, and the classic central Indian experience. 5/5 sighting rate. Mowgli's forest in the literary sense.
 - **[Bandhavgarh National Park](/destination/bandhavgarh/)**: The middle and most productive leg. Highest tiger density in India. The most photographed tigers on Earth.
 - **[Pench National Park](/destination/pench/)**: The closing leg. The actual Jungle Book setting, the most reliable park for wild dogs, and the wind-down chapter that lets a long trip end well.
 
@@ -204,7 +204,7 @@ We send back a written and itemised quote within 24 hours of an enquiry. The quo
 
 ### Related
 
-- **[Kanha National Park](/destination/kanha/)**. The opening leg of the trail. Read the standalone destination page for the full park-specific detail.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. The opening leg of the trail. Read the standalone destination page for the full park-specific detail.
 - **[Bandhavgarh National Park](/destination/bandhavgarh/)**. The middle and most productive leg. Highest tiger density in India.
 - **[Pench National Park](/destination/pench/)**. The closing leg. The original Jungle Book setting and the most reliable park for wild dogs.
 - **[Browse all our safari packages](/safaris/)**. The Tiger Trail is one of our three flagship multi-park trips.

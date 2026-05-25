@@ -174,7 +174,7 @@ Send us your dates and your city of departure. We will write back with a written
 ### Explore Other Parks
 
 - **[Bandhavgarh National Park](/destination/bandhavgarh/)**. For guests who want to add a higher-density tiger park to a Panna trip. The two together produce a strong central Indian double-park itinerary.
-- **[Kanha National Park](/destination/kanha/)**. The classic central Indian experience and a natural pairing with Panna for a longer multi-park trip.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. The classic central Indian experience and a natural pairing with Panna for a longer multi-park trip.
 - **[Satpura National Park](/destination/satpura/)**. The other lower-volume central Indian park. For guests who want the off-beaten central Indian experience across two reserves.
 
 ---

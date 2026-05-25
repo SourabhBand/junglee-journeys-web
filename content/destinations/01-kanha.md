@@ -1,11 +1,11 @@
-# Page: Kanha National Park
+# Page: Kanha Tiger Reserve
 
 | Field | Value |
 |---|---|
 | **URL** | `https://jungleejourneys.com/destination/kanha/` |
 | **Focus keyword** | kanha safari |
 | **Meta title** (58 char) | Kanha Safari \| The Land of Mowgli \| Junglee Journeys |
-| **Meta description** (153 char) | Book a Kanha National Park safari with expert naturalists. India's finest tiger reserve, Kipling's Jungle Book inspiration. Oct to Jun season. Luxury lodges. |
+| **Meta description** (153 char) | Book a Kanha Tiger Reserve safari with expert naturalists. India's finest tiger reserve, Kipling's Jungle Book inspiration. Oct to Jun season. Luxury lodges. |
 | **H1** | Kanha Safari |
 | **Search intent** | Commercial |
 | **Content type** | Destination detail |
@@ -32,7 +32,7 @@ Kanha is what Mowgli's forest looked like before the marketing department got in
 
 Kipling never set foot in Kanha. He read three books written by men who had, decided that was sufficient, and gave the world The Jungle Book. The "Mowgli Kanha" connection on every other safari brochure is honest enough. The topography lined up. The bears are still here. The wolves were until recently. Mowgli is, regrettably, fictional.
 
-**Kanha National Park** covers about 940 square kilometres. There are roughly 130 tigers in the protected area, give or take whichever ones the cameras happened to catch this month, plus around 200 leopards, an unusually healthy population of barasingha (the swamp deer that exists almost nowhere else), and a population of dhole (the Indian wild dog) that is among the densest in central India.
+**Kanha Tiger Reserve** covers about 940 square kilometres. There are roughly 130 tigers in the protected area, give or take whichever ones the cameras happened to catch this month, plus around 200 leopards, an unusually healthy population of barasingha (the swamp deer that exists almost nowhere else), and a population of dhole (the Indian wild dog) that is among the densest in central India.
 
 A **kanha safari** with us does not come with a sighting guarantee, and anyone who promises you one is selling you something we are not. What it does come with is a guide who has been watching these tigers grow up, the patience to wait, and the kind of meadow at first light that makes the waiting feel like the actual point of being there.
 
@@ -42,7 +42,7 @@ A **kanha safari** with us does not come with a sighting guarantee, and anyone w
 
 The headline animal is the tiger, obviously. There are roughly 130 of them in the **Kanha tiger reserve**, distributed across the buffer and core zones. Sighting rates for guests on a 3-night trip with us run at about 90% during the cool months and close to 100% in the hot pre-monsoon stretch.
 
-Beyond the tigers, the park is unusually rich. **Kanha National Park** is the only place in India where you can reliably see wild barasingha, the southern subspecies of the swamp deer. They were down to fewer than 100 individuals in the 1970s and have been brought back to over 800 through one of India's quietly impressive conservation programmes. The meadows in Kanha exist partly because the barasingha need them, and the management of the park has been built around that.
+Beyond the tigers, the park is unusually rich. **Kanha Tiger Reserve** is the only place in India where you can reliably see wild barasingha, the southern subspecies of the swamp deer. They were down to fewer than 100 individuals in the 1970s and have been brought back to over 800 through one of India's quietly impressive conservation programmes. The meadows in Kanha exist partly because the barasingha need them, and the management of the park has been built around that.
 
 Other species you have a serious chance of seeing on a 3-night trip:
 

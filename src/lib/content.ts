@@ -269,7 +269,7 @@ export const DESTINATIONS: DestinationSummary[] = [
   {
     slug: 'kanha',
     name: 'Kanha',
-    fullName: 'Kanha National Park',
+    fullName: 'Kanha Tiger Reserve',
     tagline: 'The Land of Mowgli',
     region: 'Central India',
     tigerRating: '5/5',

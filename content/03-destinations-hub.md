@@ -50,7 +50,7 @@ If your priority is sighting probability, you want a Central Indian park. If you
 
 The tiger heartland. Six reserves, the highest tiger density in the country, and the lodges that the rest of India tends to copy. If you are doing one trip and you want it to count, this is the region you want. Most of the **best tiger safari in India** itineraries we run come from these six parks, and most of our repeat guests started their JJ journey here.
 
-### **[Kanha National Park](/destination/kanha/)**
+### **[Kanha Tiger Reserve](/destination/kanha/)**
 
 **Tagline:** The Land of Mowgli
 **Tiger sighting:** 5/5

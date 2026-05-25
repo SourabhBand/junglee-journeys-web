@@ -187,7 +187,7 @@ Send us your dates, your city of departure, and what you are after. We send back
 ### Explore Other Parks
 
 - **[Tadoba Tiger Reserve](/destination/tadoba/)**. Pench's natural pairing for guests who want higher tiger density alongside the family-friendly experience.
-- **[Kanha National Park](/destination/kanha/)**. Add Kanha for the meadow light and the classic central Indian experience. Pench and Kanha together is one of our most-booked combinations.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. Add Kanha for the meadow light and the classic central Indian experience. Pench and Kanha together is one of our most-booked combinations.
 - **[Central India Tiger Trail](/safari/central-india-tiger-trail/)**. Our flagship multi-park package. Kanha plus Bandhavgarh plus Pench, 7 to 9 nights.
 
 ---

@@ -40,10 +40,10 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
   {
     id: 'kanha',
     image: IMAGE_ASSETS.kanhaNationalPark,
-    name: 'Kanha National Park',
+    name: 'Kanha Tiger Reserve',
     slug: 'kanha',
     rank: '03',
-    desc: <>A landscape that inspired Rudyard Kipling to immortalise it in the pages of the Jungle Book, Kanha National Park provides the classic central Indian jungle safari experience. From the tall Sal Trees towering over you to the expansive meadows teeming with herbivores, you&rsquo;re always in for a memorable safari. The tiger population here has held steady for over 2 decades with conservation practices ensuring a rich and biodiverse habitat. Around 4hrs from Jabalpur/Raipur or 4.5hrs from Nagpur, Kanha is one of the best tiger destinations of India.</>,
+    desc: <>A landscape that inspired Rudyard Kipling to immortalise it in the pages of the Jungle Book, Kanha Tiger Reserve provides the classic central Indian jungle safari experience. From the tall Sal Trees towering over you to the expansive meadows teeming with herbivores, you&rsquo;re always in for a memorable safari. The tiger population here has held steady for over 2 decades with conservation practices ensuring a rich and biodiverse habitat. Around 4hrs from Jabalpur/Raipur or 4.5hrs from Nagpur, Kanha is one of the best tiger destinations of India.</>,
   },
   {
     id: 'pench',

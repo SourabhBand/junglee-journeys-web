@@ -187,7 +187,7 @@ Send us your dates, your city of departure, and what you are after. We send back
 ### Explore Other Parks
 
 - **[Ranthambore National Park](/destination/ranthambore/)**. The other Delhi-adjacent option. Five hours from Delhi, higher tiger density, the iconic fort backdrop.
-- **[Kanha National Park](/destination/kanha/)**. For guests who want to combine Corbett with a central Indian park. The two parks together give you the full range of Indian tiger reserve experiences.
+- **[Kanha Tiger Reserve](/destination/kanha/)**. For guests who want to combine Corbett with a central Indian park. The two parks together give you the full range of Indian tiger reserve experiences.
 - **[Bandhavgarh National Park](/destination/bandhavgarh/)**. The highest tiger density in India. A natural pairing with Corbett for guests who want a longer multi-park tiger trip.
 
 ---

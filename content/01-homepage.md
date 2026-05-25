@@ -56,7 +56,7 @@ The permits, the lodge bookings, the airport pickup, the inter-park transfers, t
 
 India holds more than half the world's wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. The country gazettes more than fifty official **tiger reserves**, and we operate in eleven of them. Each one is a completely different argument for going. Six to start with.
 
-### **[Kanha National Park](/destination/kanha/)**
+### **[Kanha Tiger Reserve](/destination/kanha/)**
 
 Kanha is what Mowgli's forest looked like before the marketing department got involved. Sal trees in straight ranks, meadows wide enough that you forget what you came here for, and a tiger population that has held steady for two decades because the people running this park are very serious about their work and very polite about telling you so. The classic Central Indian **jungle safari in India** experience, and the one most first-timers should start with. Four hours by road from Jabalpur airport.
 
