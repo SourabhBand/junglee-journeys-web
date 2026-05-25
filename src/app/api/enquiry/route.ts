@@ -51,7 +51,7 @@ export async function POST(request: Request) {
     ].join('\n');
 
     await resend.emails.send({
-      from: 'Junglee Journeys <enquiry@jungleejourneys.com>',
+      from: 'Junglee Journeys <onboarding@resend.dev>',
       to: RECIPIENT,
       replyTo: body.email,
       subject: `Safari enquiry from ${body.name}`,
