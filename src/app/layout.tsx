@@ -39,11 +39,13 @@ export const metadata: Metadata = {
     description: "Experience India's magnificent wildlife with expert naturalists. Private safaris to Kanha, Tadoba, Ranthambore & more.",
     type: "website",
     siteName: "Junglee Journeys",
+    images: [{ url: "/images/hero.jpg", width: 1920, height: 1080 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Junglee Journeys | Luxury Tiger Safaris in India",
     description: "Experience India's magnificent wildlife with expert naturalists.",
+    images: ["/images/hero.jpg"],
   },
   robots: {
     index: false,

@@ -52,21 +52,6 @@ We are closed on Sundays and on major Indian public holidays. If you message us 
 
 ---
 
-## Send Us a Message
-
-For general questions, comments, or anything that does not fit the enquiry form. If you are ready to plan a trip, the [Enquire form](/enquire/) is faster.
-
-| Field | Notes |
-|---|---|
-| **Name** | Required |
-| **Email** | Required |
-| **Phone (with country code)** | Optional |
-| **Message** | Required |
-
-**[Send Message]**
-
----
-
 ## Planning a Safari?
 
 If you are ready to start planning rather than just ask a question, the [Enquire form](/enquire/) has a few additional fields (your dates, your city of departure, what kind of trip you are after) that let us send you a written quote on the first reply instead of the third. Same team, same response time, faster outcome.
@@ -77,9 +62,7 @@ If you are ready to start planning rather than just ask a question, the [Enquire
 
 ## Where We Are
 
-[Office address placeholder, e.g., Delhi or Mumbai or wherever the JJ team is based.]
-
-We are a small team that spends most of its time in the field, so the office is mostly used for planning and quotes. If you happen to be passing through and want to drop in, message us first so we can make sure someone is actually there.
+Based in Maharashtra, India. We are a small team that spends most of its time in the field, so the office is mostly used for planning and quotes.
 
 ---
 

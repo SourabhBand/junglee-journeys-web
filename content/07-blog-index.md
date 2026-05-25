@@ -69,22 +69,9 @@ This blog is the opposite of that. Every post will be written by either a member
 
 ---
 
-## Get Notified
-
-Drop your email below and we will send you an alert when the first posts go live. No newsletter, no marketing sequence, no weekly digest. One email when we publish, and that is it.
-
-| Field | Notes |
-|---|---|
-| **Email** | Required |
-| **Which topics interest you?** | Optional, multi-select. Best time to visit, How to reach, Cost guide, Park comparisons, Photography, Conservation, Beyond tigers |
-
-**[Notify Me]**
-
----
-
 ## Or, Skip Ahead
 
-If you do not want to wait for the blog and you already know roughly what you want, the [Enquire form](/enquire/) is the fastest path. You can always come back to the blog after you have booked.
+If you do not want to wait for the blog and you already know roughly what you want, the [Enquire form](/enquire/) is the fastest path. You can always come back to the blog after you have booked. To stay in touch, send us a message on [WhatsApp](https://wa.me/919370037237) and we will let you know when the first posts go live.
 
 **[Plan Your Safari](/enquire/)**   **[Browse Destinations](/destinations/)**   **[Browse Packages](/safaris/)**
 

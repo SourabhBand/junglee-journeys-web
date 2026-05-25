@@ -93,6 +93,7 @@ export function CurrencyConverter({ defaultAmount }: CurrencyConverterProps) {
                 <select
                   value={currency}
                   onChange={(e) => setCurrency(e.target.value)}
+                  aria-label="Target currency"
                   className="h-[48px] px-4 rounded-[9px] border border-[#081d01]/15 font-serif text-[15px] text-[#081d01] bg-white focus:outline-none focus:border-[#e79e23] transition sm:w-[160px]"
                 >
                   {CURRENCIES.map((c) => (

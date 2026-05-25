@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown, { defaultUrlTransform } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
 
@@ -16,6 +16,10 @@ export function MarkdownContent({ children }: Props) {
     <article className="max-w-4xl mx-auto px-6 md:px-8 py-12 md:py-16 font-serif text-[#081d01]">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
+        urlTransform={(url) => {
+          if (url.startsWith('tel:')) return url;
+          return defaultUrlTransform(url);
+        }}
         components={{
           h1: ({ children }) => (
             <h1 className="section-heading text-4xl md:text-5xl mb-8 leading-tight">
@@ -50,21 +54,15 @@ export function MarkdownContent({ children }: Props) {
             <li className="text-base md:text-lg leading-relaxed">{children}</li>
           ),
           a: ({ children, href }) => {
+            const linkClass = "text-[#e79e23] hover:text-[#c8841a] underline underline-offset-4 transition-colors";
+            if (href && (href.startsWith('mailto:') || href.startsWith('tel:'))) {
+              return <a href={href} className={linkClass}>{children}</a>;
+            }
             if (href && href.startsWith('/')) {
-              return (
-                <Link
-                  href={href}
-                  className="text-[#e79e23] hover:text-[#c8841a] underline underline-offset-4 transition-colors"
-                >
-                  {children}
-                </Link>
-              );
+              return <Link href={href} className={linkClass}>{children}</Link>;
             }
             return (
-              <a
-                href={href}
-                className="text-[#e79e23] hover:text-[#c8841a] underline underline-offset-4 transition-colors"
-              >
+              <a href={href} className={linkClass} target="_blank" rel="noopener noreferrer">
                 {children}
               </a>
             );

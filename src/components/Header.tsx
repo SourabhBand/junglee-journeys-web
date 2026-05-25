@@ -22,7 +22,7 @@ export function Header({ transparent = false }: HeaderProps) {
     >
       <nav className="flex items-center justify-between">
         {/* Desktop left nav */}
-        <div className="hidden md:flex gap-8 lg:gap-[80px] font-serif text-[16px]">
+        <div className="hidden md:flex gap-8 lg:gap-[80px] pr-16 lg:pr-0 font-serif text-[16px]">
           <Link className="hover:text-[#e79e23] transition" href="/about/">
             About
           </Link>
@@ -74,7 +74,7 @@ export function Header({ transparent = false }: HeaderProps) {
 
         {/* Desktop right nav + Enquire button */}
         <div className="flex items-center gap-6 lg:gap-[80px]">
-          <div className="hidden md:flex gap-8 lg:gap-[80px] font-serif text-[16px]">
+          <div className="hidden md:flex gap-8 lg:gap-[80px] pl-16 lg:pl-0 font-serif text-[16px]">
             <Link className="hover:text-[#e79e23] transition" href="/blog/">
               Blog
             </Link>

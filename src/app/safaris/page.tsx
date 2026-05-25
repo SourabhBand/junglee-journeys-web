@@ -123,12 +123,14 @@ export default function SafarisHubPage() {
             >
               Enquire Now
             </Link>
-            <Link
-              href="/contact/"
+            <a
+              href="https://wa.me/919370037237"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-[#ede4d1] hover:bg-[#ede4d1] hover:text-[#081d01] transition-all text-[#ede4d1] inline-flex items-center justify-center w-[200px] h-[52px] rounded-[9px] text-[16px] font-serif"
             >
               WhatsApp Us
-            </Link>
+            </a>
           </div>
         </div>
       </section>

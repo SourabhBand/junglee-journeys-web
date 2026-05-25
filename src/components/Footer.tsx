@@ -21,14 +21,6 @@ function FacebookIcon() {
   );
 }
 
-function YouTubeIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
-      <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white" />
-    </svg>
-  );
-}
 
 export function Footer() {
   return (
@@ -54,25 +46,22 @@ export function Footer() {
             {/* Social media links */}
             <div className="flex gap-5">
               <a
-                href="#"
+                href="https://instagram.com/jungleejourneys"
                 aria-label="Junglee Journeys on Instagram"
                 className="text-[#ede4d1]/40 hover:text-[#e79e23] transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <InstagramIcon />
               </a>
               <a
-                href="#"
+                href="https://facebook.com/jungleejourneys"
                 aria-label="Junglee Journeys on Facebook"
                 className="text-[#ede4d1]/40 hover:text-[#e79e23] transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FacebookIcon />
-              </a>
-              <a
-                href="#"
-                aria-label="Junglee Journeys on YouTube"
-                className="text-[#ede4d1]/40 hover:text-[#e79e23] transition"
-              >
-                <YouTubeIcon />
               </a>
             </div>
           </div>
