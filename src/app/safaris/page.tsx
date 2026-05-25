@@ -73,41 +73,23 @@ export default function SafarisHubPage() {
         </div>
       </section>
 
-      {/* Flagship Packages — accordion */}
+      {/* Flagship Packages — box grid */}
       <section className="py-[80px] md:py-[100px] bg-white">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-center section-heading text-[28px] md:text-[40px] mb-12 leading-tight">
             Flagship Packages
           </h2>
-          <div className="space-y-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {SAFARIS.map((pkg) => (
-              <details
+              <div
                 key={pkg.slug}
-                className="bg-[#ede4d1] rounded-[9px] group"
+                className="bg-[#ede4d1] rounded-[9px] p-6 md:p-8 h-full"
               >
-                <summary className="cursor-pointer list-none px-6 py-5 flex items-center justify-between gap-4">
-                  <h3 className="font-serif font-semibold text-[18px] md:text-[20px] leading-tight">
-                    {pkg.name}
-                  </h3>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    className="flex-shrink-0 transition-transform duration-300 group-open:rotate-180 text-[#081d01]/60"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M5 7.5L10 12.5L15 7.5"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </summary>
-                <div className="px-6 pb-6 pt-2 font-serif text-[14px] md:text-[15px] text-[#081d01]/80 space-y-1.5 border-t border-[#081d01]/10">
-                  <p className="pt-4">
+                <h3 className="font-serif font-semibold text-[22px] md:text-[24px] mb-4 leading-tight">
+                  {pkg.name}
+                </h3>
+                <div className="space-y-1.5 font-serif text-[14px] md:text-[15px] text-[#081d01]/80">
+                  <p>
                     <strong>Duration:</strong> {pkg.duration}
                   </p>
                   <p>
@@ -117,7 +99,7 @@ export default function SafarisHubPage() {
                     <strong>Destinations:</strong> {pkg.destinations}
                   </p>
                 </div>
-              </details>
+              </div>
             ))}
           </div>
         </div>
