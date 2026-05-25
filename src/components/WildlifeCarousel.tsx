@@ -160,7 +160,7 @@ export default function WildlifeCarousel() {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 p-1.5 box-content ${
                     index === currentSlide
                       ? 'bg-[#e79e23] w-6'
                       : 'bg-white/30 hover:bg-white/50'

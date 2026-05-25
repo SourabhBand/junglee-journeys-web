@@ -69,7 +69,7 @@ export default function SafariCarousel() {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`h-2.5 rounded-full transition-all duration-300 ${i === current ? 'bg-[#e79e23] w-6' : 'bg-white/30 hover:bg-white/50 w-2.5'}`}
+                className={`h-2.5 rounded-full transition-all duration-300 p-1.5 box-content ${i === current ? 'bg-[#e79e23] w-6' : 'bg-white/30 hover:bg-white/50 w-2.5'}`}
                 aria-label={`Go to experience ${i + 1}`}
               />
             ))}
