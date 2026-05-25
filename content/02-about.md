@@ -45,13 +45,13 @@ It has been over 500 safaris and the passion has only grown stronger.
 - **Speciality:** Ecology, Tigers, Birds, Wildlife Tracking
 - Along with wildlife, strongly passionate about football and French fries.
 
-### Shreyasi Khandekar, [Role]
+### Shreyasi Khandekar, Trip Designer & Brand Lead
 
 - **Experience:** 8+ years
 - **Speciality:** Itinerary Design, Social Media, R&D
 - Scarily good at finding a needle in the colossal haystack that is the internet.
 
-### Roemsh Atre, [Role]
+### Romesh Atre, Field Ecologist
 
 - **Experience:** 7+ years
 - **Speciality:** Biodiversity Surveys, Census Techniques
