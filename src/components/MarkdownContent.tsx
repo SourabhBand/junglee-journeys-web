@@ -18,12 +18,12 @@ export function MarkdownContent({ children }: Props) {
         remarkPlugins={[remarkGfm]}
         components={{
           h1: ({ children }) => (
-            <h1 className="font-display text-4xl md:text-5xl mb-8 leading-tight tracking-tight">
+            <h1 className="section-heading text-4xl md:text-5xl mb-8 leading-tight">
               {children}
             </h1>
           ),
           h2: ({ children }) => (
-            <h2 className="font-reform text-2xl md:text-3xl mt-12 mb-6 leading-tight uppercase tracking-[0.04em]">
+            <h2 className="section-heading text-2xl md:text-3xl mt-12 mb-6 leading-tight">
               {children}
             </h2>
           ),
@@ -33,7 +33,7 @@ export function MarkdownContent({ children }: Props) {
             </h3>
           ),
           h4: ({ children }) => (
-            <h4 className="font-display text-lg md:text-xl mt-8 mb-3 leading-tight">
+            <h4 className="font-serif font-semibold text-lg md:text-xl mt-8 mb-3 leading-tight">
               {children}
             </h4>
           ),
@@ -87,7 +87,7 @@ export function MarkdownContent({ children }: Props) {
             <thead className="bg-[#ede4d1]">{children}</thead>
           ),
           th: ({ children }) => (
-            <th className="border border-[#081d01]/20 px-4 py-3 text-left font-display text-sm md:text-base">
+            <th className="border border-[#081d01]/20 px-4 py-3 text-left font-serif font-semibold text-sm md:text-base">
               {children}
             </th>
           ),

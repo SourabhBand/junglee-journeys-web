@@ -50,7 +50,7 @@ export default function SafariCarousel() {
   return (
     <div className="lg:w-[58%]">
       <div className="flex flex-col h-full">
-        <h3 className="font-serif font-bold text-[20px] md:text-[22px] text-white/90 mb-3">
+        <h3 className="font-serif font-semibold text-[20px] md:text-[22px] text-white/90 mb-3">
           <Link href={exp.href} className="hover:text-[#e79e23] transition-colors">
             {exp.heading}
           </Link>
