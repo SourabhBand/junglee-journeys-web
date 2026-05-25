@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Header, Footer, MarkdownContent, EnquiryFormEmbed } from "@/components";
+import { Header, Footer, MarkdownContent, EnquiryForm } from "@/components";
 import { getEnquireContent } from "@/lib/content";
 
 const content = getEnquireContent();
@@ -27,7 +27,7 @@ export default function EnquirePage() {
     <main className="font-body bg-white text-[#081d01] min-h-screen">
       <Header />
       <MarkdownContent>{bodyBefore}</MarkdownContent>
-      <EnquiryFormEmbed />
+      <EnquiryForm />
       {bodyAfter && <MarkdownContent>{bodyAfter}</MarkdownContent>}
       <Footer />
     </main>
