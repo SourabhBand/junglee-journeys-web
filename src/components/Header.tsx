@@ -68,6 +68,7 @@ export function Header({ transparent = false }: HeaderProps) {
               height={transparent ? 395 : 170}
               className="object-contain"
               priority
+              fetchPriority="high"
             />
           </Link>
         </div>
