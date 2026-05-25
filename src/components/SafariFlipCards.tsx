@@ -179,9 +179,18 @@ export default function SafariFlipCards() {
               <Link
                 href={exp.href}
                 onClick={e => e.stopPropagation()}
-                className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white font-serif text-[13px] md:text-[14px] inline-flex items-center justify-center h-[40px] px-5 rounded-[9px] mt-auto self-start"
+                className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-colors text-white font-serif text-[14px] inline-flex items-center justify-center gap-2 w-[180px] h-[42px] rounded-[9px] mt-auto self-start"
               >
-                Tap for more info →
+                Tap for more info
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path
+                    d="M6 12L10 8L6 4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </Link>
             </div>
 
