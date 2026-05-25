@@ -85,10 +85,13 @@ export default function DestinationsCarousel() {
           </p>
         </div>
 
-        {/* Crawlable H3s for all destinations (hidden from sighted users) */}
+        {/* Crawlable full content for all destinations (visually hidden) */}
         <div className="sr-only">
           {destinations.map((d) => (
-            <h3 key={`sr-${d.id}`}>{d.name}</h3>
+            <article key={`sr-${d.id}`}>
+              <h3>{d.name}</h3>
+              <p>{d.desc}</p>
+            </article>
           ))}
         </div>
 

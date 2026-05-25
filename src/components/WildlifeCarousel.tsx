@@ -98,6 +98,17 @@ export default function WildlifeCarousel() {
           Tigers get all the attention (fair enough, they&rsquo;re magnificent). But India&rsquo;s wildlife story is so much bigger. We have lions, rhinos, elephants, gibbons, snow leopards and even red pandas!
         </p>
 
+        {/* Crawlable full content for all wildlife cards (visually hidden) */}
+        <div className="sr-only">
+          {wildlifeData.map((w) => (
+            <article key={`sr-${w.id}`}>
+              <h3>{w.title}</h3>
+              <p>{w.subtitle}</p>
+              <p>Location: {w.location}</p>
+            </article>
+          ))}
+        </div>
+
         {/* Carousel content */}
         <div className="relative">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-14">
