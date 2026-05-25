@@ -13,7 +13,7 @@ import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 export const metadata: Metadata = {
   title: "Tiger Safari India | Luxury Wildlife Tours | Junglee Journeys",
   description:
-    "Book tiger safaris in India with expert naturalists and luxury lodges. Private tours to Kanha, Tadoba, Ranthambore. 15+ years experience. Enquire now.",
+    "Book tiger safaris in India with expert naturalists and luxury lodges. Private tours to Kanha, Tadoba, Ranthambore. 10+ years experience. Enquire now.",
   alternates: { canonical: "https://jungleejourneys.com/" },
   openGraph: {
     title: "Tiger Safari India | Luxury Wildlife Tours | Junglee Journeys",
@@ -64,12 +64,12 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Stats: 15 years · 500+ safaris · 70% of guests come back */}
+        {/* Stats: 10 years · 500+ safaris · 70% of guests come back */}
         <div className="absolute bottom-[36px] md:bottom-[52px] left-0 right-0 z-10">
           <div className="flex justify-center gap-12 md:gap-[140px]">
             {[
               { value: "70%", label: "Repeat Guests" },
-              { value: "15+", label: "Years" },
+              { value: "10+", label: "Years" },
               { value: "500+", label: "Safaris" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col items-center">

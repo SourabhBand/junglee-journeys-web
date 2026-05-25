@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: content.metadata.metaTitle ?? "About Us | Expert Wildlife Tours India | Junglee Journeys",
   description:
     content.metadata.metaDescription ??
-    "Meet the team behind Junglee Journeys. 15+ years of tiger safari experience, expert naturalists and a passion for India's wildlife. Learn our story.",
+    "Meet the team behind Junglee Journeys. 10+ years of tiger safari experience, expert naturalists and a passion for India's wildlife. Learn our story.",
   alternates: { canonical: "https://jungleejourneys.com/about/" },
   openGraph: {
     title: content.metadata.metaTitle,

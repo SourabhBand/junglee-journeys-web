@@ -84,7 +84,7 @@ There is no deposit at any point before you say yes. You can ask as many questio
 
 The numbers we are willing to put on the front page:
 
-- **15+ years** running tiger safaris across India
+- **10+ years** running tiger safaris across India
 - **500+** trips planned
 - **70%** of our guests come back for a second trip
 - **95%** of our guests see a tiger at least once on their trip

@@ -5,7 +5,7 @@
 | **URL** | `https://jungleejourneys.com/about/` |
 | **Focus keyword** | wildlife tours india |
 | **Meta title** (55 char) | About Us \| Expert Wildlife Tours India \| Junglee Journeys |
-| **Meta description** (147 char) | Meet the team behind Junglee Journeys. 15+ years of tiger safari experience, expert naturalists and a passion for India's wildlife. Learn our story. |
+| **Meta description** (147 char) | Meet the team behind Junglee Journeys. 10+ years of tiger safari experience, expert naturalists and a passion for India's wildlife. Learn our story. |
 | **H1** | About Junglee Journeys |
 | **Search intent** | Brand / Commercial |
 | **Content type** | About / trust-building |
@@ -86,7 +86,7 @@ You are not paying for a brochure. You are not paying for a glossy itinerary wit
 
 ## The Numbers
 
-15 years. 500+ safaris. 70% of our guests come back.
+10 years. 500+ safaris. 70% of our guests come back.
 
 [TripAdvisor rating badge] [Google rating badge] [TripAdvisor Travellers' Choice Award if applicable]
 

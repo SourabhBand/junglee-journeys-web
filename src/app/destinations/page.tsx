@@ -43,7 +43,7 @@ export default function DestinationsHubPage() {
             roughly 3,000 wild tigers (more than half the world&apos;s total). We work in
             eleven of them. Not because the others are bad, but because these are the ones we
             know properly, the ones with the lodges we trust, and the ones where the guides
-            we hire have walked the same trails for fifteen years.
+            we hire have walked the same trails for ten years.
           </p>
         </div>
       </section>

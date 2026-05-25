@@ -5,7 +5,7 @@
 | **URL** | `https://jungleejourneys.com/` |
 | **Focus keyword** | tiger safari india |
 | **Meta title** (60 char) | Tiger Safari India \| Luxury Wildlife Tours \| Junglee Journeys |
-| **Meta description** (148 char) | Book tiger safaris in India with expert naturalists and luxury lodges. Private tours to Kanha, Tadoba, Ranthambore. 15+ years experience. Enquire now. |
+| **Meta description** (148 char) | Book tiger safaris in India with expert naturalists and luxury lodges. Private tours to Kanha, Tadoba, Ranthambore. 10+ years experience. Enquire now. |
 | **H1** | Private Tiger Safaris Across India |
 | **Search intent** | Transactional (60%) |
 | **Content type** | Homepage |
@@ -20,11 +20,11 @@
 
 The honest truth is that you can absolutely book a tiger safari in India yourself. People do it all the time. The honest truth is also that it usually goes badly in small, expensive ways: the Forest Department permit portal that crashes on the third attempt, the lodge website that bears no relationship to the actual lodge, the cheerful young man at the front desk who calls himself an expert naturalist and got his certification last Tuesday. We are not here to talk you out of doing this on your own. We are here for the people who decided their holiday was worth doing properly.
 
-We have spent fifteen years arranging **tiger safari in India** trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
+We have spent ten years arranging **tiger safari in India** trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
 
 **[Plan Your Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
 
-*15 years · 500+ safaris · 70% of guests come back*
+*10 years · 500+ safaris · 70% of guests come back*
 
 ---
 
@@ -136,7 +136,7 @@ The actual cost depends on three things: which park, which lodge, and how long y
 
 ### Will I actually see a tiger?
 
-Probably. We do not guarantee wildlife sightings, because anyone who guarantees you a wild animal is selling you something we are not. Our guests see tigers on roughly 95% of trips, though, and that number is the result of fifteen years of knowing which park, which guide, which waterhole, and which hour. It is not luck.
+Probably. We do not guarantee wildlife sightings, because anyone who guarantees you a wild animal is selling you something we are not. Our guests see tigers on roughly 95% of trips, though, and that number is the result of ten years of knowing which park, which guide, which waterhole, and which hour. It is not luck.
 
 ### Which is the best tiger reserve in India?
 

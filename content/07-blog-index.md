@@ -21,7 +21,7 @@
 
 *The things we know about Indian tigers, written down so you can read them at midnight before booking.*
 
-This is where we are putting fifteen years of safari knowledge into writing, one post at a time. The first wave of posts will land over the next month or two, and they cover the questions guests actually ask before booking, not the questions a content marketing agency would tell us to write about.
+This is where we are putting ten years of safari knowledge into writing, one post at a time. The first wave of posts will land over the next month or two, and they cover the questions guests actually ask before booking, not the questions a content marketing agency would tell us to write about.
 
 If you want to be told when the first posts are live, drop your email at the bottom of the page. Otherwise, the planned topics are below.
 
@@ -49,7 +49,7 @@ Kanha versus Bandhavgarh. Ranthambore versus Corbett. Tadoba versus Pench. The c
 
 ### Photography tips for Indian tiger safaris
 
-For guests who travel with serious equipment. Light, hides, lenses, the etiquette of working alongside other vehicles, and the small adjustments that make Indian tiger photography different from anywhere else. Some genuine **tiger safari tips** from the guides who have tracked the same tigers for fifteen years and understand their habits at the level you need them to.
+For guests who travel with serious equipment. Light, hides, lenses, the etiquette of working alongside other vehicles, and the small adjustments that make Indian tiger photography different from anywhere else. Some genuine **tiger safari tips** from the guides who have tracked the same tigers for ten years and understand their habits at the level you need them to.
 
 ### Conservation stories
 

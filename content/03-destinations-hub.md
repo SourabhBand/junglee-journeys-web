@@ -20,7 +20,7 @@
 
 *Eleven parks. Six regions. One job: pick the right one for you.*
 
-India officially gazettes more than fifty **tiger reserves**, holding roughly 3,000 wild tigers (more than half the world's total). We work in eleven of them. Not because the others are bad, but because these are the ones we know properly, the ones with the lodges we trust, and the ones where the guides we hire have walked the same trails for fifteen years.
+India officially gazettes more than fifty **tiger reserves**, holding roughly 3,000 wild tigers (more than half the world's total). We work in eleven of them. Not because the others are bad, but because these are the ones we know properly, the ones with the lodges we trust, and the ones where the guides we hire have walked the same trails for ten years.
 
 This is the pillar page for those eleven. If you are wondering which is the **best tiger reserve in India** has, the honest answer is that there is no single best. There is the best one for what you actually want, and the rest of this page will help you figure out which one that is.
 

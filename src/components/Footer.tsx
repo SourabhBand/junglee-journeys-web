@@ -49,7 +49,7 @@ export function Footer() {
               />
             </Link>
             <p className="font-serif text-[13px] text-[#ede4d1]/60 max-w-[240px] text-center md:text-left mb-4 leading-relaxed">
-              Private tiger safaris across India. 15 years of first-hand wilderness.
+              Private tiger safaris across India. 10 years of first-hand wilderness.
             </p>
             {/* Social media links */}
             <div className="flex gap-5">

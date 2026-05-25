@@ -17,7 +17,7 @@ const FAQAccordion = () => {
     },
     {
       question: "Will I actually see a tiger?",
-      answer: "Probably. We do not guarantee wildlife sightings, because anyone who guarantees you a wild animal is selling you something we are not. Our guests see tigers on roughly 95% of trips, though, and that number is the result of fifteen years of knowing which park, which guide, which waterhole, and which hour. It is not luck.",
+      answer: "Probably. We do not guarantee wildlife sightings, because anyone who guarantees you a wild animal is selling you something we are not. Our guests see tigers on roughly 95% of trips, though, and that number is the result of ten years of knowing which park, which guide, which waterhole, and which hour. It is not luck.",
     },
     {
       question: "Which is the best tiger reserve in India?",
