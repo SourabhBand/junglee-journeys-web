@@ -28,7 +28,7 @@ If you are ready to plan an actual trip rather than just ask a question, the [En
 
 ### WhatsApp
 
-[+91 XXXXX XXXXX](https://wa.me/91XXXXXXXXXX)
+[+91 93700 37237](https://wa.me/919370037237)
 
 The fastest channel for both Indian guests and international guests with WhatsApp installed. Send us a message and we will reply during the next business window.
 
@@ -40,7 +40,7 @@ The right channel for longer questions, attachments, or detailed itinerary discu
 
 ### Phone
 
-[+91 XXXXX XXXXX](tel:+91XXXXXXXXXX)
+[+91 93700 37237](tel:+919370037237)
 
 Best for international guests in time zones where WhatsApp is awkward. We pick up Monday to Saturday, 10 AM to 7 PM IST. (Outside those hours, leave a message and we will call you back.)
 

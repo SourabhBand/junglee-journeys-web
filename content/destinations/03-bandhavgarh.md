@@ -173,7 +173,7 @@ A 3-night **bandhavgarh tour package** with us includes your own jeep, a natural
 
 Send us your dates, your city of departure, and what you are after. We will write back with a written itemised quote within 24 hours, no deposit until you say yes.
 
-**[Plan Your Bandhavgarh Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Bandhavgarh Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ### Explore Other Parks
 

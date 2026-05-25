@@ -213,7 +213,7 @@ That is what we are here for. Tell us your dates, the city you are flying from, 
 
 We will pick the park, the dates, the lodge, and the guide. You confirm. We send a written quote within 24 hours, no deposit until you say yes.
 
-**[Get Personalised Recommendations](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Get Personalised Recommendations](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ---
 

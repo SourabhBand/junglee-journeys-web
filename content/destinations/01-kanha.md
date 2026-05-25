@@ -177,7 +177,7 @@ A 3-night **kanha tour package** with us includes your own jeep, a naturalist fo
 
 Send us your dates, your city of departure, and what you are after. We will write back with a written itemised quote within 24 hours.
 
-**[Plan Your Kanha Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Kanha Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ### Explore Other Parks
 

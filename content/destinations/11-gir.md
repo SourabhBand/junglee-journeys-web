@@ -174,7 +174,7 @@ A 3-night **gir national park tour** with us includes your own jeep, a naturalis
 
 Send us your dates and your city of departure. We will write back with a written itemised quote within 24 hours.
 
-**[Plan Your Gir Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Gir Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ### Explore Other Parks
 

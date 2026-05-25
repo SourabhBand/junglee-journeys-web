@@ -176,7 +176,7 @@ A 3-night **kaziranga national park tour** with us includes the jeep safaris, th
 
 Send us your dates, your city of departure, and what you are after. We send back a written itemised quote within 24 hours.
 
-**[Plan Your Kaziranga Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Kaziranga Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ### Explore Other Parks
 

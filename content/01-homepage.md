@@ -22,7 +22,7 @@ The honest truth is that you can absolutely book a tiger safari in India yoursel
 
 We have spent ten years arranging **tiger safari in India** trips for those people. Your own jeep, a naturalist who knows the local tigress by name (and her two cubs from last March), and lodges we have personally slept in often enough to have opinions about the breakfast. Permits, airport transfers, and the 4 AM wake-up call: all of it sits with us, handled by people who do this every week and have very little patience for it going wrong. Your only job is to turn up with socks and a camera.
 
-**[Plan Your Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 *10 years · 500+ safaris · 70% of guests come back*
 
@@ -176,7 +176,7 @@ The permits are limited and the good lodges book out earlier than you expect, so
 2. We build the itinerary and send you an itemised written quote within 24 hours.
 3. You confirm. We handle everything else.
 
-**[Plan Your Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ---
 

@@ -182,7 +182,7 @@ A 3-night **pench national park tour** with us includes your own jeep, a natural
 
 Send us your dates, your city of departure, and what you are after. We send back a written itemised quote within 24 hours.
 
-**[Plan Your Pench Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Pench Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ### Explore Other Parks
 

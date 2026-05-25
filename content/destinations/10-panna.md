@@ -169,7 +169,7 @@ A 3-night Panna trip with Khajuraho temple visits includes the jeep safaris, the
 
 Send us your dates and your city of departure. We will write back with a written itemised quote within 24 hours.
 
-**[Plan Your Panna Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Panna Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ### Explore Other Parks
 

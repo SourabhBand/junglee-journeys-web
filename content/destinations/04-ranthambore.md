@@ -181,7 +181,7 @@ A 3-night Ranthambore package with us includes your own jeep, a naturalist for t
 
 Send us your dates, your city of departure, and what you are after. We send back a written itemised quote within 24 hours, with no deposit until you say yes.
 
-**[Plan Your Ranthambore Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Ranthambore Safari](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ### Explore Other Parks
 

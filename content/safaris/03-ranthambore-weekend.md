@@ -180,7 +180,7 @@ A 2 or 3 night **ranthambore tour package** with us includes your own jeep, a na
 
 We send back a written and itemised quote within 24 hours of an enquiry. There is no deposit until you say yes.
 
-**[Plan Your Ranthambore Weekend](/enquire/)**   **[WhatsApp Us](https://wa.me/)**
+**[Plan Your Ranthambore Weekend](/enquire/)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ### Related
 

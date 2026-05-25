@@ -7,3 +7,4 @@ export { AnimateOnScroll } from './AnimateOnScroll';
 export { default as FAQAccordion } from './FAQAccordion';
 export { CurrencyConverter } from './CurrencyConverter';
 export { EnquiryForm } from './EnquiryForm';
+export { WhatsAppFloat } from './WhatsAppFloat';

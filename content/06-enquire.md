@@ -72,8 +72,8 @@ If your dates are running tight on permits in the high-demand months (March to M
 
 If you would rather skip the form and just message a human, all three direct channels are open.
 
-- **WhatsApp:** [+91 XXXXX XXXXX](https://wa.me/91XXXXXXXXXX) (fastest, even for international guests)
-- **Phone:** [+91 XXXXX XXXXX](tel:+91XXXXXXXXXX) (Mon to Sat, 10 AM to 7 PM IST)
+- **WhatsApp:** [+91 93700 37237](https://wa.me/919370037237) (fastest, even for international guests)
+- **Phone:** [+91 93700 37237](tel:+919370037237) (Mon to Sat, 10 AM to 7 PM IST)
 - **Email:** [hello@jungleejourneys.com](mailto:hello@jungleejourneys.com)
 
 A WhatsApp message is faster than the form for **plan tiger safari** questions when your dates are flexible and you just want a rough quote. The form is faster when your dates are fixed and you want a complete itinerary on the first reply.
@@ -104,7 +104,7 @@ Not usually. The permits, the lodge, and the guide are tightly linked, and separ
 
 Fill in the form, message us on WhatsApp, or call. Whichever is easier for you. Same team, same 24-hour response time.
 
-**[Send Enquiry](#enquiry-form)**   **[WhatsApp Us](https://wa.me/91XXXXXXXXXX)**
+**[Send Enquiry](#enquiry-form)**   **[WhatsApp Us](https://wa.me/919370037237)**
 
 ---
 

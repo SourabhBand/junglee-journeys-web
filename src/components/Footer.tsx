@@ -110,9 +110,8 @@ export function Footer() {
               Get in Touch
             </p>
             <div className="flex flex-col gap-2.5 font-serif text-[14px] text-[#ede4d1]/80">
-              {/* TODO: replace wa.me/ with the actual WhatsApp number e.g. wa.me/919876543210 */}
               <a
-                href="https://wa.me/"
+                href="https://wa.me/919370037237"
                 className="hover:text-[#e79e23] transition"
                 target="_blank"
                 rel="noopener noreferrer"
