@@ -1,28 +1,89 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { Header, Footer, OrnamentDivider, CurrencyConverter } from "@/components";
-import { DESTINATIONS } from "@/lib/content";
+import { Header, Footer, OrnamentDivider } from "@/components";
+import { DESTINATIONS, type DestinationSummary } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Best Tiger Reserves India | Safari Destinations | Junglee Journeys",
+  title: "Tiger Reserves and National Parks of India | Junglee Journeys",
   description:
-    "Explore India's top tiger reserves. Compare Kanha, Tadoba, Ranthambore, Bandhavgarh and more. Tiger sighting rates, best seasons and lodge options.",
+    "Explore 18 of India's best tiger reserves, national parks and wildlife sanctuaries. Size, season, access and what each park is best known for.",
   alternates: { canonical: "https://jungleejourneys.com/destinations/" },
   openGraph: {
-    title: "Best Tiger Reserves India | Safari Destinations | Junglee Journeys",
+    title: "Tiger Reserves and National Parks of India | Junglee Journeys",
     description:
-      "Explore India's top tiger reserves. Compare Kanha, Tadoba, Ranthambore, Bandhavgarh and more.",
+      "Explore 18 of India's best tiger reserves, national parks and wildlife sanctuaries.",
     type: "website",
   },
 };
 
 const REGIONS = [
   "Central India",
-  "North India",
+  "North and West India",
   "Northeast India",
-  "West India",
 ] as const;
+
+const CHOOSE_BY = [
+  { label: "Best odds of seeing a Tiger", parks: "Tadoba, Bandhavgarh" },
+  { label: "Closest to Mumbai or Pune", parks: "Pench, Tadoba" },
+  { label: "Closest to Delhi", parks: "Ranthambore, Corbett" },
+  { label: "Best for First Timers", parks: "Tadoba, Kanha, Kaziranga" },
+  { label: "Best for Families", parks: "Pench, Kaziranga, Corbett, Kanha" },
+  { label: "Best for Photographers", parks: "Bandhavgarh, Manas, Pangot, Desert NP" },
+  { label: "Best for Lions", parks: "Gir" },
+  { label: "Rhinos and Elephants", parks: "Kaziranga, Manas, Pobitora, Dudhwa" },
+  { label: "Remote Marvels", parks: "Manas, Namdhapha, Pangot, Desert NP" },
+  { label: "Best Conservation Success Story", parks: "Kaziranga, Gir, Desert NP, Pobitora, Panna" },
+];
+
+function ParkBox({ park }: { park: DestinationSummary }) {
+  const inner = (
+    <>
+      <h3 className="font-serif font-semibold text-[22px] mb-4 leading-tight">
+        {park.fullName}
+      </h3>
+      <div className="space-y-1.5 font-serif text-[14px] text-[#081d01]/80">
+        {park.size && (
+          <p>
+            <strong>Size:</strong> {park.size}
+          </p>
+        )}
+        <p>
+          <strong>Known For:</strong> {park.knownFor}
+        </p>
+        <p>
+          <strong>Best Season:</strong> {park.bestSeason}
+        </p>
+        <p>
+          <strong>Nearest Airport:</strong> {park.nearestAirport}
+        </p>
+        <p>
+          <strong>Nearest Train Station:</strong> {park.nearestTrainStation}
+        </p>
+      </div>
+      {park.hasDetailPage && (
+        <span className="font-serif text-[14px] text-[#e79e23] underline inline-block mt-5">
+          Explore {park.name}
+        </span>
+      )}
+    </>
+  );
+
+  const baseClass =
+    "block bg-[#ede4d1] rounded-[9px] p-6 destination-card h-full";
+
+  if (park.hasDetailPage) {
+    return (
+      <Link
+        href={`/destination/${park.slug}/`}
+        className={`${baseClass} hover:scale-[1.02] transition`}
+      >
+        {inner}
+      </Link>
+    );
+  }
+
+  return <div className={baseClass}>{inner}</div>;
+}
 
 export default function DestinationsHubPage() {
   return (
@@ -33,17 +94,14 @@ export default function DestinationsHubPage() {
       <section className="bg-[#081d01] text-[#ede4d1] py-[80px] md:py-[120px]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="section-heading text-[36px] md:text-[56px] mb-6 leading-tight">
-            Tiger Reserves in India
+            Tiger Reserves and National Parks of India
           </h1>
-          <p className="font-serif italic text-[18px] md:text-[22px] text-[#ede4d1]/80 mb-8">
-            Eleven parks. Six regions. One job: pick the right one for you.
-          </p>
           <p className="font-serif text-[16px] md:text-[18px] leading-relaxed text-white max-w-3xl mx-auto">
-            India officially gazettes more than fifty <strong>tiger reserves</strong>, holding
-            roughly 3,000 wild tigers (more than half the world&apos;s total). We work in
-            eleven of them. Not because the others are bad, but because these are the ones we
-            know properly, the ones with the lodges we trust, and the ones where the guides
-            we hire have walked the same trails for ten years.
+            India has over 100 National Parks, 55 of which are{" "}
+            <strong>tiger reserves</strong>. Home to over 3,500 wild tigers, India holds
+            more than 70% of the total wild tiger population of the world. We commenced
+            operations with just Tadoba Tiger Reserve in our nascent stages, but today we
+            have a network across 17 of the best parks and wildlife areas in the country.
           </p>
         </div>
       </section>
@@ -56,52 +114,17 @@ export default function DestinationsHubPage() {
             How to Choose
           </h2>
           <p className="font-serif text-[16px] leading-relaxed mb-8">
-            Most guests pick a park before they understand what they are choosing between.
-            That is fine. But here is the short version, in case it helps.
+            Many guests pick parks based on social media posts or through second-hand
+            information from other sources. We help refine the choice by understanding
+            exactly what you need. Here are a few parks and destinations based on the
+            requests we have gotten over the years:
           </p>
           <ul className="font-serif text-[15px] md:text-[16px] leading-relaxed space-y-3">
-            <li>
-              <strong>Best odds of seeing a tiger:</strong> Bandhavgarh, then Tadoba.
-            </li>
-            <li>
-              <strong>Closest to Delhi:</strong> Ranthambore (5 hours by road) and Corbett
-              (6 hours).
-            </li>
-            <li>
-              <strong>Closest to Mumbai or Pune:</strong> Tadoba (fly to Nagpur, drive
-              3 hours).
-            </li>
-            <li>
-              <strong>Best for first-timers:</strong> Kanha. The classic Central Indian
-              experience and the safest bet for your first trip.
-            </li>
-            <li>
-              <strong>Best for families with young kids:</strong> Pench. Beautiful, relaxed,
-              and the lodges are good with children.
-            </li>
-            <li>
-              <strong>Best for photographers:</strong> Bandhavgarh for the density,
-              Ranthambore for the fort backdrops, Kanha for the meadow light.
-            </li>
-            <li>
-              <strong>Best for the trip nobody else has done:</strong> Satpura. Walking
-              safaris and boat safaris and almost no jeeps.
-            </li>
-            <li>
-              <strong>Lions, not tigers:</strong> Gir. The only place on Earth with wild
-              Asiatic lions.
-            </li>
-            <li>
-              <strong>Rhinos and elephants:</strong> Kaziranga.
-            </li>
-            <li>
-              <strong>The truly remote one:</strong> Manas, on the Bhutan border. Birding
-              paradise.
-            </li>
-            <li>
-              <strong>The conservation comeback story:</strong> Panna, where the tigers
-              were locally extinct fifteen years ago and are now thriving again.
-            </li>
+            {CHOOSE_BY.map((item) => (
+              <li key={item.label}>
+                <strong>{item.label}:</strong> {item.parks}
+              </li>
+            ))}
           </ul>
         </div>
       </section>
@@ -118,42 +141,13 @@ export default function DestinationsHubPage() {
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {parks.map((park) => (
-                  <Link
-                    key={park.slug}
-                    href={`/destination/${park.slug}/`}
-                    className="block bg-[#ede4d1] rounded-[9px] p-6 hover:scale-[1.02] transition destination-card"
-                  >
-                    <h3 className="font-serif font-semibold text-[22px] mb-2">{park.fullName}</h3>
-                    <p className="font-serif italic text-[14px] text-[#081d01]/70 mb-4">
-                      {park.tagline}
-                    </p>
-                    <div className="space-y-1 font-serif text-[13px] mb-4">
-                      <p>
-                        <strong>Sighting:</strong> {park.tigerRating}
-                      </p>
-                      <p>
-                        <strong>Best season:</strong> {park.bestSeason}
-                      </p>
-                      <p>
-                        <strong>Nearest airport:</strong> {park.nearestAirport} (
-                        {park.airportDistance})
-                      </p>
-                      <p>
-                        <strong>Best for:</strong> {park.bestFor}
-                      </p>
-                    </div>
-                    <span className="font-serif text-[14px] text-[#e79e23] underline">
-                      Explore {park.name}
-                    </span>
-                  </Link>
+                  <ParkBox key={park.slug} park={park} />
                 ))}
               </div>
             </div>
           </section>
         );
       })}
-
-      <CurrencyConverter />
 
       {/* CTA */}
       <section className="py-[80px] md:py-[100px] bg-[#081d01] text-[#ede4d1]">
@@ -164,8 +158,7 @@ export default function DestinationsHubPage() {
           <p className="font-serif text-[16px] md:text-[18px] leading-relaxed text-white mb-8">
             That is what we are here for. Tell us your dates, the city you are flying from,
             and what you are after. We will pick the park, the dates, the lodge, and the
-            guide. You confirm. We send a written quote within 24 hours, no deposit until
-            you say yes.
+            guide. You confirm.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
