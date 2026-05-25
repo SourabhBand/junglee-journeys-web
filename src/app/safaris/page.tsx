@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Header, Footer, OrnamentDivider, CurrencyConverter } from "@/components";
+import { Header, Footer, OrnamentDivider, CurrencyConverter, AnimateOnScroll } from "@/components";
 import { SAFARIS } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -80,9 +80,9 @@ export default function SafarisHubPage() {
             Flagship Packages
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {SAFARIS.map((pkg) => (
+            {SAFARIS.map((pkg, i) => (
+              <AnimateOnScroll key={pkg.slug} animation="fade-up" delay={i * 100}>
               <div
-                key={pkg.slug}
                 className="bg-[#ede4d1] rounded-[9px] p-6 md:p-8 h-full"
               >
                 <h3 className="font-serif font-semibold text-[22px] md:text-[24px] mb-4 leading-tight">
@@ -100,6 +100,7 @@ export default function SafarisHubPage() {
                   </p>
                 </div>
               </div>
+              </AnimateOnScroll>
             ))}
           </div>
         </div>

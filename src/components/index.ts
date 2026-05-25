@@ -4,6 +4,7 @@ export { Header } from './Header';
 export { Footer } from './Footer';
 export { MarkdownContent } from './MarkdownContent';
 export { AnimateOnScroll } from './AnimateOnScroll';
+export { NumberCounter } from './NumberCounter';
 export { default as FAQAccordion } from './FAQAccordion';
 export { CurrencyConverter } from './CurrencyConverter';
 export { EnquiryForm } from './EnquiryForm';

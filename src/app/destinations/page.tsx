@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Header, Footer, OrnamentDivider } from "@/components";
+import { Header, Footer, OrnamentDivider, AnimateOnScroll } from "@/components";
 import { DESTINATIONS, type DestinationSummary } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -173,7 +173,9 @@ export default function DestinationsHubPage() {
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {parks.map((park, i) => (
-                  <ParkBox key={park.slug} park={park} index={i} />
+                  <AnimateOnScroll key={park.slug} animation="fade-up" delay={i * 100}>
+                    <ParkBox park={park} index={i} />
+                  </AnimateOnScroll>
                 ))}
               </div>
             </div>

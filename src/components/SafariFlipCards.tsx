@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import { AnimateOnScroll } from './AnimateOnScroll';
 
 /* ─── Icons ─────────────────────────────────────────────────────────────── */
 
@@ -130,8 +131,8 @@ export default function SafariFlipCards() {
   return (
     <div className="lg:w-[58%] grid grid-cols-1 sm:grid-cols-2 gap-5">
       {experiences.map((exp, i) => (
+        <AnimateOnScroll key={exp.heading} animation="scale-in" delay={i * 120}>
         <div
-          key={exp.heading}
           style={{ perspective: '1200px' }}
           onClick={() => toggle(i)}
           onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && toggle(i)}
@@ -196,6 +197,7 @@ export default function SafariFlipCards() {
 
           </div>
         </div>
+        </AnimateOnScroll>
       ))}
     </div>
   );
