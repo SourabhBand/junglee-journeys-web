@@ -47,7 +47,7 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
   },
   {
     id: 'pench',
-    image: IMAGE_ASSETS.heroTiger,
+    image: IMAGE_ASSETS.penchTigerReserve,
     name: 'Pench Tiger Reserve',
     slug: 'pench',
     rank: '04',
