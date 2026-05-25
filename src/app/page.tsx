@@ -64,19 +64,22 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Stats: 10 years · 500+ safaris · 70% of guests come back */}
+        {/* Stats: 10+ years · 500+ safaris · 70% repeat guests */}
         <div className="absolute bottom-[36px] md:bottom-[52px] left-0 right-0 z-10">
-          <div className="flex justify-center gap-12 md:gap-[140px]">
+          <div className="flex justify-center gap-8 md:gap-[100px]">
             {[
-              { value: "70%", label: "Repeat Guests" },
               { value: "10+", label: "Years" },
               { value: "500+", label: "Safaris" },
+              { value: "70%", label: "Repeat Guests" },
             ].map((stat) => (
-              <div key={stat.label} className="flex flex-col items-center">
+              <div
+                key={stat.label}
+                className="flex flex-col items-center w-[120px] md:w-[140px]"
+              >
                 <div className="w-[52px] h-[52px] md:w-[58px] md:h-[58px] rounded-full border border-white/25 backdrop-blur-sm bg-white/5 flex items-center justify-center mb-2">
                   <span className="font-serif text-[14px] md:text-[15px] font-bold tracking-wide">{stat.value}</span>
                 </div>
-                <span className="font-serif text-[11px] md:text-[13px] tracking-[0.15em] uppercase opacity-70">{stat.label}</span>
+                <span className="font-serif text-[11px] md:text-[13px] tracking-[0.15em] uppercase opacity-70 whitespace-nowrap">{stat.label}</span>
               </div>
             ))}
           </div>
