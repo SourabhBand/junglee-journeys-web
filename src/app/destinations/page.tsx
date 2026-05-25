@@ -35,54 +35,86 @@ const CHOOSE_BY = [
   { label: "Best Conservation Success Story", parks: "Kaziranga, Gir, Desert NP, Pobitora, Panna" },
 ];
 
-function ParkBox({ park }: { park: DestinationSummary }) {
+function ParkBox({ park, index }: { park: DestinationSummary; index: number }) {
+  const rotated = index % 2 === 1;
+  const pillCorners = rotated
+    ? "rounded-tl-[60px] md:rounded-tl-[80px] rounded-tr-[9px] rounded-br-[60px] md:rounded-br-[80px] rounded-bl-[9px]"
+    : "rounded-tl-[9px] rounded-tr-[60px] md:rounded-tr-[80px] rounded-br-[9px] rounded-bl-[60px] md:rounded-bl-[80px]";
+
+  const containerClass = `bg-[#ede4d1] p-7 md:p-8 h-full flex flex-col overflow-hidden ${pillCorners}`;
+
+  const fields: Array<[string, string | undefined]> = [
+    ["Size", park.size],
+    ["Season", park.bestSeason],
+    ["Airport", park.nearestAirport],
+    ["Station", park.nearestTrainStation],
+  ];
+
   const inner = (
     <>
-      <h3 className="font-serif font-semibold text-[22px] mb-4 leading-tight">
+      <h3 className="font-serif font-semibold text-[20px] md:text-[22px] leading-tight mb-4 text-[#081d01]">
         {park.fullName}
       </h3>
-      <div className="space-y-1.5 font-serif text-[14px] text-[#081d01]/80">
-        {park.size && (
-          <p>
-            <strong>Size:</strong> {park.size}
-          </p>
-        )}
-        <p>
-          <strong>Known For:</strong> {park.knownFor}
-        </p>
-        <p>
-          <strong>Best Season:</strong> {park.bestSeason}
-        </p>
-        <p>
-          <strong>Nearest Airport:</strong> {park.nearestAirport}
-        </p>
-        <p>
-          <strong>Nearest Train Station:</strong> {park.nearestTrainStation}
-        </p>
+
+      <hr className="gold-rule mb-5" />
+
+      <div className="mb-5">
+        <div className="font-display text-[10px] uppercase tracking-[0.2em] text-[#081d01]/45 mb-1">
+          Known For
+        </div>
+        <div className="font-serif font-semibold text-[15px] md:text-[16px] text-[#081d01] leading-snug">
+          {park.knownFor}
+        </div>
       </div>
-      {park.hasDetailPage && (
-        <span className="font-serif text-[14px] text-[#e79e23] underline inline-block mt-5">
-          Explore {park.name}
-        </span>
-      )}
+
+      <dl className="grid grid-cols-[auto_1fr] gap-x-5 gap-y-2 font-serif text-[13px] md:text-[14px] mb-6">
+        {fields.map(([label, value]) =>
+          value ? (
+            <div key={label} className="contents">
+              <dt className="font-display text-[10px] uppercase tracking-[0.2em] text-[#081d01]/45 self-center">
+                {label}
+              </dt>
+              <dd className="text-[#081d01]/85">{value}</dd>
+            </div>
+          ) : null,
+        )}
+      </dl>
+
+      <div className="mt-auto">
+        {park.hasDetailPage ? (
+          <span className="inline-flex items-center gap-2 bg-[rgba(231,158,35,0.81)] group-hover:bg-[#e79e23] transition-colors text-white font-serif text-[14px] h-[42px] px-5 rounded-[9px]">
+            Explore {park.name}
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path
+                d="M6 12L10 8L6 4"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </span>
+        ) : (
+          <span className="inline-flex items-center font-display text-[10px] uppercase tracking-[0.25em] text-[#081d01]/40">
+            Profile coming soon
+          </span>
+        )}
+      </div>
     </>
   );
-
-  const baseClass =
-    "block bg-[#ede4d1] rounded-[9px] p-6 destination-card h-full";
 
   if (park.hasDetailPage) {
     return (
       <Link
         href={`/destination/${park.slug}/`}
-        className={`${baseClass} hover:scale-[1.02] transition`}
+        className={`block group destination-card ${containerClass}`}
       >
         {inner}
       </Link>
     );
   }
 
-  return <div className={baseClass}>{inner}</div>;
+  return <div className={containerClass}>{inner}</div>;
 }
 
 export default function DestinationsHubPage() {
@@ -140,8 +172,8 @@ export default function DestinationsHubPage() {
                 {region}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {parks.map((park) => (
-                  <ParkBox key={park.slug} park={park} />
+                {parks.map((park, i) => (
+                  <ParkBox key={park.slug} park={park} index={i} />
                 ))}
               </div>
             </div>
