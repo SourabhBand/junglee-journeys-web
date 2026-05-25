@@ -62,7 +62,7 @@ export default function TestimonialsCarousel() {
             </p>
             <div className="mt-8 pt-5 border-t border-[#081d01]/10">
               <p className="font-serif font-bold text-[15px] text-[#081d01]">{t.name}</p>
-              <p className="font-serif text-[13px] text-[#081d01]/60 tracking-wide">
+              <p className="font-serif text-[13px] text-[#081d01]/75 tracking-wide">
                 {t.location} &middot; {t.trip}
               </p>
             </div>
