@@ -97,7 +97,7 @@ export default function DestinationsHubPage() {
             Tiger Reserves and National Parks of India
           </h1>
           <p className="font-serif text-[16px] md:text-[18px] leading-relaxed text-white max-w-3xl mx-auto">
-            India has over 100 National Parks, 55 of which are{" "}
+            India has over 100 national parks, 55 of which are{" "}
             <strong>tiger reserves</strong>. Home to over 3,500 wild tigers, India holds
             more than 70% of the total wild tiger population of the world. We commenced
             operations with just Tadoba Tiger Reserve in our nascent stages, but today we

@@ -119,13 +119,13 @@ export default function Home() {
 
             <AnimateOnScroll animation="fade-up" delay={380}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
-                We have explored the best tiger reserves, traversed breathtaking landscapes, pursued and found some of the rarest birds, hiked the heights of snow leopards, basically we&rsquo;ve moved around a lot across India for the last 10 years. This decade long journey has allowed us to narrow down the best parks, best seasons and best naturalists to give you the best chance of seeing your target animal.
+                We have explored the best tiger reserves, traversed breathtaking landscapes, pursued and found some of the rarest birds, hiked the heights of snow leopards, basically we&rsquo;ve moved around a lot across India for the last 10 years. This decade-long journey has allowed us to narrow down the right parks, peak seasons and most experienced naturalists to give you the best chance of seeing your target animal.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={500}>
               <p className="font-serif italic text-[20px] md:text-[26px] leading-[1.6] text-[#081d01] text-center">
-                All you have to do is turn up with socks and a binocular.
+                All you have to do is turn up with socks and a pair of binoculars.
               </p>
             </AnimateOnScroll>
           </div>
@@ -150,25 +150,25 @@ export default function Home() {
             {[
               {
                 heading: "Private Jeep Safaris",
-                body: "A safari vehicle that is only occupied by you and your group. Explore the forest on your own terms and try to find your target species. If you wish to be away from the crowds, just indicate the same to your guide or driver or naturalist, and they will make sure to take you to the quiet corners of the forest. Enjoy the wilderness at your own pace.",
+                body: "A safari vehicle occupied only by you and your group. Explore the forest on your own terms and try to find your target species. If you wish to be away from the crowds, just indicate the same to your guide or driver or naturalist, and they will make sure to take you to the quiet corners of the forest. Enjoy the wilderness at your own pace.",
                 rotated: false,
                 delay: 0,
               },
               {
                 heading: "Experienced Naturalists and Guides",
-                body: "With years of experience under their belt, we have identified the best guides and naturalists in every park. Guides that grew up in the buffer zones of wildlife reserves and naturalists who have dedicated decades to wildlife, these individuals are attuned to the ebbs and flows of nature. From their exceptional tracking skills to their deep knowledge repository, a naturalist-led private safari is truly the best way to experience the national parks and wild havens of India.",
+                body: "With years of experience under their belt, we have identified the best guides and naturalists in every park. Guides that grew up in the buffer zones of wildlife reserves and naturalists who have dedicated decades to wildlife, these individuals are attuned to the ebbs and flows of nature. From their exceptional tracking skills to their deep field knowledge, a naturalist-led private safari is the finest way to experience the national parks and wild havens of India.",
                 rotated: false,
                 delay: 80,
               },
               {
                 heading: "Lodges we have actually Slept In",
-                body: "From photos that don’t match the rooms to fake reviews, the online world isn’t as trustworthy and unbiased as it needs to be. But we bridge that gap of deceits by experiencing the lodges ourselves before recommending them to clients. It’s important to know exactly where you are putting your hard-earned money. We ensure our vendors and accommodation partners are held to our high standards. From hygienic rooms to delicious food, we make sure you have a seamless accommodation experience.",
+                body: "From photos that don’t match the rooms to fake reviews, the online world isn’t as trustworthy and unbiased as it needs to be. But we bridge that gap by experiencing the lodges ourselves before recommending them to clients. It’s important to know exactly where you are putting your hard-earned money. We ensure our vendors and accommodation partners are held to our high standards. From hygienic rooms to delicious food, we make sure you have a seamless accommodation experience.",
                 rotated: true,
                 delay: 160,
               },
               {
                 heading: "One Stop Shop",
-                body: "Safari permits, safari vehicle allocations, selection of zones, the lodge bookings, airport pickup, inter-park transfers, wildlife updates, everything to do with backend of a safari experience sits with us. All you have to do is turn up. We don’t just provide safaris; we provide the complete experience.",
+                body: "Safari permits, safari vehicle allocations, selection of zones, the lodge bookings, airport pickup, inter-park transfers, wildlife updates, everything to do with the back end of a safari experience sits with us. All you have to do is turn up. We don’t just provide safaris; we provide the complete experience.",
                 rotated: true,
                 delay: 240,
               },
@@ -211,10 +211,10 @@ export default function Home() {
                 Customised Safari Experiences
               </h2>
               <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%] mb-6">
-                Different travellers have different ideas of what constitutes an ideal safari experience. A photographer with a 400m lens needs a completely different itinerary to a birder with binoculars. A family would want a very different itinerary to a group of college friends. We stitch an itinerary specific to you and what you want. From trying to achieve the target checklist of species to just a leisurely stroll through the forest, we create bespoke experiences that cater to your specific need rather than generic itineraries that cater to the masses.
+                Different travellers have different ideas of what constitutes an ideal safari experience. A photographer with a 400mm lens needs a completely different itinerary to a birder with binoculars. A family would want a very different itinerary to a group of college friends. We stitch an itinerary specific to you and what you want. From trying to achieve the target checklist of species to just a leisurely stroll through the forest, we create bespoke experiences that cater to your specific need rather than generic itineraries that cater to the masses.
               </p>
               <p className="font-serif italic text-[15px] md:text-[16px] text-[#ede4d1]/80 leading-[170%] mb-8">
-                Its not just a safari package, it&rsquo;s your safari package!
+                It&rsquo;s not just a safari package, it&rsquo;s your safari package!
               </p>
               <hr className="gold-rule mb-8" />
               <div className="mt-auto">

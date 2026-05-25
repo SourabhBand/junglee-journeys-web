@@ -43,7 +43,7 @@ A **tiger photography tour in India** is one of those trips where the difference
 
 The naturalist who runs your photography trip is not a generalist who has read about wildlife photography. They are a working photographer themselves, with their own portfolio and an understanding of the technical and compositional choices you are trying to make. They speak the language: focal length, aperture, the difference between front-lit and back-lit, why the photographer is muttering about ISO 6400 at 6:15 AM. The communication is faster, the positioning is smarter, and the trip wastes much less time on misunderstandings.
 
-This is the single most important variable, and it is the one most operators get wrong. A great wildlife guide is not automatically a great photography guide, and vice versa. Our **wildlife photography safari** programme is built around the small number of naturalists in our team who genuinely fluent in both worlds.
+This is the single most important variable, and it is the one most operators get wrong. A great wildlife guide is not automatically a great photography guide, and vice versa. Our **wildlife photography safari** programme is built around the small number of naturalists in our team who are genuinely fluent in both worlds.
 
 ### The vehicles are configured for clean shots
 

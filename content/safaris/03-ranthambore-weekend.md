@@ -118,7 +118,7 @@ The Ranthambore Weekend is the right trip for:
 - **Returning guests** who have done a longer central Indian trip and want a quick repeat visit to the most photographed park in the country
 - **Photographers** who are specifically chasing the fort backdrop or the cenotaph compositions that Ranthambore is famous for
 
-This is not the right trip for guests with more than a week in country (the Central India Tiger Trail or a multi-park itinerary will give you more for the same effort), for guests who want depth across multiple parks, or for guests for whom the **ranthambore day trip** format would actually be more honest. We do not recommend day trips. The minimum we run is two nights, because the four-drive rule matters and the math does not work below it.
+This is not the right trip for guests with more than a week in the country (the Central India Tiger Trail or a multi-park itinerary will give you more for the same effort), for guests who want depth across multiple parks, or for guests for whom the **ranthambore day trip** format would actually be more honest. We do not recommend day trips. The minimum we run is two nights, because the four-drive rule matters and the math does not work below it.
 
 ---
 

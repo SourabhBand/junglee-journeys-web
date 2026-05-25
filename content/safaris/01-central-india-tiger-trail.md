@@ -33,7 +33,7 @@ The Central India Tiger Trail is our flagship multi-park itinerary, and the trip
 
 This is not three separate trips stitched together. It is one trip that moves through three parks deliberately, and the order matters. Kanha first, because it eases first-time guests into the rhythm of an Indian safari (the early starts, the gate procedures, the patience the format requires). Bandhavgarh second, because that is where the sighting density does most of the heavy lifting and where most guests get their best photographs. Pench third, because the smaller park and the family-friendly lodges are the right way to wind down after the more intensive earlier legs.
 
-A **tiger safari in central India** itinerary like this one is what most international guests want when they come to India for wildlife, even if they do not know it yet. It is also our most-booked single product after the Ranthambore Weekend.
+A central India tiger safari itinerary like this one is what most international guests want when they come to India for wildlife, even if they do not know it yet. It is also our most-booked single product after the Ranthambore Weekend.
 
 ---
 
@@ -123,12 +123,12 @@ What is not included:
 
 The Central India Tiger Trail is the trip we recommend for:
 
-- **First-time wildlife guests in India** who want one really good shot at understanding what makes the central Indian parks special, and who can spend 7 to 9 nights in country
+- **First-time wildlife guests in India** who want one really good shot at understanding what makes the central Indian parks special, and who can spend 7 to 9 nights in the country
 - **Repeat safari guests** who have done African safaris and want to understand how the Indian version differs (it differs significantly, and central India is the right place to see why)
 - **Photographers** who want a productive, focused trip with the same naturalist throughout, and who prefer the consistency of a single-region trip over the disruption of inter-state flights
 - **Couples** celebrating something specific, where the depth of the experience matters more than the variety of locations
 
-The trip is less suited for guests with very young children (the 4 AM wake-up calls are harder than parents expect) and for guests with less than a week in country (the multi-park logistics need the runway to work properly).
+The trip is less suited for guests with very young children (the 4 AM wake-up calls are harder than parents expect) and for guests with less than a week in the country (the multi-park logistics need the runway to work properly).
 
 ---
 
@@ -174,7 +174,7 @@ A single-park trip is the right choice for guests with less than 5 days or for g
 
 ### Is this a **jungle safari madhya pradesh** trip or does it cross states?
 
-All three parks (Kanha, Bandhavgarh, Pench) are in Madhya Pradesh, so it is genuinely a **tiger safari in Madhya Pradesh** itinerary in the strict sense, although Pench technically straddles the Madhya Pradesh and Maharashtra border (we use the Madhya Pradesh side). The road journeys between the parks all stay within Madhya Pradesh, which keeps the logistics clean.
+All three parks (Kanha, Bandhavgarh, Pench) are in Madhya Pradesh, so it is genuinely a Madhya Pradesh **tiger safari** itinerary in the strict sense, although Pench technically straddles the Madhya Pradesh and Maharashtra border (we use the Madhya Pradesh side). The road journeys between the parks all stay within Madhya Pradesh, which keeps the logistics clean.
 
 ### Can the trip be done in less than 7 nights?
 

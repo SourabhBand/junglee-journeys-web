@@ -74,7 +74,7 @@ This is the most common step, and it is the part of **safari booking in India** 
 
 ### 4. You confirm and we lock the trip
 
-Once you say yes, we lock the permits and the lodge rooms. You pay a 30% deposit. The final balance is due 30 days before departure. From that point on, the trip is fixed and the only thing left for you to do is turn up at the airport.
+Once you say yes, we lock the permits and the lodge rooms. You pay a 30% deposit. The final balance is due 15 days before departure. From that point on, the trip is fixed and the only thing left for you to do is turn up at the airport.
 
 There is no deposit at any point before you say yes. You can ask as many questions as you want without commitment. The team that handles the enquiry is the team that runs the trip, so you are not getting passed between sales and operations.
 

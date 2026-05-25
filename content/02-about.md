@@ -29,9 +29,9 @@ Exploring nature has always been a passion for our team. We never thought our pa
 
 Raviraj Soman, our founder and head naturalist, saw his first ever tiger at Kanha National Park all the way back in 2002. Just 12 years of age, all it took was one safari to make him fall madly in love with wildlife. From the petrichor in the breeze to the golden drops of sunlight pushing through the canopies, from the sharp alarm calls of the spotted deer echoing through the forest to the very moment his eyes locked in on a majestic tigress floating through the grass, every moment of that safari is ironed into his memory.
 
-The experience was so impactful that in that very moment at the age of 12, Raviraj knew he wanted to spend his life amidst nature, and hence began his journey towards a career in wildlife. He worked across Central India as a naturalist for the better part of a decade, leading nature trails, safaris, training guides and learning the forests like the neighbourhood he grew up in. Ethics have always been the priority and irresponsible tourism was always a deal breaker.
+The experience was so impactful that in that very moment at the age of 12, Raviraj knew he wanted to spend his life amidst nature, and so began his journey towards a career in wildlife. He worked across Central India as a naturalist for the better part of a decade, leading nature trails and safaris, training guides, and learning the forests like the neighbourhood he grew up in. Ethics have always been the priority and irresponsible tourism was always a deal-breaker.
 
-It is this very experience and strong base of ethics that we have built this company around. No middlemen, no call centres reading from a script, no itineraries designed by someone who has never set foot in a park. Every itinerary is planned by a team that has actually walked the trails and tracked the tigers, a team which is truly passionate about making wildlife tours in India ethical and memorable for the clients.
+It is this very experience and strong base of ethics that we have built this company around. No middlemen, no call centres reading from a script, no itineraries designed by someone who has never set foot in a park. Every itinerary is planned by a team that has actually walked the trails and tracked the tigers, a team that is truly passionate about making wildlife tours in India ethical and memorable for our clients.
 
 It has been over 500 safaris and the passion has only grown stronger.
 
@@ -63,7 +63,7 @@ It has been over 500 safaris and the passion has only grown stronger.
 
 10 years, 500+ safaris. 70% of our guests come back.
 
-The repeat clientele rate is the one that matters most. People do not come back for a tiger safari if it was just fine. The first trip is a gamble. The second one is the verdict.
+The repeat clientele rate is the one that matters most. People do not come back for a tiger safari if the first one was just fine. The first trip is a gamble. The second one is the verdict.
 
 ---
 

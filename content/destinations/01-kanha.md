@@ -30,7 +30,7 @@
 
 Kanha is what Mowgli's forest looked like before the marketing department got involved. Sal trees in straight ranks, meadows wide enough that you actually forget you came here for tigers, and a tiger population that has held steady for two decades because the people running this park are very serious about their work and very polite about telling you so.
 
-Kipling never set foot in Kanha. He read three books written by men who had, decided that was sufficient, and gave the world The Jungle Book. The "Mowgli Kanha" connection on every other safari brochure is honest enough. The topography lined up. The bears are still here. The wolves were until recently. Mowgli is, regrettably, fictional.
+Kipling never set foot in Kanha. He read three books written by men who had, decided that was sufficient, and gave the world The Jungle Book. The "Mowgli Kanha" connection on every other safari brochure is honest enough. The topography lined up. The bears are still here. The wolves were here until recently. Mowgli is, regrettably, fictional.
 
 **Kanha Tiger Reserve** covers about 940 square kilometres. There are roughly 130 tigers in the protected area, give or take whichever ones the cameras happened to catch this month, plus around 200 leopards, an unusually healthy population of barasingha (the swamp deer that exists almost nowhere else), and a population of dhole (the Indian wild dog) that is among the densest in central India.
 
@@ -53,7 +53,7 @@ Other species you have a serious chance of seeing on a 3-night trip:
 - Sambar, chital, and barking deer in numbers
 - More than 300 bird species, with the Indian roller and the racket-tailed drongo being two that even non-birders end up admiring
 
-The lesser-known specialty of Kanha is the dawn chorus. The first hour after the gates open in November and December is among the most acoustically rich experiences any Indian wildlife reserve offers, and we time our morning drives to be inside the park when it starts.
+The lesser-known speciality of Kanha is the dawn chorus. The first hour after the gates open in November and December is among the most acoustically rich experiences any Indian wildlife reserve offers, and we time our morning drives to be inside the park when it starts.
 
 ---
 

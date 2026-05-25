@@ -9,14 +9,14 @@ const wildlifeData = [
     id: 'asiatic-lions',
     image: IMAGE_ASSETS.asiaticLion,
     title: 'Asiatic Lions',
-    subtitle: 'The last living population of the Asiatic Lion in found in the state of Gujarat. Once at the brink of extinction, the lions have made an incredible comeback making this one of the biggest success stories of wildlife conservation in India.',
+    subtitle: 'The last living population of the Asiatic Lion is found in the state of Gujarat. Once at the brink of extinction, the lions have made an incredible comeback, making this one of the biggest success stories of wildlife conservation in India.',
     location: 'Gir National Park',
   },
   {
     id: 'one-horned-rhinos',
     image: IMAGE_ASSETS.oneHornedRhino,
     title: 'Indian One-Horned Rhino',
-    subtitle: 'Another massive success story from Indian conservation is that of the Indian One-Horned Rhino. Their population grows slowly but steadily, due to tireless efforts of the forest department as well as ngos across the country.',
+    subtitle: 'Another massive success story from Indian conservation is that of the Indian One-Horned Rhino. Their population grows slowly but steadily, due to the tireless efforts of the forest department as well as NGOs across the country.',
     location: 'Kaziranga, Manas, Pobitora, Dudhwa',
   },
   {
@@ -30,7 +30,7 @@ const wildlifeData = [
     id: 'hoolock-gibbon',
     image: IMAGE_ASSETS.hoolockGibbon,
     title: 'Hoolock Gibbon',
-    subtitle: 'The only species of ape in the country, the hoolock gibbon adorns the canopies of Northeast India. Loud echoing calls and agile movements through the trees, sighting a Gibbon is a remarkable experience.',
+    subtitle: 'The only species of ape in the country, the hoolock gibbon adorns the canopies of Northeast India. With loud echoing calls and agile movements through the trees, sighting a gibbon is a remarkable experience.',
     location: 'Kaziranga, Hollongapar',
   },
   {

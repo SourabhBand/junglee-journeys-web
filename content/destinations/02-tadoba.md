@@ -81,7 +81,7 @@ Peak weekend demand from Mumbai and Pune runs from December to February. Book 4 
 
 ## How to Reach Tadoba
 
-Nagpur is the nearest airport, and the answer to almost every Tadoba logistics question is "fly to Nagpur, then drive 3 hours." The route is **tadoba from nagpur** via the Wardha or Chandrapur road, depending on which gate you are using. Daily direct flights to Nagpur from Delhi, Mumbai, Pune, Hyderabad, and Bangalore. The airport is small, modern, and fast.
+Nagpur is the nearest airport, and the answer to almost every Tadoba logistics question is "fly to Nagpur, then drive 3 hours." The route from Nagpur to **Tadoba** runs via the Wardha or Chandrapur road, depending on which gate you are using. Daily direct flights to Nagpur from Delhi, Mumbai, Pune, Hyderabad, and Bangalore. The airport is small, modern, and fast.
 
 For weekend logistics from the major Indian metros:
 

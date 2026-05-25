@@ -20,9 +20,9 @@
 
 *Eleven parks. Six regions. One job: pick the right one for you.*
 
-India officially gazettes more than fifty **tiger reserves**, holding roughly 3,000 wild tigers (more than half the world's total). We work in eleven of them. Not because the others are bad, but because these are the ones we know properly, the ones with the lodges we trust, and the ones where the guides we hire have walked the same trails for ten years.
+India officially gazettes 55 **tiger reserves**, holding more than 3,500 wild tigers (more than half the world's total). We work in eleven of them. Not because the others are bad, but because these are the ones we know properly, the ones with the lodges we trust, and the ones where the guides we hire have walked the same trails for ten years.
 
-This is the pillar page for those eleven. If you are wondering which is the **best tiger reserve in India** has, the honest answer is that there is no single best. There is the best one for what you actually want, and the rest of this page will help you figure out which one that is.
+This is the pillar page for those eleven. If you are wondering which is the **best tiger reserve in India**, the honest answer is that there is no single best. There is the best one for what you actually want, and the rest of this page will help you figure out which one that is.
 
 ---
 
@@ -40,7 +40,7 @@ Most guests pick a park before they understand what they are choosing between. T
 - **Lions, not tigers:** Gir. The only place on Earth with wild Asiatic lions.
 - **Rhinos and elephants:** Kaziranga.
 - **The truly remote one:** Manas, on the Bhutan border. Birding paradise.
-- **The conservation comeback story:** Panna, where the tigers were locally extinct fifteen years ago and are now thriving again.
+- **The conservation comeback story:** Panna, where the tigers were locally extinct more than fifteen years ago and are now thriving again.
 
 If your priority is sighting probability, you want a Central Indian park. If your priority is logistics from a particular city, the answer depends on the city. If your priority is doing something nobody at the dinner party has done, go to Satpura or Manas. Tell us which of these matters to you and we will pick for you.
 
@@ -48,7 +48,7 @@ If your priority is sighting probability, you want a Central Indian park. If you
 
 ## Central India
 
-The tiger heartland. Six reserves, the highest tiger density in the country, and the lodges that the rest of India tends to copy. If you are doing one trip and you want it to count, this is the region you want. Most of the **best tiger safari in India** itineraries we run come from these six parks, and most of our repeat guests started their JJ journey here.
+The tiger heartland. Six reserves, the highest tiger density in the country, and the lodges that the rest of India tends to copy. If you are doing one trip and you want it to count, this is the region you want. Most of the **best tiger safari in India** itineraries we run come from these six parks, and most of our repeat guests started their journey with us here.
 
 ### **[Kanha Tiger Reserve](/destination/kanha/)**
 
@@ -183,9 +183,9 @@ If you are looking for the best safari you can reach from where you actually liv
 | **Delhi** | Ranthambore | 5 hours by road, or fly Jaipur and drive 3.5 hours |
 | **Mumbai** | Tadoba | Fly Nagpur, drive 3 hours. The **safari near mumbai** that actually works for a weekend. |
 | **Pune** | Tadoba | Same as Mumbai. Fly Nagpur, drive 3 hours. The **safari near pune** logistics are identical. |
-| **Bangalore** | Kabini or Nagarhole are closer (4 hours by road). For our parks, the answer is Tadoba via Nagpur. **Safari near bangalore** is genuinely better served by the Karnataka parks if proximity is the only criterion. | |
-| **Hyderabad** | Tadoba (fly Nagpur) or Pench (fly Nagpur) | |
-| **Kolkata** | Kaziranga (fly Guwahati or Jorhat) | |
+| **Bangalore** | Tadoba (via Nagpur) | Kabini or Nagarhole in Karnataka are closer (4 hours by road). For our parks, the answer is Tadoba via Nagpur. **Safari near Bangalore** is genuinely better served by the Karnataka parks if proximity is the only criterion. |
+| **Hyderabad** | Tadoba or Pench | Fly Nagpur, drive to either Tadoba or Pench. |
+| **Kolkata** | Kaziranga | Fly Guwahati or Jorhat. |
 
 ---
 

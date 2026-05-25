@@ -71,7 +71,7 @@ A 3-night trip with us means six game drives total. Most of our guests see at le
 
 The park is open from 16 October to 30 June. The rest of the year is monsoon, and the gates are closed.
 
-October to February is the comfortable window. Mornings start cool (8 to 12 degrees in December at 5:30 AM), the river is full, and the Forest is genuinely lush in the early winter weeks. The lodges fill earlier than for the higher-volume parks because Pench has fewer rooms total.
+October to February is the comfortable window. Mornings start cool (8 to 12 degrees in December at 5:30 AM), the river is full, and the forest is genuinely lush in the early winter weeks. The lodges fill earlier than for the higher-volume parks because Pench has fewer rooms total.
 
 March to mid-June is hot. Afternoons cross 40 degrees in May. The sightings sharpen because tigers and other predators come to the river and to the small water holes. If your priority is the photograph, come in April or May. If your priority is sleeping under a blanket, come in December.
 

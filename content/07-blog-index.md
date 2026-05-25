@@ -57,7 +57,7 @@ The Panna tiger reintroduction. The Manas recovery. The Kaziranga rhino numbers.
 
 ### Beyond tigers
 
-Asiatic lions in Gir. One-horned rhinos in Kaziranga. Wild dogs in Pench. Sloth bears in Satpura. The animals you go to India for after you have done the tiger trips. Functions partly as a **wildlife guide for India** for second-time visitors who want to see something different.
+Asiatic lions in Gir. One-horned rhinos in Kaziranga. Wild dogs in Pench. Sloth bears in Satpura. The animals you go to India for after you have done the tiger trips. Doubles as a **wildlife guide for India** for second-time visitors who want to see something different.
 
 ---
 

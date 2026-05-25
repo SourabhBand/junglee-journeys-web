@@ -21,7 +21,7 @@ const FAQAccordion = () => {
     },
     {
       question: "Which is the best tiger reserve in India?",
-      answer: "Honestly, it depends what you want. Bandhavgarh for the best odds. Ranthambore for the fort photographs. Tadoba for weekend access from Mumbai. Kanha for the meadow light and the classic experience. Tiger reserve India is not really a single thing, and asking which one is best is a bit like asking which flavour of ice cream is best. Tell us what matters most to you and we will pick for you.",
+      answer: "Honestly, it depends on what you want. Bandhavgarh for the best odds. Ranthambore for the fort photographs. Tadoba for weekend access from Mumbai. Kanha for the meadow light and the classic experience. Asking which tiger reserve in India is best is a bit like asking which flavour of ice cream is best. Tell us what matters most to you and we will pick for you.",
     },
     {
       question: "Is an Indian safari like an African safari?",

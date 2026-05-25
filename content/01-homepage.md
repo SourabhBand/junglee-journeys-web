@@ -54,7 +54,7 @@ The permits, the lodge bookings, the airport pickup, the inter-park transfers, t
 
 ## India's Premier Tiger Reserves
 
-India holds more than half the world's wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. The country gazettes more than fifty official **tiger reserves**, and we operate in eleven of them. Each one is a completely different argument for going. Six to start with.
+India holds more than half the world's wild tigers, which is the kind of statistic that sounds invented until you visit and realise it is, slightly improbably, true. The country gazettes 55 official **tiger reserves**, and we operate in eleven of them. Each one is a completely different argument for going. Six to start with.
 
 ### **[Kanha Tiger Reserve](/destination/kanha/)**
 
@@ -80,7 +80,7 @@ Pench is the actual Jungle Book setting, although Kipling never set foot in it a
 
 Satpura is the **wildlife safari** for guests who have already done Kanha and Bandhavgarh and want a quieter version of the trip. Walking safaris and boat safaris and almost no jeeps. Sloth bears, gaur, leopards, and the occasional tiger when she feels like making an appearance.
 
-These six are the parks we run most often, but they are not the only ones we work in. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out our list of eleven. Pick the wrong park for your dates and the **best tiger safari in India** has on offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
+These six are the parks we run most often, but they are not the only ones we work in. Five more (Corbett, Kaziranga, Manas, Panna, and Gir) round out our list of eleven. Pick the wrong park for your dates and the **best tiger safari in India** has to offer will still feel generic. Pick the right one and you have the kind of week that quietly reorganises how you think about your free time.
 
 **[View All 11 Destinations](/destinations/)**
 
@@ -140,11 +140,11 @@ Probably. We do not guarantee wildlife sightings, because anyone who guarantees 
 
 ### Which is the best tiger reserve in India?
 
-Honestly, it depends what you want. Bandhavgarh for the best odds. Ranthambore for the fort photographs. Tadoba for weekend access from Mumbai. Kanha for the meadow light and the classic experience. **Tiger reserves in India** is not really a single thing, and asking which one is best is a bit like asking which flavour of ice cream is best. Tell us what matters most to you and we will pick for you.
+Honestly, it depends on what you want. Bandhavgarh for the best odds. Ranthambore for the fort photographs. Tadoba for weekend access from Mumbai. Kanha for the meadow light and the classic experience. Asking which **tiger reserve in India** is best is a bit like asking which flavour of ice cream is best. Tell us what matters most to you and we will pick for you.
 
 ### Is an Indian safari like an African safari?
 
-Different rhythm entirely. African safaris are about open savannah and large herds, and the wildlife essentially performs in the open. An **indian safari** is about dense forest, hidden tigers, and the patience to wait for an animal that has very little interest in being watched. Both are extraordinary in their own ways. They are not interchangeable.
+Different rhythm entirely. African safaris are about open savannah and large herds, and the wildlife essentially performs in the open. An **Indian safari** is about dense forest, hidden tigers, and the patience to wait for an animal that has very little interest in being watched. Both are extraordinary in their own ways. They are not interchangeable.
 
 ### How far ahead should I book?
 
@@ -164,7 +164,7 @@ Yes, and we do this often. Panna pairs naturally with the Khajuraho temples. Sat
 
 ### Photography-focused trips?
 
-Yes. We run a dedicated photography expedition with guides who understand light, positioning, and animal behaviour at a serious level. A photography-focused **safari in india** is materially different from a generic one, and if you have brought serious equipment we will plan around it.
+Yes. We run a dedicated photography expedition with guides who understand light, positioning, and animal behaviour at a serious level. A photography-focused **safari in India** is materially different from a generic one, and if you have brought serious equipment we will plan around it.
 
 ---
 
