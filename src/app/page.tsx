@@ -41,6 +41,8 @@ export default function Home() {
             src={IMAGE_ASSETS.heroTiger}
             fill
             priority
+            sizes="100vw"
+            quality={80}
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
