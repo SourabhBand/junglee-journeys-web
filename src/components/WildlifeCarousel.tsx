@@ -13,6 +13,13 @@ const wildlifeData = [
     location: 'Gir National Park',
   },
   {
+    id: 'leopard',
+    image: IMAGE_ASSETS.indianLeopard,
+    title: 'Leopard',
+    subtitle: "Often overlooked in a country famous for its tigers, the Leopard is one of India's most elusive big cats. A master of disappearing in plain sight, every sighting feels earned.",
+    location: 'Jawai, Satpura',
+  },
+  {
     id: 'one-horned-rhinos',
     image: IMAGE_ASSETS.oneHornedRhino,
     title: 'Indian One-Horned Rhino',
