@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from 'react';
 
-const RECIPIENT = 'hello@jungleejourneys.com';
+const RECIPIENT = 'jungleejourneys@gmail.com';
 
 const ADULT_OPTIONS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10+'];
 const CHILD_OPTIONS = ['0', '1', '2', '3', '4', '5+'];
