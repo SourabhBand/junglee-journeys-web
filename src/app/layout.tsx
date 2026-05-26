@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   keywords: "tiger safari india, wildlife safari, kanha national park, ranthambore safari, tadoba tiger reserve, bandhavgarh safari, luxury safari india",
   authors: [{ name: "Junglee Journeys" }],
   creator: "Junglee Journeys",
-  metadataBase: new URL("https://junglee-journeys-web.vercel.app"),
+  metadataBase: new URL("https://jungleejourneys.com"),
   openGraph: {
     title: "Junglee Journeys | Luxury Tiger Safaris in India",
     description: "Experience India's magnificent wildlife with expert naturalists. Private safaris to Kanha, Tadoba, Ranthambore & more.",
