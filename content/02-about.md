@@ -33,6 +33,8 @@ The experience was so impactful that in that very moment at the age of 12, Ravir
 
 It is this very experience and strong base of ethics that we have built this company around. No middlemen, no call centres reading from a script, no itineraries designed by someone who has never set foot in a park. Every itinerary is planned by a team that has actually walked the trails and tracked the tigers, a team that is truly passionate about making wildlife tours in India ethical and memorable for our clients.
 
+Junglee Journeys grew out of [The Mammoth Project](https://themammothproject.org), a conservation initiative Raviraj co-founded in 2017. While the conservation work continues under The Mammoth Project, Junglee Journeys is where we channel a decade of field experience into private safari planning.
+
 It has been over 500 safaris and the passion has only grown stronger.
 
 ---
