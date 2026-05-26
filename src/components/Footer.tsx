@@ -55,7 +55,7 @@ export function Footer() {
                 <InstagramIcon />
               </a>
               <a
-                href="https://facebook.com/jungleejourneys"
+                href="https://www.facebook.com/share/1CtipyWcQb/"
                 aria-label="Junglee Journeys on Facebook"
                 className="text-[#ede4d1]/60 hover:text-[#e79e23] transition"
                 target="_blank"

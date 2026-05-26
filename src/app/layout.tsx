@@ -83,7 +83,7 @@ export default function RootLayout({
               },
               "sameAs": [
                 "https://instagram.com/jungleejourneys",
-                "https://facebook.com/jungleejourneys",
+                "https://www.facebook.com/share/1CtipyWcQb/",
                 "https://themammothproject.org"
               ],
               "knowsAbout": [
