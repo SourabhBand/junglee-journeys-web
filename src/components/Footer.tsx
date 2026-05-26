@@ -105,10 +105,10 @@ export function Footer() {
                 WhatsApp Us
               </a>
               <a
-                href="mailto:hello@jungleejourneys.com"
+                href="mailto:jungleejourneys@gmail.com"
                 className="hover:text-[#e79e23] transition"
               >
-                hello@jungleejourneys.com
+                jungleejourneys@gmail.com
               </a>
               <Link className="hover:text-[#e79e23] transition" href="/enquire/">
                 Send an Enquiry
