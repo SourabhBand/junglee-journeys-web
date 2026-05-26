@@ -76,9 +76,6 @@ export function Header({ transparent = false }: HeaderProps) {
         {/* Desktop right nav + Enquire button */}
         <div className="flex items-center gap-6 lg:gap-[80px]">
           <div className="hidden md:flex gap-8 lg:gap-[80px] pl-16 lg:pl-0 font-serif text-[16px]">
-            <Link className="hover:text-[#e79e23] transition" href="/blog/">
-              Blog
-            </Link>
             <Link className="hover:text-[#e79e23] transition" href="/contact/">
               Contact
             </Link>
@@ -119,13 +116,6 @@ export function Header({ transparent = false }: HeaderProps) {
             onClick={() => setMenuOpen(false)}
           >
             Safaris
-          </Link>
-          <Link
-            className="hover:text-[#e79e23] transition py-2 border-b border-white/10"
-            href="/blog/"
-            onClick={() => setMenuOpen(false)}
-          >
-            Blog
           </Link>
           <Link
             className="hover:text-[#e79e23] transition py-2"

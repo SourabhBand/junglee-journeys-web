@@ -81,9 +81,6 @@ export function Footer() {
               <Link className="hover:text-[#e79e23] transition" href="/safaris/">
                 Safaris
               </Link>
-              <Link className="hover:text-[#e79e23] transition" href="/blog/">
-                Blog
-              </Link>
               <Link className="hover:text-[#e79e23] transition" href="/contact/">
                 Contact
               </Link>
