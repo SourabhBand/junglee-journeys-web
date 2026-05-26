@@ -100,7 +100,7 @@ const experiences: {
   {
     num: '03',
     heading: 'Birding in India',
-    href: '/safari/ranthambore-weekend/',
+    href: '/safaris/',
     body: 'India has over 1300 species of birds and we know where to find them. We design itineraries based on your birding wish list. From the Bengal Florican to the Great Indian Bustard, we curate itineraries that take you to the right locations at the right times giving you the best chance of ticking elusive birds off your list.',
     icon: <BinocularsIcon />,
     cta: 'Train your binoculars',
@@ -108,7 +108,7 @@ const experiences: {
   {
     num: '04',
     heading: 'Multi-Park Itineraries',
-    href: '/safari/central-india-tiger-trail/',
+    href: '/safaris/',
     body: "Seven to fourteen nights across India's best wildlife locations, with a bespoke itinerary curated to you. From the Tigers of Central India to the Birds of the Himalayas, we have an assortment of itineraries awaiting your perusal.",
     icon: <RouteIcon />,
     cta: 'Take the long route',
