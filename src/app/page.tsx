@@ -53,8 +53,8 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col items-center mb-10 md:mb-12">
-            <Image src="/images/hero-title-union.svg" alt="Junglee" width={616} height={95} className="mb-2 w-[280px] md:w-[460px] lg:w-[580px] h-auto" />
-            <Image src="/images/hero-title-journeys.svg" alt="Journeys" width={661} height={94} className="w-[300px] md:w-[500px] lg:w-[620px] h-auto" />
+            <Image src="/images/hero-title-union.svg" alt="Junglee" width={616} height={95} className="mb-2 w-[280px] md:w-[460px] lg:w-[580px] h-auto" priority />
+            <Image src="/images/hero-title-journeys.svg" alt="Journeys" width={661} height={94} className="w-[300px] md:w-[500px] lg:w-[620px] h-auto" priority />
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
