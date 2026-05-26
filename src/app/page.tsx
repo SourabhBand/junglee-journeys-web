@@ -9,7 +9,7 @@ import { NumberCounter } from "@/components/NumberCounter";
 import FAQAccordion from "@/components/FAQAccordion";
 import DestinationsCarousel from "@/components/DestinationsCarousel";
 import SafariFlipCards from "@/components/SafariFlipCards";
-import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+
 
 export const metadata: Metadata = {
   title: "Tiger Safari India | Luxury Wildlife Tours | Junglee Journeys",
@@ -238,8 +238,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== WHAT OUR GUESTS SAY ===== */}
-      <TestimonialsCarousel />
 
       {/* ===== WILDLIFE CAROUSEL ===== */}
       <WildlifeCarousel />
