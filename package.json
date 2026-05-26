@@ -5,21 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:worker": "npx @opennextjs/cloudflare build",
-    "preview": "npx wrangler pages dev",
-    "deploy": "npx wrangler pages deploy",
+    "preview": "npx wrangler pages dev out",
+    "deploy": "npx wrangler pages deploy out --project-name junglee-journeys-web",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.19.11",
     "gray-matter": "^4.0.3",
     "next": "^16.2.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-markdown": "^10.1.0",
-    "remark-gfm": "^4.0.1",
-    "resend": "^6.12.3"
+    "remark-gfm": "^4.0.1"
   },
   "browserslist": [
     "last 2 Chrome versions",
