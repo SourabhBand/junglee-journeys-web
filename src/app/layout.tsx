@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     images: ["/images/hero.jpg"],
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
