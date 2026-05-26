@@ -42,7 +42,7 @@ A **pench safari** with us means a guide who has been working these forests for 
 
 The headline is the tigers, but Pench is unusual among central Indian parks in how rewarding it is for everything else. The species list reads like the cast of an unusually well-funded nature documentary.
 
-- **Tigers**, around 70 in the **Pench tiger reserve**, distributed across the Madhya Pradesh and Maharashtra sections
+- **Tigers**, around 70 in the [**Pench tiger reserve**](https://en.wikipedia.org/wiki/Pench_Tiger_Reserve), distributed across the Madhya Pradesh and Maharashtra sections
 - **Leopards**, present in healthy numbers and more visible here than in many denser parks
 - **Indian wild dogs (dholes)**, which Pench is genuinely famous for. Packs of 8 to 15 hunting in the open grasslands are one of the most thrilling things you can witness on any Indian safari, and Pench is the most reliable park for this experience
 - **Sloth bears**, particularly in the rocky areas

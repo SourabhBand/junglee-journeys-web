@@ -28,7 +28,7 @@
 
 ## About Manas
 
-Manas is the remote one. **Manas National Park** sits in western Assam, on the southern foothills of Bhutan, and it is one of the most biodiverse protected areas in South Asia. It is a UNESCO World Heritage site, a Project Tiger reserve, a biosphere reserve, and an elephant reserve, all four designations stacked on top of one another. The cumulative effect is a park that the Indian wildlife community considers genuinely special and that very few international guests have ever heard of.
+Manas is the remote one. [**Manas National Park**](https://en.wikipedia.org/wiki/Manas_National_Park) sits in western Assam, on the southern foothills of Bhutan, and it is one of the most biodiverse protected areas in South Asia. It is a UNESCO World Heritage site, a Project Tiger reserve, a biosphere reserve, and an elephant reserve, all four designations stacked on top of one another. The cumulative effect is a park that the Indian wildlife community considers genuinely special and that very few international guests have ever heard of.
 
 The park covers about 500 square kilometres of grassland, riverine forest, and dense subtropical jungle along the Manas river. The terrain is varied (the river plains in the south rise into the foothills of the Himalayas in the north), and the Bhutanese half of the same protected area continues across the international boundary as Royal Manas National Park. Wildlife moves freely between the two halves, and the cross-border conservation effort is one of the more interesting collaborative projects in the region.
 

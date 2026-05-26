@@ -30,7 +30,7 @@
 
 Satpura is the park you go to after you have done the famous ones. Walking safaris in the morning. Boat safaris on the Denwa river in the afternoon. Almost no jeeps because almost no other park in India offers this format, and almost no other park has the rugged terrain that makes the walking work.
 
-The park covers about 525 square kilometres of densely forested hills, gorges, and the Denwa river that runs through it. The terrain is more dramatic than central India's standard tiger-reserve landscape, and the Pachmarhi hill station sits on its eastern edge. **Satpura National Park** is part of a larger biosphere reserve, which means the buffer zones extend further than usual and the wildlife corridors are unusually intact.
+The park covers about 525 square kilometres of densely forested hills, gorges, and the Denwa river that runs through it. The terrain is more dramatic than central India's standard tiger-reserve landscape, and the Pachmarhi hill station sits on its eastern edge. [**Satpura National Park**](https://en.wikipedia.org/wiki/Satpura_National_Park) is part of a larger biosphere reserve, which means the buffer zones extend further than usual and the wildlife corridors are unusually intact.
 
 The current tiger population is around 50, distributed across the core zone, but the sighting rate is lower than the central Indian flagship parks (about 50 to 60% on a 3-night trip). That is the honest tradeoff for what makes Satpura special. You are not coming here primarily for the tigers. You are coming for the walking, the boating, the sloth bears, the gaur, the leopards on the rocky outcrops, and the kind of forest you experience on foot.
 

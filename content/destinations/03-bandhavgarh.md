@@ -38,7 +38,7 @@ A **bandhavgarh safari** with us means a guide who has been watching these parti
 
 ## Wildlife of Bandhavgarh
 
-The headline is the tiger density. **Bandhavgarh National Park** holds approximately 80 tigers in roughly 450 square kilometres, which works out to one of the highest densities of any tiger reserve in the world. The cats here are not just numerous; they are unusually visible because the park terrain is more open than the dense central Indian sal forests around it.
+The headline is the tiger density. [**Bandhavgarh National Park**](https://en.wikipedia.org/wiki/Bandhavgarh_National_Park) holds approximately 80 tigers in roughly 450 square kilometres, which works out to one of the highest densities of any tiger reserve in the world. The cats here are not just numerous; they are unusually visible because the park terrain is more open than the dense central Indian sal forests around it.
 
 Beyond the tigers:
 

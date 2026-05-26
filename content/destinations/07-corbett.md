@@ -28,7 +28,7 @@
 
 ## About Corbett
 
-**Jim Corbett National Park** is the oldest national park in India. It was established in 1936 as Hailey National Park, renamed in 1957 after Jim Corbett (the hunter-turned-conservationist whose books about man-eating tigers shaped how generations of Indian readers thought about the wildlife in their own country), and is the park where Project Tiger was effectively invented in 1973. The historical weight is real, and the park does not need to manufacture it.
+[**Jim Corbett National Park**](https://en.wikipedia.org/wiki/Jim_Corbett_National_Park) is the oldest national park in India. It was established in 1936 as Hailey National Park, renamed in 1957 after Jim Corbett (the hunter-turned-conservationist whose books about man-eating tigers shaped how generations of Indian readers thought about the wildlife in their own country), and is the park where Project Tiger was effectively invented in 1973. The historical weight is real, and the park does not need to manufacture it.
 
 The reserve covers about 520 square kilometres of core area and another 800 of buffer, sprawling across the foothills of the Himalayas in the Kumaon region of Uttarakhand. The terrain is more varied than the central Indian parks. River valleys, sal forest, grassland, and the kind of rolling foothill country that you do not see in Madhya Pradesh.
 

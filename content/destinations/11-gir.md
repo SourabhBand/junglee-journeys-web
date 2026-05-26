@@ -28,7 +28,7 @@
 
 ## About Gir
 
-Gir is the only place on the planet where you can see wild Asiatic lions. There are roughly 600 of them, distributed across the **Gir national park** and the surrounding protected landscape in southern Gujarat. They were down to twenty individuals at one point in the early twentieth century. The recovery from twenty animals to six hundred is one of the great Indian conservation stories, on a par with the rhino recovery at Kaziranga and the tiger reintroduction at Panna.
+Gir is the only place on the planet where you can see wild Asiatic lions. There are roughly 600 of them, distributed across the [**Gir national park**](https://en.wikipedia.org/wiki/Gir_National_Park) and the surrounding protected landscape in southern Gujarat. They were down to twenty individuals at one point in the early twentieth century. The recovery from twenty animals to six hundred is one of the great Indian conservation stories, on a par with the rhino recovery at Kaziranga and the tiger reintroduction at Panna.
 
 The park covers about 1,400 square kilometres of dry deciduous forest, scrub, and rocky terrain. The landscape is genuinely different from the central Indian tiger reserves. Drier, more open, and lit by the kind of harsh Gujarati light that produces dramatic photographs in the early morning and late afternoon. The Asiatic lion is also genuinely different from the African lion (smaller mane on the males, more pronounced belly fold, tighter prides, and a calmness around vehicles that every naturalist who has worked here remarks on). A **gir lion safari** does not feel like an African safari. It feels like its own thing, and the difference is part of what makes Gir distinctive.
 

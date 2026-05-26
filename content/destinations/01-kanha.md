@@ -32,7 +32,7 @@ Kanha is what Mowgli's forest looked like before the marketing department got in
 
 Kipling never set foot in Kanha. He read three books written by men who had, decided that was sufficient, and gave the world The Jungle Book. The "Mowgli Kanha" connection on every other safari brochure is honest enough. The topography lined up. The bears are still here. The wolves were here until recently. Mowgli is, regrettably, fictional.
 
-**Kanha Tiger Reserve** covers about 940 square kilometres. There are roughly 130 tigers in the protected area, give or take whichever ones the cameras happened to catch this month, plus around 200 leopards, an unusually healthy population of barasingha (the swamp deer that exists almost nowhere else), and a population of dhole (the Indian wild dog) that is among the densest in central India.
+[**Kanha Tiger Reserve**](https://en.wikipedia.org/wiki/Kanha_Tiger_Reserve) covers about 940 square kilometres. There are roughly 130 tigers in the protected area, give or take whichever ones the cameras happened to catch this month, plus around 200 leopards, an unusually healthy population of barasingha (the swamp deer that exists almost nowhere else), and a population of dhole (the Indian wild dog) that is among the densest in central India.
 
 A **kanha safari** with us does not come with a sighting guarantee, and anyone who promises you one is selling you something we are not. What it does come with is a guide who has been watching these tigers grow up, the patience to wait, and the kind of meadow at first light that makes the waiting feel like the actual point of being there.
 
