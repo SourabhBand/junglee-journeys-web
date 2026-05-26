@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Outfit, Gelasio } from "next/font/google";
 import localFont from "next/font/local";
 import { WhatsAppFloat } from "@/components";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 // Reform Regular - display font for all headings (H1, H2)
@@ -72,7 +71,6 @@ export default function RootLayout({
       >
         {children}
         <WhatsAppFloat />
-        <SpeedInsights />
       </body>
       {/*
         Note: Header and Footer are NOT placed in this layout because the
