@@ -20,7 +20,7 @@ function ArrowButton({ onClick, direction = 'right' }: { onClick: () => void; di
   );
 }
 
-const destinations: { id: string; image: string; name: string; slug: string; rank: string; desc: ReactNode }[] = [
+const destinations: { id: string; image: string; name: string; alt?: string; slug: string; rank: string; desc: ReactNode }[] = [
   {
     id: 'tadoba',
     image: IMAGE_ASSETS.tadobaTigerReserve,
@@ -33,6 +33,7 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
     id: 'bandhavgarh',
     image: IMAGE_ASSETS.bandhavgarhNationalPark,
     name: 'Bandhavgarh Tiger Reserve',
+    alt: 'Bandhavgarh tiger safari',
     slug: 'bandhavgarh',
     rank: '02',
     desc: <>Bandhavgarh has long held legendary status among tiger reserves in India and boasts one of the highest tiger densities in the country. For generations, wildlife travellers have returned to this forest for its extraordinary sightings and timeless charm. Rolling hills, open grasslands, quiet streams, and dense woodland come together to create a landscape that feels alive with possibility. Around 3.5 hours from Jabalpur, Bandhavgarh remains a remarkable destination for those hoping to experience the thrill of seeing a tiger in the wild.</>,
@@ -41,6 +42,7 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
     id: 'kanha',
     image: IMAGE_ASSETS.kanhaNationalPark,
     name: 'Kanha Tiger Reserve',
+    alt: 'Kanha tiger safari',
     slug: 'kanha',
     rank: '03',
     desc: <>Kanha is a forest that stays with you long after the safari ends. Said to have inspired Rudyard Kipling&rsquo;s vision of The Jungle Book, this reserve offers what many consider the classic Central Indian safari experience. Towering sal forests, expansive meadows, and thriving herbivore populations come together to create one of the most beautiful wilderness experiences in the country. Combined with decades of conservation success and a healthy tiger population, Kanha stands among India&rsquo;s finest safari destinations. Despite its sense of remoteness, Kanha is accessible from Jabalpur, Raipur, and Nagpur.</>,
@@ -110,7 +112,7 @@ export default function DestinationsCarousel() {
                   >
                     <Image
                       src={d.image}
-                      alt={d.name}
+                      alt={d.alt || d.name}
                       fill
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 58vw"

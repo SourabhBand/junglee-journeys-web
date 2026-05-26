@@ -22,10 +22,10 @@ export const IMAGE_ASSETS = {
   heroTiger: '/images/hero.jpg',
 
   // Tiger Reserves (Figma dimensions)
-  kanhaNationalPark: '/images/kanha-national-park.jpg', // 552x399
+  kanhaNationalPark: '/images/kanha-tiger-safari.jpg',
   tadobaTigerReserve: '/images/tadoba-tiger-reserve.jpg', // 904x399
   ranthamboreNationalPark: '/images/ranthambore-national-park.jpg', // 599x400
-  bandhavgarhNationalPark: '/images/bandhavgarh-national-park.jpg', // 605x404
+  bandhavgarhNationalPark: '/images/bandhavgarh-tiger-safari.jpg',
   penchTigerReserve: '/images/pench-tiger-reserve.jpg',
 
   // Other Wildlife (Figma: 692x461)
