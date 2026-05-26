@@ -24,8 +24,8 @@ export const IMAGE_ASSETS = {
   // Tiger Reserves (Figma dimensions)
   kanhaNationalPark: '/images/kanha-tiger-safari.jpg',
   tadobaTigerReserve: '/images/tadoba-tiger-reserve.jpg', // 904x399
-  ranthamboreNationalPark: '/images/ranthambore-national-park.jpg', // 599x400
-  bandhavgarhNationalPark: '/images/bandhavgarh-tiger-safari.jpg',
+  ranthamboreNationalPark: '/images/ranthambore-tiger-safari.jpg',
+  bandhavgarhNationalPark: '/images/bandhavgarh-national-park.jpg',
   penchTigerReserve: '/images/pench-tiger-reserve.jpg',
 
   // Other Wildlife (Figma: 692x461)
