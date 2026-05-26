@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Gelasio } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 import { WhatsAppFloat } from "@/components";
 import "./globals.css";
 
@@ -100,6 +101,13 @@ export default function RootLayout({
             }),
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-1HZ28CBS39"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1HZ28CBS39');`}
+        </Script>
       </head>
       <body
         className={`${reform.variable} ${outfit.variable} ${gelasio.variable} antialiased`}
