@@ -90,6 +90,13 @@ export default function RootLayout({
                 "https://facebook.com/jungleejourneys",
                 "https://themammothproject.org"
               ],
+              "knowsAbout": [
+                "Tiger Safari India",
+                "Wildlife Photography Tours",
+                "Indian National Parks",
+                "Bengal Tiger Conservation",
+                "Luxury Wildlife Tourism"
+              ],
               "founder": {
                 "@type": "Person",
                 "name": "Raviraj Soman",

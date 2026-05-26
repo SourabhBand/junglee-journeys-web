@@ -300,26 +300,6 @@ export default function Home() {
       </section>
 
       <Footer />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              { "@type": "Question", "name": "How much does a tiger safari in India cost?", "acceptedAnswer": { "@type": "Answer", "text": "The actual cost depends on three things: which park, which lodge, and how long you go for. Premium lodges, peak season, and longer multi-park itineraries push the number up. Shoulder months and shorter single-park trips bring it down. Rather than quote a range that would be wrong for half our guests, we send a written and itemised quote within 24 hours of an enquiry." } },
-              { "@type": "Question", "name": "Will I actually see a tiger?", "acceptedAnswer": { "@type": "Answer", "text": "Probably. We do not guarantee wildlife sightings, because anyone who guarantees you a wild animal is selling you something we are not. Our guests see tigers on roughly 95% of trips, and that number is the result of ten years of knowing which park, which guide, which waterhole, and which hour." } },
-              { "@type": "Question", "name": "Which is the best tiger reserve in India?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you want. Bandhavgarh for the best odds. Ranthambore for the fort photographs. Tadoba for weekend access from Mumbai. Kanha for the meadow light and the classic experience. Tell us what matters most to you and we will pick for you." } },
-              { "@type": "Question", "name": "Is an Indian safari like an African safari?", "acceptedAnswer": { "@type": "Answer", "text": "Different rhythm entirely. African safaris are about open savannah and large herds. An Indian safari is about dense forest, hidden tigers, and the patience to wait for an animal that has very little interest in being watched. Both are extraordinary in their own ways." } },
-              { "@type": "Question", "name": "How far ahead should I book?", "acceptedAnswer": { "@type": "Answer", "text": "Two to four weeks usually works. Peak season at Ranthambore (March to May) needs six to eight weeks because the permits are limited and the good lodges fill first. If your dates are inflexible, the earlier the better." } },
-              { "@type": "Question", "name": "Is it safe for solo travellers, including women?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A meaningful number of our guests come solo, and many of them are women travelling on their own. The guides are professional, the lodges are secure, and we are reachable by phone for the entire duration of the trip." } },
-              { "@type": "Question", "name": "What do I pack?", "acceptedAnswer": { "@type": "Answer", "text": "Khaki, olive, and brown for the game drives (no bright colours). Layers for the cold mornings (it can be 5 degrees in December at 5:30 AM). Comfortable walking shoes. A camera with a zoom lens if you want photographs. We send a complete packing list once you have booked." } },
-              { "@type": "Question", "name": "Can I add cultural sightseeing?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and we do this often. Panna pairs naturally with the Khajuraho temples. Satpura with the Mandu fort city. Ranthambore with Jaipur and the rest of the Golden Triangle. Tell us what else you want to see and we will fold it in." } },
-              { "@type": "Question", "name": "Photography-focused trips?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We run a dedicated photography expedition with guides who understand light, positioning, and animal behaviour at a serious level. A photography-focused safari in India is materially different from a generic one." } },
-            ],
-          }),
-        }}
-      />
     </main>
   );
 }
