@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useCallback } from 'react';
 import Image from 'next/image';
@@ -8,8 +8,8 @@ const wildlifeData = [
   {
     id: 'asiatic-lions',
     image: IMAGE_ASSETS.asiaticLion,
-    title: 'Asiatic Lions',
-    subtitle: 'The last living population of the Asiatic Lion is found in the state of Gujarat. Once at the brink of extinction, the lions have made an incredible comeback, making this one of the biggest success stories of wildlife conservation in India.',
+    title: 'Asiatic Lion',
+    subtitle: 'The last remaining population of the Asiatic Lion is found in Gujarat, India. Once pushed to the brink of extinction, the species has made an incredible recovery and stands as one of India\'s greatest wildlife conservation success stories.',
     location: 'Gir National Park',
   },
   {
@@ -17,42 +17,42 @@ const wildlifeData = [
     image: IMAGE_ASSETS.indianLeopard,
     title: 'Leopard',
     subtitle: "Often overlooked in a country famous for its tigers, the Leopard is one of India's most elusive big cats. A master of disappearing in plain sight, every sighting feels earned.",
-    location: 'Jawai, Satpura',
+    location: 'Jawai Bandh Leopard Conservation Reserve, Satpura National Park',
   },
   {
     id: 'one-horned-rhinos',
     image: IMAGE_ASSETS.oneHornedRhino,
     title: 'Indian One-Horned Rhino',
-    subtitle: 'Another massive success story from Indian conservation is that of the Indian One-Horned Rhino. Their population grows slowly but steadily, due to the tireless efforts of the forest department as well as NGOs across the country.',
-    location: 'Kaziranga, Manas, Pobitora, Dudhwa',
+    subtitle: 'The Indian One-Horned Rhino is another conservation success story. Thanks to decades of protection and conservation efforts, populations continue to grow steadily across key landscapes. Seeing these giants in the wild is something you will never forget.',
+    location: 'Kaziranga National Park, Manas National Park, Dudhwa National Park, Pobitora Wildlife Sanctuary',
   },
   {
     id: 'asian-elephant',
     image: IMAGE_ASSETS.asianElephant,
     title: 'Asian Elephant',
-    subtitle: 'The majestic Asian Elephant can be found across various landscapes of north, northeast and south India. Seeing one in the wild is truly a breathtaking experience that will stay with you forever.',
-    location: 'Corbett, Kaziranga, Manas, Bandhavgarh',
+    subtitle: 'The Asian Elephant can be found across the forests and grasslands of North, Northeast, and South India. Watching one move through the wild is unforgettable. Few wildlife sightings in India leave quite the same impression.',
+    location: 'Jim Corbett National Park, Kaziranga National Park, Manas National Park, Bandhavgarh National Park',
   },
   {
     id: 'hoolock-gibbon',
     image: IMAGE_ASSETS.hoolockGibbon,
     title: 'Hoolock Gibbon',
-    subtitle: 'The only species of ape in the country, the hoolock gibbon adorns the canopies of Northeast India. With loud echoing calls and agile movements through the trees, sighting a gibbon is a remarkable experience.',
-    location: 'Kaziranga, Hollongapar',
+    subtitle: "India's only ape, the Hoolock Gibbon, lives high in the canopies of Northeast India. Their loud, echoing calls and effortless movement through the trees make every sighting memorable.",
+    location: 'Kaziranga National Park, Hollongapar Gibbon Sanctuary',
   },
   {
     id: 'snow-leopard',
     image: IMAGE_ASSETS.snowLeopard,
     title: 'Snow Leopard',
-    subtitle: 'An animal that needs no introduction. Aptly labelled the Ghost of the Himalayas, the Snow Leopard is a master of camouflage that traverses the steep mountain slopes as if gravity doesn’t exist. A true personification of agility, this is one of the rarest animals of wild India!',
-    location: 'Spiti',
+    subtitle: 'The Ghost of the Himalayas needs no introduction. Master of camouflage and perfectly adapted to mountain life, the Snow Leopard moves across steep slopes with unbelievable ease. Spotting one is among the rarest wildlife experiences in India.',
+    location: 'Spiti Valley',
   },
   {
     id: 'red-panda',
     image: IMAGE_ASSETS.redPanda,
     title: 'Red Panda',
-    subtitle: 'What can we say about the Red Panda that truly captures its charm? The feeling of seeing a Red Panda in its true habitat is something that can only be experienced, not explained.',
-    location: 'Singalila',
+    subtitle: "How do you describe the charm of a Red Panda? You probably can't. Seeing one in its natural habitat, moving quietly through the forests of the Eastern Himalayas, one of those moments that can only be experienced, not explained.",
+    location: 'Singalila National Park',
   },
 ];
 
@@ -95,7 +95,7 @@ export default function WildlifeCarousel() {
 
         {/* Description */}
         <p className="max-w-[800px] mx-auto text-center font-serif text-[15px] md:text-[16px] text-white/85 leading-[165%] mb-12 md:mb-16">
-          Tigers get all the attention (fair enough, they&rsquo;re magnificent). But India&rsquo;s wildlife story is so much bigger. We have lions, rhinos, elephants, gibbons, snow leopards and even red pandas!
+          Tigers get all the attention (fair enough, they&rsquo;re magnificent). But India&rsquo;s wildlife story is so much bigger. From lions and rhinos to elephants, gibbons, snow leopards, and even red pandas, there&rsquo;s a whole wild side of India waiting to be explored.
         </p>
 
         {/* Crawlable full content for all wildlife cards (visually hidden) */}
@@ -177,3 +177,4 @@ export default function WildlifeCarousel() {
     </section>
   );
 }
+

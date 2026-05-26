@@ -27,7 +27,7 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
     name: 'Tadoba-Andhari Tiger Reserve',
     slug: 'tadoba',
     rank: '01',
-    desc: <>Currently the best park in the country for tiger sightings, Tadoba truly is the land of the tiger. With a high density of tigers and numbers on the rise, this is one of the few parks in the country where choosing a specific zone doesn&rsquo;t really matter. Be it the Core or Buffer, the probability of sighting is high. Although a sighting is never guaranteed, Tadoba is your best bet for seeing the striped cat. Tadoba is merely 2.5 hours from Nagpur, a city that has great connectivity with Pune and Mumbai, making this destination ideal for a quick weekend getaway.</>,
+    desc: <>If your dream is to see a tiger in the wild, Tadoba is where we&rsquo;d start. Widely regarded as one of India&rsquo;s most reliable parks for tiger sightings, this reserve has earned its reputation through consistently rewarding safari experiences. With a healthy and growing tiger population, it is also one of the few parks where choosing the perfect zone becomes less important than simply spending time in the forest. Just 2.5 hours from Nagpur, with excellent connectivity to Pune and Mumbai, Tadoba is one of the easiest reserves to escape into for a short wildlife getaway.</>,
   },
   {
     id: 'bandhavgarh',
@@ -35,7 +35,7 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
     name: 'Bandhavgarh Tiger Reserve',
     slug: 'bandhavgarh',
     rank: '02',
-    desc: <>Boasting the highest density of tigers in India, Bandhavgarh is arguably one of the most well-known tiger destinations in the world. Mountains, hills, grasslands, streams, and a good chance of seeing the gorgeous tiger: this forest truly is a breathtaking destination for wildlifers! Just around 3.5 hours from Jabalpur, Bandhavgarh is a must visit for tiger enthusiasts. This one needs to go on the bucket list for sure!</>,
+    desc: <>Bandhavgarh has long held legendary status among tiger reserves in India and boasts one of the highest tiger densities in the country. For generations, wildlife travellers have returned to this forest for its extraordinary sightings and timeless charm. Rolling hills, open grasslands, quiet streams, and dense woodland come together to create a landscape that feels alive with possibility. Around 3.5 hours from Jabalpur, Bandhavgarh remains a remarkable destination for those hoping to experience the thrill of seeing a tiger in the wild.</>,
   },
   {
     id: 'kanha',
@@ -43,7 +43,7 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
     name: 'Kanha Tiger Reserve',
     slug: 'kanha',
     rank: '03',
-    desc: <>A landscape that inspired Rudyard Kipling to immortalise it in the pages of the Jungle Book, Kanha Tiger Reserve provides the classic central Indian jungle safari experience. From the tall sal trees towering over you to the expansive meadows teeming with herbivores, you&rsquo;re always in for a memorable safari. The tiger population here has held steady for over 2 decades with conservation practices ensuring a rich and biodiverse habitat. Around 4 hours from Jabalpur or Raipur, or 4.5 hours from Nagpur, Kanha is one of the best tiger destinations of India.</>,
+    desc: <>Kanha is a forest that stays with you long after the safari ends. Said to have inspired Rudyard Kipling&rsquo;s vision of The Jungle Book, this reserve offers what many consider the classic Central Indian safari experience. Towering sal forests, expansive meadows, and thriving herbivore populations come together to create one of the most beautiful wilderness experiences in the country. Combined with decades of conservation success and a healthy tiger population, Kanha stands among India&rsquo;s finest safari destinations. Despite its sense of remoteness, Kanha is accessible from Jabalpur, Raipur, and Nagpur.</>,
   },
   {
     id: 'pench',
@@ -51,7 +51,7 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
     name: 'Pench Tiger Reserve',
     slug: 'pench',
     rank: '04',
-    desc: <>A mere 2 hours from the city of Nagpur, Pench is a destination that everyone must visit at least once. The Pench River meanders through this beautiful landscape that teems with biodiversity, making it an ideal setting for photographers, birders, wildlifers and tiger enthusiasts alike. This park crosses over from Madhya Pradesh into Maharashtra, making it a tiger reserve that allows for safari experiences in both states. Although the biodiversity stays the same, a change in terrain between MP and Maharashtra makes for a unique safari experience in each state.</>,
+    desc: <>Just a short drive from Nagpur, Pench is a forest that rewards those who enjoy more than just the search for a tiger. The Pench River winds through a landscape rich in biodiversity, creating exceptional opportunities for photographers, birders, and wildlife enthusiasts. Spanning both Madhya Pradesh and Maharashtra, Pench offers two distinct safari experiences, each with its own terrain and character while sharing a thriving ecosystem.</>,
   },
   {
     id: 'ranthambore',
@@ -59,7 +59,7 @@ const destinations: { id: string; image: string; name: string; slug: string; ran
     name: 'Ranthambore Tiger Reserve',
     slug: 'ranthambore',
     rank: '05',
-    desc: <>A park that needs no introduction, Ranthambore is a name that has echoed through the wildlife tourism world for decades. Famous for having had some of the most photographed and videographed tigers in the world, this forest boasts a picturesque landscape that merges with history through the beautiful castle ruins scattered across. A few hours&rsquo; drive from Delhi and Jaipur, Ranthambore makes for a great destination for wildlife photography.</>,
+    desc: <>A park that needs little introduction, Ranthambore is one of India&rsquo;s most iconic wildlife destinations. Famous for its tigers and dramatic setting, it is a place where history and wilderness exist side by side. Ancient fort ruins scattered across the landscape give Ranthambore a character that few national parks can match, creating a safari experience unlike anywhere else in the country. Accessible from both Delhi and Jaipur, it remains a favourite among wildlife photographers and first-time safari travellers alike.</>,
   },
 ];
 
@@ -81,7 +81,7 @@ export default function DestinationsCarousel() {
         {/* Intro paragraph */}
         <div className="max-w-[700px] mx-auto text-center mb-10 md:mb-14">
           <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%]">
-            India holds more than 70% of the world&rsquo;s wild tiger population in over 100 national parks. Each of these parks has its own charm, with varying habitats and biodiversity. Although the tiger occupies forests across the country, the probability of seeing one on a safari varies vastly from park to park. These five tiger reserves have the highest probability of tiger sightings in the country.
+            India is home to more than 70% of the world&rsquo;s wild tiger population, spread across over 100 national parks and wildlife sanctuaries. Each landscape has its own character, shaped by distinct habitats, ecosystems, and biodiversity. While tigers inhabit forests across the country, the chances of encountering one on safari can vary dramatically from park to park. These five tiger reserves offer some of the highest chances of tiger sightings in India.
           </p>
         </div>
 

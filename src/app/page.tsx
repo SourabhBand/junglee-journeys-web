@@ -101,19 +101,19 @@ export default function Home() {
 
             <AnimateOnScroll animation="fade-up" delay={80}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
-                Seeing your first tiger in the wild is a feeling that is hard to convey in words. It&rsquo;s a moment that everyone must experience. But how do you go about booking a safari that can give you the chance to have this experience?
+                Seeing your first tiger in the wild is an experience unlike any other, one that&rsquo;s almost impossible to put into words. It&rsquo;s an unforgettable encounter that every wildlife enthusiast hopes to witness at least once. But planning a safari that gives you the best chance of making it happen can feel overwhelming.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={160}>
               <p className="font-serif text-[15px] md:text-[17px] leading-[1.8] text-[#081d01]/55 text-center mb-5">
-                Booking a wildlife safari in India isn&rsquo;t exactly a walk in the park as there are multiple variables to be considered. Such as, which park, what dates, which zones, which lodge, which naturalist, what airport or train station, there&rsquo;s just a lot to consider and coordinate. That&rsquo;s where we come in!
+                Booking a tiger safari in India involves countless decisions, from choosing the right national park and the best travel dates to selecting safari zones, lodges, naturalists, and even coordinating airports or railway stations. With so many moving parts, planning the ideal trip can quickly become complicated. That&rsquo;s where we come in.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={240}>
               <p className="font-serif italic text-[16px] md:text-[19px] leading-[1.7] text-[#081d01]/70 text-center mb-10 md:mb-14">
-                We make the experience of booking a customised wildlife safari easy. Whether it is your first time or you&rsquo;re a veteran wildlifer, we can assist you in designing the tiger safari you need!
+                We curate private, naturalist-led wildlife safaris tailored to your interests and travel style. Whether it&rsquo;s your very first safari or you&rsquo;ve spent years exploring the wild, we design bespoke junglee journeys that make every moment in the field count.
               </p>
             </AnimateOnScroll>
 
@@ -125,13 +125,13 @@ export default function Home() {
 
             <AnimateOnScroll animation="fade-up" delay={380}>
               <p className="font-serif text-[18px] md:text-[22px] leading-[1.7] text-[#081d01] text-center mb-5">
-                We have explored the best tiger reserves, traversed breathtaking landscapes, pursued and found some of the rarest birds, hiked the heights of snow leopards, basically we&rsquo;ve moved around a lot across India for the last 10 years. This decade-long journey has allowed us to narrow down the right parks, peak seasons and most experienced naturalists to give you the best chance of seeing your target animal.
+                Over the last decade, we&rsquo;ve traversed breathtaking landscapes, tracked some of the country&rsquo;s rarest birds, hiked in pursuit of snow leopards, and explored the best tiger reserves in India, learning firsthand what creates a truly exceptional wildlife safari experience. That journey has helped us identify the best parks, the ideal seasons, expert naturalists, and the finest lodges giving you the best possible chance of encountering your target species in the wild.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fade-up" delay={500}>
               <p className="font-serif italic text-[20px] md:text-[26px] leading-[1.6] text-[#081d01] text-center">
-                All you have to do is turn up with socks and a pair of binoculars.
+                All you have to do is arrive with a pair of binoculars and a sense of adventure.
               </p>
             </AnimateOnScroll>
           </div>
@@ -156,25 +156,25 @@ export default function Home() {
             {[
               {
                 heading: "Private Jeep Safaris",
-                body: "A safari vehicle occupied only by you and your group. Explore the forest on your own terms and try to find your target species. If you wish to be away from the crowds, just indicate the same to your guide or driver or naturalist, and they will make sure to take you to the quiet corners of the forest. Enjoy the wilderness at your own pace.",
+                body: "Explore the forest at your own pace in a safari vehicle reserved exclusively for you and your group. Prefer fewer crowds and more secluded routes? Simply let your driver, guide, or naturalist know, and they’ll help you discover the quieter corners of the reserve. Experience the wilderness on your own terms and focus on the wildlife you’ve come to see.",
                 rotated: false,
                 delay: 0,
               },
               {
                 heading: "Experienced Naturalists and Guides",
-                body: "With years of experience under their belt, we have identified the best guides and naturalists in every park. Guides that grew up in the buffer zones of wildlife reserves and naturalists who have dedicated decades to wildlife, these individuals are attuned to the ebbs and flows of nature. From their exceptional tracking skills to their deep field knowledge, a naturalist-led private safari is the finest way to experience the national parks and wild havens of India.",
+                body: "Years of exploring India's wild spaces have helped us identify the finest naturalists and guides across the country's leading parks. Many have grown up alongside these forests, while others have dedicated decades to studying and understanding wildlife. Their tracking expertise, local knowledge, and ability to interpret the rhythms of the forest elevate every safari into an immersive and rewarding experience that goes far beyond a drive through the jungle.",
                 rotated: false,
                 delay: 80,
               },
               {
-                heading: "Lodges we have actually Slept In",
-                body: "From photos that don’t match the rooms to fake reviews, the online world isn’t as trustworthy and unbiased as it needs to be. But we bridge that gap by experiencing the lodges ourselves before recommending them to clients. It’s important to know exactly where you are putting your hard-earned money. We ensure our vendors and accommodation partners are held to our high standards. From hygienic rooms to delicious food, we make sure you have a seamless accommodation experience.",
+                heading: "Lodges We’ve Actually Stayed In",
+                body: "A great safari experience doesn’t end at the park gate, and where you stay matters just as much. But photos can be misleading, and reviews don’t always tell the full story. That’s why we only recommend lodges we’ve personally stayed in. We believe where you stay should feel every bit as considered as the safari itself, which is why we only partner with properties that offer the comfort, hospitality, and understated luxury we’d expect for ourselves.",
                 rotated: true,
                 delay: 160,
               },
               {
-                heading: "One Stop Shop",
-                body: "Safari permits, safari vehicle allocations, selection of zones, the lodge bookings, airport pickup, inter-park transfers, wildlife updates, everything to do with the back end of a safari experience sits with us. All you have to do is turn up. We don’t just provide safaris; we provide the complete experience.",
+                heading: "Everything Taken Care Of",
+                body: "Safari permits, vehicle allocations, zone selection, lodge bookings, airport transfers, inter-park logistics, and on-ground wildlife updates. Every detail behind your safari is taken care of by us, so all you have to do is arrive. We don’t just plan safaris, we create seamless journeys into the wild.",
                 rotated: true,
                 delay: 240,
               },
@@ -217,10 +217,13 @@ export default function Home() {
                 Customised Safari Experiences
               </h2>
               <p className="font-serif text-[14px] md:text-[15px] text-white/50 leading-[180%] mb-6">
-                Different travellers have different ideas of what constitutes an ideal safari experience. A photographer with a 400mm lens needs a completely different itinerary to a birder with binoculars. A family would want a very different itinerary to a group of college friends. We stitch an itinerary specific to you and what you want. From trying to achieve the target checklist of species to just a leisurely stroll through the forest, we create bespoke experiences that cater to your specific need rather than generic itineraries that cater to the masses.
+                No two travellers experience the wild in the same way. Some travel with a 400mm lens hoping for the perfect photograph. Some arrive with binoculars and a long list of birds to spot. Some want an adventurous family holiday, while others are simply looking to slow down and spend time in nature. That&rsquo;s why we do not believe in fixed departures or off-the-shelf itineraries. Every safari is designed around what you want to experience. Whether your goal is to maximise sightings of your target species or simply enjoy a slower, more immersive experience in the forest, we create bespoke journeys shaped around your interests, pace, and travel style. From selecting the right parks and seasons to choosing the ideal lodges, safari zones, and naturalists, every detail is thoughtfully planned.
               </p>
-              <p className="font-serif italic text-[15px] md:text-[16px] text-[#ede4d1]/80 leading-[170%] mb-8">
-                It&rsquo;s not just a safari package, it&rsquo;s your safari package!
+              <p className="font-serif italic text-[15px] md:text-[16px] text-[#ede4d1]/80 leading-[170%] mb-4">
+                No generic packages. Just Junglee Journeys designed for you.
+              </p>
+              <p className="font-serif text-[13px] md:text-[14px] text-white/40 leading-[170%] mb-8">
+                The experiences featured here are simply starting points. Once you tell us your dates and preferences, we turn them into your version of the trip.
               </p>
               <hr className="gold-rule mb-8" />
               <div className="mt-auto">
