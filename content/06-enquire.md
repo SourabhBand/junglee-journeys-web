@@ -74,7 +74,7 @@ If you would rather skip the form and just message a human, all three direct cha
 
 - **WhatsApp:** [+91 93700 37237](https://wa.me/919370037237) (fastest, even for international guests)
 - **Phone:** [+91 93700 37237](tel:+919370037237) (Mon to Sat, 10 AM to 7 PM IST)
-- **Email:** [hello@jungleejourneys.com](mailto:hello@jungleejourneys.com)
+- **Email:** [jungleejourneys@gmail.com](mailto:jungleejourneys@gmail.com)
 
 A WhatsApp message is faster than the form for **plan tiger safari** questions when your dates are flexible and you just want a rough quote. The form is faster when your dates are fixed and you want a complete itinerary on the first reply.
 

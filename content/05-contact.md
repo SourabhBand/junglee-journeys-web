@@ -34,7 +34,7 @@ The fastest channel for both Indian guests and international guests with WhatsAp
 
 ### Email
 
-[hello@jungleejourneys.com](mailto:hello@jungleejourneys.com)
+[jungleejourneys@gmail.com](mailto:jungleejourneys@gmail.com)
 
 The right channel for longer questions, attachments, or detailed itinerary discussion. Replies within 24 hours on weekdays, sometimes faster.
 

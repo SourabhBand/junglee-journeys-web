@@ -65,6 +65,39 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
           rel="stylesheet"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              "name": "Junglee Journeys",
+              "url": "https://jungleejourneys.com",
+              "logo": "https://jungleejourneys.com/images/logo-jj.svg",
+              "image": "https://jungleejourneys.com/images/hero.jpg",
+              "description": "Private tiger safaris across India with expert naturalists. 10+ years experience, 500+ safaris.",
+              "telephone": "+919370037237",
+              "email": "jungleejourneys@gmail.com",
+              "priceRange": "$$$$",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mumbai",
+                "addressRegion": "Maharashtra",
+                "addressCountry": "IN"
+              },
+              "sameAs": [
+                "https://instagram.com/jungleejourneys",
+                "https://facebook.com/jungleejourneys",
+                "https://themammothproject.org"
+              ],
+              "founder": {
+                "@type": "Person",
+                "name": "Raviraj Soman",
+                "jobTitle": "Founder and Head Naturalist"
+              }
+            }),
+          }}
+        />
       </head>
       <body
         className={`${reform.variable} ${outfit.variable} ${gelasio.variable} antialiased`}

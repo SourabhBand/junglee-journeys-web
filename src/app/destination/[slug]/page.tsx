@@ -36,12 +36,35 @@ export default async function DestinationPage({ params }: PageProps) {
     notFound();
   }
 
+  const dest = DESTINATIONS.find(d => d.slug === slug);
+
+  const schemaData = dest ? {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": dest.fullName,
+    "description": content.metadata.metaDescription,
+    "url": `https://jungleejourneys.com/destination/${slug}/`,
+    "touristType": "Wildlife Safari",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": dest.region,
+      "addressCountry": "IN"
+    },
+    "isAccessibleForFree": false,
+  } : null;
+
   return (
     <main className="font-body bg-white text-[#081d01] min-h-screen">
       <Header />
       <MarkdownContent>{content.body}</MarkdownContent>
-      <CurrencyConverter defaultAmount={DESTINATIONS.find(d => d.slug === slug)?.priceFrom} />
+      <CurrencyConverter defaultAmount={dest?.priceFrom} />
       <Footer />
+      {schemaData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      )}
     </main>
   );
 }
