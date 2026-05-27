@@ -15,7 +15,8 @@ interface EnquiryPayload {
   safaris: string;
 }
 
-const RECIPIENT = 'jungleejourneys@gmail.com';
+// TODO: Change back to jungleejourneys@gmail.com after verifying domain in Resend
+const RECIPIENT = 'band.sourabh@gmail.com';
 
 async function logToSheet(webhookUrl: string, data: EnquiryPayload, source: string) {
   try {
