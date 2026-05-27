@@ -1,5 +1,6 @@
 interface Env {
   RESEND_API_KEY: string;
+  GOOGLE_SHEETS_WEBHOOK?: string;
 }
 
 interface EnquiryPayload {
@@ -15,6 +16,30 @@ interface EnquiryPayload {
 }
 
 const RECIPIENT = 'jungleejourneys@gmail.com';
+
+async function logToSheet(webhookUrl: string, data: EnquiryPayload, source: string) {
+  try {
+    await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        timestamp: new Date().toISOString(),
+        name: data.name,
+        email: data.email,
+        phone: data.phone || '',
+        park: data.park,
+        dates: data.dates,
+        adults: data.adults,
+        children: data.children,
+        rooms: data.rooms,
+        safaris: data.safaris,
+        source,
+      }),
+    });
+  } catch {
+    // Sheet logging is non-blocking; email delivery is primary
+  }
+}
 
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
@@ -46,6 +71,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       'Sent via the jungleejourneys.com enquiry form.',
     ].join('\n');
 
+    const source = context.request.headers.get('referer') || 'direct';
+
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
@@ -68,6 +95,12 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         { error: 'Failed to send enquiry. Please try WhatsApp or email directly.' },
         { status: 500 }
       );
+    }
+
+    // Log to Google Sheet (non-blocking, don't await)
+    const sheetWebhook = context.env.GOOGLE_SHEETS_WEBHOOK;
+    if (sheetWebhook) {
+      context.waitUntil(logToSheet(sheetWebhook, body, source));
     }
 
     return Response.json({ success: true });
