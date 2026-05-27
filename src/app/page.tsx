@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { OrnamentDivider, Header, Footer } from "@/components";
+import { OrnamentDivider, Header, Footer, WhatsAppLink } from "@/components";
 import { IMAGE_ASSETS } from "@/lib/assets";
 import WildlifeCarousel from "@/components/WildlifeCarousel";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
@@ -61,9 +61,9 @@ export default function Home() {
             <Link className="bg-[rgba(231,158,35,0.81)] hover:bg-[#e79e23] transition-all text-white w-[240px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center" href="/enquire/">
               Plan Your Safari
             </Link>
-            <Link className="border border-white/40 text-white hover:bg-white/10 transition-all w-[240px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center" href="https://wa.me/919370037237">
+            <WhatsAppLink className="border border-white/40 text-white hover:bg-white/10 transition-all w-[240px] h-[52px] rounded-[9px] text-[16px] font-serif inline-flex items-center justify-center" label="hero">
               WhatsApp Us
-            </Link>
+            </WhatsAppLink>
           </div>
         </div>
 
@@ -291,9 +291,9 @@ export default function Home() {
                 <Link className="bg-[#e79e23] hover:bg-[rgba(231,158,35,0.85)] transition-all text-white w-[220px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center" href="/enquire/">
                   Plan Your Safari
                 </Link>
-                <Link className="border border-[#081d01]/15 text-[#081d01]/60 hover:bg-[#081d01] hover:text-white hover:border-[#081d01] transition-all w-[220px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center" href="https://wa.me/919370037237">
+                <WhatsAppLink className="border border-[#081d01]/15 text-[#081d01]/60 hover:bg-[#081d01] hover:text-white hover:border-[#081d01] transition-all w-[220px] h-[48px] rounded-[9px] text-[15px] font-serif inline-flex items-center justify-center" label="bottom-cta">
                   WhatsApp Us
-                </Link>
+                </WhatsAppLink>
               </div>
             </div>
           </AnimateOnScroll>

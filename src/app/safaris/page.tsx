@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Header, Footer, OrnamentDivider, CurrencyConverter, AnimateOnScroll } from "@/components";
+import { Header, Footer, OrnamentDivider, CurrencyConverter, AnimateOnScroll, WhatsAppLink } from "@/components";
 import { SAFARIS } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -124,14 +124,12 @@ export default function SafarisHubPage() {
             >
               Enquire Now
             </Link>
-            <a
-              href="https://wa.me/919370037237"
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
               className="border border-[#ede4d1] hover:bg-[#ede4d1] hover:text-[#081d01] transition-all text-[#ede4d1] inline-flex items-center justify-center w-[200px] h-[52px] rounded-[9px] text-[16px] font-serif"
+              label="safaris-cta"
             >
               WhatsApp Us
-            </a>
+            </WhatsAppLink>
           </div>
         </div>
       </section>

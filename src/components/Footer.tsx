@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IMAGE_ASSETS } from '@/lib/assets';
 import { OrnamentDivider } from './OrnamentDivider';
+import { WhatsAppLink } from './WhatsAppLink';
 
 function InstagramIcon() {
   return (
@@ -96,14 +97,12 @@ export function Footer() {
               Get in Touch
             </p>
             <div className="flex flex-col gap-2.5 font-serif text-[14px] text-[#ede4d1]/80">
-              <a
-                href="https://wa.me/919370037237"
+              <WhatsAppLink
                 className="hover:text-[#e79e23] transition"
-                target="_blank"
-                rel="noopener noreferrer"
+                label="footer"
               >
                 WhatsApp Us
-              </a>
+              </WhatsAppLink>
               <a
                 href="mailto:jungleejourneys@gmail.com"
                 className="hover:text-[#e79e23] transition"

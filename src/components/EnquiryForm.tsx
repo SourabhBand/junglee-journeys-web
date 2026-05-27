@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, type FormEvent } from 'react';
+import { WhatsAppLink } from './WhatsAppLink';
 
 const RECIPIENT = 'jungleejourneys@gmail.com';
 
@@ -90,6 +91,13 @@ export function EnquiryForm() {
       });
       if (res.ok) {
         setStatus('sent');
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', {
+            event_category: 'enquiry',
+            event_label: data.park,
+            value: 1,
+          });
+        }
       } else {
         setStatus('error');
       }
@@ -128,9 +136,9 @@ export function EnquiryForm() {
           </h3>
           <p className="font-serif text-[15px] md:text-[16px] text-[#081d01]/75 leading-relaxed mb-6">
             We will get back to you at <strong>{submitted.email}</strong> within 24 hours with a written, itemised quote. If you need a faster response, message us on{' '}
-            <a href="https://wa.me/919370037237" target="_blank" rel="noopener noreferrer" className="text-[#e79e23] underline underline-offset-4">
+            <WhatsAppLink className="text-[#e79e23] underline underline-offset-4" label="enquiry-success">
               WhatsApp
-            </a>.
+            </WhatsAppLink>.
           </p>
           <button
             type="button"
