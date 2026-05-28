@@ -8,9 +8,10 @@ interface WhatsAppLinkProps {
   className?: string;
   children: React.ReactNode;
   label?: string;
+  ariaLabel?: string;
 }
 
-export function WhatsAppLink({ className, children, label }: WhatsAppLinkProps) {
+export function WhatsAppLink({ className, children, label, ariaLabel }: WhatsAppLinkProps) {
   const handleClick = () => {
     if (typeof window === 'undefined') return;
     const page = label || window.location.pathname;
@@ -35,6 +36,7 @@ export function WhatsAppLink({ className, children, label }: WhatsAppLinkProps) 
       rel="noopener noreferrer"
       className={className}
       onClick={handleClick}
+      aria-label={ariaLabel}
     >
       {children}
     </a>

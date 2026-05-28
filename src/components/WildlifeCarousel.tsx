@@ -114,22 +114,15 @@ export default function WildlifeCarousel() {
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-14">
             {/* Wildlife Image */}
             <div className="w-full lg:w-[58%] flex-shrink-0">
-              <div className="relative w-full aspect-[692/461] rounded-tl-[9px] rounded-tr-[9px] rounded-br-[9px] rounded-bl-[80px] md:rounded-bl-[120px] overflow-hidden">
-                {wildlifeData.map((wildlife, index) => (
-                  <div
-                    key={wildlife.id}
-                    className="absolute inset-0 transition-opacity duration-700 ease-in-out"
-                    style={{ opacity: index === currentSlide ? 1 : 0 }}
-                  >
-                    <Image
-                      alt={wildlife.title}
-                      className="w-full h-full object-cover"
-                      src={wildlife.image}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 58vw"
-                    />
-                  </div>
-                ))}
+              <div className="relative w-full aspect-[692/461] rounded-tl-[9px] rounded-tr-[9px] rounded-br-[9px] rounded-bl-[80px] md:rounded-bl-[120px] overflow-hidden bg-[#081d01]">
+                <Image
+                  key={currentWildlife.id}
+                  alt={currentWildlife.title}
+                  className="w-full h-full object-cover carousel-fade-in"
+                  src={currentWildlife.image}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 58vw"
+                />
               </div>
             </div>
 

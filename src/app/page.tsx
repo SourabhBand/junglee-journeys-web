@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { OrnamentDivider, Header, Footer, WhatsAppLink } from "@/components";
 import { IMAGE_ASSETS } from "@/lib/assets";
-import WildlifeCarousel from "@/components/WildlifeCarousel";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { NumberCounter } from "@/components/NumberCounter";
-import FAQAccordion from "@/components/FAQAccordion";
-import DestinationsCarousel from "@/components/DestinationsCarousel";
-import SafariFlipCards from "@/components/SafariFlipCards";
+
+const WildlifeCarousel = dynamic(() => import("@/components/WildlifeCarousel"));
+const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"));
+const DestinationsCarousel = dynamic(() => import("@/components/DestinationsCarousel"));
+const SafariFlipCards = dynamic(() => import("@/components/SafariFlipCards"));
 
 
 export const metadata: Metadata = {
@@ -35,15 +37,17 @@ export default function Home() {
         <h1 className="sr-only">Private Tiger Safaris Across India</h1>
 
         <div className="absolute inset-0 overflow-hidden">
-          <Image
-            alt="Peahen standing on a forest path framed by lush trees"
-            className="absolute inset-0 w-full h-full object-cover ken-burns"
-            src={IMAGE_ASSETS.heroTiger}
-            fill
-            priority
-            sizes="100vw"
-            quality={60}
-          />
+          <picture>
+            <source srcSet="/images/hero-mobile.avif" type="image/avif" media="(max-width: 768px)" />
+            <source srcSet="/images/hero.avif" type="image/avif" />
+            <img
+              src={IMAGE_ASSETS.heroTiger}
+              alt="Peahen standing on a forest path framed by lush trees"
+              className="absolute inset-0 w-full h-full object-cover ken-burns"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
 

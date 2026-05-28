@@ -18,24 +18,24 @@ export const SVG_ASSETS = {
 } as const;
 
 export const IMAGE_ASSETS = {
-  // Hero Section (2400x1600 optimised JPEG, ~500 KB)
+  // Hero — JPG outperforms WebP at this dimension/quality
   heroTiger: '/images/hero.jpg',
 
-  // Tiger Reserves (Figma dimensions)
-  kanhaNationalPark: '/images/kanha-tiger-safari.jpg',
-  tadobaTigerReserve: '/images/tadoba-tiger-reserve.jpg', // 904x399
-  ranthamboreNationalPark: '/images/ranthambore-tiger-safari.jpg',
+  // Tiger Reserves
+  kanhaNationalPark: '/images/kanha-tiger-safari.webp',
+  tadobaTigerReserve: '/images/tadoba-tiger-reserve.webp',
+  ranthamboreNationalPark: '/images/ranthambore-tiger-safari.webp',
   bandhavgarhNationalPark: '/images/bandhavgarh-national-park.jpg',
-  penchTigerReserve: '/images/pench-tiger-reserve.jpg',
+  penchTigerReserve: '/images/pench-tiger-reserve.webp',
 
-  // Other Wildlife (Figma: 692x461)
-  asiaticLion: '/images/asiatic-lion.jpg',
-  oneHornedRhino: '/images/one-horned-rhino.jpg',
-  indianLeopard: '/images/indian-leopard.jpg',
+  // Other Wildlife
+  asiaticLion: '/images/asiatic-lion.webp',
+  oneHornedRhino: '/images/one-horned-rhino.webp',
+  indianLeopard: '/images/indian-leopard.webp',
   asianElephant: '/images/asian-elephant.jpg',
-  hoolockGibbon: '/images/hoolock-gibbon.jpg',
-  snowLeopard: '/images/snow-leopard.jpg',
-  redPanda: '/images/red-panda.jpg',
+  hoolockGibbon: '/images/hoolock-gibbon.webp',
+  snowLeopard: '/images/snow-leopard.webp',
+  redPanda: '/images/red-panda.webp',
 
   // Logo
   logo: '/logo-jj.png',

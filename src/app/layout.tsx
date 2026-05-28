@@ -61,6 +61,22 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-mobile.avif"
+          type="image/avif"
+          media="(max-width: 768px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero.avif"
+          type="image/avif"
+          media="(min-width: 769px)"
+          fetchPriority="high"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -109,12 +125,12 @@ export default function RootLayout({
         <WhatsAppFloat />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-1HZ28CBS39"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="lazyOnload">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1HZ28CBS39');`}
         </Script>
-        <Script id="clarity" strategy="afterInteractive">
+        <Script id="clarity" strategy="lazyOnload">
           {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wx4tzcwcmr");`}
         </Script>
       </body>

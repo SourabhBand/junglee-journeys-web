@@ -103,22 +103,15 @@ export default function DestinationsCarousel() {
 
             {/* Image */}
             <div className="w-full lg:w-[58%] flex-shrink-0">
-              <div className="relative w-full aspect-[692/461] rounded-tl-[9px] rounded-tr-[9px] rounded-br-[9px] rounded-bl-[80px] md:rounded-bl-[120px] overflow-hidden">
-                {destinations.map((d, i) => (
-                  <div
-                    key={d.id}
-                    className="absolute inset-0 transition-opacity duration-700 ease-in-out"
-                    style={{ opacity: i === current ? 1 : 0 }}
-                  >
-                    <Image
-                      src={d.image}
-                      alt={d.alt || d.name}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 58vw"
-                    />
-                  </div>
-                ))}
+              <div className="relative w-full aspect-[692/461] rounded-tl-[9px] rounded-tr-[9px] rounded-br-[9px] rounded-bl-[80px] md:rounded-bl-[120px] overflow-hidden bg-[#081d01]">
+                <Image
+                  key={curr.id}
+                  src={curr.image}
+                  alt={curr.alt || curr.name}
+                  fill
+                  className="object-cover carousel-fade-in"
+                  sizes="(max-width: 1024px) 100vw, 58vw"
+                />
               </div>
             </div>
 
