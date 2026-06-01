@@ -57,7 +57,7 @@ junglee-journeys-web/
 │   │   ├── safaris/page.tsx            Hub
 │   │   ├── destination/[slug]/page.tsx Dynamic destination detail (markdown from content/destinations/)
 │   │   └── safari/[slug]/page.tsx      Dynamic safari detail (markdown from content/safaris/)
-│   ├── components/                     17 components — see below
+│   ├── components/                     18 components — see below
 │   ├── fonts/Reform.otf
 │   └── lib/
 │       ├── assets.ts                   SVG_ASSETS + IMAGE_ASSETS maps (per-image format choice lives here)
@@ -89,11 +89,12 @@ junglee-journeys-web/
 |---|---|
 | `AnimateOnScroll` | Scroll-triggered fade/slide via IntersectionObserver |
 | `ArrowButton` | Reusable round arrow button (carousels) |
+| `Breadcrumbs` | Visible breadcrumb nav (Home › hub › page) + `BreadcrumbList` JSON-LD. Rendered on destination + safari detail pages for internal linking / SERP breadcrumbs. |
 | `CurrencyConverter` | INR/USD/EUR converter for safari pricing display |
 | `DestinationsCarousel` | Homepage carousel — 5 tiger reserves (Tadoba, Bandhavgarh, Kanha, Pench, Ranthambore). Renders only the active slide. |
 | `EnquiryForm` | Safari enquiry form — POSTs to `/api/enquiry` |
 | `FAQAccordion` | Expandable FAQ section |
-| `Footer` | Site footer (logo, links, social, copyright) |
+| `Footer` | Site footer. Sitewide link mesh: a "Tiger Reserves" column linking all 11 detail-page destinations (data-driven from `DESTINATIONS.filter(hasDetailPage)`) + "Featured Safaris" linking the 3 `SAFARI_FILE_MAP` detail pages. This is the main internal-linking lever for indexing — every page links to every detail page. |
 | `Header` | Nav header — accepts `transparent` prop for hero-overlay variant |
 | `MarkdownContent` | Styled `react-markdown` renderer for destination/safari detail pages |
 | `NumberCounter` | Animated count-up for hero stats |
@@ -185,3 +186,5 @@ The script reads via `readFile` buffers (not file paths) because sharp+Windows f
 - `trailingSlash: true` is required for RSC payload paths under Cloudflare Pages static export. Removing it 404s `__next.<route>.__PAGE__.txt`.
 - The 11 destinations are markdown under `content/destinations/` but only 5 appear in `DestinationsCarousel` on the homepage. The full set is available at `/destinations/` and individual `/destination/[slug]/` pages.
 - `next/dynamic` with default options keeps SSR enabled — this is what we want here, since static export needs the prerendered HTML for SEO and SSR-disabled would exclude it from the export.
+- **Internal linking for indexing (June 2026):** GSC reported the destination/hub pages as "Discovered – currently not indexed" — a crawl-priority problem, not a technical block (sitemaps/robots/canonicals are all clean). Fix was internal linking: sitewide footer mesh to all 11 destination + 3 safari detail pages, `Breadcrumbs` on detail pages, and crawlable `<Link>`s for all 5 featured parks in `DestinationsCarousel`'s `sr-only` block (the carousel only mounts the active slide, so without these only Tadoba was linked from the homepage). When adding new detail pages, add them to the footer mesh automatically by keeping `DESTINATIONS`/`SAFARI_FILE_MAP` current.
+- **`SAFARIS` array vs `SAFARI_FILE_MAP` mismatch:** the `/safaris/` hub displays the `SAFARIS` array (10 packages, all `hasDetailPage: false`, slugs like `central-indian-tiger-tour`). The 3 safari pages that actually have detail content come from a *different* set in `SAFARI_FILE_MAP` (`central-india-tiger-trail`, `photography-special`, `ranthambore-weekend`). The two lists do not overlap, so the hub cards are intentionally NOT linked to detail pages (the slugs wouldn't resolve). The 3 real safari pages are linked via the footer + breadcrumbs instead. If you reconcile these later, unify the two sources so hub cards can link directly.

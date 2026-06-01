@@ -87,11 +87,15 @@ export default function DestinationsCarousel() {
           </p>
         </div>
 
-        {/* Crawlable full content for all destinations (visually hidden) */}
+        {/* Crawlable full content + links for all destinations (visually hidden).
+            The carousel below only mounts the active slide, so these anchors are
+            what make every featured park's detail page discoverable in the static HTML. */}
         <div className="sr-only">
           {destinations.map((d) => (
             <article key={`sr-${d.id}`}>
-              <h3>{d.name}</h3>
+              <h3>
+                <Link href={`/destination/${d.slug}/`}>{d.name}</Link>
+              </h3>
               <p>{d.desc}</p>
             </article>
           ))}

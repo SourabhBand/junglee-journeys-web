@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Header, Footer, MarkdownContent, CurrencyConverter } from "@/components";
+import { Header, Footer, MarkdownContent, CurrencyConverter, Breadcrumbs } from "@/components";
 import { getSafariContent, getAllSafariSlugs, SAFARIS } from "@/lib/content";
 
 interface PageProps {
@@ -60,6 +60,13 @@ export default async function SafariPage({ params }: PageProps) {
   return (
     <main className="font-body bg-white text-[#081d01] min-h-screen">
       <Header />
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Safaris", href: "/safaris/" },
+          { name: safari?.name ?? content.metadata.h1 ?? "Safari", href: `/safari/${slug}/` },
+        ]}
+      />
       <MarkdownContent>{content.body}</MarkdownContent>
       <CurrencyConverter defaultAmount={safari?.priceFrom} />
       <Footer />

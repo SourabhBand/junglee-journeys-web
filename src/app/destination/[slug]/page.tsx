@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Header, Footer, MarkdownContent, CurrencyConverter } from "@/components";
+import { Header, Footer, MarkdownContent, CurrencyConverter, Breadcrumbs } from "@/components";
 import { getDestinationContent, getAllDestinationSlugs, DESTINATIONS } from "@/lib/content";
 
 interface PageProps {
@@ -56,6 +56,13 @@ export default async function DestinationPage({ params }: PageProps) {
   return (
     <main className="font-body bg-white text-[#081d01] min-h-screen">
       <Header />
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Destinations", href: "/destinations/" },
+          { name: dest?.fullName ?? content.metadata.h1 ?? "Destination", href: `/destination/${slug}/` },
+        ]}
+      />
       <MarkdownContent>{content.body}</MarkdownContent>
       <CurrencyConverter defaultAmount={dest?.priceFrom} />
       <Footer />

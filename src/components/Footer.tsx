@@ -1,8 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { IMAGE_ASSETS } from '@/lib/assets';
+import { DESTINATIONS, getAllSafariSlugs } from '@/lib/content';
 import { OrnamentDivider } from './OrnamentDivider';
 import { WhatsAppLink } from './WhatsAppLink';
+
+// Every reserve that has a detail page — sitewide footer links so each one
+// gets a crawlable inbound link from every page (helps indexing).
+const FOOTER_RESERVES = DESTINATIONS.filter((d) => d.hasDetailPage);
+
+// The safari itineraries that actually have detail pages live in SAFARI_FILE_MAP,
+// a different set from the SAFARIS display array. Link them by slug → Title Case.
+const FOOTER_SAFARIS = getAllSafariSlugs().map((slug) => ({
+  slug,
+  name: slug
+    .split('-')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' '),
+}));
 
 function InstagramIcon() {
   return (
@@ -29,7 +44,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <OrnamentDivider variant="light" className="!mt-0 mb-[16px] md:mb-[24px]" />
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 mb-8">
           {/* Left: Logo + tagline + social — full width on mobile */}
           <div className="col-span-2 md:col-span-1 flex flex-col items-center md:items-start mb-2 md:mb-0">
             <Link href="/" className="mb-3">
@@ -67,6 +82,24 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Tiger Reserves — sitewide links to every destination detail page */}
+          <div className="col-span-2 md:col-span-1 flex flex-col items-start">
+            <p className="font-serif font-bold text-[14px] text-[#ede4d1] mb-3">
+              Tiger Reserves
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-1 gap-x-6 gap-y-2.5 font-serif text-[14px] text-[#ede4d1]/80">
+              {FOOTER_RESERVES.map((d) => (
+                <Link
+                  key={d.slug}
+                  className="hover:text-[#e79e23] transition"
+                  href={`/destination/${d.slug}/`}
+                >
+                  {d.fullName}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           {/* Explore */}
           <div className="flex flex-col items-start">
             <p className="font-serif font-bold text-[14px] text-[#ede4d1] mb-3">
@@ -88,6 +121,22 @@ export function Footer() {
               <Link className="hover:text-[#e79e23] transition" href="/enquire/">
                 Enquire
               </Link>
+            </div>
+
+            {/* Featured itineraries that have detail pages */}
+            <p className="font-serif font-bold text-[14px] text-[#ede4d1] mt-6 mb-3">
+              Featured Safaris
+            </p>
+            <div className="flex flex-col gap-2.5 font-serif text-[14px] text-[#ede4d1]/80">
+              {FOOTER_SAFARIS.map((s) => (
+                <Link
+                  key={s.slug}
+                  className="hover:text-[#e79e23] transition"
+                  href={`/safari/${s.slug}/`}
+                >
+                  {s.name}
+                </Link>
+              ))}
             </div>
           </div>
 

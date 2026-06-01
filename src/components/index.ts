@@ -2,6 +2,7 @@ export { OrnamentDivider } from './OrnamentDivider';
 export { ArrowButton } from './ArrowButton';
 export { Header } from './Header';
 export { Footer } from './Footer';
+export { Breadcrumbs } from './Breadcrumbs';
 export { MarkdownContent } from './MarkdownContent';
 export { AnimateOnScroll } from './AnimateOnScroll';
 export { NumberCounter } from './NumberCounter';
