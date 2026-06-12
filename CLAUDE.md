@@ -36,7 +36,7 @@ npm run dev        # next dev (regular Next.js dev server)
 
 **Deploys are manual.** Pushing to `main` does NOT auto-deploy. Run `npm run deploy` explicitly after pushing.
 
-**Auth (since June 2026):** wrangler uses a non-expiring API token, not OAuth. `CLOUDFLARE_API_TOKEN` (scoped to Account → Cloudflare Pages → Edit) and `CLOUDFLARE_ACCOUNT_ID` are set as Windows user environment variables on this machine — deploys never prompt for login. If a deploy fails with auth error 10000, the token was likely revoked; create a new one in the Cloudflare dashboard (My Profile → API Tokens) and update the env var. Do not use `wrangler login` (OAuth) — it requires the account owner's credentials.
+**Auth (since June 2026):** wrangler uses a non-expiring API token, not OAuth. `CLOUDFLARE_API_TOKEN` (scoped to Account → Cloudflare Pages → Edit) and `CLOUDFLARE_ACCOUNT_ID` are set as Windows user environment variables on this machine — deploys never prompt for login. If a deploy fails with auth error 10000, the token was likely revoked; create a new one in the Cloudflare dashboard (My Profile → API Tokens) and update the env var. Do not use `wrangler login` (OAuth) — it requires the account owner's credentials. For dashboard work (Redirect Rules, env vars, custom domains), `rankwithsourabh@gmail.com` is a member of the Cloudflare account (added June 2026).
 
 The parent folder's `CLAUDE.md` (one level up) describes an abandoned WordPress/Hostinger plan — **ignore it**. The Next.js + Cloudflare stack is the current reality.
 
