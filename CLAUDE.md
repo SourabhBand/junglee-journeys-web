@@ -179,8 +179,9 @@ The script reads via `readFile` buffers (not file paths) because sharp+Windows f
 ## Known TODOs (carry forward across sessions)
 
 - [ ] Verify the `jungleejourneys.com` domain in Resend, then change `RECIPIENT` in `functions/api/enquiry.ts` back to `jungleejourneys@gmail.com`
-- [ ] Submit `https://jungleejourneys.com/sitemap_index.xml` to Google Search Console
 - [ ] Disable Cloudflare → Scrape Shield → Email Address Obfuscation for the zone (saves a request + small JS parse)
+- [x] Submit `https://jungleejourneys.com/sitemap_index.xml` to Google Search Console (done 2026-06-12, along with Request Indexing on the 10 stuck destination URLs)
+- [ ] ~2 weeks out (late June 2026): check GSC Page Indexing — the 10 destination pages should move out of "Discovered – currently not indexed", and the www/http duplicate buckets should drain now that www 301s to apex
 
 ## Operational gotchas
 
