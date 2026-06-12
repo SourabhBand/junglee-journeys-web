@@ -11,3 +11,4 @@ export { CurrencyConverter } from './CurrencyConverter';
 export { EnquiryForm } from './EnquiryForm';
 export { WhatsAppFloat } from './WhatsAppFloat';
 export { WhatsAppLink } from './WhatsAppLink';
+export { RelatedParks } from './RelatedParks';

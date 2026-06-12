@@ -23,17 +23,36 @@ const REGIONS = [
 ] as const;
 
 const CHOOSE_BY = [
-  { label: "Best odds of seeing a Tiger", parks: "Tadoba, Bandhavgarh" },
-  { label: "Closest to Mumbai or Pune", parks: "Pench, Tadoba" },
-  { label: "Closest to Delhi", parks: "Ranthambore, Corbett" },
-  { label: "Best for First Timers", parks: "Tadoba, Kanha, Kaziranga" },
-  { label: "Best for Families", parks: "Pench, Kaziranga, Corbett, Kanha" },
-  { label: "Best for Photographers", parks: "Bandhavgarh, Manas, Pangot, Desert NP" },
-  { label: "Best for Lions", parks: "Gir" },
-  { label: "Rhinos and Elephants", parks: "Kaziranga, Manas, Pobitora, Dudhwa" },
-  { label: "Remote Marvels", parks: "Manas, Namdhapha, Pangot, Desert NP" },
-  { label: "Best Conservation Success Story", parks: "Kaziranga, Gir, Desert NP, Pobitora, Panna" },
+  { label: "Best odds of seeing a Tiger", parks: ["Tadoba", "Bandhavgarh"] },
+  { label: "Closest to Mumbai or Pune", parks: ["Pench", "Tadoba"] },
+  { label: "Closest to Delhi", parks: ["Ranthambore", "Corbett"] },
+  { label: "Best for First Timers", parks: ["Tadoba", "Kanha", "Kaziranga"] },
+  { label: "Best for Families", parks: ["Pench", "Kaziranga", "Corbett", "Kanha"] },
+  { label: "Best for Photographers", parks: ["Bandhavgarh", "Manas", "Pangot", "Desert NP"] },
+  { label: "Best for Lions", parks: ["Gir"] },
+  { label: "Rhinos and Elephants", parks: ["Kaziranga", "Manas", "Pobitora", "Dudhwa"] },
+  { label: "Remote Marvels", parks: ["Manas", "Namdhapha", "Pangot", "Desert NP"] },
+  { label: "Best Conservation Success Story", parks: ["Kaziranga", "Gir", "Desert NP", "Pobitora", "Panna"] },
 ];
+
+// Display name → detail-page slug, for parks that have a detail page.
+// Names not in DESTINATIONS (Pangot, Desert NP, Dudhwa, Namdhapha) render as plain text.
+const PARK_SLUGS = new Map(
+  DESTINATIONS.filter((d) => d.hasDetailPage).map((d) => [d.name, d.slug]),
+);
+
+function ParkName({ name }: { name: string }) {
+  const slug = PARK_SLUGS.get(name);
+  if (!slug) return <>{name}</>;
+  return (
+    <Link
+      href={`/destination/${slug}/`}
+      className="underline decoration-[#e79e23] underline-offset-2 hover:text-[#c8841a] transition-colors"
+    >
+      {name}
+    </Link>
+  );
+}
 
 function ParkBox({ park, index }: { park: DestinationSummary; index: number }) {
   const rotated = index % 2 === 1;
@@ -154,7 +173,13 @@ export default function DestinationsHubPage() {
           <ul className="font-serif text-[15px] md:text-[16px] leading-relaxed space-y-3">
             {CHOOSE_BY.map((item) => (
               <li key={item.label}>
-                <strong>{item.label}:</strong> {item.parks}
+                <strong>{item.label}:</strong>{" "}
+                {item.parks.map((park, i) => (
+                  <span key={park}>
+                    {i > 0 && ", "}
+                    <ParkName name={park} />
+                  </span>
+                ))}
               </li>
             ))}
           </ul>

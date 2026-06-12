@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Header, Footer, MarkdownContent, CurrencyConverter, Breadcrumbs } from "@/components";
+import { Header, Footer, MarkdownContent, CurrencyConverter, Breadcrumbs, RelatedParks } from "@/components";
 import { getDestinationContent, getAllDestinationSlugs, DESTINATIONS } from "@/lib/content";
 
 interface PageProps {
@@ -65,6 +65,7 @@ export default async function DestinationPage({ params }: PageProps) {
       />
       <MarkdownContent>{content.body}</MarkdownContent>
       <CurrencyConverter defaultAmount={dest?.priceFrom} />
+      <RelatedParks currentSlug={slug} />
       <Footer />
       {schemaData && (
         <script
