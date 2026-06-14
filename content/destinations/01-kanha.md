@@ -73,9 +73,13 @@ A 3-night **kanha jungle safari** with us means six game drives total. Most of o
 
 Kanha is open from 16 October to 30 June. The rest of the year is monsoon, the gates are closed, and the park belongs to the leopards.
 
-November to February is cool, dry, and busy. Mornings start at 5 to 8 degrees and warm up by 10 AM. This is the most comfortable window for guests who do not love the heat, and the lodges fill first. The dawn chorus is at its best in this stretch.
+| Window | Conditions | Tiger sightings | Best for |
+|---|---|---|---|
+| **November to February** | Cool and dry, mornings 5 to 8 degrees warming by 10 AM, the busiest stretch | Around 90% | Comfort, the dawn chorus, guests who do not love the heat |
+| **March to mid-June** | Hot, afternoons cross 40 degrees in May | Close to 100% (tigers come to water) | Photography and the sharpest sightings |
+| **July to mid-October** | Monsoon, gates closed | Park closed | Not applicable |
 
-March to mid-June is hot. Afternoons cross 40 degrees in May. The sightings sharpen because tigers come to water in the heat (which is good for guests and slightly less good for the tigers themselves). If your priority is the photograph, come in April or May. If your priority is sleeping under a blanket, come in December or January.
+If your priority is the photograph, come in April or May. If your priority is sleeping under a blanket, come in December or January. The sightings sharpen in the heat because tigers come to water, which is good for guests and slightly less good for the tigers themselves.
 
 Peak demand for a Kanha trip runs March to mid-May. Book 6 to 8 weeks ahead. Off-peak weekends in November and February usually open up two to three weeks before the date.
 
@@ -83,31 +87,25 @@ Peak demand for a Kanha trip runs March to mid-May. Book 6 to 8 weeks ahead. Off
 
 ## How to Reach Kanha
 
-Jabalpur is the nearest airport, 160 km from the park. Roughly 4 hours by road on a road that is, by Central Indian rural standards, perfectly civilised. Daily direct flights from Delhi, Mumbai, and Hyderabad. Connections via Delhi from most international gateways.
+| Gateway | Distance | Travel time | Notes |
+|---|---|---|---|
+| **Jabalpur Airport** | 160 km | About 4 hours by road | Daily direct flights from Delhi, Mumbai, and Hyderabad, with connections via Delhi from most international gateways. The default for most guests. |
+| **Nagpur Airport** | 260 km | 5 to 6 hours by road | More flight options on most days. Pick this if your dates do not match the Jabalpur schedule, or to add Pench or Tadoba to the itinerary on the way. |
+| **Jabalpur Railway Station** | 160 km | Overnight train, then about 4 hours by road | Trains from Delhi take 14 to 16 hours (the Jabalpur Garib Rath is the comfortable option); around 18 hours from Mumbai. |
 
-Nagpur is the second option. 260 km away, 5 to 6 hours by road, but with more flight options on most days. Pick Nagpur if your dates do not match the Jabalpur schedule, or if you want to add Pench or Tadoba to the itinerary on the way.
-
-The nearest railway station is also Jabalpur. Trains from Delhi take 14 to 16 hours overnight (the Jabalpur Garib Rath is the comfortable option). From Mumbai it is around 18 hours.
-
-We arrange the airport or station pickup with the lodge transfer. Send us your flight or train details after booking and we handle the rest, including the road journey and any breaks for tea or lunch on the way.
+The road from Jabalpur is, by Central Indian rural standards, perfectly civilised. We arrange the airport or station pickup with the lodge transfer. Send us your flight or train details after booking and we handle the rest, including the road journey and any breaks for tea or lunch on the way.
 
 ---
 
 ## Where to Stay in Kanha
 
-Our shortlist for **kanha resorts** has six properties on it across three lodge tiers, and we have stayed at every one. The right choice depends on your budget and which gate you want to be closest to.
+Our shortlist for **kanha resorts** has six properties on it across three lodge tiers, and we have stayed at every one. The right choice depends on your budget and which gate you want to be closest to. The **kanha safari booking** logistics are the same regardless of which tier you pick, so the lodge is really the only variable.
 
-### Luxury
-
-The lodges in this tier are the ones that make the trip feel like a complete experience rather than just a series of game drives. Single windows that frame the forest. Naturalists in the lodge as well as the jeep. Food that does not feel like an afterthought after a 4 AM start. Two of the three properties we recommend at this tier are inside the buffer zone, which means a 10-minute jeep ride to the gate at 5:30 AM rather than a 30-minute one.
-
-### Mid-range
-
-Genuinely good lodges that are not trying to be five-star. The rooms are comfortable, the food is honest, the gardens are green, and the gate is close. This is where most of our guests end up, and the trips are not less good for it. Two of these properties have naturalists who have been with the lodge for over a decade.
-
-### Best value
-
-For guests who care more about the safari than the room. Clean, simple, well-located, and run by people who have been in the business long enough to know what guests actually need. The **kanha safari booking** logistics are the same regardless of which tier you pick, so the lodge is the only variable.
+| Tier | Character | Best for |
+|---|---|---|
+| **Luxury** | Rooms that frame the forest, naturalists in the lodge as well as the jeep, and food that does not feel like an afterthought after a 4 AM start. Two of the three are inside the buffer zone, a 10-minute jeep ride to the gate rather than 30. | A complete experience, not just a series of game drives |
+| **Mid-range** | Genuinely good lodges that are not trying to be five-star. Comfortable rooms, honest food, green gardens, and a close gate. Two have naturalists who have been with the lodge for over a decade. | Where most of our guests end up |
+| **Best value** | Clean, simple, well-located, and run by people who have been in the business long enough to know what guests actually need. | Guests who care more about the safari than the room |
 
 We will recommend specific properties once we know your dates and budget. The shortlist changes slightly each year as lodges get better or worse, and we update it after every site visit.
 
