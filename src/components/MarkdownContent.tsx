@@ -1,9 +1,22 @@
 import ReactMarkdown, { defaultUrlTransform } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
+import { slugifyHeading } from '@/lib/headings';
 
 interface Props {
   children: string;
+  /** Drop the centered max-width/padding chrome so a parent can control layout. */
+  bare?: boolean;
+}
+
+/** Extract plain text from react-markdown children for anchor-id derivation. */
+function childrenToText(children: React.ReactNode): string {
+  if (typeof children === 'string' || typeof children === 'number') return String(children);
+  if (Array.isArray(children)) return children.map(childrenToText).join('');
+  if (children && typeof children === 'object' && 'props' in children) {
+    return childrenToText((children as { props?: { children?: React.ReactNode } }).props?.children);
+  }
+  return '';
 }
 
 /**
@@ -11,9 +24,12 @@ interface Props {
  * Used for destination detail pages, package detail pages, and any
  * long-form content where the markdown is the source of truth.
  */
-export function MarkdownContent({ children }: Props) {
+export function MarkdownContent({ children, bare = false }: Props) {
+  const wrapperClass = bare
+    ? 'font-serif text-[#081d01]'
+    : 'max-w-4xl mx-auto px-6 md:px-8 py-12 md:py-16 font-serif text-[#081d01]';
   return (
-    <article className="max-w-4xl mx-auto px-6 md:px-8 py-12 md:py-16 font-serif text-[#081d01]">
+    <article className={wrapperClass}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         urlTransform={(url) => {
@@ -27,7 +43,10 @@ export function MarkdownContent({ children }: Props) {
             </h1>
           ),
           h2: ({ children }) => (
-            <h2 className="section-heading text-2xl md:text-3xl mt-12 mb-6 leading-tight">
+            <h2
+              id={slugifyHeading(childrenToText(children))}
+              className="section-heading text-2xl md:text-3xl mt-12 mb-6 leading-tight scroll-mt-28"
+            >
               {children}
             </h2>
           ),

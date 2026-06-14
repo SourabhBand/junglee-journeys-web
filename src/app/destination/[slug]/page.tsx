@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Header, Footer, MarkdownContent, CurrencyConverter, Breadcrumbs, RelatedParks } from "@/components";
-import { getDestinationContent, getAllDestinationSlugs, DESTINATIONS } from "@/lib/content";
+import { Header, Footer, MarkdownContent, CurrencyConverter, Breadcrumbs, RelatedParks, PageTOC, FAQAccordion, FaqJsonLd } from "@/components";
+import { getDestinationContent, getAllDestinationSlugs, DESTINATIONS, getSectionHeadings, extractFaqSection, slugifyHeading } from "@/lib/content";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -38,6 +38,9 @@ export default async function DestinationPage({ params }: PageProps) {
 
   const dest = DESTINATIONS.find(d => d.slug === slug);
 
+  const headings = getSectionHeadings(content.body);
+  const { before, faqItems, after, heading: faqHeading } = extractFaqSection(content.body);
+
   const schemaData = dest ? {
     "@context": "https://schema.org",
     "@type": "TouristAttraction",
@@ -63,7 +66,32 @@ export default async function DestinationPage({ params }: PageProps) {
           { name: dest?.fullName ?? content.metadata.h1 ?? "Destination", href: `/destination/${slug}/` },
         ]}
       />
-      <MarkdownContent>{content.body}</MarkdownContent>
+      <div className="max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-16">
+        <div className="lg:grid lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-12">
+          <aside className="mb-10 lg:mb-0">
+            <PageTOC headings={headings} />
+          </aside>
+          <div className="min-w-0">
+            <MarkdownContent bare>{before}</MarkdownContent>
+            {faqItems.length > 0 && (
+              <section className="mt-12">
+                <h2
+                  id={faqHeading ? slugifyHeading(faqHeading) : "faqs"}
+                  className="section-heading text-2xl md:text-3xl mb-6 leading-tight scroll-mt-28"
+                >
+                  {faqHeading ?? "FAQs"}
+                </h2>
+                <FAQAccordion items={faqItems} />
+              </section>
+            )}
+            {after && (
+              <div className="mt-12">
+                <MarkdownContent bare>{after}</MarkdownContent>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
       <CurrencyConverter defaultAmount={dest?.priceFrom} />
       <RelatedParks currentSlug={slug} />
       <Footer />
@@ -73,6 +101,7 @@ export default async function DestinationPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       )}
+      <FaqJsonLd items={faqItems} />
     </main>
   );
 }

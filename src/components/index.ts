@@ -7,6 +7,8 @@ export { MarkdownContent } from './MarkdownContent';
 export { AnimateOnScroll } from './AnimateOnScroll';
 export { NumberCounter } from './NumberCounter';
 export { default as FAQAccordion } from './FAQAccordion';
+export { PageTOC } from './PageTOC';
+export { FaqJsonLd } from './FaqJsonLd';
 export { CurrencyConverter } from './CurrencyConverter';
 export { EnquiryForm } from './EnquiryForm';
 export { WhatsAppFloat } from './WhatsAppFloat';

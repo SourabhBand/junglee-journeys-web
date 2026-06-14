@@ -1,5 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import { slugifyHeading } from './headings';
+
+export { slugifyHeading };
 
 export interface PageMetadata {
   url?: string;
@@ -147,6 +150,107 @@ function stripSeoCheck(markdown: string): string {
   let cutoff = seoIdx;
   while (cutoff > 0 && /\s|-/.test(markdown[cutoff - 1])) cutoff--;
   return markdown.slice(0, cutoff).trim();
+}
+
+// ============================================================================
+// Section / heading / FAQ parsing (used by detail-page templates)
+// ============================================================================
+
+export interface SectionHeading {
+  text: string;
+  id: string;
+}
+
+/**
+ * Return every `## ` H2 heading in a markdown body as { text, id }, in order.
+ * Used to build the in-page table of contents. Ignores fenced code blocks.
+ */
+export function getSectionHeadings(body: string): SectionHeading[] {
+  const headings: SectionHeading[] = [];
+  let inFence = false;
+  for (const line of body.split('\n')) {
+    if (/^```/.test(line.trim())) {
+      inFence = !inFence;
+      continue;
+    }
+    if (inFence) continue;
+    const match = line.match(/^##\s+(?!#)(.+?)\s*$/);
+    if (match) {
+      const text = match[1].replace(/[*_`]/g, '').trim();
+      headings.push({ text, id: slugifyHeading(text) });
+    }
+  }
+  return headings;
+}
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface FaqSplit {
+  /** Body markdown before the FAQ H2 section. */
+  before: string;
+  /** Parsed FAQ question/answer pairs (empty if no FAQ section found). */
+  faqItems: FaqItem[];
+  /** Body markdown after the FAQ H2 section (e.g. the closing CTA section). */
+  after: string;
+  /** The FAQ section's H2 heading text, for the heading rendered above the accordion. */
+  heading: string | null;
+}
+
+/**
+ * Split a markdown body around its FAQ section so the FAQ can render as an
+ * accordion (and emit FAQPage JSON-LD) in its original position.
+ *
+ * The FAQ section is the first `## ` whose text matches /FAQ/i. Within it,
+ * each `### ` line is a question and the markdown that follows (until the next
+ * `###` or `##`) is the answer. The section ends at the next `## `, so any
+ * trailing sections (e.g. "Ready for Your Safari?") are returned in `after`.
+ */
+export function extractFaqSection(body: string): FaqSplit {
+  const lines = body.split('\n');
+
+  // Locate the FAQ H2 and the next H2 after it.
+  let faqStart = -1;
+  let faqEnd = lines.length;
+  let inFence = false;
+  for (let i = 0; i < lines.length; i++) {
+    if (/^```/.test(lines[i].trim())) inFence = !inFence;
+    if (inFence) continue;
+    const h2 = lines[i].match(/^##\s+(?!#)(.+?)\s*$/);
+    if (!h2) continue;
+    if (faqStart === -1) {
+      if (/faq/i.test(h2[1])) faqStart = i;
+    } else {
+      faqEnd = i;
+      break;
+    }
+  }
+
+  if (faqStart === -1) {
+    return { before: body, faqItems: [], after: '', heading: null };
+  }
+
+  const heading = lines[faqStart].replace(/^##\s+/, '').replace(/[*_`]/g, '').trim();
+  const before = lines.slice(0, faqStart).join('\n').trim();
+  const after = lines.slice(faqEnd).join('\n').trim();
+
+  // Parse ### question + following answer lines within the FAQ block.
+  const faqItems: FaqItem[] = [];
+  let current: FaqItem | null = null;
+  for (let i = faqStart + 1; i < faqEnd; i++) {
+    const q = lines[i].match(/^###\s+(.+?)\s*$/);
+    if (q) {
+      if (current) faqItems.push({ ...current, answer: current.answer.trim() });
+      current = { question: q[1].replace(/[*_`]/g, '').trim(), answer: '' };
+    } else if (current) {
+      current.answer += lines[i] + '\n';
+    }
+  }
+  if (current) faqItems.push({ ...current, answer: current.answer.trim() });
+
+  return { before, faqItems, after, heading };
 }
 
 /**
